@@ -1,0 +1,12 @@
+{
+  "_verified_by": "human + frozen HTML (2026-07-10): JSON-LD ProductGroup variant offer = 28 USD; visible $28 in page. Extractor previously returned null price (headless fallback was gated on missing NAME only).",
+  "fields": {
+    "page.pageType": "product",
+    "platform": "Shopify",
+    "products[0].name": "Gymshark Everyday Seamless Shorts - Black",
+    "products[0].handle": "gymshark-everyday-seamless-shorts-black-aw23",
+    "products[0].price.current": 28.0,
+    "products[0].price.currency": "USD",
+    "products[0].productType": "Shorts"
+  }
+}

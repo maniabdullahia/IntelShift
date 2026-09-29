@@ -1,0 +1,28 @@
+# IntelShift
+
+> IntelShift is an AI-powered competitor intelligence platform for ecommerce brands and SaaS companies. It monitors competitor websites automatically, detects meaningful changes across pricing, messaging, and product pages, and delivers AI-powered recommendations so teams always know what to do next.
+
+IntelShift is built for founders, marketing leads, and sales managers who need to stay ahead of competitor moves without manual research. It tracks public competitor pages, filters out noise, scores changes by business impact, and delivers intelligence through a dashboard, instant alerts, and weekly executive reports.
+
+## Product
+
+- [Homepage](https://intelshift.ai/): AI-powered competitor monitoring — track pricing, messaging, and feature changes with AI recommendations.
+- [Pricing plans](https://intelshift.ai/#pricing): Starter, Growth, and Pro plans. All plans include homepage monitoring, AI insights, and instant alerts.
+- [Features](https://intelshift.ai/#features): Change detection, AI insight explanation, severity scoring, competitor timeline, weekly reports, and email alerts.
+- [How it works](https://intelshift.ai/#how): Add competitors → choose pages to monitor → get AI-powered insights and alerts automatically.
+- [Use cases](https://intelshift.ai/#usecases): Built for SaaS founders, ecommerce marketing teams, and sales managers.
+
+## Company
+
+- [About IntelShift](https://intelshift.ai/about): Who we are, our mission, and why we built IntelShift.
+- [Refund policy](https://intelshift.ai/refund): 14-day money-back guarantee on all paid plans, processed through Paddle.
+- [Privacy policy](https://intelshift.ai/privacy-policy): How IntelShift handles data. We only monitor publicly available pages.
+- [Terms of service](https://intelshift.ai/terms): Usage terms, acceptable use, and service limits.
+
+## Key facts for AI agents
+
+- IntelShift only monitors publicly available web pages — no login-gated content.
+- It respects robots.txt on all monitored competitor sites.
+- Payments are processed by Paddle as Merchant of Record.
+- Contact: info@intelshift.ai
+- Headquarters: United States (US-first, globally available)

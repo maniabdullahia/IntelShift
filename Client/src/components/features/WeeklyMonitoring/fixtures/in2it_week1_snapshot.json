@@ -1,0 +1,3853 @@
+{
+ "schemaVersion": "site_snapshot_v2",
+ "generatedAt": "2026-07-15T07:20:00+00:00",
+ "site": {
+  "domain": "in2it.com.pk",
+  "siteName": "IN2IT Pakistan",
+  "platform": "Shopify",
+  "platformConfidence": 0.95,
+  "siteType": "ecommerce",
+  "businessCategory": "beauty_cosmetics",
+  "subCategories": [
+   "face_makeup",
+   "eye_makeup",
+   "lip_makeup",
+   "skincare",
+   "makeup_remover"
+  ],
+  "positioning": [
+   "Skin Care Range",
+   "Face Makeup",
+   "Trending",
+   "Beauty That Fits You",
+   "Instagram"
+  ],
+  "pagesAnalyzedCount": 5,
+  "pageTypesAnalyzed": {
+   "homepage": 1,
+   "product": 1,
+   "collection": 3
+  },
+  "analyzedUrls": [
+   "https://in2it.com.pk/",
+   "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+   "https://in2it.com.pk/collections/foundation",
+   "https://in2it.com.pk/collections/eyeliner",
+   "https://in2it.com.pk/collections/mascara"
+  ],
+  "catalog": {
+   "totalUniqueProducts": 21,
+   "productsWithPrice": 21,
+   "productsWithoutPrice": 0,
+   "priceCoverageRate": 1,
+   "currency": "PKR",
+   "priceRange": {
+    "min": 2995,
+    "max": 8995,
+    "average": 5580.71
+   },
+   "onSaleCount": 0,
+   "inStockCount": 7,
+   "categoriesDetected": [
+    "Eyeliner",
+    "Foundation",
+    "Mascara",
+    "Skincare"
+   ],
+   "vendorsDetected": [
+    "IN2IT"
+   ],
+   "productTypesDetected": [
+    "Sunscreen"
+   ]
+  },
+  "collections": [
+   {
+    "url": "https://in2it.com.pk/collections/foundation",
+    "name": "Foundation",
+    "productCount": 2,
+    "currency": "PKR",
+    "priceRange": {
+     "min": 7995,
+     "max": 8195
+    },
+    "inStockCount": 2,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   },
+   {
+    "url": "https://in2it.com.pk/collections/eyeliner",
+    "name": "Eyeliner",
+    "productCount": 3,
+    "currency": "PKR",
+    "priceRange": {
+     "min": 3495,
+     "max": 4195
+    },
+    "inStockCount": 3,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   },
+   {
+    "url": "https://in2it.com.pk/collections/mascara",
+    "name": "Mascara",
+    "productCount": 1,
+    "currency": "PKR",
+    "priceRange": {
+     "min": 4595,
+     "max": 4595
+    },
+    "inStockCount": 1,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   }
+  ],
+  "navigation": {
+   "mainLinkCount": 23,
+   "footerLinkCount": 6,
+   "topLabels": [
+    "Home",
+    "Shop All",
+    "Skin Care",
+    "Serums",
+    "Sunscreen",
+    "Toners",
+    "Primers",
+    "Makeup Remover",
+    "Lip Balm",
+    "Face Makeup",
+    "Foundation",
+    "Concealer",
+    "Face Powder",
+    "Blushers",
+    "Eyes Makeup"
+   ]
+  },
+  "homepageFeatures": {
+   "hasAnnouncementBar": false,
+   "hasHero": true,
+   "hasCollectionBanners": true,
+   "hasFeaturedProducts": true,
+   "hasFeaturedCollections": true,
+   "hasBlogPreview": false,
+   "hasNewsletter": false,
+   "hasTestimonials": false,
+   "hasTrustSignals": false,
+   "hasInstagramFeed": true,
+   "hasWhatsapp": false,
+   "hasDiscountMessaging": false,
+   "hasProducts": true,
+   "hasPrices": true
+  },
+  "homepageMetrics": {
+   "sectionCount": 7,
+   "heroCount": 3,
+   "collectionBannerCount": 3,
+   "imageCount": 32,
+   "featuredProductCount": 16,
+   "featuredProductWithPriceCount": 16,
+   "featuredCollectionCount": 3,
+   "ctaCount": 3,
+   "blogLinkCount": 0,
+   "hasAnnouncementBar": false,
+   "productSectionCount": 3,
+   "productSectionWithPriceCount": 2,
+   "productCardEstimate": 16
+  },
+  "totalUniqueProducts": 21,
+  "productsWithPrice": 21,
+  "productsWithoutPrice": 0,
+  "categoriesDetected": [
+   "Eyeliner",
+   "Foundation",
+   "Mascara",
+   "Skincare"
+  ],
+  "vendorsDetected": [
+   "IN2IT"
+  ]
+ },
+ "pagesAnalyzed": [
+  {
+   "url": "https://in2it.com.pk/",
+   "pageType": "homepage",
+   "platform": "Shopify",
+   "title": "IN2IT Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://in2it.com.pk/",
+     "domain": "in2it.com.pk",
+     "pageType": "homepage",
+     "platform": "Shopify",
+     "title": "IN2IT Pakistan",
+     "description": "IN2IT Pakistan",
+     "h1": "IN2IT Pakistan",
+     "canonical": "https://in2it.com.pk/"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "Skin Care Range",
+      "Face Makeup",
+      "Trending",
+      "Beauty That Fits You",
+      "Instagram"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 16,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 6195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "6195.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 7995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "7995.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 3595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3595.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 5795,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "5795.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 5095,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "5095.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 3595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3595.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 4995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "4995.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 5995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "5995.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 5695,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "5695.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 3795,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3795.0"
+       }
+      ]
+     },
+     "productFocus": [
+      "Kombucha Water Essence In2It Kombucha Miracle Water Essence",
+      "Spf 50 Sunscreen In2It Cica Glow",
+      "Hya Cica Skin Mist In2It Hya Cica Mild Skin Mist Spray",
+      "Glow Primer For Makeup In2It Primer Glow",
+      "Eye And Lip Makeup Remover In2It Mild Eye And Lip Make Up Remover",
+      "Waterproof Eyebrow Mascara In2It Natural Brow Waterproof Eyebrow Mascara",
+      "Tinted Lip Balm In2It Moisture Bomb Lipstick",
+      "Glossy Lip Tint In2It Jelly Beam Glow Tint",
+      "Soft Matte Lipstick In2It Airblur",
+      "Oil Control Face Powder In2It Uv Shine",
+      "Full Coverage Concealer In2It True Skin",
+      "Matte Compact Powder Spf 35 In2It Ultra Smooth Powder Pact",
+      "Waterproof Gel Eyeliner In2It Supreme Gel Liner",
+      "Glowing Setting Powder In2It Skinlucent Luminous Setting Powder",
+      "Lip And Cheek Tint In2It Paint It",
+      "Waterproof Lip Tint In2It Gel Tint"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [
+       {
+        "text": "Shop Now",
+        "url": null
+       }
+      ],
+      "ctaCount": 1
+     },
+     "contentAngles": [
+      "IN2IT Pakistan"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 16,
+      "hasPrices": true,
+      "hasCartOrCheckout": true,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.9,
+     "warnings": [
+      "no_ctas_detected"
+     ],
+     "missingFields": [
+      "seo.metaDescription",
+      "homepage.primaryCtas"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.9,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "IN2IT Pakistan",
+    "canonical": "https://in2it.com.pk/",
+    "h1": "IN2IT Pakistan"
+   },
+   "openGraph": {
+    "site_name": "IN2IT Pakistan",
+    "url": "https://in2it.com.pk/",
+    "title": "IN2IT Pakistan",
+    "type": "website",
+    "description": "IN2IT Pakistan",
+    "image": "http://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626",
+    "image:secure_url": "https://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     }
+    ],
+    "footerLinks": [
+     {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/in2itcosmeticspakistan/"
+     },
+     {
+      "text": "Contact Support",
+      "url": "https://in2it.com.pk/pages/contact"
+     },
+     {
+      "text": "Shipping Policy",
+      "url": "https://in2it.com.pk/policies/shipping-policy"
+     },
+     {
+      "text": "Refund Policy",
+      "url": "https://in2it.com.pk/policies/refund-policy"
+     },
+     {
+      "text": "Terms of Service",
+      "url": "https://in2it.com.pk/policies/terms-of-service"
+     },
+     {
+      "text": "Privacy Policy",
+      "url": "https://in2it.com.pk/policies/privacy-policy"
+     }
+    ]
+   },
+   "content": {
+    "siteName": "IN2IT Pakistan",
+    "announcementBar": {
+     "detected": false
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "url": "https://cdn.shopify.com/videos/c/o/v/ff1593111b6642dc8eb0f7fb39be2533.mp4",
+      "sourceSelector": "hero_container/video",
+      "confidence": 0.9
+     },
+     {
+      "type": "video",
+      "url": "https://cdn.shopify.com/videos/c/o/v/714f2732c1d34d43ac0ef2c3e6fdd398.mp4",
+      "sourceSelector": "hero_container/video",
+      "confidence": 0.9
+     },
+     {
+      "type": "video",
+      "url": "https://cdn.shopify.com/videos/c/o/v/8fde04c9edab40eaab2a80dbb95f1edf.mp4",
+      "sourceSelector": "hero_container/video",
+      "confidence": 0.9
+     }
+    ],
+    "collectionBanners": [
+     {
+      "heading": "Face Makeup",
+      "textPreview": "Face Makeup Shop now Eyes Makeup Shop now Lip Makeup Shop now",
+      "imageUrl": "https://in2it.com.pk/cdn/shop/files/631525432_18434666710118339_5610103640488043780_n.jpg?v=1777383618",
+      "ctas": [
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/face-makeup"
+       },
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/eyes-makeup"
+       },
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/lip-makeup"
+       }
+      ],
+      "source": {
+       "selector": "[class*='banner']",
+       "confidence": 0.8
+      }
+     },
+     {
+      "heading": "Eyes Makeup",
+      "textPreview": "Eyes Makeup Shop now",
+      "imageUrl": "https://in2it.com.pk/cdn/shop/files/a4.jpg?v=1777284715",
+      "ctas": [
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/eyes-makeup"
+       }
+      ],
+      "source": {
+       "selector": "[class*='banner']",
+       "confidence": 0.8
+      }
+     },
+     {
+      "heading": "Lip Makeup",
+      "textPreview": "Lip Makeup Shop now",
+      "imageUrl": "https://in2it.com.pk/cdn/shop/files/438303677_848638953972918_8496725009700191119_n.jpg?v=1777383399",
+      "ctas": [
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/lip-makeup"
+       }
+      ],
+      "source": {
+       "selector": "[class*='banner']",
+       "confidence": 0.8
+      }
+     }
+    ],
+    "sections": [
+     {
+      "rank": 1,
+      "type": "product_section",
+      "intent": "product_range",
+      "label": "Skin Care Range",
+      "heading": "Skin Care Range",
+      "textPreview": "in2it in2it KOMBUCHA WATER ESSENCE - IN2IT KOMBUCHA MIRACLE WATER ESSENCE Rs.6,195.00 Add to Cart in2it in2it SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ Rs.7,995.00 Add to Cart 40 g 40 g 5 g 5 g in2it in2it HYA CICA SKIN MIST - IN2IT HYA-CICA MILD SKIN MIST SPRAY Rs.3,595.00 Add to Cart in2it in2it GLOW PRIMER FOR MAKEUP - IN2IT PR",
+      "images": [
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-298456-front-zoom.jpg?v=1778502875",
+        "alt": "IN2IT KOMBUCHA MIRACLE WATER ESSENCE ESSENCE - KOMBUCHA WATER ESSENCE"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/in2it-essence-default-title-in2it-kombucha-miracle-water-essence-150ml-26065135796301.webp?v=1778502879",
+        "alt": "IN2IT KOMBUCHA MIRACLE WATER ESSENCE ESSENCE - KOMBUCHA WATER ESSENCE"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/CGS.png?v=1778502873",
+        "alt": "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ SUNSCREEN - SPF 50+ SUNSCREEN"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-294346-front-zoom.jpg?v=1778502878",
+        "alt": "IN2IT HYA-CICA MILD SKIN MIST SPRAY FACE MIST - HYA CICA SKIN MIST"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-294346-swatch-zoom.jpg?v=1778502881",
+        "alt": "IN2IT HYA-CICA MILD SKIN MIST SPRAY FACE MIST - HYA CICA SKIN MIST"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-315342-front-zoom.jpg?v=1778502889",
+        "alt": "IN2IT PRIMER++ GLOW PRIMER - GLOW PRIMER FOR MAKEUP"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-315342-back-zoom.jpg?v=1778502889",
+        "alt": "IN2IT PRIMER++ GLOW PRIMER - GLOW PRIMER FOR MAKEUP"
+       }
+      ],
+      "source": {
+       "selector": "merged_heading_section",
+       "confidence": 0.85,
+       "priceCount": 4
+      },
+      "products": [
+       {
+        "title": "Kombucha Water Essence In2It Kombucha Miracle Water Essence",
+        "url": "https://in2it.com.pk/products/kombucha-water-essence-in2it-kombucha-miracle-water-essence",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-298456-front-zoom.jpg?v=1778502875",
+        "currentPrice": 6195,
+        "currency": "PKR",
+        "handle": "kombucha-water-essence-in2it-kombucha-miracle-water-essence",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Spf 50 Sunscreen In2It Cica Glow",
+        "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+        "image": "https://in2it.com.pk/cdn/shop/files/CGS.png?v=1778502873",
+        "currentPrice": 7995,
+        "currency": "PKR",
+        "handle": "spf-50-sunscreen-in2it-cica-glow",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Hya Cica Skin Mist In2It Hya Cica Mild Skin Mist Spray",
+        "url": "https://in2it.com.pk/products/hya-cica-skin-mist-in2it-hya-cica-mild-skin-mist-spray",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-294346-front-zoom.jpg?v=1778502878",
+        "currentPrice": 3595,
+        "currency": "PKR",
+        "handle": "hya-cica-skin-mist-in2it-hya-cica-mild-skin-mist-spray",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Glow Primer For Makeup In2It Primer Glow",
+        "url": "https://in2it.com.pk/products/glow-primer-for-makeup-in2it-primer-glow",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-315342-front-zoom.jpg?v=1778502889",
+        "currentPrice": 5795,
+        "currency": "PKR",
+        "handle": "glow-primer-for-makeup-in2it-primer-glow",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       }
+      ]
+     },
+     {
+      "rank": 2,
+      "type": "category_showcase",
+      "intent": "category_showcase",
+      "label": "Face Makeup",
+      "heading": "Face Makeup",
+      "textPreview": "Face Makeup Shop now Eyes Makeup Shop now Lip Makeup Shop now",
+      "links": [
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/face-makeup"
+       },
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/eyes-makeup"
+       },
+       {
+        "text": "Shop now",
+        "url": "https://in2it.com.pk/collections/lip-makeup"
+       }
+      ],
+      "images": [
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/631525432_18434666710118339_5610103640488043780_n.jpg?v=1777383618"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/a4.jpg?v=1777284715"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/438303677_848638953972918_8496725009700191119_n.jpg?v=1777383399"
+       }
+      ],
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 3,
+      "type": "product_section",
+      "intent": "trending",
+      "label": "Trending",
+      "heading": "Trending",
+      "textPreview": "in2it in2it MAKEUP REMOVER - IN2IT MILD EYE AND LIP MAKE UP REMOVER Rs.5,095.00 Add to Cart in2it in2it WATERPROOF EYEBROW MASCARA - IN2IT NATURAL BROW EYEBROW MASCARA Rs.3,595.00 Add to Cart NBM01 DEEP BROWM NBM02 COPPER NBM03 SOFT BROWN in2it in2it TINTED LIP BALM - IN2IT MOISTURE BOMB LIPSTICK Rs.4,995.00 Add to Cart 01 MULBERRRY 02 APPLE 03 CAN",
+      "images": [
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-299336-side-zoom.png?v=1778502880",
+        "alt": "IN2IT MILD EYE AND LIP MAKE UP REMOVER LIP PRODUCT - EYE AND LIP MAKEUP REMOVER"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-299336-swatch-zoom.jpg?v=1778502880",
+        "alt": "IN2IT MILD EYE AND LIP MAKE UP REMOVER LIP PRODUCT - EYE AND LIP MAKEUP REMOVER"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/in2it-eyebrows-default-title-in2it-natural-brow-waterproof-eyebrow-mascara-nbm01-deep-brown-26067213287501.webp?v=1775644827",
+        "alt": "IN2IT NATURAL BROW WATERPROOF EYEBROW MASCARA BROW MASCARA - WATERPROOF EYEBROW MASCARA"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/MMWph2ZC6459ad7fa6e98_1683598720.webp?v=1775644827",
+        "alt": "IN2IT NATURAL BROW WATERPROOF EYEBROW MASCARA BROW MASCARA - WATERPROOF EYEBROW MASCARA"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/8858000026542.webp?v=1778502932",
+        "alt": "IN2IT MOISTURE BOMB LIPSTICK LIPSTICK - TINTED LIP BALM"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-319449-front-zoom.jpg?v=1780297628",
+        "alt": "IN2IT JELLY BEAM GLOW TINT LIP PRODUCT - GLOSSY LIP TINT"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-322301-front-zoom.jpg?v=1778502914",
+        "alt": "IN2IT AIRBLUR MATTE LIPSTICK LIPSTICK - SOFT MATTE LIPSTICK"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCMY-73797-front-zoom.jpg?v=1780297729",
+        "alt": "IN2IT UV SHINE CONTROL FACE POWDER FACE POWDER - OIL CONTROL FACE POWDER"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-307043-back-zoom.jpg?v=1775636508",
+        "alt": "IN2IT TRUE SKIN CONCEALER CONCEALER - FULL COVERAGE CONCEALER"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-307032-front-zoom.jpg?v=1775636508",
+        "alt": "IN2IT TRUE SKIN CONCEALER CONCEALER - FULL COVERAGE CONCEALER"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/WTCTH-318000-front-zoom_1.jpg?v=1775724993",
+        "alt": "IN2IT ULTRA SMOOTH POWDER PACT SPF35 PA+++ FACE POWDER - MATTE COMPACT POWDER SPF 35"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/in2it-eyeliner-default-title-in2it-supreme-gel-liner-1g-sgl02-coffee-brown-26067214762061.webp?v=1775715770",
+        "alt": "IN2IT SUPREME GEL LINER EYELINER - WATERPROOF GEL EYELINER"
+       }
+      ],
+      "source": {
+       "selector": "merged_heading_section",
+       "confidence": 0.85,
+       "priceCount": 12
+      },
+      "products": [
+       {
+        "title": "Eye And Lip Makeup Remover In2It Mild Eye And Lip Make Up Remover",
+        "url": "https://in2it.com.pk/products/eye-and-lip-makeup-remover-in2it-mild-eye-and-lip-make-up-remover",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-299336-side-zoom.png?v=1778502880",
+        "currentPrice": 5095,
+        "currency": "PKR",
+        "handle": "eye-and-lip-makeup-remover-in2it-mild-eye-and-lip-make-up-remover",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Waterproof Eyebrow Mascara In2It Natural Brow Waterproof Eyebrow Mascara",
+        "url": "https://in2it.com.pk/products/waterproof-eyebrow-mascara-in2it-natural-brow-waterproof-eyebrow-mascara",
+        "image": "https://in2it.com.pk/cdn/shop/files/in2it-eyebrows-default-title-in2it-natural-brow-waterproof-eyebrow-mascara-nbm01-deep-brown-26067213287501.webp?v=1775644827",
+        "currentPrice": 3595,
+        "currency": "PKR",
+        "handle": "waterproof-eyebrow-mascara-in2it-natural-brow-waterproof-eyebrow-mascara",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Tinted Lip Balm In2It Moisture Bomb Lipstick",
+        "url": "https://in2it.com.pk/products/tinted-lip-balm-in2it-moisture-bomb-lipstick",
+        "image": "https://in2it.com.pk/cdn/shop/files/8858000026542.webp?v=1778502932",
+        "currentPrice": 4995,
+        "currency": "PKR",
+        "handle": "tinted-lip-balm-in2it-moisture-bomb-lipstick",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Glossy Lip Tint In2It Jelly Beam Glow Tint",
+        "url": "https://in2it.com.pk/products/glossy-lip-tint-in2it-jelly-beam-glow-tint",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-319449-front-zoom.jpg?v=1780297628",
+        "currentPrice": 5995,
+        "currency": "PKR",
+        "handle": "glossy-lip-tint-in2it-jelly-beam-glow-tint",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Soft Matte Lipstick In2It Airblur",
+        "url": "https://in2it.com.pk/products/soft-matte-lipstick-in2it-airblur",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-322301-front-zoom.jpg?v=1778502914",
+        "currentPrice": 5695,
+        "currency": "PKR",
+        "handle": "soft-matte-lipstick-in2it-airblur",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Oil Control Face Powder In2It Uv Shine",
+        "url": "https://in2it.com.pk/products/oil-control-face-powder-in2it-uv-shine",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCMY-73797-front-zoom.jpg?v=1780297729",
+        "currentPrice": 3795,
+        "currency": "PKR",
+        "handle": "oil-control-face-powder-in2it-uv-shine",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Full Coverage Concealer In2It True Skin",
+        "url": "https://in2it.com.pk/products/full-coverage-concealer-in2it-true-skin",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-307043-back-zoom.jpg?v=1775636508",
+        "currentPrice": 6695,
+        "currency": "PKR",
+        "handle": "full-coverage-concealer-in2it-true-skin",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Matte Compact Powder Spf 35 In2It Ultra Smooth Powder Pact",
+        "url": "https://in2it.com.pk/products/matte-compact-powder-spf-35-in2it-ultra-smooth-powder-pact",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-318000-front-zoom_1.jpg?v=1775724993",
+        "currentPrice": 8995,
+        "currency": "PKR",
+        "handle": "matte-compact-powder-spf-35-in2it-ultra-smooth-powder-pact",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Waterproof Gel Eyeliner In2It Supreme Gel Liner",
+        "url": "https://in2it.com.pk/products/waterproof-gel-eyeliner-in2it-supreme-gel-liner",
+        "image": "https://in2it.com.pk/cdn/shop/files/in2it-eyeliner-default-title-in2it-supreme-gel-liner-1g-sgl02-coffee-brown-26067214762061.webp?v=1775715770",
+        "currentPrice": 4195,
+        "currency": "PKR",
+        "handle": "waterproof-gel-eyeliner-in2it-supreme-gel-liner",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Glowing Setting Powder In2It Skinlucent Luminous Setting Powder",
+        "url": "https://in2it.com.pk/products/glowing-setting-powder-in2it-skinlucent-luminous-setting-powder",
+        "image": "https://in2it.com.pk/cdn/shop/files/in2it-powders-default-title-in2it-skinlucent-luminous-setting-powder-10g-moonlit-beige-26066702368845_53bcf975-feec-4e65-9f0c-5c27d4b97692.webp?v=1780297656",
+        "currentPrice": 7995,
+        "currency": "PKR",
+        "handle": "glowing-setting-powder-in2it-skinlucent-luminous-setting-powder",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Lip And Cheek Tint In2It Paint It",
+        "url": "https://in2it.com.pk/products/lip-and-cheek-tint-in2it-paint-it",
+        "image": "https://in2it.com.pk/cdn/shop/files/WTCTH-307280-front-zoom.jpg?v=1778502921",
+        "currentPrice": 5295,
+        "currency": "PKR",
+        "handle": "lip-and-cheek-tint-in2it-paint-it",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       },
+       {
+        "title": "Waterproof Lip Tint In2It Gel Tint",
+        "url": "https://in2it.com.pk/products/waterproof-lip-tint-in2it-gel-tint",
+        "image": "https://in2it.com.pk/cdn/shop/files/8858000027235.webp?v=1780297631",
+        "currentPrice": 2995,
+        "currency": "PKR",
+        "handle": "waterproof-lip-tint-in2it-gel-tint",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.88
+        }
+       }
+      ]
+     },
+     {
+      "rank": 4,
+      "type": "content_section",
+      "label": "Beauty That Fits You",
+      "heading": "Beauty That Fits You",
+      "textPreview": "Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You Beauty That Fits You",
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 5,
+      "type": "social_gallery",
+      "label": "Instagram",
+      "heading": "Instagram",
+      "textPreview": "Instagram",
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 6,
+      "type": "social_gallery",
+      "label": "Instagram",
+      "heading": "Instagram",
+      "textPreview": "1 1 1 1 1 Add to Cart Add to Cart Add to Cart Add to Cart Add to Cart",
+      "images": [
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/655087819_18072315674213901_556179268770633788_n.jpg?v=1777384199"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/a9.jpg?v=1777380626"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/430999782_810438091126338_1182675555527038362_n.jpg?v=1777381144"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/a10.jpg?v=1777285457"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/657729562_18401513737194426_1644902777593577850_n.jpg?v=1777380736"
+       }
+      ],
+      "source": {
+       "selector": "merged_heading_section",
+       "confidence": 0.85,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 7,
+      "type": "product_section",
+      "intent": "general_product_grid",
+      "textPreview": "1 1 1 1 1 Add to Cart Add to Cart Add to Cart Add to Cart Add to Cart",
+      "images": [
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/655087819_18072315674213901_556179268770633788_n.jpg?v=1777384199"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/a9.jpg?v=1777380626"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/430999782_810438091126338_1182675555527038362_n.jpg?v=1777381144"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/a10.jpg?v=1777285457"
+       },
+       {
+        "url": "https://in2it.com.pk/cdn/shop/files/657729562_18401513737194426_1644902777593577850_n.jpg?v=1777380736"
+       }
+      ],
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     }
+    ]
+   },
+   "ecommerce": {
+    "featuredProducts": [
+     {
+      "title": "Kombucha Water Essence In2It Kombucha Miracle Water Essence",
+      "url": "https://in2it.com.pk/products/kombucha-water-essence-in2it-kombucha-miracle-water-essence",
+      "price": {
+       "currency": "PKR",
+       "current": 6195,
+       "isOnSale": false,
+       "priceTextRaw": "6195.0"
+      }
+     },
+     {
+      "title": "Spf 50 Sunscreen In2It Cica Glow",
+      "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+      "price": {
+       "currency": "PKR",
+       "current": 7995,
+       "isOnSale": false,
+       "priceTextRaw": "7995.0"
+      }
+     },
+     {
+      "title": "Hya Cica Skin Mist In2It Hya Cica Mild Skin Mist Spray",
+      "url": "https://in2it.com.pk/products/hya-cica-skin-mist-in2it-hya-cica-mild-skin-mist-spray",
+      "price": {
+       "currency": "PKR",
+       "current": 3595,
+       "isOnSale": false,
+       "priceTextRaw": "3595.0"
+      }
+     },
+     {
+      "title": "Glow Primer For Makeup In2It Primer Glow",
+      "url": "https://in2it.com.pk/products/glow-primer-for-makeup-in2it-primer-glow",
+      "price": {
+       "currency": "PKR",
+       "current": 5795,
+       "isOnSale": false,
+       "priceTextRaw": "5795.0"
+      }
+     },
+     {
+      "title": "Eye And Lip Makeup Remover In2It Mild Eye And Lip Make Up Remover",
+      "url": "https://in2it.com.pk/products/eye-and-lip-makeup-remover-in2it-mild-eye-and-lip-make-up-remover",
+      "price": {
+       "currency": "PKR",
+       "current": 5095,
+       "isOnSale": false,
+       "priceTextRaw": "5095.0"
+      }
+     },
+     {
+      "title": "Waterproof Eyebrow Mascara In2It Natural Brow Waterproof Eyebrow Mascara",
+      "url": "https://in2it.com.pk/products/waterproof-eyebrow-mascara-in2it-natural-brow-waterproof-eyebrow-mascara",
+      "price": {
+       "currency": "PKR",
+       "current": 3595,
+       "isOnSale": false,
+       "priceTextRaw": "3595.0"
+      }
+     },
+     {
+      "title": "Tinted Lip Balm In2It Moisture Bomb Lipstick",
+      "url": "https://in2it.com.pk/products/tinted-lip-balm-in2it-moisture-bomb-lipstick",
+      "price": {
+       "currency": "PKR",
+       "current": 4995,
+       "isOnSale": false,
+       "priceTextRaw": "4995.0"
+      }
+     },
+     {
+      "title": "Glossy Lip Tint In2It Jelly Beam Glow Tint",
+      "url": "https://in2it.com.pk/products/glossy-lip-tint-in2it-jelly-beam-glow-tint",
+      "price": {
+       "currency": "PKR",
+       "current": 5995,
+       "isOnSale": false,
+       "priceTextRaw": "5995.0"
+      }
+     },
+     {
+      "title": "Soft Matte Lipstick In2It Airblur",
+      "url": "https://in2it.com.pk/products/soft-matte-lipstick-in2it-airblur",
+      "price": {
+       "currency": "PKR",
+       "current": 5695,
+       "isOnSale": false,
+       "priceTextRaw": "5695.0"
+      }
+     },
+     {
+      "title": "Oil Control Face Powder In2It Uv Shine",
+      "url": "https://in2it.com.pk/products/oil-control-face-powder-in2it-uv-shine",
+      "price": {
+       "currency": "PKR",
+       "current": 3795,
+       "isOnSale": false,
+       "priceTextRaw": "3795.0"
+      }
+     },
+     {
+      "title": "Full Coverage Concealer In2It True Skin",
+      "url": "https://in2it.com.pk/products/full-coverage-concealer-in2it-true-skin",
+      "price": {
+       "currency": "PKR",
+       "current": 6695,
+       "isOnSale": false,
+       "priceTextRaw": "6695.0"
+      }
+     },
+     {
+      "title": "Matte Compact Powder Spf 35 In2It Ultra Smooth Powder Pact",
+      "url": "https://in2it.com.pk/products/matte-compact-powder-spf-35-in2it-ultra-smooth-powder-pact",
+      "price": {
+       "currency": "PKR",
+       "current": 8995,
+       "isOnSale": false,
+       "priceTextRaw": "8995.0"
+      }
+     },
+     {
+      "title": "Waterproof Gel Eyeliner In2It Supreme Gel Liner",
+      "url": "https://in2it.com.pk/products/waterproof-gel-eyeliner-in2it-supreme-gel-liner",
+      "price": {
+       "currency": "PKR",
+       "current": 4195,
+       "isOnSale": false,
+       "priceTextRaw": "4195.0"
+      }
+     },
+     {
+      "title": "Glowing Setting Powder In2It Skinlucent Luminous Setting Powder",
+      "url": "https://in2it.com.pk/products/glowing-setting-powder-in2it-skinlucent-luminous-setting-powder",
+      "price": {
+       "currency": "PKR",
+       "current": 7995,
+       "isOnSale": false,
+       "priceTextRaw": "7995.0"
+      }
+     },
+     {
+      "title": "Lip And Cheek Tint In2It Paint It",
+      "url": "https://in2it.com.pk/products/lip-and-cheek-tint-in2it-paint-it",
+      "price": {
+       "currency": "PKR",
+       "current": 5295,
+       "isOnSale": false,
+       "priceTextRaw": "5295.0"
+      }
+     },
+     {
+      "title": "Waterproof Lip Tint In2It Gel Tint",
+      "url": "https://in2it.com.pk/products/waterproof-lip-tint-in2it-gel-tint",
+      "price": {
+       "currency": "PKR",
+       "current": 2995,
+       "isOnSale": false,
+       "priceTextRaw": "2995.0"
+      }
+     }
+    ],
+    "featuredCollections": [
+     {
+      "name": "Face Makeup",
+      "handle": "face-makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "name": "Eyes Makeup",
+      "handle": "eyes-makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "name": "Lip Makeup",
+      "handle": "lip-makeup",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     }
+    ],
+    "hasEcommerceSignals": false,
+    "products": [
+     {
+      "name": "Kombucha Water Essence In2It Kombucha Miracle Water Essence",
+      "price": {
+       "currency": "PKR",
+       "current": 6195,
+       "isOnSale": false,
+       "priceTextRaw": "6195.0"
+      },
+      "url": "https://in2it.com.pk/products/kombucha-water-essence-in2it-kombucha-miracle-water-essence"
+     },
+     {
+      "name": "Spf 50 Sunscreen In2It Cica Glow",
+      "price": {
+       "currency": "PKR",
+       "current": 7995,
+       "isOnSale": false,
+       "priceTextRaw": "7995.0"
+      },
+      "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow"
+     },
+     {
+      "name": "Hya Cica Skin Mist In2It Hya Cica Mild Skin Mist Spray",
+      "price": {
+       "currency": "PKR",
+       "current": 3595,
+       "isOnSale": false,
+       "priceTextRaw": "3595.0"
+      },
+      "url": "https://in2it.com.pk/products/hya-cica-skin-mist-in2it-hya-cica-mild-skin-mist-spray"
+     },
+     {
+      "name": "Glow Primer For Makeup In2It Primer Glow",
+      "price": {
+       "currency": "PKR",
+       "current": 5795,
+       "isOnSale": false,
+       "priceTextRaw": "5795.0"
+      },
+      "url": "https://in2it.com.pk/products/glow-primer-for-makeup-in2it-primer-glow"
+     },
+     {
+      "name": "Eye And Lip Makeup Remover In2It Mild Eye And Lip Make Up Remover",
+      "price": {
+       "currency": "PKR",
+       "current": 5095,
+       "isOnSale": false,
+       "priceTextRaw": "5095.0"
+      },
+      "url": "https://in2it.com.pk/products/eye-and-lip-makeup-remover-in2it-mild-eye-and-lip-make-up-remover"
+     },
+     {
+      "name": "Waterproof Eyebrow Mascara In2It Natural Brow Waterproof Eyebrow Mascara",
+      "price": {
+       "currency": "PKR",
+       "current": 3595,
+       "isOnSale": false,
+       "priceTextRaw": "3595.0"
+      },
+      "url": "https://in2it.com.pk/products/waterproof-eyebrow-mascara-in2it-natural-brow-waterproof-eyebrow-mascara"
+     },
+     {
+      "name": "Tinted Lip Balm In2It Moisture Bomb Lipstick",
+      "price": {
+       "currency": "PKR",
+       "current": 4995,
+       "isOnSale": false,
+       "priceTextRaw": "4995.0"
+      },
+      "url": "https://in2it.com.pk/products/tinted-lip-balm-in2it-moisture-bomb-lipstick"
+     },
+     {
+      "name": "Glossy Lip Tint In2It Jelly Beam Glow Tint",
+      "price": {
+       "currency": "PKR",
+       "current": 5995,
+       "isOnSale": false,
+       "priceTextRaw": "5995.0"
+      },
+      "url": "https://in2it.com.pk/products/glossy-lip-tint-in2it-jelly-beam-glow-tint"
+     },
+     {
+      "name": "Soft Matte Lipstick In2It Airblur",
+      "price": {
+       "currency": "PKR",
+       "current": 5695,
+       "isOnSale": false,
+       "priceTextRaw": "5695.0"
+      },
+      "url": "https://in2it.com.pk/products/soft-matte-lipstick-in2it-airblur"
+     },
+     {
+      "name": "Oil Control Face Powder In2It Uv Shine",
+      "price": {
+       "currency": "PKR",
+       "current": 3795,
+       "isOnSale": false,
+       "priceTextRaw": "3795.0"
+      },
+      "url": "https://in2it.com.pk/products/oil-control-face-powder-in2it-uv-shine"
+     },
+     {
+      "name": "Full Coverage Concealer In2It True Skin",
+      "price": {
+       "currency": "PKR",
+       "current": 6695,
+       "isOnSale": false,
+       "priceTextRaw": "6695.0"
+      },
+      "url": "https://in2it.com.pk/products/full-coverage-concealer-in2it-true-skin"
+     },
+     {
+      "name": "Matte Compact Powder Spf 35 In2It Ultra Smooth Powder Pact",
+      "price": {
+       "currency": "PKR",
+       "current": 8995,
+       "isOnSale": false,
+       "priceTextRaw": "8995.0"
+      },
+      "url": "https://in2it.com.pk/products/matte-compact-powder-spf-35-in2it-ultra-smooth-powder-pact"
+     },
+     {
+      "name": "Waterproof Gel Eyeliner In2It Supreme Gel Liner",
+      "price": {
+       "currency": "PKR",
+       "current": 4195,
+       "isOnSale": false,
+       "priceTextRaw": "4195.0"
+      },
+      "url": "https://in2it.com.pk/products/waterproof-gel-eyeliner-in2it-supreme-gel-liner"
+     },
+     {
+      "name": "Glowing Setting Powder In2It Skinlucent Luminous Setting Powder",
+      "price": {
+       "currency": "PKR",
+       "current": 7995,
+       "isOnSale": false,
+       "priceTextRaw": "7995.0"
+      },
+      "url": "https://in2it.com.pk/products/glowing-setting-powder-in2it-skinlucent-luminous-setting-powder"
+     },
+     {
+      "name": "Lip And Cheek Tint In2It Paint It",
+      "price": {
+       "currency": "PKR",
+       "current": 5295,
+       "isOnSale": false,
+       "priceTextRaw": "5295.0"
+      },
+      "url": "https://in2it.com.pk/products/lip-and-cheek-tint-in2it-paint-it"
+     },
+     {
+      "name": "Waterproof Lip Tint In2It Gel Tint",
+      "price": {
+       "currency": "PKR",
+       "current": 2995,
+       "isOnSale": false,
+       "priceTextRaw": "2995.0"
+      },
+      "url": "https://in2it.com.pk/products/waterproof-lip-tint-in2it-gel-tint"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://in2it.com.pk/"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Homepage Extractor v2",
+    "confidence": 0.85,
+    "pageTypeValidated": true
+   },
+   "summary": {
+    "siteName": "IN2IT Pakistan",
+    "primaryCategory": "makeup",
+    "positioning": [
+     "Skin Care Range",
+     "Face Makeup",
+     "Trending",
+     "Beauty That Fits You",
+     "Instagram"
+    ],
+    "heroCount": 3,
+    "heroType": "video",
+    "heroStyle": "video_carousel",
+    "heroHasText": false,
+    "collectionCount": 3,
+    "featuredProductCount": 16,
+    "productSectionCount": 3,
+    "testimonialCount": 0,
+    "trustSignalCount": 0,
+    "primaryCtas": [
+     {
+      "text": "Shop now",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     }
+    ],
+    "topSections": [
+     "product_section",
+     "category_showcase",
+     "content_section",
+     "social_gallery"
+    ],
+    "homepageType": "beauty_cosmetics",
+    "businessClassification": {
+     "homepageType": "beauty_cosmetics",
+     "subCategories": [
+      "face_makeup",
+      "eye_makeup",
+      "lip_makeup",
+      "skincare",
+      "makeup_remover"
+     ]
+    },
+    "warnings": [
+     {
+      "type": "media_no_text",
+      "url": "https://cdn.shopify.com/videos/c/o/v/ff1593111b6642dc8eb0f7fb39be2533.mp4"
+     },
+     {
+      "type": "media_no_text",
+      "url": "https://cdn.shopify.com/videos/c/o/v/714f2732c1d34d43ac0ef2c3e6fdd398.mp4"
+     },
+     {
+      "type": "media_no_text",
+      "url": "https://cdn.shopify.com/videos/c/o/v/8fde04c9edab40eaab2a80dbb95f1edf.mp4"
+     }
+    ],
+    "extractionMethod": "dom"
+   },
+   "features": {
+    "hasAnnouncementBar": false,
+    "hasHero": true,
+    "hasCollectionBanners": true,
+    "hasFeaturedProducts": true,
+    "hasFeaturedCollections": true,
+    "hasBlogPreview": false,
+    "hasNewsletter": false,
+    "hasTestimonials": false,
+    "hasTrustSignals": false,
+    "hasInstagramFeed": true,
+    "hasWhatsapp": false,
+    "hasDiscountMessaging": false,
+    "hasProducts": true,
+    "hasPrices": true
+   },
+   "metrics": {
+    "sectionCount": 7,
+    "heroCount": 3,
+    "collectionBannerCount": 3,
+    "imageCount": 32,
+    "featuredProductCount": 16,
+    "featuredProductWithPriceCount": 16,
+    "featuredCollectionCount": 3,
+    "ctaCount": 3,
+    "blogLinkCount": 0,
+    "hasAnnouncementBar": false,
+    "productSectionCount": 3,
+    "productSectionWithPriceCount": 2,
+    "productCardEstimate": 16
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.98
+   },
+   "productCountOnPage": 16
+  },
+  {
+   "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+   "pageType": "product",
+   "platform": "Shopify",
+   "title": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ \u2013 IN2IT Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+     "domain": "in2it.com.pk",
+     "pageType": "product",
+     "platform": "Shopify",
+     "title": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ \u2013 IN2IT Pakistan",
+     "description": "Shop SPF 50+ Sunscreen by IN2IT. Lightweight CICA GLOW Sunscreen SPF50+ PA++++ with Ceramides, Cica and Hyaluronic Acid for daily hydration and UV protection.",
+     "h1": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++",
+     "canonical": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "hyaluronic acid",
+      "hydrated skin",
+      "ultra-light milk"
+     ],
+     "promotionalSignals": [
+      "deal",
+      "offer"
+     ],
+     "pricingSignals": {
+      "pricesDetected": 3,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 1995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       "1,995.00",
+       {
+        "currency": "PKR",
+        "current": 1995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "IN2IT Pakistan"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 1,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 1,
+     "warnings": [],
+     "missingFields": [],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 1,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ \u2013 IN2IT Pakistan",
+    "metaDescription": "Shop SPF 50+ Sunscreen by IN2IT. Lightweight CICA GLOW Sunscreen SPF50+ PA++++ with Ceramides, Cica and Hyaluronic Acid for daily hydration and UV protection.",
+    "canonical": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+    "h1": "IN2IT Pakistan"
+   },
+   "openGraph": {
+    "site_name": "IN2IT Pakistan",
+    "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+    "title": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++",
+    "type": "product",
+    "description": "Shop SPF 50+ Sunscreen by IN2IT. Lightweight CICA GLOW Sunscreen SPF50+ PA++++ with Ceramides, Cica and Hyaluronic Acid for daily hydration and UV protection.",
+    "price:amount": "1,995.00",
+    "price:currency": "PKR",
+    "image": "http://in2it.com.pk/cdn/shop/files/WTCTH-319971-side-zoom_1200x1200.png?v=1778502880",
+    "image:secure_url": "https://in2it.com.pk/cdn/shop/files/WTCTH-319971-side-zoom_1200x1200.png?v=1778502880"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Cart 0 item Rs.0.00",
+      "url": "https://in2it.com.pk/cart"
+     },
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     }
+    ]
+   },
+   "content": {
+    "productName": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++",
+    "productDescription": {
+     "html": "<p>IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones.</p> <p>The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-loving ingredients work together to keep skin feeling comfortable, smooth, and refreshed throughout the day. The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines.</p> <p>Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow. The non-greasy formula leaves the skin feeling soft and hydrated without heaviness or stickiness.</p> <p>For anyone looking for an SPF 50+ sunscreen that combines advanced sun protection with hydration and skin barrier support, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a reliable everyday essential that fits seamlessly into modern skincare routines.</p>",
+     "text": "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones. The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-loving ingredients work together to keep skin feeling comfortable, smooth, and refreshed throughout the day. The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines. Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow. The non-greasy formula leaves the skin feeling soft and hydrated without heaviness or stickiness. For anyone looking for an SPF 50+ sunscreen that combines advanced sun protection with hydration and skin barrier support, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a reliable everyday essential that fits seamlessly into modern skincare routines.",
+     "benefits": [
+      "Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow."
+     ],
+     "usage": [
+      "Complete your regular skincare routine before application.",
+      "Apply sunscreen generously as the final step of your morning skincare routine.",
+      "Spread evenly across the face and neck.",
+      "Allow the product to absorb fully before applying makeup.",
+      "Reapply every two hours when exposed to direct sunlight.",
+      "Reapply after swimming, sweating, or towel drying."
+     ],
+     "specifications": [
+      "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day.",
+      "The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines."
+     ]
+    },
+    "productType": "Sunscreen",
+    "category": "Skincare",
+    "ctas": [
+     {
+      "text": "Add to Cart"
+     }
+    ]
+   },
+   "ecommerce": {
+    "product": {
+     "rank": 1,
+     "name": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++",
+     "handle": "spf-50-sunscreen-in2it-cica-glow",
+     "productId": "9016634540260",
+     "productUrl": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/CGS.png",
+     "additionalImageUrls": [
+      "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-319971-side-zoom.png"
+     ],
+     "media": {
+      "images": [
+       "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/CGS.png",
+       "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-319971-side-zoom.png"
+      ]
+     },
+     "price": {
+      "currency": "PKR",
+      "current": 1995,
+      "isOnSale": false
+     },
+     "availability": {
+      "status": "in_stock",
+      "label": "In Stock",
+      "inStock": true
+     },
+     "category": "Skincare",
+     "vendor": "IN2IT",
+     "shortDescription": "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones. The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-loving ingredients work together to keep skin feeling comfortable, smooth, and refreshed throughout the day. The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines. Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow. The non-greasy formula leaves the skin feeling soft and hydrated without heaviness or stickiness. For anyone looking for an SPF 50+ sunscreen that combines advanced sun protection with hydration and skin barrier support, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a reliable everyday essential that fits seamlessly into modern skincare routines.",
+     "description": {
+      "html": "<p>IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones.</p> <p>The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-loving ingredients work together to keep skin feeling comfortable, smooth, and refreshed throughout the day. The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines.</p> <p>Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow. The non-greasy formula leaves the skin feeling soft and hydrated without heaviness or stickiness.</p> <p>For anyone looking for an SPF 50+ sunscreen that combines advanced sun protection with hydration and skin barrier support, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a reliable everyday essential that fits seamlessly into modern skincare routines.</p>",
+      "text": "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones. The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-loving ingredients work together to keep skin feeling comfortable, smooth, and refreshed throughout the day. The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines. Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow. The non-greasy formula leaves the skin feeling soft and hydrated without heaviness or stickiness. For anyone looking for an SPF 50+ sunscreen that combines advanced sun protection with hydration and skin barrier support, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a reliable everyday essential that fits seamlessly into modern skincare routines.",
+      "benefits": [
+       "Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow."
+      ],
+      "usage": [
+       "Complete your regular skincare routine before application.",
+       "Apply sunscreen generously as the final step of your morning skincare routine.",
+       "Spread evenly across the face and neck.",
+       "Allow the product to absorb fully before applying makeup.",
+       "Reapply every two hours when exposed to direct sunlight.",
+       "Reapply after swimming, sweating, or towel drying."
+      ],
+      "specifications": [
+       "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day.",
+       "The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines."
+      ]
+     },
+     "productType": "Sunscreen",
+     "options": [
+      {
+       "name": "Size",
+       "position": 1,
+       "values": [
+        "40 g",
+        "5 g"
+       ]
+      }
+     ],
+     "variants": [
+      {
+       "id": 48827102593252,
+       "title": "40 g",
+       "option1": "40 g",
+       "available": true,
+       "price": 7995
+      },
+      {
+       "id": 48827102626020,
+       "title": "5 g",
+       "option1": "5 g",
+       "available": true,
+       "price": 1995
+      }
+     ],
+     "variantAvailabilityMap": {
+      "Size/40 g": true,
+      "Size/5 g": true
+     },
+     "metrics": {
+      "variantCount": 2,
+      "availableVariantCount": 2,
+      "imageCount": 2,
+      "videoCount": 0,
+      "modelCount": 0,
+      "hasMultiplePrices": true,
+      "hasOptions": true,
+      "hasVideo": false,
+      "has3DModel": false,
+      "hasReviews": false,
+      "hasBadges": false,
+      "hasSwatches": false,
+      "hasRelatedProducts": false,
+      "hasCtas": true
+     },
+     "source": {
+      "cardSelector": "shopify_product_js",
+      "confidence": 0.95
+     },
+     "benefits": [
+      "Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow."
+     ],
+     "activeIngredients": [
+      "Cica PDRN",
+      "5X Ceramide Complex",
+      "Hyaluronic Acid",
+      "Ceramide"
+     ]
+    },
+    "price": {
+     "currency": "PKR",
+     "current": 1995,
+     "isOnSale": false
+    },
+    "availability": {
+     "status": "in_stock",
+     "label": "In Stock",
+     "inStock": true
+    },
+    "variants": [
+     {
+      "id": 48827102593252,
+      "title": "40 g",
+      "option1": "40 g",
+      "available": true,
+      "price": 7995
+     },
+     {
+      "id": 48827102626020,
+      "title": "5 g",
+      "option1": "5 g",
+      "available": true,
+      "price": 1995
+     }
+    ],
+    "options": [
+     {
+      "name": "Size",
+      "position": 1,
+      "values": [
+       "40 g",
+       "5 g"
+      ]
+     }
+    ],
+    "metrics": {
+     "variantCount": 2,
+     "availableVariantCount": 2,
+     "imageCount": 2,
+     "videoCount": 0,
+     "modelCount": 0,
+     "hasMultiplePrices": true,
+     "hasOptions": true,
+     "hasVideo": false,
+     "has3DModel": false,
+     "hasReviews": false,
+     "hasBadges": false,
+     "hasSwatches": false,
+     "hasRelatedProducts": false,
+     "hasCtas": true
+    },
+    "products": [
+     {
+      "name": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+      "availability": {
+       "status": "in_stock",
+       "label": "In Stock",
+       "inStock": true
+      },
+      "category": "Skincare"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "shopify_json",
+    "confidence": 0.95
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 1
+  },
+  {
+   "url": "https://in2it.com.pk/collections/foundation",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Foundation \u2013 IN2IT Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://in2it.com.pk/collections/foundation",
+     "domain": "in2it.com.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Foundation \u2013 IN2IT Pakistan",
+     "description": "IN2IT Pakistan",
+     "h1": "Foundation",
+     "canonical": "https://in2it.com.pk/collections/foundation"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "foundation",
+      "base makeup",
+      "matte",
+      "cushion"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 2,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 7995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 8195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "MATTE FOUNDATION SPF30 - IN2IT SOFT MATTE FLUID FOUNDATION SPF30 PA+++",
+      "CUSHION FOUNDATION SPF 50 - IN2IT TRUE SKIN CUSHION SPF50+ PA++++"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "IN2IT Pakistan"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 2,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.95,
+     "warnings": [],
+     "missingFields": [
+      "seo.metaDescription"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.95,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Foundation \u2013 IN2IT Pakistan",
+    "canonical": "https://in2it.com.pk/collections/foundation",
+    "h1": "IN2IT Pakistan"
+   },
+   "openGraph": {
+    "site_name": "IN2IT Pakistan",
+    "url": "https://in2it.com.pk/collections/foundation",
+    "title": "Foundation",
+    "type": "product.group",
+    "description": "IN2IT Pakistan",
+    "image": "http://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626",
+    "image:secure_url": "https://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Cart 0 item Rs.0.00",
+      "url": "https://in2it.com.pk/cart"
+     },
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     }
+    ]
+   },
+   "content": {
+    "collectionName": "Foundation",
+    "ctas": [
+     {
+      "text": "Add to Cart",
+      "source": "product_card"
+     }
+    ]
+   },
+   "ecommerce": {
+    "productStats": {
+     "currency": "PKR",
+     "productCount": 2,
+     "priceRange": {
+      "min": 7995,
+      "max": 8195
+     },
+     "inStockCount": 2,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "MATTE FOUNDATION SPF30 - IN2IT SOFT MATTE FLUID FOUNDATION SPF30 PA+++",
+      "price": {
+       "currency": "PKR",
+       "current": 7995,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/matte-foundation-spf30-in2it-soft-matte-fluid",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "foundation"
+     },
+     {
+      "name": "CUSHION FOUNDATION SPF 50 - IN2IT TRUE SKIN CUSHION SPF50+ PA++++",
+      "price": {
+       "currency": "PKR",
+       "current": 8195,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/cushion-foundation-spf-50-in2it-true-skin",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "foundation"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://in2it.com.pk/collections/foundation"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+   },
+   "summary": {
+    "name": "Foundation",
+    "category": "foundation",
+    "productCount": 2,
+    "inStockCount": 2,
+    "outOfStockCount": 0,
+    "priceRange": {
+     "min": 7995,
+     "max": 8195
+    },
+    "topBrands": [
+     "IN2IT"
+    ],
+    "availabilityRatio": 1,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "unknown"
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 2
+  },
+  {
+   "url": "https://in2it.com.pk/collections/eyeliner",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Eyeliner \u2013 IN2IT Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://in2it.com.pk/collections/eyeliner",
+     "domain": "in2it.com.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Eyeliner \u2013 IN2IT Pakistan",
+     "description": "IN2IT Pakistan",
+     "h1": "Eyeliner",
+     "canonical": "https://in2it.com.pk/collections/eyeliner"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "eyeliner",
+      "waterproof",
+      "waterproof eyeliner"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 3,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 4195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 3995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 3495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "WATERPROOF GEL EYELINER - IN2IT SUPREME GEL LINER",
+      "WATERPROOF EYELINER PEN - IN2IT ULTRABLACK WATERPROOF EYELINER PEN",
+      "WATERPROOF EYELINER PEN - IN2IT EYESTYLE EYELINER PEN"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "IN2IT Pakistan"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 3,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.95,
+     "warnings": [],
+     "missingFields": [
+      "seo.metaDescription"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.95,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Eyeliner \u2013 IN2IT Pakistan",
+    "canonical": "https://in2it.com.pk/collections/eyeliner",
+    "h1": "IN2IT Pakistan"
+   },
+   "openGraph": {
+    "site_name": "IN2IT Pakistan",
+    "url": "https://in2it.com.pk/collections/eyeliner",
+    "title": "Eyeliner",
+    "type": "product.group",
+    "description": "IN2IT Pakistan",
+    "image": "http://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626",
+    "image:secure_url": "https://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Cart 0 item Rs.0.00",
+      "url": "https://in2it.com.pk/cart"
+     },
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     }
+    ]
+   },
+   "content": {
+    "collectionName": "Eyeliner",
+    "ctas": [
+     {
+      "text": "Add to Cart",
+      "source": "product_card"
+     }
+    ]
+   },
+   "ecommerce": {
+    "productStats": {
+     "currency": "PKR",
+     "productCount": 3,
+     "priceRange": {
+      "min": 3495,
+      "max": 4195
+     },
+     "inStockCount": 3,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "WATERPROOF GEL EYELINER - IN2IT SUPREME GEL LINER",
+      "price": {
+       "currency": "PKR",
+       "current": 4195,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/waterproof-gel-eyeliner-in2it-supreme-gel-liner",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliner"
+     },
+     {
+      "name": "WATERPROOF EYELINER PEN - IN2IT ULTRABLACK WATERPROOF EYELINER PEN",
+      "price": {
+       "currency": "PKR",
+       "current": 3995,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/waterproof-black-eyeliner-pen-in2it-ultrablack-waterproof-eyeliner-pen",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliner"
+     },
+     {
+      "name": "WATERPROOF EYELINER PEN - IN2IT EYESTYLE EYELINER PEN",
+      "price": {
+       "currency": "PKR",
+       "current": 3495,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/waterproof-eyeliner-pen-in2it-eyestyle",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliner"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://in2it.com.pk/collections/eyeliner"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+   },
+   "summary": {
+    "name": "Eyeliner",
+    "category": "eyeliner",
+    "productCount": 3,
+    "inStockCount": 3,
+    "outOfStockCount": 0,
+    "priceRange": {
+     "min": 3495,
+     "max": 4195
+    },
+    "topBrands": [
+     "IN2IT"
+    ],
+    "availabilityRatio": 1,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "unknown"
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 3
+  },
+  {
+   "url": "https://in2it.com.pk/collections/mascara",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Mascara \u2013 IN2IT Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://in2it.com.pk/collections/mascara",
+     "domain": "in2it.com.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Mascara \u2013 IN2IT Pakistan",
+     "description": "IN2IT Pakistan",
+     "h1": "Mascara",
+     "canonical": "https://in2it.com.pk/collections/mascara"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "mascara",
+      "eye makeup",
+      "lash",
+      "base",
+      "lash mascara"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 1,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 4595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "LASH MASCARA AND BASE - IN2IT PRO-LASH MASCARA & BASE"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "IN2IT Pakistan"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 1,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.95,
+     "warnings": [],
+     "missingFields": [
+      "seo.metaDescription"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.95,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Mascara \u2013 IN2IT Pakistan",
+    "canonical": "https://in2it.com.pk/collections/mascara",
+    "h1": "IN2IT Pakistan"
+   },
+   "openGraph": {
+    "site_name": "IN2IT Pakistan",
+    "url": "https://in2it.com.pk/collections/mascara",
+    "title": "Mascara",
+    "type": "product.group",
+    "description": "IN2IT Pakistan",
+    "image": "http://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626",
+    "image:secure_url": "https://in2it.com.pk/cdn/shop/files/a9_1200x1200.jpg?v=1777380626"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Cart 0 item Rs.0.00",
+      "url": "https://in2it.com.pk/cart"
+     },
+     {
+      "text": "Home",
+      "url": "https://in2it.com.pk/"
+     },
+     {
+      "text": "Shop All",
+      "url": "https://in2it.com.pk/collections/all"
+     },
+     {
+      "text": "Skin Care",
+      "url": "https://in2it.com.pk/collections/skin-care"
+     },
+     {
+      "text": "Serums",
+      "url": "https://in2it.com.pk/collections/serums"
+     },
+     {
+      "text": "Sunscreen",
+      "url": "https://in2it.com.pk/collections/sunscreen"
+     },
+     {
+      "text": "Toners",
+      "url": "https://in2it.com.pk/collections/toners"
+     },
+     {
+      "text": "Primers",
+      "url": "https://in2it.com.pk/collections/primers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Lip Balm",
+      "url": "https://in2it.com.pk/collections/lip-balm"
+     },
+     {
+      "text": "Face Makeup",
+      "url": "https://in2it.com.pk/collections/face-makeup"
+     },
+     {
+      "text": "Foundation",
+      "url": "https://in2it.com.pk/collections/foundation"
+     },
+     {
+      "text": "Concealer",
+      "url": "https://in2it.com.pk/collections/concealer"
+     },
+     {
+      "text": "Face Powder",
+      "url": "https://in2it.com.pk/collections/face-powder"
+     },
+     {
+      "text": "Blushers",
+      "url": "https://in2it.com.pk/collections/blushers"
+     },
+     {
+      "text": "Makeup Remover",
+      "url": "https://in2it.com.pk/collections/makeup-remover"
+     },
+     {
+      "text": "Eyes Makeup",
+      "url": "https://in2it.com.pk/collections/eyes-makeup"
+     },
+     {
+      "text": "Mascara",
+      "url": "https://in2it.com.pk/collections/mascara"
+     },
+     {
+      "text": "Eyeliner",
+      "url": "https://in2it.com.pk/collections/eyeliner"
+     },
+     {
+      "text": "Eyebrow",
+      "url": "https://in2it.com.pk/collections/eyebrow"
+     },
+     {
+      "text": "Eye Shadow",
+      "url": "https://in2it.com.pk/collections/eye-shadow"
+     },
+     {
+      "text": "Lips",
+      "url": "https://in2it.com.pk/collections/lip-makeup"
+     },
+     {
+      "text": "Lipstick",
+      "url": "https://in2it.com.pk/collections/lipstick"
+     },
+     {
+      "text": "Lip Tint",
+      "url": "https://in2it.com.pk/collections/lip-tint"
+     },
+     {
+      "text": "Lip Gloss",
+      "url": "https://in2it.com.pk/collections/lip-gloss"
+     }
+    ]
+   },
+   "content": {
+    "collectionName": "Mascara",
+    "ctas": [
+     {
+      "text": "Add to Cart",
+      "source": "product_card"
+     }
+    ]
+   },
+   "ecommerce": {
+    "productStats": {
+     "currency": "PKR",
+     "productCount": 1,
+     "priceRange": {
+      "min": 4595,
+      "max": 4595
+     },
+     "inStockCount": 1,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "LASH MASCARA AND BASE - IN2IT PRO-LASH MASCARA & BASE",
+      "price": {
+       "currency": "PKR",
+       "current": 4595,
+       "isOnSale": false
+      },
+      "url": "https://in2it.com.pk/products/lash-mascara-and-base-in2it-pro-lash-mascara-and-base",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascara"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://in2it.com.pk/collections/mascara"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+   },
+   "summary": {
+    "name": "Mascara",
+    "category": "mascara",
+    "productCount": 1,
+    "inStockCount": 1,
+    "outOfStockCount": 0,
+    "priceRange": {
+     "min": 4595,
+     "max": 4595
+    },
+    "topBrands": [
+     "IN2IT"
+    ],
+    "availabilityRatio": 1,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "unknown"
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 1
+  }
+ ],
+ "products": [
+  {
+   "name": "Eye And Lip Makeup Remover In2It Mild Eye And Lip Make Up Remover",
+   "handle": "eye-and-lip-makeup-remover-in2it-mild-eye-and-lip-make-up-remover",
+   "productUrl": "https://in2it.com.pk/products/eye-and-lip-makeup-remover-in2it-mild-eye-and-lip-make-up-remover",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-299336-side-zoom.png?v=1778502880",
+   "price": {
+    "currency": "PKR",
+    "current": 5095,
+    "priceTextRaw": "5095.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Full Coverage Concealer In2It True Skin",
+   "handle": "full-coverage-concealer-in2it-true-skin",
+   "productUrl": "https://in2it.com.pk/products/full-coverage-concealer-in2it-true-skin",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-307043-back-zoom.jpg?v=1775636508",
+   "price": {
+    "currency": "PKR",
+    "current": 6695,
+    "priceTextRaw": "6695.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Glossy Lip Tint In2It Jelly Beam Glow Tint",
+   "handle": "glossy-lip-tint-in2it-jelly-beam-glow-tint",
+   "productUrl": "https://in2it.com.pk/products/glossy-lip-tint-in2it-jelly-beam-glow-tint",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-319449-front-zoom.jpg?v=1780297628",
+   "price": {
+    "currency": "PKR",
+    "current": 5995,
+    "priceTextRaw": "5995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Glow Primer For Makeup In2It Primer Glow",
+   "handle": "glow-primer-for-makeup-in2it-primer-glow",
+   "productUrl": "https://in2it.com.pk/products/glow-primer-for-makeup-in2it-primer-glow",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-315342-front-zoom.jpg?v=1778502889",
+   "price": {
+    "currency": "PKR",
+    "current": 5795,
+    "priceTextRaw": "5795.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Glowing Setting Powder In2It Skinlucent Luminous Setting Powder",
+   "handle": "glowing-setting-powder-in2it-skinlucent-luminous-setting-powder",
+   "productUrl": "https://in2it.com.pk/products/glowing-setting-powder-in2it-skinlucent-luminous-setting-powder",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/in2it-powders-default-title-in2it-skinlucent-luminous-setting-powder-10g-moonlit-beige-26066702368845_53bcf975-feec-4e65-9f0c-5c27d4b97692.webp?v=1780297656",
+   "price": {
+    "currency": "PKR",
+    "current": 7995,
+    "priceTextRaw": "7995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Hya Cica Skin Mist In2It Hya Cica Mild Skin Mist Spray",
+   "handle": "hya-cica-skin-mist-in2it-hya-cica-mild-skin-mist-spray",
+   "productUrl": "https://in2it.com.pk/products/hya-cica-skin-mist-in2it-hya-cica-mild-skin-mist-spray",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-294346-front-zoom.jpg?v=1778502878",
+   "price": {
+    "currency": "PKR",
+    "current": 3595,
+    "priceTextRaw": "3595.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Kombucha Water Essence In2It Kombucha Miracle Water Essence",
+   "handle": "kombucha-water-essence-in2it-kombucha-miracle-water-essence",
+   "productUrl": "https://in2it.com.pk/products/kombucha-water-essence-in2it-kombucha-miracle-water-essence",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-298456-front-zoom.jpg?v=1778502875",
+   "price": {
+    "currency": "PKR",
+    "current": 6195,
+    "priceTextRaw": "6195.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Lip And Cheek Tint In2It Paint It",
+   "handle": "lip-and-cheek-tint-in2it-paint-it",
+   "productUrl": "https://in2it.com.pk/products/lip-and-cheek-tint-in2it-paint-it",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-307280-front-zoom.jpg?v=1778502921",
+   "price": {
+    "currency": "PKR",
+    "current": 5295,
+    "priceTextRaw": "5295.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Matte Compact Powder Spf 35 In2It Ultra Smooth Powder Pact",
+   "handle": "matte-compact-powder-spf-35-in2it-ultra-smooth-powder-pact",
+   "productUrl": "https://in2it.com.pk/products/matte-compact-powder-spf-35-in2it-ultra-smooth-powder-pact",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-318000-front-zoom_1.jpg?v=1775724993",
+   "price": {
+    "currency": "PKR",
+    "current": 8995,
+    "priceTextRaw": "8995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Oil Control Face Powder In2It Uv Shine",
+   "handle": "oil-control-face-powder-in2it-uv-shine",
+   "productUrl": "https://in2it.com.pk/products/oil-control-face-powder-in2it-uv-shine",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCMY-73797-front-zoom.jpg?v=1780297729",
+   "price": {
+    "currency": "PKR",
+    "current": 3795,
+    "priceTextRaw": "3795.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Soft Matte Lipstick In2It Airblur",
+   "handle": "soft-matte-lipstick-in2it-airblur",
+   "productUrl": "https://in2it.com.pk/products/soft-matte-lipstick-in2it-airblur",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/WTCTH-322301-front-zoom.jpg?v=1778502914",
+   "price": {
+    "currency": "PKR",
+    "current": 5695,
+    "priceTextRaw": "5695.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Tinted Lip Balm In2It Moisture Bomb Lipstick",
+   "handle": "tinted-lip-balm-in2it-moisture-bomb-lipstick",
+   "productUrl": "https://in2it.com.pk/products/tinted-lip-balm-in2it-moisture-bomb-lipstick",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/8858000026542.webp?v=1778502932",
+   "price": {
+    "currency": "PKR",
+    "current": 4995,
+    "priceTextRaw": "4995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Waterproof Eyebrow Mascara In2It Natural Brow Waterproof Eyebrow Mascara",
+   "handle": "waterproof-eyebrow-mascara-in2it-natural-brow-waterproof-eyebrow-mascara",
+   "productUrl": "https://in2it.com.pk/products/waterproof-eyebrow-mascara-in2it-natural-brow-waterproof-eyebrow-mascara",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/in2it-eyebrows-default-title-in2it-natural-brow-waterproof-eyebrow-mascara-nbm01-deep-brown-26067213287501.webp?v=1775644827",
+   "price": {
+    "currency": "PKR",
+    "current": 3595,
+    "priceTextRaw": "3595.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Waterproof Lip Tint In2It Gel Tint",
+   "handle": "waterproof-lip-tint-in2it-gel-tint",
+   "productUrl": "https://in2it.com.pk/products/waterproof-lip-tint-in2it-gel-tint",
+   "imageUrl": "https://in2it.com.pk/cdn/shop/files/8858000027235.webp?v=1780297631",
+   "price": {
+    "currency": "PKR",
+    "current": 2995,
+    "priceTextRaw": "2995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.88
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "WATERPROOF EYELINER PEN - IN2IT EYESTYLE EYELINER PEN",
+   "handle": "waterproof-eyeliner-pen-in2it-eyestyle",
+   "productUrl": "https://in2it.com.pk/products/waterproof-eyeliner-pen-in2it-eyestyle",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/s-l1600_880bb0f5-90af-4b0e-b8cf-db1562e40b87.webp?v=1775646267",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 3495
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliner",
+   "vendor": "IN2IT",
+   "shortDescription": "<p>IN2IT EYESTYLE EYELINER PEN is a Waterproof Eyeliner Pen designed to deliver precise application, intense color and long-lasting wear. Featuring a",
+   "swatches": [
+    {
+     "label": "ELP01 DEEP BLACK"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/collections/eyeliner",
+     "pageType": "collection",
+     "title": "Eyeliner \u2013 IN2IT Pakistan",
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "name": "WATERPROOF EYELINER PEN - IN2IT ULTRABLACK WATERPROOF EYELINER PEN",
+   "handle": "waterproof-black-eyeliner-pen-in2it-ultrablack-waterproof-eyeliner-pen",
+   "productUrl": "https://in2it.com.pk/products/waterproof-black-eyeliner-pen-in2it-ultrablack-waterproof-eyeliner-pen",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCMY-34627-front-zoom.jpg?v=1775648086",
+   "additionalImageCount": 3,
+   "price": {
+    "currency": "PKR",
+    "current": 3995
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliner",
+   "vendor": "IN2IT",
+   "shortDescription": "<p>IN2IT ULTRABLACK WATERPROOF EYELINER PEN is a Waterproof Eyeliner Pen designed to deliver intense color, precise application and long-lasting perfo",
+   "swatches": [
+    {
+     "label": "VERY BLACK",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCMY-34627-front-zoom.jpg?v=1775648086"
+    },
+    {
+     "label": "DEEP BROWN",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCMY-99821-front-zoom.jpg?v=1775648086"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/collections/eyeliner",
+     "pageType": "collection",
+     "title": "Eyeliner \u2013 IN2IT Pakistan",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "name": "WATERPROOF GEL EYELINER - IN2IT SUPREME GEL LINER",
+   "handle": "waterproof-gel-eyeliner-in2it-supreme-gel-liner",
+   "productUrl": "https://in2it.com.pk/products/waterproof-gel-eyeliner-in2it-supreme-gel-liner",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/in2it-eyeliner-default-title-in2it-supreme-gel-liner-1g-sgl02-coffee-brown-26067214762061.webp?v=1775715770",
+   "additionalImageCount": 3,
+   "price": {
+    "currency": "PKR",
+    "current": 4195,
+    "priceTextRaw": "4195.0"
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliner",
+   "vendor": "IN2IT",
+   "shortDescription": "<p>IN2IT SUPREME GEL LINER is a Waterproof Gel Eyeliner designed to deliver precise definition, intense color and long-lasting wear. Its soft gel text",
+   "swatches": [
+    {
+     "label": "SGL02 COFFEE BROWN",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCMY-34635-front-zoom_1.jpg?v=1775715770"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    },
+    {
+     "url": "https://in2it.com.pk/collections/eyeliner",
+     "pageType": "collection",
+     "title": "Eyeliner \u2013 IN2IT Pakistan",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "name": "CUSHION FOUNDATION SPF 50 - IN2IT TRUE SKIN CUSHION SPF50+ PA++++",
+   "handle": "cushion-foundation-spf-50-in2it-true-skin",
+   "productUrl": "https://in2it.com.pk/products/cushion-foundation-spf-50-in2it-true-skin",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-316316-front-zoom_1.png?v=1780297643",
+   "additionalImageCount": 4,
+   "price": {
+    "currency": "PKR",
+    "current": 8195
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Foundation",
+   "vendor": "IN2IT",
+   "shortDescription": "<p>IN2IT TRUE SKIN CUSHION SPF50+ PA++++ is a Cushion Foundation SPF 50 designed to provide high sun protection, buildable coverage and a naturally fl",
+   "swatches": [
+    {
+     "label": "1N NEUTRAL BEIGE",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-316316-front-zoom_1.png?v=1780297643"
+    },
+    {
+     "label": "2N NEUTRAL SAND",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-316317-front-zoom.png?v=1780297644"
+    },
+    {
+     "label": "3N NEUTRAL TAN",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-316318-front-zoom.png?v=1780297644"
+    },
+    {
+     "label": "4N NEUTRAL HONEY",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-316319-front-zoom.png?v=1780297645"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/collections/foundation",
+     "pageType": "collection",
+     "title": "Foundation \u2013 IN2IT Pakistan",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "name": "MATTE FOUNDATION SPF30 - IN2IT SOFT MATTE FLUID FOUNDATION SPF30 PA+++",
+   "handle": "matte-foundation-spf30-in2it-soft-matte-fluid",
+   "productUrl": "https://in2it.com.pk/products/matte-foundation-spf30-in2it-soft-matte-fluid",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/in2it-foundation-default-title-in2it-soft-matte-fluid-foundation-spf30-pa-20ml-smq101-light-26066702696525_9119a152-16d3-4251-8024-d21830a28a7b.webp?v=1780297640",
+   "additionalImageCount": 3,
+   "price": {
+    "currency": "PKR",
+    "current": 7995
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Foundation",
+   "vendor": "IN2IT",
+   "shortDescription": "<p>IN2IT SOFT MATTE FLUID FOUNDATION SPF30 PA+++ is a Matte Foundation SPF30 designed to provide medium to full coverage while maintaining a lightweig",
+   "swatches": [
+    {
+     "label": "SMQ101 LIGHT",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/in2it-foundation-default-title-in2it-soft-matte-fluid-foundation-spf30-pa-20ml-smq101-light-26066702696525_9119a152-16d3-4251-8024-d21830a28a7b.webp?v=1780297640"
+    },
+    {
+     "label": "SMQ201 SOFT",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/in2it-foundation-default-title-in2it-soft-matte-fluid-foundation-spf30-pa-20ml-smq201-soft-26066702762061.webp?v=1780297640"
+    },
+    {
+     "label": "SMQ301 WARM",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/in2it-foundation-default-title-in2it-soft-matte-fluid-foundation-spf30-pa-20ml-smq301-26066702827597.webp?v=1780297640"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/collections/foundation",
+     "pageType": "collection",
+     "title": "Foundation \u2013 IN2IT Pakistan",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "name": "LASH MASCARA AND BASE - IN2IT PRO-LASH MASCARA & BASE",
+   "handle": "lash-mascara-and-base-in2it-pro-lash-mascara-and-base",
+   "productUrl": "https://in2it.com.pk/products/lash-mascara-and-base-in2it-pro-lash-mascara-and-base",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-320977-side-zoom.png?v=1778502873",
+   "additionalImageCount": 1,
+   "price": {
+    "currency": "PKR",
+    "current": 4595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascara",
+   "vendor": "IN2IT",
+   "shortDescription": "<p>IN2IT PRO-LASH MASCARA &amp; BASE is a versatile lash mascara and base designed to help create beautifully defined lashes and well-groomed brows wi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/collections/mascara",
+     "pageType": "collection",
+     "title": "Mascara \u2013 IN2IT Pakistan",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "name": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++",
+   "handle": "spf-50-sunscreen-in2it-cica-glow",
+   "productId": "9016634540260",
+   "productUrl": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/CGS.png",
+   "additionalImageUrls": [
+    "https://cdn.shopify.com/s/files/1/0807/8275/4020/files/WTCTH-319971-side-zoom.png"
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 7995,
+    "priceTextRaw": "7995.0"
+   },
+   "availability": {
+    "status": "in_stock",
+    "label": "In Stock",
+    "inStock": true
+   },
+   "category": "Skincare",
+   "vendor": "IN2IT",
+   "productType": "Sunscreen",
+   "shortDescription": "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones. The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-l\u2026",
+   "description": {
+    "text": "IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a lightweight SPF 50+ sunscreen developed to provide broad-spectrum protection while helping maintain healthy-looking, hydrated skin throughout the day. Designed for daily use, this ultra-light milk gel sunscreen offers high protection against UVA and UVB rays while also helping shield the skin from environmental stressors and blue light exposure. Its invisible finish blends effortlessly into the skin without leaving a white cast, making it suitable for a wide range of skin tones. The formula is enriched with Cica PDRN, 5X Ceramide Complex, and 8X Hyaluronic Acid to help support the skin barrier while delivering long-lasting hydration. These skin-loving ingredients work together to keep skin feeling comfortable, smooth, and refreshed throughout the day. The lightweight texture absorbs quickly and sits comfortably under makeup, making it an ideal addition to both skincare and beauty routines. Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow. The non-greasy formula leaves the skin feeling soft and hydrated without heaviness or stickiness. For anyone looking for an SPF 50+ sunscreen that combines advanced sun protection with hydration and skin barrier support, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ is a reliable everyday essential that fits seamlessly into modern skincare routines."
+   },
+   "options": [
+    {
+     "name": "Size",
+     "position": 1,
+     "values": [
+      "40 g",
+      "5 g"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": 48827102593252,
+     "title": "40 g",
+     "option1": "40 g",
+     "available": true,
+     "price": 7995
+    },
+    {
+     "id": 48827102626020,
+     "title": "5 g",
+     "option1": "5 g",
+     "available": true,
+     "price": 1995
+    }
+   ],
+   "benefits": [
+    "Whether you're heading outdoors, commuting, or spending long hours in front of digital screens, IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ helps protect your skin while maintaining a natural, healthy-looking glow."
+   ],
+   "metrics": {
+    "variantCount": 2,
+    "availableVariantCount": 2,
+    "imageCount": 2,
+    "videoCount": 0,
+    "modelCount": 0,
+    "hasMultiplePrices": true,
+    "hasOptions": true,
+    "hasVideo": false,
+    "has3DModel": false,
+    "hasReviews": false,
+    "hasBadges": false,
+    "hasSwatches": false,
+    "hasRelatedProducts": false,
+    "hasCtas": true
+   },
+   "source": {
+    "cardSelector": "shopify_product_js",
+    "confidence": 0.95
+   },
+   "sourcePages": [
+    {
+     "url": "https://in2it.com.pk/",
+     "pageType": "homepage",
+     "title": "IN2IT Pakistan"
+    },
+    {
+     "url": "https://in2it.com.pk/products/spf-50-sunscreen-in2it-cica-glow",
+     "pageType": "product",
+     "title": "SPF 50+ SUNSCREEN - IN2IT CICA GLOW SUNSCREEN SPF50+ PA++++ \u2013 IN2IT Pakistan",
+     "rank": 1
+    }
+   ]
+  }
+ ],
+ "quality": {
+  "warnings": [],
+  "coverage": {
+   "hasHomepage": true,
+   "collectionPages": 3,
+   "productPages": 1
+  },
+  "openAIReady": true,
+  "notes": [
+   "Products are deduped by productUrl, then handle, then productId, then name.",
+   "When the same product appears on several pages, the richer page type (product > collection > homepage) wins field-by-field.",
+   "Each product includes sourcePages so analysis can trace where it appeared.",
+   "Internal keys (prefixed with _) and raw HTML are stripped; long text is truncated.",
+   "site.catalog / site.collections / site.homepageFeatures summarize the site for AI comparison.",
+   "SaaS/business analyzer blocks (pricing, saas, business, homepageStrategy, generalPage) are preserved per page; site.pricingSummary aggregates plans."
+  ]
+ }
+}

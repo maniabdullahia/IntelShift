@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competitor Intelligence - Admin Panel Wireframes</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #1a1a2e;
+            --accent: #ff6b6b;
+            --secondary: #4ecdc4;
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --border: #e8eaed;
+            --success: #26de81;
+            --warning: #fed330;
+            --danger: #fc5c65;
+            --blue: #4b7bec;
+            --purple: #8854d0;
+            --orange: #fa8231;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .wireframe-container { display: flex; height: 100vh; overflow: hidden; }
+
+        .nav-sidebar {
+            width: 290px;
+            background: var(--primary);
+            color: white;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 24px;
+            margin-bottom: 8px;
+            font-style: italic;
+            color: var(--secondary);
+        }
+
+        .admin-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.75);
+            font-size: 12px;
+            margin-bottom: 42px;
+        }
+
+        .screen-nav { flex: 1; }
+        .nav-section { margin-bottom: 30px; }
+        .nav-section-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .nav-item {
+            padding: 12px 16px;
+            margin-bottom: 4px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-item:hover { background: rgba(255,255,255,0.1); }
+        .nav-item.active { background: var(--secondary); color: var(--primary); font-weight: 700; }
+        .nav-item-icon { width: 20px; height: 20px; display:flex; align-items:center; justify-content:center; }
+
+        .main-content { flex: 1; overflow-y: auto; background: var(--bg); }
+        .screen { display: none; animation: fadeIn 0.25s ease-in; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        .top-nav {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            padding: 0 40px;
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .breadcrumb { color: var(--text-light); font-size: 14px; }
+        .breadcrumb strong { color: var(--text); }
+        .top-nav-right { display: flex; align-items: center; gap: 16px; }
+        .search-box {
+            width: 280px;
+            padding: 11px 14px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            background: var(--bg);
+        }
+        .admin-avatar {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: white; display:flex; align-items:center; justify-content:center;
+            font-weight: 700;
+        }
+
+        .page-container { padding: 40px; max-width: 1500px; margin: 0 auto; }
+        .page-header { margin-bottom: 32px; display:flex; align-items:flex-start; justify-content:space-between; gap:24px; }
+        .page-title { font-family: 'DM Serif Display', serif; font-size: 36px; margin-bottom: 8px; color: var(--primary); }
+        .page-subtitle { color: var(--text-light); font-size: 16px; max-width: 780px; }
+        .header-actions { display:flex; gap:12px; align-items:center; }
+
+        .btn-primary, .btn-secondary, .btn-danger, .btn-muted {
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 700;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-secondary { background: var(--primary); color: white; }
+        .btn-danger { background: rgba(252,92,101,0.12); color: var(--danger); }
+        .btn-muted { background: white; border: 1px solid var(--border); color: var(--text); }
+        .btn-primary:hover, .btn-secondary:hover, .btn-muted:hover { transform: translateY(-2px); }
+
+        .stats-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 34px; }
+        .stat-card { background:white; padding:26px; border-radius:12px; border:1px solid var(--border); }
+        .stat-label { font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:var(--text-light); margin-bottom:8px; font-weight:700; }
+        .stat-value { font-size:34px; font-weight:700; color:var(--primary); margin-bottom:4px; }
+        .stat-change { font-size:13px; color:var(--text-light); }
+        .stat-value.success { color: var(--success); }
+        .stat-value.warning { color: #d4a500; }
+        .stat-value.danger { color: var(--danger); }
+        .stat-value.blue { color: var(--blue); }
+
+        .grid-2 { display:grid; grid-template-columns: 1.2fr .8fr; gap:24px; margin-bottom: 32px; }
+        .grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap:24px; margin-bottom: 32px; }
+        .card { background:white; border:1px solid var(--border); border-radius:12px; padding:24px; }
+        .card-title { font-size:18px; font-weight:700; color:var(--primary); margin-bottom:16px; display:flex; align-items:center; justify-content:space-between; }
+        .card-subtitle { color: var(--text-light); font-size:14px; margin-top:-8px; margin-bottom:18px; }
+
+        .table-container { background:white; border-radius:12px; overflow:hidden; border:1px solid var(--border); margin-bottom: 32px; }
+        table { width:100%; border-collapse: collapse; }
+        thead { background: var(--bg); }
+        th { padding:15px 20px; text-align:left; font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:var(--text-light); }
+        td { padding:18px 20px; border-top:1px solid var(--border); vertical-align:top; font-size:14px; }
+        tr:hover { background: var(--bg); }
+
+        .entity-name { font-weight:700; color: var(--text); }
+        .muted { color: var(--text-light); }
+        .small { font-size:13px; }
+        .badge-group { display:flex; flex-wrap:wrap; gap:6px; }
+        .badge { padding:4px 8px; border-radius:5px; background:var(--bg); color:var(--text-light); font-size:12px; font-weight:600; }
+        .badge.success { background:rgba(38,222,129,.14); color:#16a65c; }
+        .badge.warning { background:rgba(254,211,48,.18); color:#b88b00; }
+        .badge.danger { background:rgba(252,92,101,.14); color:var(--danger); }
+        .badge.info { background:rgba(78,205,196,.16); color:#0e9f96; }
+        .badge.blue { background:rgba(75,123,236,.12); color:var(--blue); }
+        .badge.purple { background:rgba(136,84,208,.12); color:var(--purple); }
+
+        .health-row, .queue-row, .timeline-item { display:flex; align-items:flex-start; justify-content:space-between; gap:18px; padding:16px; border-radius:10px; background:var(--bg); margin-bottom:10px; }
+        .health-dot { width:10px; height:10px; border-radius:50%; margin-top:7px; background:var(--success); flex:0 0 auto; }
+        .health-dot.warning { background:var(--warning); }
+        .health-dot.danger { background:var(--danger); }
+        .row-left { display:flex; gap:12px; align-items:flex-start; }
+        .progress { height:8px; background:var(--border); border-radius:999px; overflow:hidden; margin:10px 0 6px; }
+        .progress-fill { height:100%; background:var(--secondary); border-radius:999px; }
+        .progress-fill.warning { background:var(--warning); }
+        .progress-fill.danger { background:var(--danger); }
+        .metric-list { display:flex; flex-direction:column; gap:12px; }
+        .metric-item { display:flex; align-items:center; justify-content:space-between; padding-bottom:12px; border-bottom:1px solid var(--border); }
+        .metric-item:last-child { border-bottom:0; padding-bottom:0; }
+
+        .filter-bar { background:white; border:1px solid var(--border); border-radius:12px; padding:18px; display:flex; gap:12px; align-items:center; margin-bottom:22px; }
+        .filter-input, .filter-select { padding:11px 14px; border:1px solid var(--border); border-radius:8px; font-family:'DM Sans', sans-serif; background:var(--bg); min-width:170px; }
+        .filter-input { flex:1; }
+
+        .admin-note { background: rgba(78,205,196,.10); border-left:4px solid var(--secondary); padding:16px; border-radius:8px; margin-bottom:24px; }
+        .admin-note strong { color: var(--primary); }
+
+        .review-card { background:white; border:1px solid var(--border); border-radius:12px; padding:24px; margin-bottom:16px; }
+        .review-header { display:flex; align-items:flex-start; justify-content:space-between; gap:18px; margin-bottom:16px; }
+        .diff-box { background:var(--bg); border-radius:10px; padding:18px; font-family:monospace; font-size:13px; line-height:1.7; color:var(--text); margin-top:14px; }
+        .removed { background:rgba(252,92,101,.16); text-decoration: line-through; }
+        .added { background:rgba(38,222,129,.18); }
+
+        .settings-grid { display:grid; grid-template-columns: 320px 1fr; gap:24px; }
+        .settings-menu { background:white; border:1px solid var(--border); border-radius:12px; padding:16px; height:fit-content; }
+        .settings-menu-item { padding:13px 14px; border-radius:8px; color:var(--text-light); font-weight:600; margin-bottom:4px; }
+        .settings-menu-item.active { background:rgba(255,107,107,.08); color:var(--accent); }
+        .form-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:18px; }
+        .form-group { margin-bottom:18px; }
+        .form-label { display:block; font-weight:700; margin-bottom:8px; }
+        .form-input { width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:8px; font-family:'DM Sans', sans-serif; background:white; }
+
+        .chart-placeholder { height:220px; background:linear-gradient(180deg, #fff, var(--bg)); border:1px dashed var(--border); border-radius:12px; display:flex; align-items:center; justify-content:center; color:var(--text-light); font-weight:700; }
+        .mini-bars { display:flex; align-items:flex-end; gap:10px; height:140px; padding-top:20px; }
+        .mini-bars span { flex:1; min-width:16px; background:var(--secondary); border-radius:8px 8px 0 0; opacity:.85; }
+
+        @media (max-width: 1100px) {
+            .stats-grid, .grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .grid-2, .settings-grid { grid-template-columns: 1fr; }
+            .nav-sidebar { width:250px; }
+        }
+        @media (max-width: 760px) {
+            .wireframe-container { flex-direction:column; height:auto; }
+            .nav-sidebar { width:100%; height:auto; }
+            .stats-grid, .grid-3, .form-grid { grid-template-columns: 1fr; }
+            .top-nav, .page-header, .filter-bar { flex-direction:column; align-items:flex-start; }
+            .search-box { width:100%; }
+        }
+    </style>
+</head>
+<body>
+<div class="wireframe-container">
+    <aside class="nav-sidebar">
+        <div class="logo">Intelshift</div>
+        <div class="admin-label">Admin Console</div>
+
+        <nav class="screen-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Operations</div>
+                <div class="nav-item active" onclick="showScreen('overview')"><span class="nav-item-icon">📊</span><span>Admin Overview</span></div>
+                <div class="nav-item" onclick="showScreen('workspaces')"><span class="nav-item-icon">🏢</span><span>Workspaces</span></div>
+                <div class="nav-item" onclick="showScreen('users')"><span class="nav-item-icon">👥</span><span>Users</span></div>
+                <div class="nav-item" onclick="showScreen('workspace-detail')"><span class="nav-item-icon">🔎</span><span>Workspace Detail</span></div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Monitoring System</div>
+                <div class="nav-item" onclick="showScreen('competitor-monitor')"><span class="nav-item-icon">🎯</span><span>Competitor Monitor</span></div>
+                <div class="nav-item" onclick="showScreen('crawl-queue')"><span class="nav-item-icon">🕷️</span><span>Crawl Queue</span></div>
+                <div class="nav-item" onclick="showScreen('change-review')"><span class="nav-item-icon">✅</span><span>Change Review</span></div>
+                <div class="nav-item" onclick="showScreen('ai-usage')"><span class="nav-item-icon">🤖</span><span>AI Usage & Costs</span></div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Revenue & Delivery</div>
+                <div class="nav-item" onclick="showScreen('billing-admin')"><span class="nav-item-icon">💳</span><span>Billing Admin</span></div>
+                <div class="nav-item" onclick="showScreen('reports-admin')"><span class="nav-item-icon">📄</span><span>Reports & Alerts</span></div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Platform</div>
+                <div class="nav-item" onclick="showScreen('system-health')"><span class="nav-item-icon">🟢</span><span>System Health</span></div>
+                <div class="nav-item" onclick="showScreen('audit-log')"><span class="nav-item-icon">🧾</span><span>Audit Log</span></div>
+                <div class="nav-item" onclick="showScreen('admin-settings')"><span class="nav-item-icon">⚙️</span><span>Admin Settings</span></div>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="top-nav">
+            <div class="breadcrumb">Admin Console / <strong id="breadcrumb-title">Admin Overview</strong></div>
+            <div class="top-nav-right">
+                <input class="search-box" placeholder="Search workspace, user, domain, job ID..." />
+                <button class="btn-muted">Export</button>
+                <div class="admin-avatar">IA</div>
+            </div>
+        </div>
+
+        <section id="overview" class="screen active">
+            <div class="page-container">
+                <div class="page-header">
+                    <div>
+                        <h1 class="page-title">Admin Overview</h1>
+                        <p class="page-subtitle">Operational control center for customers, monitoring jobs, AI usage, billing status, and platform health.</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-muted">Refresh</button>
+                        <button class="btn-secondary">Run Health Check</button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-label">Active Workspaces</div><div class="stat-value">248</div><div class="stat-change">+18 this month</div></div>
+                    <div class="stat-card"><div class="stat-label">Pages Monitored</div><div class="stat-value blue">4,812</div><div class="stat-change">Across 1,206 competitors</div></div>
+                    <div class="stat-card"><div class="stat-label">Crawl Success</div><div class="stat-value success">97.8%</div><div class="stat-change">Last 24 hours</div></div>
+                    <div class="stat-card"><div class="stat-label">AI Cost Today</div><div class="stat-value warning">$184</div><div class="stat-change">72% of daily cap</div></div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-title">Live Operations Queue <span class="badge info">BullMQ / Redis</span></div>
+                        <div class="queue-row"><div><strong>Crawl jobs running</strong><div class="muted small">Scheduled public-page crawls currently in workers</div></div><span class="badge blue">386 active</span></div>
+                        <div class="queue-row"><div><strong>Diff jobs waiting</strong><div class="muted small">Snapshots waiting for text/structure comparison</div></div><span class="badge warning">74 waiting</span></div>
+                        <div class="queue-row"><div><strong>AI insight jobs</strong><div class="muted small">Meaningful changes above threshold</div></div><span class="badge purple">42 queued</span></div>
+                        <div class="queue-row"><div><strong>Email delivery jobs</strong><div class="muted small">Weekly reports and high-impact alerts</div></div><span class="badge success">18 sending</span></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Platform Health</div>
+                        <div class="health-row"><div class="row-left"><span class="health-dot"></span><div><strong>API</strong><div class="muted small">p95 response: 410ms</div></div></div><span class="badge success">Healthy</span></div>
+                        <div class="health-row"><div class="row-left"><span class="health-dot"></span><div><strong>MongoDB Atlas</strong><div class="muted small">Read/write latency normal</div></div></div><span class="badge success">Healthy</span></div>
+                        <div class="health-row"><div class="row-left"><span class="health-dot warning"></span><div><strong>Playwright Fallback</strong><div class="muted small">Higher JS-heavy page volume</div></div></div><span class="badge warning">Watch</span></div>
+                        <div class="health-row"><div class="row-left"><span class="health-dot"></span><div><strong>Email Provider</strong><div class="muted small">Delivery rate 99.2%</div></div></div><span class="badge success">Healthy</span></div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead><tr><th>Recent Admin Attention</th><th>Workspace</th><th>Type</th><th>Status</th><th>Action</th></tr></thead>
+                        <tbody>
+                            <tr><td><div class="entity-name">AI spend spike detected</div><div class="muted small">Usage 42% above 7-day average</div></td><td>Acme Corp Intelligence</td><td>Cost Control</td><td><span class="badge warning">Needs Review</span></td><td><button class="btn-muted">Inspect</button></td></tr>
+                            <tr><td><div class="entity-name">Repeated crawl failures</div><div class="muted small">403 responses from 12 competitor URLs</div></td><td>ScaleOps</td><td>Crawling</td><td><span class="badge danger">Failing</span></td><td><button class="btn-muted">Open</button></td></tr>
+                            <tr><td><div class="entity-name">Stripe webhook retry</div><div class="muted small">Payment status sync delayed</div></td><td>LaunchPilot</td><td>Billing</td><td><span class="badge warning">Retrying</span></td><td><button class="btn-muted">Retry</button></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="workspaces" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Workspaces</h1><p class="page-subtitle">Manage customer accounts, plans, limits, onboarding state, and workspace-level usage.</p></div><button class="btn-primary">+ Create Workspace</button></div>
+                <div class="filter-bar"><input class="filter-input" placeholder="Search by company, domain, or owner email" /><select class="filter-select"><option>All Plans</option><option>Starter</option><option>Growth</option><option>Pro</option></select><select class="filter-select"><option>All Statuses</option><option>Active</option><option>Trial</option><option>Past Due</option></select><button class="btn-muted">Filter</button></div>
+                <div class="table-container"><table><thead><tr><th>Workspace</th><th>Owner</th><th>Plan</th><th>Usage</th><th>MRR</th><th>Status</th><th>Last Activity</th></tr></thead><tbody>
+                    <tr><td><div class="entity-name">Acme Corp Intelligence</div><div class="muted small">SaaS • US</div></td><td>jane@acme.com</td><td><span class="badge blue">Growth</span></td><td>8/10 competitors<br><span class="muted small">34 AI insights</span></td><td>$99</td><td><span class="badge success">Active</span></td><td>12 minutes ago</td></tr>
+                    <tr><td><div class="entity-name">ScaleOps Market Watch</div><div class="muted small">Agency • UK</div></td><td>mark@scaleops.io</td><td><span class="badge purple">Pro</span></td><td>48 competitors<br><span class="muted small">188 AI insights</span></td><td>$199</td><td><span class="badge success">Active</span></td><td>35 minutes ago</td></tr>
+                    <tr><td><div class="entity-name">LaunchPilot</div><div class="muted small">SaaS • US</div></td><td>tara@launchpilot.com</td><td><span class="badge">Starter</span></td><td>3/3 competitors<br><span class="muted small">Limit reached</span></td><td>$39</td><td><span class="badge warning">Trial Ending</span></td><td>2 hours ago</td></tr>
+                    <tr><td><div class="entity-name">BrightCart</div><div class="muted small">E-commerce • CA</div></td><td>ops@brightcart.com</td><td><span class="badge blue">Growth</span></td><td>5/10 competitors<br><span class="muted small">21 AI insights</span></td><td>$99</td><td><span class="badge danger">Past Due</span></td><td>1 day ago</td></tr>
+                </tbody></table></div>
+            </div>
+        </section>
+
+        <section id="users" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Users</h1><p class="page-subtitle">View account owners, admins, members, authentication state, and support access controls.</p></div><button class="btn-secondary">Invite Admin</button></div>
+                <div class="table-container"><table><thead><tr><th>User</th><th>Workspace</th><th>Role</th><th>Auth</th><th>Status</th><th>Last Login</th><th>Support</th></tr></thead><tbody>
+                    <tr><td><div class="entity-name">Jane Doe</div><div class="muted small">jane@acme.com</div></td><td>Acme Corp</td><td>Owner</td><td>Email / Password</td><td><span class="badge success">Active</span></td><td>Today, 10:42 AM</td><td><button class="btn-muted">Impersonate</button></td></tr>
+                    <tr><td><div class="entity-name">Michael Chen</div><div class="muted small">michael@scaleops.io</div></td><td>ScaleOps</td><td>Admin</td><td>Google SSO</td><td><span class="badge success">Active</span></td><td>Today, 9:18 AM</td><td><button class="btn-muted">View</button></td></tr>
+                    <tr><td><div class="entity-name">Tara Singh</div><div class="muted small">tara@launchpilot.com</div></td><td>LaunchPilot</td><td>Owner</td><td>Email / Password</td><td><span class="badge warning">Unverified</span></td><td>Yesterday</td><td><button class="btn-muted">Resend Verify</button></td></tr>
+                </tbody></table></div>
+            </div>
+        </section>
+
+        <section id="workspace-detail" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Workspace Detail</h1><p class="page-subtitle">Admin view of one customer workspace: plan, competitors, monitored pages, alerts, reports, and recent activity.</p></div><div class="header-actions"><button class="btn-muted">Open as User</button><button class="btn-danger">Suspend</button></div></div>
+                <div class="admin-note"><strong>Acme Corp Intelligence</strong> is on Growth plan. Competitor usage is 8/10, page usage is 23/40, and AI insights are 72% of monthly cap.</div>
+                <div class="grid-3"><div class="card"><div class="stat-label">Plan</div><div class="stat-value blue">Growth</div><div class="stat-change">Renews Jun 1, 2026</div></div><div class="card"><div class="stat-label">Competitors</div><div class="stat-value">8/10</div><div class="progress"><div class="progress-fill" style="width:80%"></div></div></div><div class="card"><div class="stat-label">AI Insights</div><div class="stat-value warning">144/200</div><div class="progress"><div class="progress-fill warning" style="width:72%"></div></div></div></div>
+                <div class="grid-2"><div class="card"><div class="card-title">Monitored Competitors</div><div class="timeline-item"><div><strong>notion.so</strong><div class="muted small">Homepage, pricing, product • Daily</div></div><span class="badge success">Healthy</span></div><div class="timeline-item"><div><strong>airtable.com</strong><div class="muted small">Homepage, pricing, blog • Daily</div></div><span class="badge warning">1 page slow</span></div><div class="timeline-item"><div><strong>monday.com</strong><div class="muted small">Homepage, pricing, product, careers • Weekly</div></div><span class="badge success">Healthy</span></div></div><div class="card"><div class="card-title">Recent Activity</div><div class="metric-list"><div class="metric-item"><span>Added competitor</span><strong>2 days ago</strong></div><div class="metric-item"><span>Generated weekly report</span><strong>May 6</strong></div><div class="metric-item"><span>High-impact alert sent</span><strong>May 5</strong></div><div class="metric-item"><span>Plan upgraded</span><strong>Apr 28</strong></div></div></div></div>
+            </div>
+        </section>
+
+        <section id="competitor-monitor" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Competitor Monitor</h1><p class="page-subtitle">Admin-level overview of all monitored domains, page types, robots status, crawl method, and failure patterns.</p></div><button class="btn-primary">+ Add Manual Monitor</button></div>
+                <div class="table-container"><table><thead><tr><th>Domain</th><th>Workspace</th><th>Pages</th><th>Crawl Method</th><th>Robots</th><th>Last Crawl</th><th>Health</th></tr></thead><tbody>
+                    <tr><td><div class="entity-name">notion.so</div></td><td>Acme Corp</td><td><div class="badge-group"><span class="badge">Homepage</span><span class="badge">Pricing</span><span class="badge">Product</span></div></td><td>Fetch + Readability</td><td><span class="badge success">Allowed</span></td><td>24 min ago</td><td><span class="badge success">Healthy</span></td></tr>
+                    <tr><td><div class="entity-name">figma.com</div></td><td>ScaleOps</td><td><div class="badge-group"><span class="badge">Pricing</span><span class="badge">Careers</span></div></td><td>Playwright</td><td><span class="badge success">Allowed</span></td><td>52 min ago</td><td><span class="badge warning">Slow Render</span></td></tr>
+                    <tr><td><div class="entity-name">example-ai.com</div></td><td>LaunchPilot</td><td><div class="badge-group"><span class="badge">Homepage</span><span class="badge">Blog</span></div></td><td>Fetch</td><td><span class="badge danger">Blocked</span></td><td>3 hr ago</td><td><span class="badge danger">Paused</span></td></tr>
+                </tbody></table></div>
+            </div>
+        </section>
+
+        <section id="crawl-queue" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Crawl Queue</h1><p class="page-subtitle">Control scheduled crawls, manual crawl triggers, failed job retries, and worker status.</p></div><div class="header-actions"><button class="btn-muted">Pause Queue</button><button class="btn-secondary">Retry Failed</button></div></div>
+                <div class="stats-grid"><div class="stat-card"><div class="stat-label">Queued</div><div class="stat-value">512</div><div class="stat-change">Next 30 minutes</div></div><div class="stat-card"><div class="stat-label">Running</div><div class="stat-value blue">86</div><div class="stat-change">Across 12 workers</div></div><div class="stat-card"><div class="stat-label">Failed</div><div class="stat-value danger">23</div><div class="stat-change">Needs retry / inspect</div></div><div class="stat-card"><div class="stat-label">Avg Duration</div><div class="stat-value">8.4s</div><div class="stat-change">Fetch + render mixed</div></div></div>
+                <div class="table-container"><table><thead><tr><th>Job ID</th><th>Domain / Page</th><th>Type</th><th>Worker</th><th>Status</th><th>Attempts</th><th>Action</th></tr></thead><tbody>
+                    <tr><td>crawl_8f29</td><td><div class="entity-name">airtable.com/pricing</div><div class="muted small">Acme Corp</div></td><td>Pricing</td><td>worker-us-03</td><td><span class="badge blue">Running</span></td><td>1/3</td><td><button class="btn-muted">View Logs</button></td></tr>
+                    <tr><td>crawl_91ca</td><td><div class="entity-name">figma.com/careers</div><div class="muted small">ScaleOps</div></td><td>Careers</td><td>worker-us-07</td><td><span class="badge warning">Retrying</span></td><td>2/3</td><td><button class="btn-muted">Inspect</button></td></tr>
+                    <tr><td>crawl_52ba</td><td><div class="entity-name">example-ai.com/blog</div><div class="muted small">LaunchPilot</div></td><td>Blog</td><td>worker-us-01</td><td><span class="badge danger">Failed</span></td><td>3/3</td><td><button class="btn-muted">Requeue</button></td></tr>
+                </tbody></table></div>
+            </div>
+        </section>
+
+        <section id="change-review" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Change Review</h1><p class="page-subtitle">Internal moderation/QA screen for meaningful changes before AI insight generation or customer-facing surfacing.</p></div><button class="btn-secondary">Approve All Safe</button></div>
+                <div class="review-card"><div class="review-header"><div><span class="badge danger">High Severity</span><h3 style="margin-top:10px;">Pricing restructure detected</h3><p class="muted">notion.so/pricing • Acme Corp • score 9.1/10</p></div><div class="header-actions"><button class="btn-primary">Approve AI</button><button class="btn-muted">Mark Noise</button></div></div><p>Detected plan pricing increase and AI add-on separation. Diff engine removed header/footer noise and isolated pricing table changes.</p><div class="diff-box"><span class="removed">Business: $18/user/month, AI included</span><br><span class="added">Business: $20/user/month + AI Add-on $10/user/month</span></div></div>
+                <div class="review-card"><div class="review-header"><div><span class="badge warning">Medium Severity</span><h3 style="margin-top:10px;">Homepage positioning update</h3><p class="muted">monday.com • Acme Corp • score 6.8/10</p></div><div class="header-actions"><button class="btn-primary">Approve AI</button><button class="btn-muted">Mark Noise</button></div></div><p>Hero copy changed from operational workflow language to enterprise platform language.</p><div class="diff-box"><span class="removed">Work OS for teams</span><br><span class="added">Work platform for any workflow</span></div></div>
+            </div>
+        </section>
+
+        <section id="ai-usage" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">AI Usage & Costs</h1><p class="page-subtitle">Monitor model usage, tokens, provider performance, failed validations, and workspace-level cost caps.</p></div><button class="btn-muted">Download Cost CSV</button></div>
+                <div class="stats-grid"><div class="stat-card"><div class="stat-label">Tokens Today</div><div class="stat-value blue">2.8M</div><div class="stat-change">+14% vs yesterday</div></div><div class="stat-card"><div class="stat-label">Cost Today</div><div class="stat-value warning">$184</div><div class="stat-change">72% of cap</div></div><div class="stat-card"><div class="stat-label">JSON Validation</div><div class="stat-value success">98.6%</div><div class="stat-change">Retry policy active</div></div><div class="stat-card"><div class="stat-label">AI Failures</div><div class="stat-value danger">11</div><div class="stat-change">Mostly timeout</div></div></div>
+                <div class="grid-2"><div class="card"><div class="card-title">Daily AI Spend</div><div class="mini-bars"><span style="height:42%"></span><span style="height:55%"></span><span style="height:48%"></span><span style="height:76%"></span><span style="height:62%"></span><span style="height:88%"></span><span style="height:72%"></span></div></div><div class="card"><div class="card-title">Cost Controls</div><div class="metric-list"><div class="metric-item"><span>Run AI only on meaningful changes</span><span class="badge success">Enabled</span></div><div class="metric-item"><span>Workspace monthly caps</span><span class="badge success">Enabled</span></div><div class="metric-item"><span>Provider abstraction</span><span class="badge blue">Active</span></div><div class="metric-item"><span>Prompt versioning</span><span class="badge purple">v1.3</span></div></div></div></div>
+                <div class="table-container"><table><thead><tr><th>Workspace</th><th>Model</th><th>Insights</th><th>Tokens</th><th>Cost</th><th>Cap</th><th>Status</th></tr></thead><tbody><tr><td>ScaleOps</td><td>Primary LLM</td><td>188</td><td>910k</td><td>$61</td><td>$120</td><td><span class="badge success">Normal</span></td></tr><tr><td>Acme Corp</td><td>Primary LLM</td><td>144</td><td>742k</td><td>$49</td><td>$80</td><td><span class="badge warning">Near Cap</span></td></tr><tr><td>LaunchPilot</td><td>Primary LLM</td><td>38</td><td>126k</td><td>$8</td><td>$25</td><td><span class="badge success">Normal</span></td></tr></tbody></table></div>
+            </div>
+        </section>
+
+        <section id="billing-admin" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Billing Admin</h1><p class="page-subtitle">Stripe subscription status, plan limits, invoices, trials, upgrades, and failed payments.</p></div><button class="btn-secondary">Open Stripe Dashboard</button></div>
+                <div class="stats-grid"><div class="stat-card"><div class="stat-label">MRR</div><div class="stat-value success">$18.4k</div><div class="stat-change">+9.2% this month</div></div><div class="stat-card"><div class="stat-label">Trials</div><div class="stat-value">31</div><div class="stat-change">12 ending this week</div></div><div class="stat-card"><div class="stat-label">Past Due</div><div class="stat-value danger">7</div><div class="stat-change">Requires dunning</div></div><div class="stat-card"><div class="stat-label">Plan Upgrades</div><div class="stat-value blue">18</div><div class="stat-change">Last 30 days</div></div></div>
+                <div class="table-container"><table><thead><tr><th>Workspace</th><th>Plan</th><th>Stripe Status</th><th>Limits</th><th>Invoice</th><th>Next Billing</th><th>Action</th></tr></thead><tbody><tr><td>Acme Corp</td><td><span class="badge blue">Growth</span></td><td><span class="badge success">Paid</span></td><td>10 competitors / 200 insights</td><td>$99 paid</td><td>Jun 1</td><td><button class="btn-muted">Manage</button></td></tr><tr><td>BrightCart</td><td><span class="badge blue">Growth</span></td><td><span class="badge danger">Past Due</span></td><td>10 competitors / 200 insights</td><td>$99 failed</td><td>Retry May 9</td><td><button class="btn-muted">Send Reminder</button></td></tr><tr><td>LaunchPilot</td><td><span class="badge">Starter</span></td><td><span class="badge warning">Trial</span></td><td>3 competitors / 40 insights</td><td>No invoice</td><td>Trial ends May 12</td><td><button class="btn-muted">Extend Trial</button></td></tr></tbody></table></div>
+            </div>
+        </section>
+
+        <section id="reports-admin" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Reports & Alerts</h1><p class="page-subtitle">Admin delivery console for weekly reports, instant alerts, email logs, and generated report QA.</p></div><div class="header-actions"><button class="btn-muted">Preview Template</button><button class="btn-secondary">Generate Test Report</button></div></div>
+                <div class="grid-3"><div class="card"><div class="stat-label">Reports Sent</div><div class="stat-value success">212</div><div class="stat-change">This week</div></div><div class="card"><div class="stat-label">High Impact Alerts</div><div class="stat-value danger">86</div><div class="stat-change">Last 7 days</div></div><div class="card"><div class="stat-label">Email Delivery</div><div class="stat-value success">99.2%</div><div class="stat-change">Postmark / SendGrid</div></div></div>
+                <div class="table-container"><table><thead><tr><th>Delivery</th><th>Workspace</th><th>Type</th><th>Recipient</th><th>Status</th><th>Sent At</th><th>Action</th></tr></thead><tbody><tr><td>rep_2019</td><td>Acme Corp</td><td>Weekly Report</td><td>jane@acme.com</td><td><span class="badge success">Delivered</span></td><td>Today 9:00 AM</td><td><button class="btn-muted">View</button></td></tr><tr><td>alert_7712</td><td>ScaleOps</td><td>Pricing Alert</td><td>team@scaleops.io</td><td><span class="badge success">Delivered</span></td><td>Today 8:14 AM</td><td><button class="btn-muted">Open</button></td></tr><tr><td>rep_2001</td><td>BrightCart</td><td>Weekly Report</td><td>ops@brightcart.com</td><td><span class="badge warning">Deferred</span></td><td>Yesterday</td><td><button class="btn-muted">Retry</button></td></tr></tbody></table></div>
+            </div>
+        </section>
+
+        <section id="system-health" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">System Health</h1><p class="page-subtitle">Technical admin dashboard for API, workers, database, Redis queue, crawler fallback, email, and error tracking.</p></div><button class="btn-secondary">Open Sentry</button></div>
+                <div class="grid-2"><div class="card"><div class="card-title">Service Status</div><div class="health-row"><div class="row-left"><span class="health-dot"></span><div><strong>Frontend / Vercel</strong><div class="muted small">Build healthy • Edge responses normal</div></div></div><span class="badge success">Operational</span></div><div class="health-row"><div class="row-left"><span class="health-dot"></span><div><strong>API / NestJS</strong><div class="muted small">p95 410ms • error rate 0.4%</div></div></div><span class="badge success">Operational</span></div><div class="health-row"><div class="row-left"><span class="health-dot warning"></span><div><strong>Workers</strong><div class="muted small">Queue depth elevated</div></div></div><span class="badge warning">Degraded</span></div><div class="health-row"><div class="row-left"><span class="health-dot"></span><div><strong>MongoDB Atlas</strong><div class="muted small">Indexes healthy</div></div></div><span class="badge success">Operational</span></div></div><div class="card"><div class="card-title">Error Trends</div><div class="chart-placeholder">Error rate / crawl failures / AI validation chart placeholder</div></div></div>
+                <div class="table-container"><table><thead><tr><th>Incident</th><th>Component</th><th>Severity</th><th>Started</th><th>Status</th><th>Owner</th></tr></thead><tbody><tr><td>JS-heavy crawl duration spike</td><td>Playwright Workers</td><td><span class="badge warning">Medium</span></td><td>Today 7:20 AM</td><td>Monitoring</td><td>Backend</td></tr><tr><td>Email template preview timeout</td><td>Reports</td><td><span class="badge">Low</span></td><td>Yesterday</td><td>Resolved</td><td>Product</td></tr></tbody></table></div>
+            </div>
+        </section>
+
+        <section id="audit-log" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Audit Log</h1><p class="page-subtitle">Track critical admin and system actions for security, billing, support, and compliance.</p></div><button class="btn-muted">Export Audit Log</button></div>
+                <div class="table-container"><table><thead><tr><th>Time</th><th>Actor</th><th>Action</th><th>Target</th><th>IP / Source</th><th>Result</th></tr></thead><tbody><tr><td>Today 10:51 AM</td><td>admin@Intelshift.com</td><td>Impersonated workspace</td><td>Acme Corp</td><td>Admin Console</td><td><span class="badge success">Allowed</span></td></tr><tr><td>Today 10:34 AM</td><td>system</td><td>Retried failed Stripe webhook</td><td>BrightCart</td><td>billing-webhook</td><td><span class="badge success">Synced</span></td></tr><tr><td>Today 9:44 AM</td><td>worker-us-03</td><td>Generated AI insight</td><td>change_8821</td><td>BullMQ</td><td><span class="badge success">Validated</span></td></tr><tr><td>Yesterday 6:12 PM</td><td>admin@Intelshift.com</td><td>Suspended workspace</td><td>Test Account</td><td>Admin Console</td><td><span class="badge warning">Manual</span></td></tr></tbody></table></div>
+            </div>
+        </section>
+
+        <section id="admin-settings" class="screen">
+            <div class="page-container">
+                <div class="page-header"><div><h1 class="page-title">Admin Settings</h1><p class="page-subtitle">Configure platform-wide limits, crawl policy, AI thresholds, prompt versions, billing rules, and admin access.</p></div><button class="btn-primary">Save Settings</button></div>
+                <div class="settings-grid"><div class="settings-menu"><div class="settings-menu-item active">Platform Limits</div><div class="settings-menu-item">Crawl Rules</div><div class="settings-menu-item">AI Thresholds</div><div class="settings-menu-item">Billing Plans</div><div class="settings-menu-item">Admin Roles</div></div><div class="card"><div class="card-title">Platform Limits</div><div class="form-grid"><div class="form-group"><label class="form-label">Starter competitor limit</label><input class="form-input" value="3" /></div><div class="form-group"><label class="form-label">Growth competitor limit</label><input class="form-input" value="10" /></div><div class="form-group"><label class="form-label">Starter AI insight cap</label><input class="form-input" value="40 / month" /></div><div class="form-group"><label class="form-label">Growth AI insight cap</label><input class="form-input" value="200 / month" /></div><div class="form-group"><label class="form-label">AI trigger severity threshold</label><input class="form-input" value="6.5" /></div><div class="form-group"><label class="form-label">High impact alert threshold</label><input class="form-input" value="8.0" /></div></div><div class="admin-note" style="margin-top:8px;">These settings should stay aligned with billing limits and change detection thresholds so users receive meaningful insights without unnecessary AI cost.</div></div></div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script>
+    const labels = {
+        'overview': 'Admin Overview',
+        'workspaces': 'Workspaces',
+        'users': 'Users',
+        'workspace-detail': 'Workspace Detail',
+        'competitor-monitor': 'Competitor Monitor',
+        'crawl-queue': 'Crawl Queue',
+        'change-review': 'Change Review',
+        'ai-usage': 'AI Usage & Costs',
+        'billing-admin': 'Billing Admin',
+        'reports-admin': 'Reports & Alerts',
+        'system-health': 'System Health',
+        'audit-log': 'Audit Log',
+        'admin-settings': 'Admin Settings'
+    };
+
+    function showScreen(screenId) {
+        document.querySelectorAll('.screen').forEach(screen => screen.classList.remove('active'));
+        document.getElementById(screenId).classList.add('active');
+        document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+        if (event && event.target) event.target.closest('.nav-item').classList.add('active');
+        document.getElementById('breadcrumb-title').textContent = labels[screenId] || 'Admin Overview';
+    }
+</script>
+</body>
+</html>

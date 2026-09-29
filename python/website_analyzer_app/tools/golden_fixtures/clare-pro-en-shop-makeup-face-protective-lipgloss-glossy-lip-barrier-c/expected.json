@@ -1,0 +1,11 @@
+{
+  "_instructions": "VERIFY each value against the real page in your browser. Fix wrong values, delete fields you don't want checked.",
+  "fields": {
+    "page.pageType": "product",
+    "platform": "WordPress / WooCommerce",
+    "products[0].name": "Protective lipgloss / GLOSSY LIP BARRIER - CLEAR 00",
+    "products[0].price.current": 32.0,
+    "products[0].price.currency": "EUR",
+    "products[0].productType": "singleProduct"
+  }
+}

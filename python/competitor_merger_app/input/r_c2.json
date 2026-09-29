@@ -1,0 +1,919 @@
+{
+  "level1": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "isKnownPlatform": true,
+    "platformSignals": {
+      "Shopify": 47,
+      "WooCommerce / WordPress": 2,
+      "WordPress": 0,
+      "Wix": 0,
+      "Webflow": 0,
+      "Magento": 0,
+      "Next.js / React": 0,
+      "React": 0,
+      "Vue": 0
+    },
+    "pageType": "collection",
+    "pageTypeConfidence": 0.99,
+    "pageTypeSignals": {
+      "homepage": 0,
+      "collection": 1033,
+      "product": 8,
+      "blog": 0,
+      "cart_checkout": 0,
+      "general": 0
+    },
+    "pageTypeDebug": {
+      "reason": "shopify_collection_url_priority",
+      "signals": {
+        "product": {
+          "isProduct": true,
+          "score": 8,
+          "signals": [
+            "product_title_dom",
+            "stock_text",
+            "wix_product_section"
+          ]
+        },
+        "collection": {
+          "isCollection": true,
+          "score": 33,
+          "signals": [
+            "url_collections",
+            "product_grid_dom",
+            "sort_filter_dom",
+            "multiple_product_links",
+            "ecommerce_collection_wording",
+            "text_product_facet_counts",
+            "text_result_count"
+          ],
+          "metrics": {
+            "productLinkCount": 3,
+            "categoryLinkCount": 4,
+            "hasProductGrid": true,
+            "priceTextCount": 0,
+            "textCollectionBoost": 8
+          }
+        },
+        "blog": {
+          "isBlog": false,
+          "score": 0,
+          "signals": []
+        },
+        "generalSubtype": "unknown",
+        "platform": "Shopify"
+      }
+    }
+  },
+  "platform": "Shopify",
+  "page": {
+    "url": "https://rivaj-uk.com/collections/foundation-hd",
+    "pageType": "collection"
+  },
+  "seo": {
+    "title": "Foundation-HD – Rivaj",
+    "metaDescription": null,
+    "canonical": "https://rivaj-uk.com/collections/foundation-hd",
+    "h1": "Foundation-HD"
+  },
+  "openGraph": {
+    "url": "https://rivaj-uk.com/collections/foundation-hd",
+    "site_name": "Rivaj",
+    "type": "website",
+    "title": "Foundation-HD",
+    "description": "Rivaj",
+    "image": "http://rivaj-uk.com/cdn/shop/collections/Rivaj-HD-Desktop-Face_copy_67f92f65-4706-4535-a570-bf2925111b3d.jpg?v=1713338936",
+    "image:secure_url": "https://rivaj-uk.com/cdn/shop/collections/Rivaj-HD-Desktop-Face_copy_67f92f65-4706-4535-a570-bf2925111b3d.jpg?v=1713338936"
+  },
+  "navigation": {
+    "links": [
+      {
+        "text": "Skip to content",
+        "url": "https://rivaj-uk.com/collections/foundation-hd#main"
+      },
+      {
+        "text": "Rivaj",
+        "url": "https://rivaj-uk.com/"
+      },
+      {
+        "text": "Create account",
+        "url": "https://shopify.com/62120395002/account?locale=en&region_country=PK&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyaXZhai11ay1vbmxpbmUubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgzNjg2OTQ4LCJuYmYiOjE3ODMwODIxNDh9.X1JQNXDnQgHWhrnJMjph0Kzq2sL-5_9lCVKa9JFsekM"
+      },
+      {
+        "text": "Cart",
+        "url": "https://rivaj-uk.com/cart"
+      },
+      {
+        "text": "Rivaj",
+        "url": "https://rivaj-uk.com/"
+      },
+      {
+        "text": "Summer Radiance Sale",
+        "url": "https://rivaj-uk.com/collections/summer-radiance-sale"
+      },
+      {
+        "text": "RHD",
+        "url": "https://rivaj-uk.com/collections/rhd"
+      },
+      {
+        "text": "Face",
+        "url": "https://rivaj-uk.com/collections/face-hd"
+      },
+      {
+        "text": "Primer",
+        "url": "https://rivaj-uk.com/collections/primer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://rivaj-uk.com/collections/foundation-hd"
+      },
+      {
+        "text": "Powder",
+        "url": "https://rivaj-uk.com/collections/powder-hd"
+      },
+      {
+        "text": "Contour",
+        "url": "https://rivaj-uk.com/collections/contour-hd"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://rivaj-uk.com/collections/concealer-hd"
+      },
+      {
+        "text": "Makeup Fixer",
+        "url": "https://rivaj-uk.com/collections/makeup-fixer-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/face-makeup-remover-hd"
+      },
+      {
+        "text": "Toner",
+        "url": "https://rivaj-uk.com/collections/toner"
+      },
+      {
+        "text": "Makeup Brush",
+        "url": "https://rivaj-uk.com/collections/makeup-brush-hd"
+      },
+      {
+        "text": "Accessories",
+        "url": "https://rivaj-uk.com/collections/face-accessories-hd"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://rivaj-uk.com/collections/eyes-hd"
+      },
+      {
+        "text": "Eye Lashes",
+        "url": "https://rivaj-uk.com/collections/eye-lashes-hd"
+      },
+      {
+        "text": "Eye Shadow",
+        "url": "https://rivaj-uk.com/collections/eye-shadow-hd"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://rivaj-uk.com/collections/mascara-hd"
+      },
+      {
+        "text": "Eye Liner",
+        "url": "https://rivaj-uk.com/collections/eye-liner-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/eyes-makeup-remover-hd"
+      },
+      {
+        "text": "Lips",
+        "url": "https://rivaj-uk.com/collections/lips-hd"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://rivaj-uk.com/collections/lipstick-hd"
+      },
+      {
+        "text": "Lip Gloss",
+        "url": "https://rivaj-uk.com/collections/lip-gloss-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/eyes-makeup-remover-hd"
+      },
+      {
+        "text": "Evernoya🌟",
+        "url": "https://rivaj-uk.com/pages/evernoya"
+      },
+      {
+        "text": "Self-Care Kits",
+        "url": "https://rivaj-uk.com/collections/summer-bundles"
+      },
+      {
+        "text": "Makeup",
+        "url": "https://rivaj-uk.com/collections/makeup"
+      },
+      {
+        "text": "Skin Care",
+        "url": "https://rivaj-uk.com/collections/skin-care"
+      },
+      {
+        "text": "Face Serum",
+        "url": "https://rivaj-uk.com/collections/face-serum"
+      },
+      {
+        "text": "Sunblock",
+        "url": "https://rivaj-uk.com/collections/sunblock"
+      },
+      {
+        "text": "Face Wash",
+        "url": "https://rivaj-uk.com/collections/face-wash"
+      },
+      {
+        "text": "Cleanser",
+        "url": "https://rivaj-uk.com/collections/cleanser"
+      },
+      {
+        "text": "Facial Range",
+        "url": "https://rivaj-uk.com/collections/facial"
+      },
+      {
+        "text": "Mask",
+        "url": "https://rivaj-uk.com/collections/mask"
+      },
+      {
+        "text": "Gel / Cream",
+        "url": "https://rivaj-uk.com/collections/gel-cream"
+      },
+      {
+        "text": "Lotion / Oil",
+        "url": "https://rivaj-uk.com/collections/lotion-oil"
+      },
+      {
+        "text": "Wax / Strips",
+        "url": "https://rivaj-uk.com/collections/wax-strips"
+      },
+      {
+        "text": "Beauty Soaps",
+        "url": "https://rivaj-uk.com/collections/soap-liquid-soap"
+      },
+      {
+        "text": "Hair Care",
+        "url": "https://rivaj-uk.com/collections/hair-care"
+      },
+      {
+        "text": "Developer / Blonder",
+        "url": "https://rivaj-uk.com/collections/developer-blonder"
+      },
+      {
+        "text": "Hair Color",
+        "url": "https://rivaj-uk.com/collections/hair-color"
+      },
+      {
+        "text": "Hair Serum",
+        "url": "https://rivaj-uk.com/collections/hair-serum"
+      },
+      {
+        "text": "Hair Fibers",
+        "url": "https://rivaj-uk.com/collections/hair-treatment"
+      },
+      {
+        "text": "Hair Oil",
+        "url": "https://rivaj-uk.com/collections/hair-oil"
+      },
+      {
+        "text": "Hair Spray",
+        "url": "https://rivaj-uk.com/collections/hair-spray"
+      },
+      {
+        "text": "Personal Care",
+        "url": "https://rivaj-uk.com/collections/personal-care"
+      }
+    ]
+  },
+  "content": {
+    "collectionName": "Foundation-HD",
+    "ctas": [
+      {
+        "text": "Choose options 0 in your cart",
+        "source": "product_card"
+      }
+    ]
+  },
+  "ecommerce": {
+    "productStats": {
+      "currency": "PKR",
+      "productCount": 3,
+      "priceRange": {
+        "min": 2959,
+        "max": 3759
+      },
+      "inStockCount": 3,
+      "outOfStockCount": 0,
+      "hasFilters": true,
+      "hasSort": true
+    },
+    "products": [
+      {
+        "name": "Natural Finish 24 Hrs Foundation - RHD",
+        "price": {
+          "currency": "PKR",
+          "current": 3599,
+          "compareAt": 4499,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/natural-finish-24-hrs-foundation-rivaj-hd-101-1",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Foundation Hd",
+        "badges": []
+      },
+      {
+        "name": "Pro Longwear Matte Full Coverage Foundation - RHD",
+        "price": {
+          "currency": "PKR",
+          "current": 3759,
+          "compareAt": 4699,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/pro-longwear-matte-full-coverage-foundation-rivaj-hd-101-4",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Foundation Hd",
+        "badges": []
+      },
+      {
+        "name": "RHD Butter Skin Foundation 30Ml",
+        "price": {
+          "currency": "PKR",
+          "current": 2959,
+          "compareAt": 3699,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/rivaj-hd-butter-skin-foundation-30ml",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Foundation Hd",
+        "badges": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "rank": 1,
+      "name": "Natural Finish 24 Hrs Foundation - RHD",
+      "handle": "natural-finish-24-hrs-foundation-rivaj-hd-101-1",
+      "productUrl": "https://rivaj-uk.com/products/natural-finish-24-hrs-foundation-rivaj-hd-101-1",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/4_a6da4b87-be7c-401a-9d13-63ed1e42e9ca.jpg?v=1774681922",
+      "additionalImageCount": 6,
+      "price": {
+        "currency": "PKR",
+        "current": 3599,
+        "compareAt": 4499,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Foundation Hd",
+      "vendor": "RHD",
+      "shortDescription": "<p>• Smooths skin texture and leaves a naturally luminous finish<br>• Moisturizing, medium coverage <br>• Lightweight, long-wearing formula for all-da",
+      "productType": "Foundation",
+      "tags": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "11:11 Sale-24",
+        "15 May 26",
+        "2001 - 5000",
+        "2023 Eid Sale Upto 80%",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Bari Sale - RHD",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Best Winter Deals - RHD 30%OFF",
+        "Blessed Friday",
+        "Blessed Friday Sale 2021 - RHD - 30% OFF",
+        "Bundleup",
+        "Eid Blessing Sale24",
+        "EID Gala RHD 2021",
+        "Eid may 26",
+        "End of Season Sale - RHD",
+        "End Of Season Sale-24",
+        "End Of Year Sale 2021 - RHD - 30% OFF",
+        "end-of-season-sale-25%",
+        "Express Makeup",
+        "Express Shopping",
+        "Face HD 30%  Featured Collection",
+        "Face-HD",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Flash Sale August 2021 - 30% RHD",
+        "Flash sale RHD - 2021",
+        "Foundation",
+        "Foundation-HD",
+        "Happy Winter Weekend Jan 2021 - RHD",
+        "Independence Day Sale 2021 - RivajHD",
+        "Makeup",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Pakistan Day Sale RHD",
+        "Pre Spring Sale - RHD",
+        "Ramadan Offer 2021 - RHD",
+        "RHD",
+        "RHD Summer Sale 2021",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "Super Bash RHD 2021",
+        "Super Feb Sale 2021 - RHD",
+        "Super September Sale 2021 - RivajHD",
+        "super-weekend-sale",
+        "valentine Sale-24",
+        "WDS",
+        "wfsale20/05/29",
+        "Women Day Sale 2021 - RHD - 30% OFF",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "1",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade1_fcd16f8e-022e-4490-b5e3-87f4098c3a32.jpg?v=1774691300"
+        },
+        {
+          "label": "2",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade2_4d71189b-8d8e-40bd-a991-647a0606e579.jpg?v=1774691300"
+        },
+        {
+          "label": "3",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade3_0769dd6a-629f-4626-9972-18e59d51b4de.jpg?v=1774691300"
+        },
+        {
+          "label": "4",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade4_eaaf6382-709d-4c80-8a1f-9a24ac3df4d8.jpg?v=1774691300"
+        },
+        {
+          "label": "5",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade5_08ddefc1-5729-4143-b1d3-4fb7af52855b.jpg?v=1774691300"
+        },
+        {
+          "label": "5.5",
+          "imageUrl": null
+        }
+      ],
+      "badges": [],
+      "variantCount": 6,
+      "variantOptions": [
+        "3",
+        "5",
+        "4",
+        "2",
+        "5.5",
+        "1"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 2,
+      "name": "Pro Longwear Matte Full Coverage Foundation - RHD",
+      "handle": "pro-longwear-matte-full-coverage-foundation-rivaj-hd-101-4",
+      "productUrl": "https://rivaj-uk.com/products/pro-longwear-matte-full-coverage-foundation-rivaj-hd-101-4",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-1.jpg?v=1776251866",
+      "additionalImageCount": 5,
+      "price": {
+        "currency": "PKR",
+        "current": 3759,
+        "compareAt": 4699,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Foundation Hd",
+      "vendor": "RHD",
+      "shortDescription": "<p class=\"ng-star-inserted\">A timeless long-lasting formula that provides impeccable coverage with a velvety matte finish without drying your skin. Th",
+      "productType": "Foundation",
+      "tags": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "11:11 Sale-24",
+        "15 May 26",
+        "2001 - 5000",
+        "2023 Eid Sale Upto 80%",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Bari Sale - RHD",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Best Winter Deals - RHD 30%OFF",
+        "Blessed Friday",
+        "Blessed Friday Sale 2021 - RHD - 30% OFF",
+        "Bundleup",
+        "Eid Blessing Sale24",
+        "EID Gala RHD 2021",
+        "Eid may 26",
+        "End of Season Sale - RHD",
+        "End Of Season Sale-24",
+        "End Of Year Sale 2021 - RHD - 30% OFF",
+        "end-of-season-sale-25%",
+        "Express Makeup",
+        "Express Shopping",
+        "Face - HD",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Flash Sale August 2021 - 30% RHD",
+        "Flash sale RHD - 2021",
+        "Foundation",
+        "Foundation - HD",
+        "Free Lipstick Pencil #13",
+        "Happy Winter Weekend Jan 2021 - RHD",
+        "Independence Day Sale 2021 - RivajHD",
+        "Makeup",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "New Year Sale 2020 - RHD",
+        "new year sale 22",
+        "Pakistan Day Sale RHD",
+        "Pre Spring Sale - RHD",
+        "Ramadan Offer 2021 - RHD",
+        "RHD",
+        "RHD Summer Sale 2021",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "Super Bash RHD 2021",
+        "Super Feb Sale 2021 - RHD",
+        "Super September Sale 2021 - RivajHD",
+        "Super Weekend RHD",
+        "super-weekend-sale",
+        "valentine Sale-24",
+        "WDS",
+        "wfsale20/05/29",
+        "Women Day Sale 2021 - RHD - 30% OFF",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "1",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-1.jpg?v=1776251866"
+        },
+        {
+          "label": "2",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-2_35a2e381-375a-4377-9468-2d6d028d7e81.jpg?v=1776251896"
+        },
+        {
+          "label": "3",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-3_196b1cea-b0da-4346-8e77-65a8ff8272a3.jpg?v=1776251914"
+        },
+        {
+          "label": "4",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-4_9ea5292e-d6c1-4d5d-a9db-dde757545e54.jpg?v=1776251929"
+        },
+        {
+          "label": "5",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-5_aaffbc03-a600-4e69-ac09-9cae93b4d715.jpg?v=1776251943"
+        },
+        {
+          "label": "5.5",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade-6_97bece6d-1180-461f-8847-9ea11fe3c794.jpg?v=1776251972"
+        }
+      ],
+      "badges": [],
+      "variantCount": 6,
+      "variantOptions": [
+        "3",
+        "5",
+        "4",
+        "2",
+        "5.5",
+        "1"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 3,
+      "name": "RHD Butter Skin Foundation 30Ml",
+      "handle": "rivaj-hd-butter-skin-foundation-30ml",
+      "productUrl": "https://rivaj-uk.com/products/rivaj-hd-butter-skin-foundation-30ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/6_a9082141-ae73-4a22-9b2f-e433aed005c5.jpg?v=1774682072",
+      "additionalImageCount": 6,
+      "price": {
+        "currency": "PKR",
+        "current": 2959,
+        "compareAt": 3699,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Foundation Hd",
+      "vendor": "RHD",
+      "shortDescription": "<ul> <li> <p class=\"MsoListParagraphCxSpFirst\" style=\"text-indent: -.25in; mso-list: l0 level1 lfo1;\"><span style=\"font-size: 10.0pt; line-height: 107",
+      "productType": "Foundation",
+      "tags": [
+        "01",
+        "02",
+        "05",
+        "06",
+        "11:11 Sale-24",
+        "15 May 26",
+        "2001 - 5000",
+        "2023 Eid Sale Upto 80%",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Bari Sale - RHD",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Best Winter Deals - RHD 30%OFF",
+        "Blessed Friday",
+        "Blessed Friday Sale 2021 - RHD - 30% OFF",
+        "Bundleup",
+        "Eid Blessing Sale24",
+        "EID Gala RHD 2021",
+        "Eid may 26",
+        "End of Season Sale - RHD",
+        "End Of Season Sale-24",
+        "End Of Year Sale 2021 - RHD - 30% OFF",
+        "end-of-season-sale-25%",
+        "Express Makeup",
+        "Express Shopping",
+        "Face - HD",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Flash Sale August 2021 - 30% RHD",
+        "Flash sale RHD - 2021",
+        "Foundation",
+        "Foundation - HD",
+        "Free Lipstick Pencil #13",
+        "Happy Winter Weekend Jan 2021 - RHD",
+        "Independence Day Sale 2021 - RivajHD",
+        "Makeup",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "New arrivals",
+        "New Year Sale 2020 - RHD",
+        "new year sale 22",
+        "Pakistan Day Sale RHD",
+        "Pre Spring Sale - RHD",
+        "Ramadan Offer 2021 - RHD",
+        "RHD",
+        "RHD Summer Sale 2021",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "Super Bash RHD 2021",
+        "Super Feb Sale 2021 - RHD",
+        "Super September Sale 2021 - RivajHD",
+        "Super Weekend RHD",
+        "super-weekend-sale",
+        "valentine Sale-24",
+        "WDS",
+        "wfsale20/05/29",
+        "Women Day Sale 2021 - RHD - 30% OFF",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "1",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade1_eb07721e-341b-40ec-82cb-ffb145759bc5.jpg?v=1774693160"
+        },
+        {
+          "label": "2",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade2_c4b66541-0b29-426d-922d-e4db52e428e0.jpg?v=1774693160"
+        },
+        {
+          "label": "5",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade5_49957cde-cad8-4d3e-b36d-2be3ff942145.jpg?v=1774693160"
+        },
+        {
+          "label": "6",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Shade6_2ae3b35d-cf6e-4df0-8f32-7a5da8d5b946.jpg?v=1774693160"
+        }
+      ],
+      "badges": [],
+      "variantCount": 4,
+      "variantOptions": [
+        "6",
+        "5",
+        "1",
+        "2"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    }
+  ],
+  "technical": {
+    "finalUrl": "https://rivaj-uk.com/collections/foundation-hd",
+    "responseHeaders": {
+      "Date": "Fri, 03 Jul 2026 12:36:11 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "46386",
+      "Connection": "keep-alive",
+      "x-dc": "gcp-asia-southeast1,gcp-asia-southeast1,gcp-asia-southeast1",
+      "etag": "\"page_cache:62120395002:CollectionDetailsController:1472906b15b93fa64c772dd36e1893eb\"",
+      "content-encoding": "br",
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <//rivaj-uk.com/cdn/shop/t/36/assets/theme.css?v=74450073783372036231780136570>; as=\"style\"; rel=\"preload\"",
+      "speculation-rules": "\"/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json\"",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "localization=PK; path=/; expires=Sat, 03 Jul 2027 12:36:11 GMT, _shopify_y=cc50b129-042e-4457-b107-575ef37c78a1; domain=rivaj-uk.com; path=/; expires=Sat, 03 Jul 2027 18:36:11 GMT; SameSite=Lax, _shopify_s=252f3f77-d95a-48a2-9637-980d6d61ceb6; domain=rivaj-uk.com; path=/; expires=Fri, 03 Jul 2026 13:06:11 GMT; SameSite=Lax, _shopify_essential=:AZ8n-r4TAAEAEhmrhczfoJx-ekH5CH1_rDumcGUgodtZhH9OZN65UcfIy_6fl5BR-AiEDo2BORMdf5wE9TYUjMpFd2wvUqnbJQfO2_rX3IGW7_jp_WCRLR_CQczELnY85aTV0CnT_T5elkpD3mNxLr_OTxwgX5QYr6tPvKGZdXzRvfLSvYkds-l-MdOA8CVEbfzmVZtbM1tuEXfEU2QXA3lnWog7rFQKvZt9XxumU1TIc3vEHIpH7F13VOTvVp98OaPtgxC2dUJTrcTtCdjA4htFgAVBQ2oBsR728CtPNQIr85vj2hqoTuP1GnpXOCQ5fPTDkoNHD87IBi1bArh36AtgcB45Ghxfof_PPLid6rxiKD3cXT4-KtSUwhAVp1E0POBF2siqF-GGiAPMGfKFefWVYQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_analytics=:AZ8n-r4nAAEAnmCl5Lv4n7AjgB7G-XFBeKx3_nrTKUWPCZckhmlsOboyQrWDfXDf3lqmlEHHk5VsJlVP7Q0SPzoQZ8Nft5IoYtsQLDdWiScZhbYHCSNCxiihh0L_Z3Sj1JN7k4Oq:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_marketing=:AZ8n-r4nAAEAw9z64juLXXAEKmBV7D4rNMcJECzqm1s35CBsCC5SpvPr35I86zxsJ5kPHc2HzK-iR-DZD8z94LCRles:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "shopify-complexity-score": "0",
+      "shopify-complexity-score-v2": "25",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "X-Content-Type-Options": "nosniff",
+      "vary": "Accept, accept-encoding",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "content-language": "en-PK",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=30;desc=\"gc:2\", db;dur=7, asn;desc=\"135407\", edge;desc=\"SIN\", country;desc=\"PK\", theme;desc=\"163374465274\", pageType;desc=\"collection\", servedBy;desc=\"tkcf\", requestID;desc=\"d76a54c3-12de-4f23-8eb9-14308b304bf7-1783082171\", _y;desc=\"cc50b129-042e-4457-b107-575ef37c78a1\", _s;desc=\"252f3f77-d95a-48a2-9637-980d6d61ceb6\", _cmp;desc=\"3.AMPS_PKPB_f_f_e91caA3wRP6rrLL3ABXsBQ\", compressionLevel;desc=\"5\"",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "server": "cloudflare",
+      "X-XSS-Protection": "1; mode=block",
+      "x-request-id": "d76a54c3-12de-4f23-8eb9-14308b304bf7-1783082171",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nV2PGXqthdNFViewwdpQ4CY%2Bb9lJe11yWV4rLkvs0cIFHOqHYVpP14g91sARJW0pvmGFPnilmCG1S%2B%2Ba9uSyK5t2ixQ5JpFLyqkjZncQBcW1ZIhBdQcsGo3iA7gZYw%3D%3D\"}]}",
+      "CF-RAY": "a155ef36394a1984-SIN",
+      "status_code": 200,
+      "fetch_method": "requests",
+      "blocked": false
+    }
+  },
+  "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+  },
+  "collectionSummary": {
+    "name": "Foundation-HD",
+    "productCount": 3,
+    "priceRange": {
+      "min": 2959,
+      "max": 3759
+    },
+    "source": "unknown"
+  },
+  "success": true,
+  "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+  },
+  "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+      "url": "https://rivaj-uk.com/collections/foundation-hd",
+      "domain": "rivaj-uk.com",
+      "pageType": "collection",
+      "platform": "Shopify",
+      "title": "Foundation-HD – Rivaj",
+      "description": "Rivaj",
+      "h1": "Foundation-HD",
+      "canonical": "https://rivaj-uk.com/collections/foundation-hd"
+    },
+    "competitiveSignals": {
+      "positioning": [
+        "foundation",
+        "base makeup"
+      ],
+      "promotionalSignals": [
+        "sale",
+        "bundle",
+        "deal",
+        "% off"
+      ],
+      "pricingSignals": {
+        "pricesDetected": 3,
+        "samplePrices": [
+          {
+            "currency": "PKR",
+            "current": 3599,
+            "compareAt": 4499,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 3759,
+            "compareAt": 4699,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 2959,
+            "compareAt": 3699,
+            "isOnSale": true,
+            "priceTextRaw": null
+          }
+        ]
+      },
+      "productFocus": [
+        "Natural Finish 24 Hrs Foundation - RHD",
+        "Pro Longwear Matte Full Coverage Foundation - RHD",
+        "RHD Butter Skin Foundation 30Ml"
+      ],
+      "trustSignals": [],
+      "ctaStrategy": {
+        "primaryCtas": [
+          {
+            "text": "Choose options 0 in your cart",
+            "url": null
+          }
+        ],
+        "ctaCount": 1
+      },
+      "contentAngles": [
+        "Foundation-HD"
+      ],
+      "ecommerceSignals": {
+        "hasProducts": true,
+        "productCountExtracted": 3,
+        "hasPrices": true,
+        "hasCartOrCheckout": false,
+        "hasRealEcommerceEvidence": true
+      }
+    },
+    "extractionQuality": {
+      "score": 0.95,
+      "warnings": [],
+      "missingFields": [
+        "seo.metaDescription"
+      ],
+      "unfetchedFields": []
+    },
+    "collectionSummary": {
+      "name": "Foundation-HD",
+      "productCount": 3,
+      "priceRange": {
+        "min": 2959,
+        "max": 3759
+      },
+      "source": "unknown"
+    },
+    "merger": {
+      "extractionMethod": "requests",
+      "qualityScore": 0.95,
+      "qualityBucket": "good",
+      "needsAIInsightReview": false,
+      "fallbacksTried": [
+        "requests"
+      ],
+      "usableForMerge": true,
+      "usableForInsights": true
+    }
+  }
+}

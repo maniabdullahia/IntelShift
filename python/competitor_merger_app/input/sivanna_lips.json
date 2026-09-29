@@ -1,0 +1,1406 @@
+{
+  "level1": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "isKnownPlatform": true,
+    "platformSignals": {
+      "Shopify": 47,
+      "WooCommerce / WordPress": 0,
+      "WordPress": 0,
+      "Wix": 0,
+      "Webflow": 0,
+      "Magento": 0,
+      "Next.js / React": 0,
+      "React": 0,
+      "Vue": 0
+    },
+    "pageType": "collection",
+    "pageTypeConfidence": 0.99,
+    "pageTypeSignals": {
+      "homepage": 0,
+      "collection": 1034,
+      "product": 13,
+      "blog": 1,
+      "cart_checkout": 0,
+      "general": 0
+    },
+    "pageTypeDebug": {
+      "reason": "shopify_collection_url_priority",
+      "signals": {
+        "product": {
+          "isProduct": true,
+          "score": 13,
+          "signals": [
+            "add_to_cart_dom",
+            "add_to_cart_text",
+            "stock_text"
+          ]
+        },
+        "collection": {
+          "isCollection": true,
+          "score": 34,
+          "signals": [
+            "url_collections",
+            "product_grid_dom",
+            "sort_filter_dom",
+            "multiple_product_links",
+            "high_product_link_density",
+            "category_link_density_medium",
+            "ecommerce_collection_wording",
+            "text_result_count"
+          ],
+          "metrics": {
+            "productLinkCount": 14,
+            "categoryLinkCount": 11,
+            "hasProductGrid": true,
+            "priceTextCount": 0,
+            "textCollectionBoost": 3
+          }
+        },
+        "blog": {
+          "isBlog": false,
+          "score": 1,
+          "signals": [
+            "article_dom"
+          ]
+        },
+        "generalSubtype": "unknown",
+        "platform": "Shopify"
+      }
+    }
+  },
+  "platform": "Shopify",
+  "page": {
+    "url": "https://sivanna.com.pk/collections/matte-lipstick",
+    "pageType": "collection"
+  },
+  "seo": {
+    "title": "Matte Lipstick | Long-Lasting Lip Color – Sivanna Colors",
+    "metaDescription": "Matte lipstick delivers rich color, smooth application, and a long-lasting finish for comfortable everyday wear.",
+    "canonical": "https://sivanna.com.pk/collections/matte-lipstick",
+    "h1": "Sivanna Colors"
+  },
+  "openGraph": {
+    "site_name": "Sivanna Colors",
+    "url": "https://sivanna.com.pk/collections/matte-lipstick",
+    "title": "Lips",
+    "type": "product.group",
+    "description": "Matte lipstick delivers rich color, smooth application, and a long-lasting finish for comfortable everyday wear."
+  },
+  "navigation": {
+    "links": [
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/"
+      },
+      {
+        "text": "All",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://sivanna.com.pk/collections/liquid-concealer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://sivanna.com.pk/collections/full-coverage-liquid-foundation"
+      },
+      {
+        "text": "Powder",
+        "url": "https://sivanna.com.pk/collections/loose-setting-powder"
+      },
+      {
+        "text": "Blush on",
+        "url": "https://sivanna.com.pk/collections/matte-blush-palette"
+      },
+      {
+        "text": "Hightlight/Shading",
+        "url": "https://sivanna.com.pk/collections/highlighter-face-palette"
+      },
+      {
+        "text": "Makeup Set",
+        "url": "https://sivanna.com.pk/collections/all-in-one-makeup-kit"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "EyeBrow",
+        "url": "https://sivanna.com.pk/collections/eyebrow-pencil"
+      },
+      {
+        "text": "Eyeliner",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-eyeliner"
+      },
+      {
+        "text": "Eyeshadow",
+        "url": "https://sivanna.com.pk/collections/products-eyeshadow-palette"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://sivanna.com.pk/collections/waterproof-matte-lipstick"
+      },
+      {
+        "text": "Tint",
+        "url": "https://sivanna.com.pk/collections/hydrating-lip-balm"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Cart 0 item Rs.0.00",
+        "url": "https://sivanna.com.pk/cart"
+      },
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/"
+      },
+      {
+        "text": "All",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://sivanna.com.pk/collections/liquid-concealer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://sivanna.com.pk/collections/full-coverage-liquid-foundation"
+      },
+      {
+        "text": "Powder",
+        "url": "https://sivanna.com.pk/collections/loose-setting-powder"
+      },
+      {
+        "text": "Blush on",
+        "url": "https://sivanna.com.pk/collections/matte-blush-palette"
+      },
+      {
+        "text": "Hightlight/Shading",
+        "url": "https://sivanna.com.pk/collections/highlighter-face-palette"
+      },
+      {
+        "text": "Makeup Set",
+        "url": "https://sivanna.com.pk/collections/all-in-one-makeup-kit"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "EyeBrow",
+        "url": "https://sivanna.com.pk/collections/eyebrow-pencil"
+      },
+      {
+        "text": "Eyeliner",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-eyeliner"
+      },
+      {
+        "text": "Eyeshadow",
+        "url": "https://sivanna.com.pk/collections/products-eyeshadow-palette"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://sivanna.com.pk/collections/waterproof-matte-lipstick"
+      },
+      {
+        "text": "Tint",
+        "url": "https://sivanna.com.pk/collections/hydrating-lip-balm"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Cart 0 item Rs.0.00",
+        "url": "https://sivanna.com.pk/cart"
+      },
+      {
+        "text": "Cart 0 item Rs.0.00",
+        "url": "https://sivanna.com.pk/cart"
+      },
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/collections/\\"
+      },
+      {
+        "text": "Shop",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      }
+    ]
+  },
+  "content": {
+    "collectionName": "Sivanna Colors",
+    "ctas": [
+      {
+        "text": "Out Of Stock",
+        "source": "product_card"
+      },
+      {
+        "text": "Add To Cart",
+        "source": "product_card"
+      },
+      {
+        "text": "Quickview",
+        "source": "product_card"
+      }
+    ]
+  },
+  "ecommerce": {
+    "productStats": {
+      "currency": "PKR",
+      "productCount": 10,
+      "priceRange": {
+        "min": 975,
+        "max": 1990
+      },
+      "inStockCount": 5,
+      "outOfStockCount": 5,
+      "hasFilters": true,
+      "hasSort": true
+    },
+    "products": [
+      {
+        "name": "Kiss Me Long Lasting Matte Lipstick - Bold Smooth Lip Color",
+        "price": {
+          "currency": "PKR",
+          "current": 1890,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/kiss-me-long-lasting-matte-lipstick",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": []
+      },
+      {
+        "name": "Matte Lipstick Sivanna Soft Long Lasting Lipstick",
+        "price": {
+          "currency": "PKR",
+          "current": 1650,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/matte-lipstick-soft-long-lasting",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": []
+      },
+      {
+        "name": "Sivanna Seductive Lipstick HF566 – Matte Lipstick",
+        "price": {
+          "currency": "PKR",
+          "current": 1050,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/sivanna-seductive-lipstick-hf566-matte-lipstick",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": []
+      },
+      {
+        "name": "Color Changing Lipstick Moisturizing Long Lasting Formula",
+        "price": {
+          "currency": "PKR",
+          "current": 1990,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/color-changing-lipstick",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": []
+      },
+      {
+        "name": "Lip Tint Hydrating Waterproof Natural Glow for Soft Lips",
+        "price": {
+          "currency": "PKR",
+          "current": 995,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/lip-tint-hydrating-waterproof-natural-glow",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Matte Tint Long Lasting Natural Smooth Lip Color",
+        "price": {
+          "currency": "PKR",
+          "current": 1195,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/matte-tint-long-lasting-natural-lip-color",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Lip Tint Long Lasting Natural Hydrating Lip Color",
+        "price": {
+          "currency": "PKR",
+          "current": 1495,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/lip-tint-long-lasting-natural-lip-color",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Velvet Liquid Lipstick Matte Waterproof Lip Color",
+        "price": {
+          "currency": "PKR",
+          "current": 975,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/velvet-liquid-lipstick",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Gina Glam Velvet Matte Lipstick G37 – Matte Lipstick",
+        "price": {
+          "currency": "PKR",
+          "current": 995,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/gina-glam-velvet-matte-lipstick-g37",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Gold Collagen Lipstick Waterproof Moisturizing Formula",
+        "price": {
+          "currency": "PKR",
+          "current": 1590,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/gold-collagen-lipstick",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "matte-lipstick",
+        "badges": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "rank": 1,
+      "name": "Kiss Me Long Lasting Matte Lipstick - Bold Smooth Lip Color",
+      "handle": "kiss-me-long-lasting-matte-lipstick",
+      "productUrl": "https://sivanna.com.pk/products/kiss-me-long-lasting-matte-lipstick",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF688-01_-fb.jpg?v=1733903718",
+      "additionalImageCount": 36,
+      "price": {
+        "currency": "PKR",
+        "current": 1890,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "Kiss Me Long Lasting Matte Lipstick is a high quality lip product designed to give your lips a bold, smooth, and elegant finish. The Kiss Me Long Last",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF688-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/1_6e2efc9d-2323-47c0-afa2-6c514923aa75.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/2_19922f87-6759-47a9-b7e2-1f5a6e0fb8c9.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/3.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-04",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/4.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-05",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/5.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-06",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/6.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-07",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/7.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-08",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/8.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-09",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/9.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-10",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/10.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-11",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/11_5fb1a1be-7dd5-46a2-bf5b-510e65283e9c.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-12",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/12.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-13",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/13.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-14",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/14.jpg?v=1733903718"
+        },
+        {
+          "label": "HF688-15",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/15.jpg?v=1733903718"
+        }
+      ],
+      "badges": [],
+      "variantCount": 15,
+      "variantOptions": [
+        "HF688-09",
+        "HF688-01",
+        "HF688-05",
+        "HF688-11",
+        "HF688-12",
+        "HF688-14",
+        "HF688-03",
+        "HF688-10",
+        "HF688-04",
+        "HF688-13",
+        "HF688-07",
+        "HF688-06",
+        "HF688-02",
+        "HF688-15",
+        "HF688-08"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 2,
+      "name": "Matte Lipstick Sivanna Soft Long Lasting Lipstick",
+      "handle": "matte-lipstick-soft-long-lasting",
+      "productUrl": "https://sivanna.com.pk/products/matte-lipstick-soft-long-lasting",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006.jpg?v=1733999447",
+      "additionalImageCount": 12,
+      "price": {
+        "currency": "PKR",
+        "current": 1650,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Matte Lipstick is a beauty essential designed to give your lips a smooth, bold, and elegant look. This lipstick delivers rich pigmentation with a s",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF6006-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-01.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-02.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-03.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-04",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-04.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-05",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-05.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-06",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-06.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-07",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-07.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-08",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-08.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-09",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-09.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-10",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-10.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-11",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-11.jpg?v=1733999447"
+        },
+        {
+          "label": "HF6006-12",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF6006-12.jpg?v=1733999447"
+        }
+      ],
+      "badges": [],
+      "variantCount": 12,
+      "variantOptions": [
+        "HF6006-06",
+        "HF6006-03",
+        "HF6006-05",
+        "HF6006-02",
+        "HF6006-07",
+        "HF6006-11",
+        "HF6006-04",
+        "HF6006-08",
+        "HF6006-10",
+        "HF6006-01",
+        "HF6006-12",
+        "HF6006-09"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 3,
+      "name": "Sivanna Seductive Lipstick HF566 – Matte Lipstick",
+      "handle": "sivanna-seductive-lipstick-hf566-matte-lipstick",
+      "productUrl": "https://sivanna.com.pk/products/sivanna-seductive-lipstick-hf566-matte-lipstick",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/26d9e3e2ac2091b260eaba61afd501e8.webp?v=1737467873",
+      "additionalImageCount": 12,
+      "price": {
+        "currency": "PKR",
+        "current": 1050,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Sivanna seductive lipstick hf566 is a high-quality matte lipstick designed for women who want bold, elegant, and long-lasting lip color. This lipst",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF566-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/35d5f858e514fc1bd737bea2c533e472_5d29f105-45e3-4253-82ac-6528099b17b9.jpg?v=1736938178"
+        },
+        {
+          "label": "HF566-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/bf55c7514e602bd553c4f037c1f64a96_24e35a0b-3258-429e-8ecc-e8470bcbc6a6.jpg?v=1736938227"
+        },
+        {
+          "label": "HF566-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/564e46bb32211177a7c2ea90e02e2b9a_93d43203-8aaa-440c-b922-1c31738d406d.jpg?v=1736938258"
+        },
+        {
+          "label": "HF566-04",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/fd42bf5afc4c497b2c41c519a0bbb479_54d079e9-0375-4dd5-8464-7d7eaaf380a4.jpg?v=1736938286"
+        }
+      ],
+      "badges": [],
+      "variantCount": 4,
+      "variantOptions": [
+        "HF566-02",
+        "HF566-04",
+        "HF566-01",
+        "HF566-03"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 4,
+      "name": "Color Changing Lipstick Moisturizing Long Lasting Formula",
+      "handle": "color-changing-lipstick",
+      "productUrl": "https://sivanna.com.pk/products/color-changing-lipstick",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/th-11134207-7r98o-lootiwtexw715d.webp?v=1734699684",
+      "additionalImageCount": 5,
+      "price": {
+        "currency": "PKR",
+        "current": 1990,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Color Changing Lipstick is a modern beauty product specially designed to create a personalized lip shade according to your lip temperature and natu",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "Pink",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/th-11134207-7r991-lootiwtetohp46.webp?v=1734699684"
+        },
+        {
+          "label": "Orange",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/th-11134207-7r98u-lootiwtewhml42.webp?v=1734699684"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "Orange",
+        "Pink"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 5,
+      "name": "Lip Tint Hydrating Waterproof Natural Glow for Soft Lips",
+      "handle": "lip-tint-hydrating-waterproof-natural-glow",
+      "productUrl": "https://sivanna.com.pk/products/lip-tint-hydrating-waterproof-natural-glow",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/ADS-HF904.1_0-1000x1000.jpg?v=1735300060",
+      "additionalImageCount": 14,
+      "price": {
+        "currency": "PKR",
+        "current": 995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Lip Tint is a must-have beauty product designed to give your lips a natural, fresh and long-lasting color. This Lip Tint delivers a lightweight for",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF904-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF940.10.jpg?v=1735300059"
+        },
+        {
+          "label": "HF904-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF940.11.jpg?v=1735300059"
+        },
+        {
+          "label": "HF904-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF940.12.jpg?v=1735300060"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 3,
+      "variantOptions": [
+        "HF904-03",
+        "HF904-02",
+        "HF904-01"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 6,
+      "name": "Matte Tint Long Lasting Natural Smooth Lip Color",
+      "handle": "matte-tint-long-lasting-natural-lip-color",
+      "productUrl": "https://sivanna.com.pk/products/matte-tint-long-lasting-natural-lip-color",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF613-ADS-01-1000x1000.jpg?v=1734345235",
+      "additionalImageCount": 18,
+      "price": {
+        "currency": "PKR",
+        "current": 1195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Matte Tint is a lightweight and long-lasting lip product designed to give your lips a smooth, natural, and beautiful matte finish. Matte Tint provi",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF613-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF613-C-01-copy-1000x1000_3ddb6492-8638-4d1f-95b1-274a734a57cd.jpg?v=1736770963"
+        },
+        {
+          "label": "HF613-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF613-C-02-copy-1000x1000_9d50e869-99c7-412d-bd77-a21cf2041bbc.jpg?v=1736770992"
+        },
+        {
+          "label": "HF613-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF613-C-03-copy-1000x1000_4f028522-09ee-4cdf-82bb-41031e844c7e.jpg?v=1736771013"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 3,
+      "variantOptions": [
+        "HF613-02",
+        "HF613-03",
+        "HF613-01"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 7,
+      "name": "Lip Tint Long Lasting Natural Hydrating Lip Color",
+      "handle": "lip-tint-long-lasting-natural-lip-color",
+      "productUrl": "https://sivanna.com.pk/products/lip-tint-long-lasting-natural-lip-color",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF1018Ads-01-scaled.jpg?v=1734345495",
+      "additionalImageCount": 17,
+      "price": {
+        "currency": "PKR",
+        "current": 1495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Lip Tint is a lightweight and long-lasting lip color designed to give your lips a fresh, natural, and smooth appearance. Lip Tint provides beautifu",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF1018-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/01_ba53cca6-6f34-41a9-aab8-b9b127a77114.jpg?v=1734345494"
+        },
+        {
+          "label": "HF1018-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/02_b7f549b3-9056-4338-96e1-a26920ccb5a6.jpg?v=1734345495"
+        },
+        {
+          "label": "HF1018-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/03_af688857-708b-465f-8db9-2981891e66e0.jpg?v=1734345495"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 3,
+      "variantOptions": [
+        "HF1018-03",
+        "HF1018-01",
+        "HF1018-02"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 8,
+      "name": "Velvet Liquid Lipstick Matte Waterproof Lip Color",
+      "handle": "velvet-liquid-lipstick",
+      "productUrl": "https://sivanna.com.pk/products/velvet-liquid-lipstick",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/sg-11134201-22120-qcx4izcdpxkv7c.webp?v=1734939679",
+      "additionalImageCount": 5,
+      "price": {
+        "currency": "PKR",
+        "current": 975,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Velvet Liquid Lipstick is the ideal choice for creating soft, smooth, and beautiful lips with a rich matte finish. The lightweight formula glides e",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "G28-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/id-11134207-7r98s-lleoimbqt4iacc_1.webp?v=1734939679"
+        },
+        {
+          "label": "G28-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/sg-11134201-22120-a586jmddpxkvdc.webp?v=1734939679"
+        },
+        {
+          "label": "G28-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/sg-11134201-22120-j7369aedpxkv4d.webp?v=1734939679"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 3,
+      "variantOptions": [
+        "G28-03",
+        "G28-01",
+        "G28-02"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 9,
+      "name": "Gina Glam Velvet Matte Lipstick G37 – Matte Lipstick",
+      "handle": "gina-glam-velvet-matte-lipstick-g37",
+      "productUrl": "https://sivanna.com.pk/products/gina-glam-velvet-matte-lipstick-g37",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/2158193_267_7706730_47_n.png?v=1734344573",
+      "additionalImageCount": 12,
+      "price": {
+        "currency": "PKR",
+        "current": 995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Gina Glam Velvet Matte Lipstick G37 is a premium quality lipstick that gives a smooth and elegant matte finish. Gina Glam Velvet Matte Lipstick G37",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "G37-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-1.png?v=1734344573"
+        },
+        {
+          "label": "G37-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-2.png?v=1734344573"
+        },
+        {
+          "label": "G37-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-3.png?v=1734344573"
+        },
+        {
+          "label": "G37-04",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-4.png?v=1734344573"
+        },
+        {
+          "label": "G37-05",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-5.png?v=1734344573"
+        },
+        {
+          "label": "G37-06",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-6.png?v=1734344573"
+        },
+        {
+          "label": "G37-07",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-7.png?v=1734344573"
+        },
+        {
+          "label": "G37-08",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-8.png?v=1734344573"
+        },
+        {
+          "label": "G37-09",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-9.png?v=1734344573"
+        },
+        {
+          "label": "G37-10",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-10.png?v=1734344573"
+        },
+        {
+          "label": "G37-11",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-11.png?v=1734344573"
+        },
+        {
+          "label": "G37-12",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G37-12.png?v=1734344573"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 12,
+      "variantOptions": [
+        "G37-06",
+        "G37-04",
+        "G37-11",
+        "G37-02",
+        "G37-05",
+        "G37-03",
+        "G37-09",
+        "G37-08",
+        "G37-10",
+        "G37-07",
+        "G37-01",
+        "G37-12"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 10,
+      "name": "Gold Collagen Lipstick Waterproof Moisturizing Formula",
+      "handle": "gold-collagen-lipstick",
+      "productUrl": "https://sivanna.com.pk/products/gold-collagen-lipstick",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/2155ea30cc17246eaed0b8676dee3ae8.webp?v=1734696947",
+      "additionalImageCount": 7,
+      "price": {
+        "currency": "PKR",
+        "current": 1590,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "matte-lipstick",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Gold Collagen Lipstick is the perfect beauty product for creating soft, smooth, and naturally beautiful lips with rich long lasting color. Gold Col",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF4009-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/49855730_1965496843756880_2320208751400845312_n_1.jpg?v=1734696947"
+        },
+        {
+          "label": "HF4009-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/49855730_1965496843756880_2320208751400845312_n_1.jpg?v=1734696947"
+        },
+        {
+          "label": "HF4009-03",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/49855730_1965496843756880_2320208751400845312_n_1.jpg?v=1734696947"
+        },
+        {
+          "label": "HF4009-04",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/49855730_1965496843756880_2320208751400845312_n_1.jpg?v=1734696947"
+        }
+      ],
+      "badges": [],
+      "variantCount": 4,
+      "variantOptions": [
+        "HF4009-02",
+        "HF4009-01",
+        "HF4009-04",
+        "HF4009-03"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    }
+  ],
+  "technical": {
+    "finalUrl": "https://sivanna.com.pk/collections/matte-lipstick",
+    "responseHeaders": {
+      "Date": "Tue, 07 Jul 2026 07:41:53 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "44932",
+      "Connection": "keep-alive",
+      "x-dc": "gcp-europe-west1,gcp-europe-west1,gcp-europe-west1",
+      "etag": "\"page_cache:61869490278:CollectionDetailsController:693fda765e0f2a954c0408a3c43eba9b\"",
+      "content-encoding": "br",
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <https://fonts.googleapis.com>; rel=\"preconnect\"",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "localization=PK; path=/; expires=Wed, 07 Jul 2027 07:41:53 GMT, _shopify_y=d49415b8-a50b-4b96-84d9-0bafe45e3602; domain=sivanna.com.pk; path=/; expires=Wed, 07 Jul 2027 13:41:53 GMT; SameSite=Lax, _shopify_s=f0f4c675-ca90-4444-b9b3-8cd38faf57bf; domain=sivanna.com.pk; path=/; expires=Tue, 07 Jul 2026 08:11:53 GMT; SameSite=Lax, _shopify_essential=:AZ87hrn0AAEABks5E1dyeJA30oxdZlaIzssY04cCWpAS33LpWJlJ3yfORkAtUceJgBsmDPTOlyJALqFVev1Up1i9g1AH-ibcFz--KlMJ1nHt0Xg1QNJ3cSZzkmnBGWMINgLrCsShFWBXJaKEGIaqXvxaS8D62aUZkJlbCrF35iP6cPKbksqtZOKqBgzZkBIBvPaCwba21Q5OLXsm2-ZyyS7ltJVZwZtHs4gNSpZZ5eDVW7Jn_9JmOIGh03SLWiJY-DC0okULeAvZhlseDZdBUqcXOdfNLbCf6yVmxtOju-756pxlfkbib-gB3qT8EQ6m7PJbj871z2ego_f035g4MPmQq2W_t1XrOCPC729-bOs1d0wjiFpo8_NKm1n6RWat27bX4U9me63gtd2mhcMx9Sk2tw:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_analytics=:AZ87hroVAAEAcMN3JLNzWofoQhzKfb44mB5M73F6jBN0l4XXO3zrNlmUhpx13Fbh3PNwqTrxj4Ha8uATHeI-CGFUStt7sucRWu4fjAIyDvdJlKhtmRAGN8zN441tVV27Aq7Q_CoZgQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_marketing=:AZ87hroVAAEAyz1MqQSAeeUQAPaPzhNvZIIMUkoitkfyHVmzIS4Lc_TIiE_ElUEzyFgJmEoSwookKaEfEeicnDVfy9E:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+      "speculation-rules": "\"/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json\"",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "shopify-complexity-score": "0",
+      "shopify-complexity-score-v2": "40",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "X-Content-Type-Options": "nosniff",
+      "vary": "Accept, accept-encoding",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "content-language": "en-PK",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=43;desc=\"gc:2\", db;dur=13, asn;desc=\"135407\", edge;desc=\"KHI\", country;desc=\"PK\", theme;desc=\"132946165862\", pageType;desc=\"collection\", servedBy;desc=\"nsl5\", requestID;desc=\"97869291-0a05-48c6-bc9c-b64fe88b3b25-1783410112\", _y;desc=\"d49415b8-a50b-4b96-84d9-0bafe45e3602\", _s;desc=\"f0f4c675-ca90-4444-b9b3-8cd38faf57bf\", _cmp;desc=\"3.AMPS_PKPB_f_f_FHFHjq4mTs2hhPKDCPQnmg\", compressionLevel;desc=\"5\"",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "server": "cloudflare",
+      "X-XSS-Protection": "1; mode=block",
+      "x-request-id": "97869291-0a05-48c6-bc9c-b64fe88b3b25-1783410112",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QWOzlOUzf75%2FLgldmWZrSGdIzfw8VxkuwatNcZJ88ef3HvIFMDZ5%2BBwbpLQ1tKheU3wp%2BTOcH%2F59f3CUmNP8YbI7cd%2FBVratxf9416X7kr7w1Hu9S%2BSQf7NfROOU%2Fhnb\"}]}",
+      "CF-RAY": "a17535959a0690a5-KHI",
+      "status_code": 200,
+      "fetch_method": "requests",
+      "blocked": false
+    }
+  },
+  "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+  },
+  "collectionSummary": {
+    "name": "Sivanna Colors",
+    "productCount": 10,
+    "priceRange": {
+      "min": 975,
+      "max": 1990
+    },
+    "source": "unknown"
+  },
+  "success": true,
+  "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+  },
+  "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+      "url": "https://sivanna.com.pk/collections/matte-lipstick",
+      "domain": "sivanna.com.pk",
+      "pageType": "collection",
+      "platform": "Shopify",
+      "title": "Matte Lipstick | Long-Lasting Lip Color – Sivanna Colors",
+      "description": "Matte lipstick delivers rich color, smooth application, and a long-lasting finish for comfortable everyday wear.",
+      "h1": "Sivanna Colors",
+      "canonical": "https://sivanna.com.pk/collections/matte-lipstick"
+    },
+    "competitiveSignals": {
+      "positioning": [
+        "comfortable",
+        "long-lasting",
+        "smooth application",
+        "long-lasting finish",
+        "lipstick",
+        "matte",
+        "long",
+        "lasting"
+      ],
+      "promotionalSignals": [
+        "deal"
+      ],
+      "pricingSignals": {
+        "pricesDetected": 10,
+        "samplePrices": [
+          {
+            "currency": "PKR",
+            "current": 1890,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1650,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1050,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1990,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 995,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1195,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1495,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 975,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 995,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1590,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          }
+        ]
+      },
+      "productFocus": [
+        "Kiss Me Long Lasting Matte Lipstick - Bold Smooth Lip Color",
+        "Matte Lipstick Sivanna Soft Long Lasting Lipstick",
+        "Sivanna Seductive Lipstick HF566 – Matte Lipstick",
+        "Color Changing Lipstick Moisturizing Long Lasting Formula",
+        "Lip Tint Hydrating Waterproof Natural Glow for Soft Lips",
+        "Matte Tint Long Lasting Natural Smooth Lip Color",
+        "Lip Tint Long Lasting Natural Hydrating Lip Color",
+        "Velvet Liquid Lipstick Matte Waterproof Lip Color",
+        "Gina Glam Velvet Matte Lipstick G37 – Matte Lipstick",
+        "Gold Collagen Lipstick Waterproof Moisturizing Formula"
+      ],
+      "trustSignals": [],
+      "ctaStrategy": {
+        "primaryCtas": [
+          {
+            "text": "Out Of Stock",
+            "url": null
+          },
+          {
+            "text": "View Product",
+            "url": null
+          }
+        ],
+        "ctaCount": 2
+      },
+      "contentAngles": [
+        "Sivanna Colors"
+      ],
+      "ecommerceSignals": {
+        "hasProducts": true,
+        "productCountExtracted": 10,
+        "hasPrices": true,
+        "hasCartOrCheckout": false,
+        "hasRealEcommerceEvidence": true
+      }
+    },
+    "extractionQuality": {
+      "score": 1,
+      "warnings": [],
+      "missingFields": [],
+      "unfetchedFields": [],
+      "dataConsistency": {
+        "structuredDataFound": false,
+        "structuredDataProductFound": false,
+        "priceConsistent": null,
+        "currencyPlausible": null,
+        "suspiciousName": false,
+        "flags": []
+      }
+    },
+    "merger": {
+      "extractionMethod": "requests",
+      "qualityScore": 1,
+      "qualityBucket": "good",
+      "needsAIInsightReview": false,
+      "fallbacksTried": [
+        "requests"
+      ],
+      "usableForMerge": true,
+      "usableForInsights": true
+    }
+  }
+}

@@ -1,0 +1,1288 @@
+{
+  "platform": "Shopify",
+  "page": {
+    "url": "https://sivanna.com.pk/",
+    "pageType": "homepage"
+  },
+  "seo": {
+    "title": "Sivanna Colors",
+    "metaDescription": null,
+    "canonical": "https://sivanna.com.pk/",
+    "h1": "Sivanna Colors"
+  },
+  "openGraph": {
+    "site_name": "Sivanna Colors",
+    "url": "https://sivanna.com.pk/",
+    "title": "Sivanna Colors",
+    "type": "website",
+    "description": "Sivanna Colors"
+  },
+  "navigation": {
+    "links": [
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/"
+      },
+      {
+        "text": "All",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://sivanna.com.pk/collections/liquid-concealer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://sivanna.com.pk/collections/full-coverage-liquid-foundation"
+      },
+      {
+        "text": "Powder",
+        "url": "https://sivanna.com.pk/collections/loose-setting-powder"
+      },
+      {
+        "text": "Blush on",
+        "url": "https://sivanna.com.pk/collections/matte-blush-palette"
+      },
+      {
+        "text": "Hightlight/Shading",
+        "url": "https://sivanna.com.pk/collections/highlighter-face-palette"
+      },
+      {
+        "text": "Makeup Set",
+        "url": "https://sivanna.com.pk/collections/all-in-one-makeup-kit"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "EyeBrow",
+        "url": "https://sivanna.com.pk/collections/eyebrow-pencil"
+      },
+      {
+        "text": "Eyeliner",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-eyeliner"
+      },
+      {
+        "text": "Eyeshadow",
+        "url": "https://sivanna.com.pk/collections/products-eyeshadow-palette"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://sivanna.com.pk/collections/waterproof-matte-lipstick"
+      },
+      {
+        "text": "Tint",
+        "url": "https://sivanna.com.pk/collections/hydrating-lip-balm"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      }
+    ],
+    "footerLinks": [
+      {
+        "text": "Contact",
+        "url": "https://sivanna.com.pk/pages/contact"
+      },
+      {
+        "text": "Privacy Policy",
+        "url": "https://sivanna.com.pk/pages/privacy-policy"
+      },
+      {
+        "text": "Shipping and Returns Policy",
+        "url": "https://sivanna.com.pk/pages/shipping-and-returns-policy"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Facebook",
+        "url": "https://www.facebook.com/SivannaPakistan/"
+      },
+      {
+        "text": "Instagram",
+        "url": "https://www.instagram.com/sivannacolorofficialpakistan"
+      },
+      {
+        "text": "YouTube",
+        "url": "https://www.youtube.com/@sivannacosmeticsofficial5674"
+      }
+    ]
+  },
+  "content": {
+    "siteName": "Sivanna Colors",
+    "announcementBar": {
+      "text": null,
+      "detected": false,
+      "selector": null
+    },
+    "heroMedia": [
+      {
+        "type": "video",
+        "url": "https://cdn.shopify.com/videos/c/o/v/40a96514bf2147b9b7b24ceca7c87d93.mp4",
+        "posterImage": null,
+        "heading": null,
+        "textPreview": null,
+        "ctas": [],
+        "sourceSelector": "hero/video",
+        "confidence": 0.9
+      }
+    ],
+    "collectionBanners": [
+      {
+        "heading": "FACE MAKEUP",
+        "textPreview": "FACE MAKEUP SHOP COLLECTION LIPSTICKS & GLOSS SHOP COLLECTION EYES MAKEUP SHOP COLLECTION",
+        "imageUrl": "https://sivanna.com.pk/cdn/shop/files/pexels-polina-kovaleva-6543611.jpg?v=1737018111",
+        "ctas": [
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/face"
+          },
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/lips"
+          },
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/eyes"
+          }
+        ],
+        "source": {
+          "selector": "[class*='banner']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": "LIPSTICKS & GLOSS",
+        "textPreview": "LIPSTICKS & GLOSS SHOP COLLECTION",
+        "imageUrl": "https://sivanna.com.pk/cdn/shop/files/18499.jpg?v=1736868384",
+        "ctas": [
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/lips"
+          }
+        ],
+        "source": {
+          "selector": "[class*='banner']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": "EYES MAKEUP",
+        "textPreview": "EYES MAKEUP SHOP COLLECTION",
+        "imageUrl": "https://sivanna.com.pk/cdn/shop/files/pexels-meruyert-gonullu-7244700.jpg?v=1737018279",
+        "ctas": [
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/eyes"
+          }
+        ],
+        "source": {
+          "selector": "[class*='banner']",
+          "confidence": 0.8
+        }
+      }
+    ],
+    "sections": [
+      {
+        "rank": 1,
+        "type": "category_showcase",
+        "intent": "category_showcase",
+        "label": "FACE MAKEUP",
+        "heading": "FACE MAKEUP",
+        "textPreview": "FACE MAKEUP SHOP COLLECTION LIPSTICKS & GLOSS SHOP COLLECTION EYES MAKEUP SHOP COLLECTION",
+        "links": [
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/face"
+          },
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/lips"
+          },
+          {
+            "text": "SHOP COLLECTION",
+            "url": "https://sivanna.com.pk/collections/eyes"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/pexels-polina-kovaleva-6543611.jpg?v=1737018111",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/18499.jpg?v=1736868384",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/pexels-meruyert-gonullu-7244700.jpg?v=1737018279",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        }
+      },
+      {
+        "rank": 2,
+        "type": "product_section",
+        "intent": "bestsellers",
+        "label": "SHOP BEST SELLERS",
+        "heading": "SHOP BEST SELLERS",
+        "textPreview": "Sivanna Colors Sivanna Colors Add to Cart Quickview High Definition Mousse Foundation - Flawless Matte Finish Rs.2,590.00 HF596-01 HF596-01 HF596-02 HF596-02 Sivanna Colors Sivanna Colors Add to Cart Quickview Gina Glam Eyeliner Waterproof Long Lasting Eyeliner Rs.1,890.00 Sivanna Colors Sivanna Colors Add to Cart Quickview Duo Blusher Waterproof L",
+        "links": [],
+        "images": [
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF596.jpg?v=1733988068",
+            "alt": "High Definition Mousse Foundation packaging"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/596W01_6b86b68d-9269-416f-880f-0c7b6228dbaa.jpg?v=1733988124",
+            "alt": "High Definition Mousse Foundation packaging"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/G04ALL.jpg?v=1734085364",
+            "alt": "Gina Glam Eyeliner intense black long lasting eyeliner"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/G04.jpg?v=1734085364",
+            "alt": "Gina Glam Eyeliner intense black long lasting eyeliner"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF387_190103_0007.jpg?v=1733986906",
+            "alt": "Duo Blusher Natural Glow Makeup"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF387_190103_0001.jpg?v=1733986906",
+            "alt": "Duo Blusher Natural Glow Makeup"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF362NO.01B.jpg?v=1733985922",
+            "alt": "Highlight Palette illuminating shimmer shades for cheek glow"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF362NO.01P.jpg?v=1733985922",
+            "alt": "Highlight Palette illuminating shimmer shades for cheek glow"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF688-01_-fb.jpg?v=1733903718",
+            "alt": "Kiss Me Long Lasting Matte Lipstick rich color swatch close up"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/1_6e2efc9d-2323-47c0-afa2-6c514923aa75.jpg?v=1733903718",
+            "alt": "Kiss Me Long Lasting Matte Lipstick rich color swatch close up"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/G45-2_0c7161f7-06e3-4fd3-9690-34c87d3182ed.png?v=1733222415",
+            "alt": "Liquid Foundation professional beauty product"
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/G45-3.png?v=1733222452",
+            "alt": "Liquid Foundation professional beauty product"
+          }
+        ],
+        "source": {
+          "selector": "merged_heading_section",
+          "confidence": 0.85,
+          "priceCount": 8
+        },
+        "products": [
+          {
+            "title": "High Definition Mousse Foundation",
+            "url": "https://sivanna.com.pk/products/high-definition-mousse-foundation",
+            "image": "https://sivanna.com.pk/cdn/shop/files/HF596.jpg?v=1733988068",
+            "currentPrice": 2590,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "high-definition-mousse-foundation",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Gina Glam Eyeliner Waterproof Long Lasting",
+            "url": "https://sivanna.com.pk/products/gina-glam-eyeliner-waterproof-long-lasting",
+            "image": "https://sivanna.com.pk/cdn/shop/files/G04ALL.jpg?v=1734085364",
+            "currentPrice": 1890,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "gina-glam-eyeliner-waterproof-long-lasting",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Duo Blusher Waterproof Long Lasting Matte Finish",
+            "url": "https://sivanna.com.pk/products/duo-blusher-waterproof-long-lasting-matte-finish",
+            "image": "https://sivanna.com.pk/cdn/shop/files/HF387_190103_0007.jpg?v=1733986906",
+            "currentPrice": 1695,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "duo-blusher-waterproof-long-lasting-matte-finish",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Highlight Palette High Pigmented Glow Face Makeup Palette",
+            "url": "https://sivanna.com.pk/products/highlight-palette-high-pigmented-glow-face-makeup-palette",
+            "image": "https://sivanna.com.pk/cdn/shop/files/HF362NO.01B.jpg?v=1733985922",
+            "currentPrice": 2250,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "highlight-palette-high-pigmented-glow-face-makeup-palette",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Kiss Me Long Lasting Matte Lipstick",
+            "url": "https://sivanna.com.pk/products/kiss-me-long-lasting-matte-lipstick",
+            "image": "https://sivanna.com.pk/cdn/shop/files/HF688-01_-fb.jpg?v=1733903718",
+            "currentPrice": 3200,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "kiss-me-long-lasting-matte-lipstick",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Liquid Foundation",
+            "url": "https://sivanna.com.pk/products/liquid-foundation",
+            "image": "https://sivanna.com.pk/cdn/shop/files/G45-2_0c7161f7-06e3-4fd3-9690-34c87d3182ed.png?v=1733222415",
+            "currentPrice": 1800,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "liquid-foundation",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Waterproof Gel Eyeliner Pencil Long Lasting Smudge Proof",
+            "url": "https://sivanna.com.pk/products/waterproof-gel-eyeliner-pencil-long-lasting-smudge-proof",
+            "image": "https://sivanna.com.pk/cdn/shop/files/HF777-1.jpg?v=1733218312",
+            "currentPrice": 3210,
+            "comparePrice": null,
+            "currency": "PKR",
+            "handle": "waterproof-gel-eyeliner-pencil-long-lasting-smudge-proof",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.72
+            }
+          },
+          {
+            "title": "Full Coverage Cushion Foundation Waterproof Matte Finish",
+            "url": "https://sivanna.com.pk/products/full-coverage-cushion-foundation-waterproof-matte-finish",
+            "image": "https://sivanna.com.pk/cdn/shop/files/hf564_b88aa37c-297f-49e8-b296-19a39080e2c9.jpg?v=1733987611",
+            "currentPrice": null,
+            "comparePrice": null,
+            "currency": null,
+            "handle": "full-coverage-cushion-foundation-waterproof-matte-finish",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.76
+            }
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "type": "category_showcase",
+        "intent": "category_showcase",
+        "label": "SHOP BY CATEGORY",
+        "heading": "SHOP BY CATEGORY",
+        "textPreview": "SHOP BY CATEGORY",
+        "links": [],
+        "images": [],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        }
+      },
+      {
+        "rank": 4,
+        "type": "collections",
+        "intent": null,
+        "label": null,
+        "heading": null,
+        "textPreview": "Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title Example Collection Title",
+        "links": [],
+        "images": [
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/6051wbg033.jpg?v=1737021794",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF8127-P-01-copy.jpg?v=1737022031",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF689-02_d3d9bbff-ee63-41ee-8834-17a0035f68a5.png?v=1737023650",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/5080-001wbg.jpg?v=1737023803",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF178NO.01P-595x595.jpg?v=1737024356",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF653-C-NO2-1000x1000.jpg?v=1737024523",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/G37-1_3e5de967-9c92-4e90-99eb-05256bd774ad.png?v=1737024586",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/WBGHF641NO.01-C_a892ed41-b573-486f-92d9-08653c222ef8.jpg?v=1737024687",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/ES8012-B_938618bb-171d-41bc-bfa7-09d8df9a9003.jpg?v=1737024762",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF775SW_417f7d0c-ac3f-4602-988f-35354a95dfbc.jpg?v=1737024852",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/HF6049-B-01_7f06cffb-a1c0-4ec0-ac2f-f1ccfdb08454.jpg?v=1737024927",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/th-11134207-7r98t-lriephhd7we55e_1eaba49b-be15-41d2-a23b-94d809cd834b.webp?v=1737024982",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        }
+      },
+      {
+        "rank": 5,
+        "type": "product_section",
+        "intent": "shop_the_look",
+        "label": "Shop the Look",
+        "heading": "Shop the Look",
+        "textPreview": "Shop the Look",
+        "links": [],
+        "images": [],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        },
+        "products": []
+      },
+      {
+        "rank": 6,
+        "type": "product_section",
+        "intent": "shop_the_look",
+        "label": "Shop the Look",
+        "heading": "Shop the Look",
+        "textPreview": "1 1 Add to Cart Quickview Add to Cart Quickview",
+        "links": [],
+        "images": [
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/pawawww_88929968_2505778073007982_7945643387430444069_n-768x959.jpg?v=1736860858",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/Whisk_24062c0032e5342b8f648ee69a8e915ddr.png?v=1774618881",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "merged_heading_section",
+          "confidence": 0.85,
+          "priceCount": 0
+        },
+        "products": []
+      },
+      {
+        "rank": 7,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": null,
+        "heading": null,
+        "textPreview": "1 1 Add to Cart Quickview Add to Cart Quickview",
+        "links": [],
+        "images": [
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/pawawww_88929968_2505778073007982_7945643387430444069_n-768x959.jpg?v=1736860858",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/Whisk_24062c0032e5342b8f648ee69a8e915ddr.png?v=1774618881",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        },
+        "products": []
+      },
+      {
+        "rank": 8,
+        "type": "trust_signal",
+        "intent": null,
+        "label": null,
+        "heading": null,
+        "textPreview": "SHIPPING ALL OVER PAKISTAN Top Notch Support SECURE PAYMENT METHODS",
+        "links": [],
+        "images": [],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        }
+      },
+      {
+        "rank": 9,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": null,
+        "heading": null,
+        "textPreview": "1 1 1 1 1 1 Add to Cart Quickview Add to Cart Quickview Add to Cart Quickview Add to Cart Quickview Add to Cart Quickview Add to Cart Quickview",
+        "links": [],
+        "images": [
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/gainagain_90089563_510362593187047_4974967728199406965_n-768x960.jpg?v=1737020176",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/Whisk_8cb1c24b0c25c3a934d4c75b4431de22dr.png?v=1774617737",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/Whisk_a9126187c97f1b2971041d7ef171ae47dr.png?v=1774618345",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/fernatipa_89387332_2582655031992266_1745709969944538286_n-768x960.jpg?v=1737020579",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/317904430_1573782016472550_4661945099153649115_n.jpg?v=1737021520",
+            "alt": null
+          },
+          {
+            "url": "https://sivanna.com.pk/cdn/shop/files/89395412_222739985794570_5288713197539656370_n-1.jpg?v=1737020774",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        },
+        "products": []
+      }
+    ]
+  },
+  "ecommerce": {
+    "primaryModel": null,
+    "featuredProducts": [
+      {
+        "title": "High Definition Mousse Foundation",
+        "url": "https://sivanna.com.pk/products/high-definition-mousse-foundation",
+        "price": {
+          "currency": "PKR",
+          "current": 2590.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "2590.0"
+        }
+      },
+      {
+        "title": "Gina Glam Eyeliner Waterproof Long Lasting",
+        "url": "https://sivanna.com.pk/products/gina-glam-eyeliner-waterproof-long-lasting",
+        "price": {
+          "currency": "PKR",
+          "current": 1890.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1890.0"
+        }
+      },
+      {
+        "title": "Duo Blusher Waterproof Long Lasting Matte Finish",
+        "url": "https://sivanna.com.pk/products/duo-blusher-waterproof-long-lasting-matte-finish",
+        "price": {
+          "currency": "PKR",
+          "current": 1695.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1695.0"
+        }
+      },
+      {
+        "title": "Highlight Palette High Pigmented Glow Face Makeup Palette",
+        "url": "https://sivanna.com.pk/products/highlight-palette-high-pigmented-glow-face-makeup-palette",
+        "price": {
+          "currency": "PKR",
+          "current": 2250.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "2250.0"
+        }
+      },
+      {
+        "title": "Kiss Me Long Lasting Matte Lipstick",
+        "url": "https://sivanna.com.pk/products/kiss-me-long-lasting-matte-lipstick",
+        "price": {
+          "currency": "PKR",
+          "current": 1890.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1890.0"
+        }
+      },
+      {
+        "title": "Liquid Foundation",
+        "url": "https://sivanna.com.pk/products/liquid-foundation",
+        "price": {
+          "currency": "PKR",
+          "current": 3200.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "3200.0"
+        }
+      },
+      {
+        "title": "Waterproof Gel Eyeliner Pencil Long Lasting Smudge Proof",
+        "url": "https://sivanna.com.pk/products/waterproof-gel-eyeliner-pencil-long-lasting-smudge-proof",
+        "price": {
+          "currency": "PKR",
+          "current": 1800.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1800.0"
+        }
+      },
+      {
+        "title": "Full Coverage Cushion Foundation Waterproof Matte Finish",
+        "url": "https://sivanna.com.pk/products/full-coverage-cushion-foundation-waterproof-matte-finish",
+        "price": {
+          "currency": "PKR",
+          "current": 3210.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "3210.0"
+        }
+      }
+    ],
+    "productTeasers": [],
+    "featuredCollections": [
+      {
+        "name": "Face",
+        "handle": "face",
+        "url": "https://sivanna.com.pk/collections/face"
+      },
+      {
+        "name": "Lips",
+        "handle": "lips",
+        "url": "https://sivanna.com.pk/collections/lips"
+      },
+      {
+        "name": "Eyes",
+        "handle": "eyes",
+        "url": "https://sivanna.com.pk/collections/eyes"
+      }
+    ],
+    "featuredPrograms": [],
+    "hasEcommerceSignals": false,
+    "products": [
+      {
+        "name": "High Definition Mousse Foundation",
+        "price": {
+          "currency": "PKR",
+          "current": 2590.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "2590.0"
+        },
+        "url": "https://sivanna.com.pk/products/high-definition-mousse-foundation",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Gina Glam Eyeliner Waterproof Long Lasting",
+        "price": {
+          "currency": "PKR",
+          "current": 1890.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1890.0"
+        },
+        "url": "https://sivanna.com.pk/products/gina-glam-eyeliner-waterproof-long-lasting",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Duo Blusher Waterproof Long Lasting Matte Finish",
+        "price": {
+          "currency": "PKR",
+          "current": 1695.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1695.0"
+        },
+        "url": "https://sivanna.com.pk/products/duo-blusher-waterproof-long-lasting-matte-finish",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Highlight Palette High Pigmented Glow Face Makeup Palette",
+        "price": {
+          "currency": "PKR",
+          "current": 2250.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "2250.0"
+        },
+        "url": "https://sivanna.com.pk/products/highlight-palette-high-pigmented-glow-face-makeup-palette",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Kiss Me Long Lasting Matte Lipstick",
+        "price": {
+          "currency": "PKR",
+          "current": 1890.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1890.0"
+        },
+        "url": "https://sivanna.com.pk/products/kiss-me-long-lasting-matte-lipstick",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Liquid Foundation",
+        "price": {
+          "currency": "PKR",
+          "current": 3200.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "3200.0"
+        },
+        "url": "https://sivanna.com.pk/products/liquid-foundation",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Waterproof Gel Eyeliner Pencil Long Lasting Smudge Proof",
+        "price": {
+          "currency": "PKR",
+          "current": 1800.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "1800.0"
+        },
+        "url": "https://sivanna.com.pk/products/waterproof-gel-eyeliner-pencil-long-lasting-smudge-proof",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Full Coverage Cushion Foundation Waterproof Matte Finish",
+        "price": {
+          "currency": "PKR",
+          "current": 3210.0,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": "3210.0"
+        },
+        "url": "https://sivanna.com.pk/products/full-coverage-cushion-foundation-waterproof-matte-finish",
+        "availability": null,
+        "category": null,
+        "badges": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "title": "High Definition Mousse Foundation",
+      "url": "https://sivanna.com.pk/products/high-definition-mousse-foundation",
+      "image": "https://sivanna.com.pk/cdn/shop/files/HF596.jpg?v=1733988068",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "high-definition-mousse-foundation",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 2590.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "2590.0"
+      }
+    },
+    {
+      "title": "Gina Glam Eyeliner Waterproof Long Lasting",
+      "url": "https://sivanna.com.pk/products/gina-glam-eyeliner-waterproof-long-lasting",
+      "image": "https://sivanna.com.pk/cdn/shop/files/G04ALL.jpg?v=1734085364",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "gina-glam-eyeliner-waterproof-long-lasting",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 1890.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1890.0"
+      }
+    },
+    {
+      "title": "Duo Blusher Waterproof Long Lasting Matte Finish",
+      "url": "https://sivanna.com.pk/products/duo-blusher-waterproof-long-lasting-matte-finish",
+      "image": "https://sivanna.com.pk/cdn/shop/files/HF387_190103_0007.jpg?v=1733986906",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "duo-blusher-waterproof-long-lasting-matte-finish",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 1695.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1695.0"
+      }
+    },
+    {
+      "title": "Highlight Palette High Pigmented Glow Face Makeup Palette",
+      "url": "https://sivanna.com.pk/products/highlight-palette-high-pigmented-glow-face-makeup-palette",
+      "image": "https://sivanna.com.pk/cdn/shop/files/HF362NO.01B.jpg?v=1733985922",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "highlight-palette-high-pigmented-glow-face-makeup-palette",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 2250.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "2250.0"
+      }
+    },
+    {
+      "title": "Kiss Me Long Lasting Matte Lipstick",
+      "url": "https://sivanna.com.pk/products/kiss-me-long-lasting-matte-lipstick",
+      "image": "https://sivanna.com.pk/cdn/shop/files/HF688-01_-fb.jpg?v=1733903718",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "kiss-me-long-lasting-matte-lipstick",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 1890.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1890.0"
+      }
+    },
+    {
+      "title": "Liquid Foundation",
+      "url": "https://sivanna.com.pk/products/liquid-foundation",
+      "image": "https://sivanna.com.pk/cdn/shop/files/G45-2_0c7161f7-06e3-4fd3-9690-34c87d3182ed.png?v=1733222415",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "liquid-foundation",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 3200.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3200.0"
+      }
+    },
+    {
+      "title": "Waterproof Gel Eyeliner Pencil Long Lasting Smudge Proof",
+      "url": "https://sivanna.com.pk/products/waterproof-gel-eyeliner-pencil-long-lasting-smudge-proof",
+      "image": "https://sivanna.com.pk/cdn/shop/files/HF777-1.jpg?v=1733218312",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "waterproof-gel-eyeliner-pencil-long-lasting-smudge-proof",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 1800.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1800.0"
+      }
+    },
+    {
+      "title": "Full Coverage Cushion Foundation Waterproof Matte Finish",
+      "url": "https://sivanna.com.pk/products/full-coverage-cushion-foundation-waterproof-matte-finish",
+      "image": "https://sivanna.com.pk/cdn/shop/files/hf564_b88aa37c-297f-49e8-b296-19a39080e2c9.jpg?v=1733987611",
+      "currentPrice": null,
+      "comparePrice": null,
+      "currency": null,
+      "handle": "full-coverage-cushion-foundation-waterproof-matte-finish",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.76
+      },
+      "price": {
+        "currency": "PKR",
+        "current": 3210.0,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3210.0"
+      }
+    }
+  ],
+  "technical": {
+    "finalUrl": "https://sivanna.com.pk/",
+    "responseHeaders": {
+      "Date": "Tue, 07 Jul 2026 07:41:07 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "49334",
+      "Connection": "keep-alive",
+      "x-dc": "gcp-europe-west1,gcp-europe-west1,gcp-europe-west1",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "localization=PK; path=/; expires=Wed, 07 Jul 2027 07:41:07 GMT; SameSite=Lax, _shopify_y=548cd42f-f56a-4a6e-ac88-bc2904910933; domain=sivanna.com.pk; path=/; expires=Wed, 07 Jul 2027 13:41:07 GMT; SameSite=Lax, _shopify_s=e9ccc1a0-3b60-448d-bd23-ac078bee3445; domain=sivanna.com.pk; path=/; expires=Tue, 07 Jul 2026 08:11:07 GMT; SameSite=Lax, _shopify_essential=:AZ87hgcxAAEASYDPxqBXJHuR8EfdjE7KIC3C4-yMp_5T6wsfkLRSS3CCiLjcJogEBVrvMBjA5vf_hApgOpn_tkyXMhmypUVSDv-U5gB8FB9MQF1wQu0_YlZ6BhLmxlGfbKhHuIYNS0OHTS7vboz6M612nNRtPMUcC6LtYwNHT3OUqELv58pJcCmRkuvG_MHO7Jv8WuIVcP0IKFEy9EQEUw_G9WmtLyswvgu1h7x85PgO1VMg77d-1CjZefzMDH4MbL-aUBll481W3A7kwHjNXewkjJFWqcfytsEUu0SI2RsFLyo_wa2k6nzwHsBW9JqAIi3nx4PR4DaB5P-hwPlj-zrTaSp1BtpaDEUdPd7GxMmZcgaIM-iHWYVnq1z5Bt1ixGixKQVY833GSjO0Bz5xw4mkdg:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_analytics=:AZ87hghlAAEAWjue66dbs6Fhcna5i737gco2XerKeewoiJh9HwmscNHbyCwBKWeAAVjOXnItNAq3J38vjjiyXcUhPkUIOKd9rE3epvo:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_marketing=:AZ87hghlAAEAUN2rAbyyiOeSozM5QNe8JRMgLoUg9oo05iwdpkSN8uhCXWxQ4Cfe4keVX64QisSAG64YAdmAPwNHdFo:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <https://fonts.googleapis.com>; rel=\"preconnect\"",
+      "speculation-rules": "\"/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json\"",
+      "etag": "\"page_cache:61869490278:IndexController:9d08dd68348f1f295c451906ed4c2586\"",
+      "content-encoding": "br",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "shopify-complexity-score": "0",
+      "shopify-complexity-score-v2": "318",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "X-Content-Type-Options": "nosniff",
+      "vary": "Accept, accept-encoding",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "content-language": "en-PK",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=321;desc=\"gc:31\", db;dur=70, db_async;dur=9.602, render;dur=163, asn;desc=\"135407\", edge;desc=\"KHI\", country;desc=\"PK\", theme;desc=\"132946165862\", pageType;desc=\"index\", servedBy;desc=\"qwrj\", requestID;desc=\"d881d2e0-720c-474c-9a39-797af4770f96-1783410067\", _y;desc=\"548cd42f-f56a-4a6e-ac88-bc2904910933\", _s;desc=\"e9ccc1a0-3b60-448d-bd23-ac078bee3445\", _cmp;desc=\"3.AMPS_PKPB_f_f_qH1slQSmQfSoSMKe4UQMvw\", compressionLevel;desc=\"5\", compressionTime;dur=5.963",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "server": "cloudflare",
+      "X-XSS-Protection": "1; mode=block",
+      "x-request-id": "d881d2e0-720c-474c-9a39-797af4770f96-1783410067",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JCkiejFc26xWcwjN8Jm3nqwA1CZzCDhV4ZmQYYQ%2BP647t%2F9%2F2LaC01xQ3UNnJjhDwpmWkALoZjqKml3tYs4VRdP6xX%2FNBrS01UuPmKkKCk5%2FRgiHHH1U0vIhjf5%2BYuAo\"}]}",
+      "CF-RAY": "a1753477892e90a1-KHI",
+      "status_code": 200,
+      "fetch_method": "requests",
+      "blocked": false
+    }
+  },
+  "source": {
+    "extractor": "Shopify Homepage Extractor v2",
+    "confidence": 0.85,
+    "pageTypeValidated": true,
+    "pageTypeMismatchReason": null
+  },
+  "homepage": {
+    "siteName": "Sivanna Colors",
+    "primaryCategory": "makeup",
+    "positioning": [
+      "FACE MAKEUP",
+      "SHOP BEST SELLERS",
+      "SHOP BY CATEGORY",
+      "Shop the Look"
+    ],
+    "heroCount": 1,
+    "heroType": "video",
+    "heroStyle": "single_video",
+    "heroHasText": false,
+    "collectionCount": 3,
+    "featuredProductCount": 8,
+    "productSectionCount": 5,
+    "testimonialCount": 0,
+    "trustSignalCount": 1,
+    "primaryCtas": [
+      {
+        "text": "SHOP COLLECTION",
+        "url": "https://sivanna.com.pk/collections/face"
+      }
+    ],
+    "topSections": [
+      "category_showcase",
+      "product_section",
+      "collections",
+      "trust_signal"
+    ],
+    "homepageType": "beauty_cosmetics",
+    "businessClassification": {
+      "homepageType": "beauty_cosmetics",
+      "subCategories": [
+        "face_makeup",
+        "eye_makeup",
+        "lip_makeup"
+      ]
+    },
+    "warnings": [
+      {
+        "type": "media_no_text",
+        "url": "https://cdn.shopify.com/videos/c/o/v/40a96514bf2147b9b7b24ceca7c87d93.mp4"
+      }
+    ],
+    "extractionMethod": "dom"
+  },
+  "metrics": {
+    "sectionCount": 9,
+    "heroCount": 1,
+    "collectionBannerCount": 3,
+    "imageCount": 40,
+    "featuredProductCount": 8,
+    "featuredProductWithPriceCount": 0,
+    "featuredCollectionCount": 3,
+    "ctaCount": 3,
+    "blogLinkCount": 0,
+    "hasAnnouncementBar": false,
+    "productSectionCount": 5,
+    "productSectionWithPriceCount": 1,
+    "productCardEstimate": 8
+  },
+  "features": {
+    "hasAnnouncementBar": false,
+    "hasHero": true,
+    "hasCollectionBanners": true,
+    "hasFeaturedProducts": true,
+    "hasFeaturedCollections": true,
+    "hasBlogPreview": false,
+    "hasNewsletter": false,
+    "hasTestimonials": false,
+    "hasTrustSignals": true,
+    "hasInstagramFeed": false,
+    "hasWhatsapp": false,
+    "hasDiscountMessaging": false,
+    "hasProducts": true,
+    "hasPrices": true
+  },
+  "success": true,
+  "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+  },
+  "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+      "url": "https://sivanna.com.pk/",
+      "domain": "sivanna.com.pk",
+      "pageType": "homepage",
+      "platform": "Shopify",
+      "title": "Sivanna Colors",
+      "description": "Sivanna Colors",
+      "h1": "Sivanna Colors",
+      "canonical": "https://sivanna.com.pk/"
+    },
+    "competitiveSignals": {
+      "positioning": [
+        "FACE MAKEUP",
+        "SHOP BEST SELLERS",
+        "SHOP BY CATEGORY",
+        "Shop the Look"
+      ],
+      "promotionalSignals": [
+        "bestseller",
+        "best seller"
+      ],
+      "pricingSignals": {
+        "pricesDetected": 8,
+        "samplePrices": [
+          {
+            "currency": "PKR",
+            "current": 2590.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "2590.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 1890.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "1890.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 1695.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "1695.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 2250.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "2250.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 1890.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "1890.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 3200.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "3200.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 1800.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "1800.0"
+          },
+          {
+            "currency": "PKR",
+            "current": 3210.0,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": "3210.0"
+          }
+        ]
+      },
+      "productFocus": [
+        "High Definition Mousse Foundation",
+        "Gina Glam Eyeliner Waterproof Long Lasting",
+        "Duo Blusher Waterproof Long Lasting Matte Finish",
+        "Highlight Palette High Pigmented Glow Face Makeup Palette",
+        "Kiss Me Long Lasting Matte Lipstick",
+        "Liquid Foundation",
+        "Waterproof Gel Eyeliner Pencil Long Lasting Smudge Proof",
+        "Full Coverage Cushion Foundation Waterproof Matte Finish"
+      ],
+      "trustSignals": [
+        "secure"
+      ],
+      "ctaStrategy": {
+        "primaryCtas": [],
+        "ctaCount": 0
+      },
+      "contentAngles": [
+        "Sivanna Colors"
+      ],
+      "ecommerceSignals": {
+        "hasProducts": true,
+        "productCountExtracted": 8,
+        "hasPrices": true,
+        "hasCartOrCheckout": true,
+        "hasRealEcommerceEvidence": true
+      }
+    },
+    "extractionQuality": {
+      "score": 0.9,
+      "warnings": [
+        "no_ctas_detected"
+      ],
+      "missingFields": [
+        "seo.metaDescription",
+        "homepage.primaryCtas"
+      ],
+      "unfetchedFields": [],
+      "dataConsistency": {
+        "structuredDataFound": false,
+        "structuredDataProductFound": false,
+        "priceConsistent": null,
+        "currencyPlausible": null,
+        "suspiciousName": false,
+        "flags": []
+      }
+    },
+    "merger": {
+      "extractionMethod": "requests",
+      "qualityScore": 0.9,
+      "qualityBucket": "good",
+      "needsAIInsightReview": false,
+      "fallbacksTried": [
+        "requests"
+      ],
+      "usableForMerge": true,
+      "usableForInsights": true
+    }
+  }
+}

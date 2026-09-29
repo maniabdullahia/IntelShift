@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "change_detection_v1",
+  "generatedAt": "2026-07-22T08:20:46.582096+00:00",
+  "domain": "in2it.com.pk",
+  "previousGeneratedAt": "2026-07-15T07:20:00+00:00",
+  "currentGeneratedAt": "2026-07-22T07:20:00+00:00",
+  "overallSeverity": "medium",
+  "changeScore": 52,
+  "shouldSendToAI": true,
+  "summary": {
+    "totalChanges": 2,
+    "criticalChanges": 0,
+    "highChanges": 1,
+    "mediumChanges": 1,
+    "lowChanges": 0,
+    "changesByType": {
+      "new_product": 1,
+      "price_change": 1
+    }
+  },
+  "changes": [
+    {
+      "type": "new_product",
+      "severity": "high",
+      "whyImportant": "New product detected since the previous snapshot.",
+      "product": {
+        "name": "In2It Matte Liquid Lipstick Velvet Rose",
+        "productUrl": "https://in2it.com.pk/products/matte-liquid-lipstick-velvet-rose",
+        "category": null
+      },
+      "price": 3195.0
+    },
+    {
+      "type": "price_change",
+      "severity": "medium",
+      "whyImportant": "Price moved beyond the configured threshold.",
+      "product": {
+        "name": "Full Coverage Concealer In2It True Skin",
+        "productUrl": "https://in2it.com.pk/products/full-coverage-concealer-in2it-true-skin",
+        "category": null
+      },
+      "oldValue": 6695.0,
+      "newValue": 5995.0,
+      "changePercent": -10.46,
+      "direction": "decrease"
+    }
+  ],
+  "changesTruncated": false,
+  "extractionStable": true,
+  "warnings": [],
+  "aiPromptHint": "These are deterministic week-over-week changes for one site. Explain what the site owner should notice and do; do not invent changes."
+}

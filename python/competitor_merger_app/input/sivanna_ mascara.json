@@ -1,0 +1,1244 @@
+{
+  "level1": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "isKnownPlatform": true,
+    "platformSignals": {
+      "Shopify": 47,
+      "WooCommerce / WordPress": 0,
+      "WordPress": 0,
+      "Wix": 0,
+      "Webflow": 0,
+      "Magento": 0,
+      "Next.js / React": 0,
+      "React": 0,
+      "Vue": 0
+    },
+    "pageType": "collection",
+    "pageTypeConfidence": 0.99,
+    "pageTypeSignals": {
+      "homepage": 0,
+      "collection": 1035,
+      "product": 13,
+      "blog": 1,
+      "cart_checkout": 0,
+      "general": 0
+    },
+    "pageTypeDebug": {
+      "reason": "shopify_collection_url_priority",
+      "signals": {
+        "product": {
+          "isProduct": true,
+          "score": 13,
+          "signals": [
+            "add_to_cart_dom",
+            "add_to_cart_text",
+            "stock_text"
+          ]
+        },
+        "collection": {
+          "isCollection": true,
+          "score": 35,
+          "signals": [
+            "url_collections",
+            "seo_collection_terms",
+            "product_grid_dom",
+            "sort_filter_dom",
+            "multiple_product_links",
+            "high_product_link_density",
+            "category_link_density_medium",
+            "ecommerce_collection_wording",
+            "text_result_count"
+          ],
+          "metrics": {
+            "productLinkCount": 16,
+            "categoryLinkCount": 13,
+            "hasProductGrid": true,
+            "priceTextCount": 0,
+            "textCollectionBoost": 3
+          }
+        },
+        "blog": {
+          "isBlog": false,
+          "score": 1,
+          "signals": [
+            "article_dom"
+          ]
+        },
+        "generalSubtype": "unknown",
+        "platform": "Shopify"
+      }
+    }
+  },
+  "platform": "Shopify",
+  "page": {
+    "url": "https://sivanna.com.pk/collections/smudge-proof-mascara",
+    "pageType": "collection"
+  },
+  "seo": {
+    "title": "Smudge Proof Mascara | Long Lasting Waterproof Formula – Sivanna Colors",
+    "metaDescription": "Smudge proof mascara with a waterproof, long-lasting formula that lengthens and volumizes lashes for an all-day flawless eye makeup look.",
+    "canonical": "https://sivanna.com.pk/collections/smudge-proof-mascara",
+    "h1": "Sivanna Colors"
+  },
+  "openGraph": {
+    "site_name": "Sivanna Colors",
+    "url": "https://sivanna.com.pk/collections/smudge-proof-mascara",
+    "title": "Mascara",
+    "type": "product.group",
+    "description": "Smudge proof mascara with a waterproof, long-lasting formula that lengthens and volumizes lashes for an all-day flawless eye makeup look."
+  },
+  "navigation": {
+    "links": [
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/"
+      },
+      {
+        "text": "All",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://sivanna.com.pk/collections/liquid-concealer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://sivanna.com.pk/collections/full-coverage-liquid-foundation"
+      },
+      {
+        "text": "Powder",
+        "url": "https://sivanna.com.pk/collections/loose-setting-powder"
+      },
+      {
+        "text": "Blush on",
+        "url": "https://sivanna.com.pk/collections/matte-blush-palette"
+      },
+      {
+        "text": "Hightlight/Shading",
+        "url": "https://sivanna.com.pk/collections/highlighter-face-palette"
+      },
+      {
+        "text": "Makeup Set",
+        "url": "https://sivanna.com.pk/collections/all-in-one-makeup-kit"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "EyeBrow",
+        "url": "https://sivanna.com.pk/collections/eyebrow-pencil"
+      },
+      {
+        "text": "Eyeliner",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-eyeliner"
+      },
+      {
+        "text": "Eyeshadow",
+        "url": "https://sivanna.com.pk/collections/products-eyeshadow-palette"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://sivanna.com.pk/collections/waterproof-matte-lipstick"
+      },
+      {
+        "text": "Tint",
+        "url": "https://sivanna.com.pk/collections/hydrating-lip-balm"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Cart 0 item Rs.0.00",
+        "url": "https://sivanna.com.pk/cart"
+      },
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/"
+      },
+      {
+        "text": "All",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://sivanna.com.pk/collections/liquid-concealer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://sivanna.com.pk/collections/full-coverage-liquid-foundation"
+      },
+      {
+        "text": "Powder",
+        "url": "https://sivanna.com.pk/collections/loose-setting-powder"
+      },
+      {
+        "text": "Blush on",
+        "url": "https://sivanna.com.pk/collections/matte-blush-palette"
+      },
+      {
+        "text": "Hightlight/Shading",
+        "url": "https://sivanna.com.pk/collections/highlighter-face-palette"
+      },
+      {
+        "text": "Makeup Set",
+        "url": "https://sivanna.com.pk/collections/all-in-one-makeup-kit"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "EyeBrow",
+        "url": "https://sivanna.com.pk/collections/eyebrow-pencil"
+      },
+      {
+        "text": "Eyeliner",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-eyeliner"
+      },
+      {
+        "text": "Eyeshadow",
+        "url": "https://sivanna.com.pk/collections/products-eyeshadow-palette"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://sivanna.com.pk/collections/smudge-proof-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://sivanna.com.pk/collections/waterproof-matte-lipstick"
+      },
+      {
+        "text": "Tint",
+        "url": "https://sivanna.com.pk/collections/hydrating-lip-balm"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://sivanna.com.pk/collections/matte-lipstick"
+      },
+      {
+        "text": "Cart 0 item Rs.0.00",
+        "url": "https://sivanna.com.pk/cart"
+      },
+      {
+        "text": "Cart 0 item Rs.0.00",
+        "url": "https://sivanna.com.pk/cart"
+      },
+      {
+        "text": "Home",
+        "url": "https://sivanna.com.pk/collections/\\"
+      },
+      {
+        "text": "Shop",
+        "url": "https://sivanna.com.pk/collections/all"
+      },
+      {
+        "text": "Face",
+        "url": "https://sivanna.com.pk/collections/water-based-makeup-primer"
+      },
+      {
+        "text": "Cheeks",
+        "url": "https://sivanna.com.pk/collections/peach-powder-blush"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://sivanna.com.pk/collections/volumizing-mascara"
+      }
+    ]
+  },
+  "content": {
+    "collectionName": "Sivanna Colors",
+    "ctas": [
+      {
+        "text": "Out Of Stock",
+        "source": "product_card"
+      },
+      {
+        "text": "Add To Cart",
+        "source": "product_card"
+      },
+      {
+        "text": "Quickview",
+        "source": "product_card"
+      }
+    ]
+  },
+  "ecommerce": {
+    "productStats": {
+      "currency": "PKR",
+      "productCount": 12,
+      "priceRange": {
+        "min": 1090,
+        "max": 2800
+      },
+      "inStockCount": 3,
+      "outOfStockCount": 9,
+      "hasFilters": true,
+      "hasSort": true
+    },
+    "products": [
+      {
+        "name": "Waterproof Lengthening Mascara for Long Lashes - Smudge Proof Volume",
+        "price": {
+          "currency": "PKR",
+          "current": 2400,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/waterproof-lengthening-mascara-for-long-lashes",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": []
+      },
+      {
+        "name": "Volume Mascara Thick Volumizing Long Lasting Eyelash Makeup",
+        "price": {
+          "currency": "PKR",
+          "current": 2800,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/volume-mascara-volumizing-thick-lash-makeup",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": []
+      },
+      {
+        "name": "Waterproof Lengthening Curling Mascara for Long Lashes Volume",
+        "price": {
+          "currency": "PKR",
+          "current": 2400,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/waterproof-lengthening-curling-mascara-long-lashes-volume",
+        "availability": {
+          "status": "in_stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": []
+      },
+      {
+        "name": "Waterproof Mascara Long Lasting Smudge Proof Volumizing Lash Makeup",
+        "price": {
+          "currency": "PKR",
+          "current": 1190,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/waterproof-mascara-long-lasting-smudge-proof-lash-makeup",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Duo Color Mascara Dual Shade Volumizing Long Lasting Lash Makeup",
+        "price": {
+          "currency": "PKR",
+          "current": 1950,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/duo-color-mascara-dual-shade-lash-makeup",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Double Extend Mascara Waterproof Long Lasting",
+        "price": {
+          "currency": "PKR",
+          "current": 2495,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/double-extend-mascara",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Waterproof Volume Mascara Smudge Proof Long Wear",
+        "price": {
+          "currency": "PKR",
+          "current": 1295,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/waterproof-volume-mascara",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Volume Curl Mascara Thick Long Lasting Curling Eyelashes",
+        "price": {
+          "currency": "PKR",
+          "current": 1195,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/volume-curl-mascara-thick-curl-lashes",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Sivanna Mascara Waterproof Long Lasting Volume Curl",
+        "price": {
+          "currency": "PKR",
+          "current": 1090,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/sivanna-mascara-waterproof-volume-curl",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Gina Glam Mascara - Long Lash Volumizing Mascara",
+        "price": {
+          "currency": "PKR",
+          "current": 1290,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/sivanna-gina-glam-mascara-pakistan",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Curling Mascara for Long Lasting Lash Lift & Curl",
+        "price": {
+          "currency": "PKR",
+          "current": 1290,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/curling-mascara-long-lasting-lash-lift-makeup",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      },
+      {
+        "name": "Double Sided Waterproof Mascara - Long Lasting Volume Lash Makeup",
+        "price": {
+          "currency": "PKR",
+          "current": 1150,
+          "compareAt": null,
+          "isOnSale": false,
+          "priceTextRaw": null
+        },
+        "url": "https://sivanna.com.pk/products/double-sided-waterproof-mascara",
+        "availability": {
+          "status": "out_of_stock",
+          "inStock": false,
+          "stockTextRaw": null
+        },
+        "category": "smudge-proof-mascara",
+        "badges": [
+          "out_of_stock"
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "rank": 1,
+      "name": "Waterproof Lengthening Mascara for Long Lashes - Smudge Proof Volume",
+      "handle": "waterproof-lengthening-mascara-for-long-lashes",
+      "productUrl": "https://sivanna.com.pk/products/waterproof-lengthening-mascara-for-long-lashes",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF893.png?v=1733309399",
+      "additionalImageCount": 2,
+      "price": {
+        "currency": "PKR",
+        "current": 2400,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>The Waterproof Lengthening Mascara for Long Lashes is specially designed to give your eyes a bold, lifted, and naturally longer lash effect. This W",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 2,
+      "name": "Volume Mascara Thick Volumizing Long Lasting Eyelash Makeup",
+      "handle": "volume-mascara-volumizing-thick-lash-makeup",
+      "productUrl": "https://sivanna.com.pk/products/volume-mascara-volumizing-thick-lash-makeup",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/th-11134207-7r98u-ls9nq0iogory72.webp?v=1734942242",
+      "additionalImageCount": 4,
+      "price": {
+        "currency": "PKR",
+        "current": 2800,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Volume Mascara is a powerful lash-enhancing makeup product designed to give your eyelashes instant volume, thickness, and definition. The Volume Ma",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 3,
+      "name": "Waterproof Lengthening Curling Mascara for Long Lashes Volume",
+      "handle": "waterproof-lengthening-curling-mascara-long-lashes-volume",
+      "productUrl": "https://sivanna.com.pk/products/waterproof-lengthening-curling-mascara-long-lashes-volume",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/WBGHF932-0-1000x1000.jpg?v=1738058276",
+      "additionalImageCount": 9,
+      "price": {
+        "currency": "PKR",
+        "current": 2400,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Waterproof Lengthening Curling Mascara is specially designed to enhance your lashes by providing instant lift, long-lasting curl, and visible lengt",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF932-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/WBGHF932-000-1000x1000.jpg?v=1733308768"
+        },
+        {
+          "label": "HF932-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/WBGHF932-00-1000x1000.jpg?v=1733308767"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "HF932-01",
+        "HF932-02"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 4,
+      "name": "Waterproof Mascara Long Lasting Smudge Proof Volumizing Lash Makeup",
+      "handle": "waterproof-mascara-long-lasting-smudge-proof-lash-makeup",
+      "productUrl": "https://sivanna.com.pk/products/waterproof-mascara-long-lasting-smudge-proof-lash-makeup",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/14d46bc8622742c4fd1da27e2860d823.webp?v=1734941135",
+      "additionalImageCount": 6,
+      "price": {
+        "currency": "PKR",
+        "current": 1190,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Waterproof Mascara is a high-performance lash makeup product designed to give your eyelashes long-lasting volume, curl, and definition in all condi",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 5,
+      "name": "Duo Color Mascara Dual Shade Volumizing Long Lasting Lash Makeup",
+      "handle": "duo-color-mascara-dual-shade-lash-makeup",
+      "productUrl": "https://sivanna.com.pk/products/duo-color-mascara-dual-shade-lash-makeup",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/2c517e8ffd7280709b252aca943c4002.webp?v=1734941493",
+      "additionalImageCount": 4,
+      "price": {
+        "currency": "PKR",
+        "current": 1950,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Duo Color Mascara is a stylish and innovative lash makeup product designed to give your eyelashes a bold dual-shade effect with volume, curl, and d",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF918-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/60421be003b60064125c3160f29d6791.webp?v=1734941493"
+        },
+        {
+          "label": "HF918-02",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/27457b83a9ae67a5ca8e778b195efdf2.webp?v=1734941493"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 2,
+      "variantOptions": [
+        "HF918-02",
+        "HF918-01"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 6,
+      "name": "Double Extend Mascara Waterproof Long Lasting",
+      "handle": "double-extend-mascara",
+      "productUrl": "https://sivanna.com.pk/products/double-extend-mascara",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/600.jpg?v=1734340651",
+      "additionalImageCount": 2,
+      "price": {
+        "currency": "PKR",
+        "current": 2495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Double Extend Mascara is a premium quality lash mascara created to give your eyelashes extra length, bold volume, and a beautifully defined appeara",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "SIVANNA COLORS Super Model-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/600.jpg?v=1734340651"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [
+        "SIVANNA COLORS Super Model-01"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 7,
+      "name": "Waterproof Volume Mascara Smudge Proof Long Wear",
+      "handle": "waterproof-volume-mascara",
+      "productUrl": "https://sivanna.com.pk/products/waterproof-volume-mascara",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF9034-AD-01-1000x1000.jpg?v=1734343166",
+      "additionalImageCount": 6,
+      "price": {
+        "currency": "PKR",
+        "current": 1295,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Waterproof Volume Mascara is a high quality lash mascara designed to give your eyelashes a fuller, thicker, and more dramatic appearance. Waterproo",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF9034-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF9034-P-copy-1000x1000.jpg?v=1734343166"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [
+        "HF9034-01"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 8,
+      "name": "Volume Curl Mascara Thick Long Lasting Curling Eyelashes",
+      "handle": "volume-curl-mascara-thick-curl-lashes",
+      "productUrl": "https://sivanna.com.pk/products/volume-curl-mascara-thick-curl-lashes",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/th-11134207-7r98t-lriephhd7we55e.webp?v=1734944454",
+      "additionalImageCount": 4,
+      "price": {
+        "currency": "PKR",
+        "current": 1195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Volume Curl Mascara is a powerful lash-enhancing product designed to give your lashes instant volume, curl, and definition. Volume Curl Mascara lif",
+      "productType": null,
+      "tags": [],
+      "swatches": [
+        {
+          "label": "HF993-01",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/th-11134207-7r98s-lriephhdc43h5a.webp?v=1734944454"
+        }
+      ],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [
+        "HF993-01"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 9,
+      "name": "Sivanna Mascara Waterproof Long Lasting Volume Curl",
+      "handle": "sivanna-mascara-waterproof-volume-curl",
+      "productUrl": "https://sivanna.com.pk/products/sivanna-mascara-waterproof-volume-curl",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/84ecaf872085a8f7679f10a4ccf21523.webp?v=1734940056",
+      "additionalImageCount": 4,
+      "price": {
+        "currency": "PKR",
+        "current": 1090,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Sivanna Mascara is the perfect choice for creating bold, lifted, and beautifully defined eyelashes. This lightweight mascara formula glides smoothl",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 10,
+      "name": "Gina Glam Mascara - Long Lash Volumizing Mascara",
+      "handle": "sivanna-gina-glam-mascara-pakistan",
+      "productUrl": "https://sivanna.com.pk/products/sivanna-gina-glam-mascara-pakistan",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/G28PNG.png?v=1734086343",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 1290,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Sivanna Gina Glam Mascara is a premium eyelash makeup product designed to give your lashes a bold, voluminous, and lifted appearance. The Sivanna G",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 11,
+      "name": "Curling Mascara for Long Lasting Lash Lift & Curl",
+      "handle": "curling-mascara-long-lasting-lash-lift-makeup",
+      "productUrl": "https://sivanna.com.pk/products/curling-mascara-long-lasting-lash-lift-makeup",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/5a024f214e4143ee71a4e29970c70fc3.webp?v=1734940466",
+      "additionalImageCount": 5,
+      "price": {
+        "currency": "PKR",
+        "current": 1290,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Curling Mascara is a powerful eye makeup product designed to lift, curl, and define your eyelashes for a naturally beautiful look. Curling Mascara ",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 12,
+      "name": "Double Sided Waterproof Mascara - Long Lasting Volume Lash Makeup",
+      "handle": "double-sided-waterproof-mascara",
+      "productUrl": "https://sivanna.com.pk/products/double-sided-waterproof-mascara",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0618/6949/0278/files/HF891.png?v=1733309648",
+      "additionalImageCount": 2,
+      "price": {
+        "currency": "PKR",
+        "current": 1150,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "out_of_stock",
+        "inStock": false,
+        "stockTextRaw": null
+      },
+      "category": "smudge-proof-mascara",
+      "vendor": "Sivanna Colors",
+      "shortDescription": "<p>Double Sided Waterproof Mascara is a high-performance eye makeup product designed to give your lashes dramatic volume, length, and perfect curl. Th",
+      "productType": null,
+      "tags": [],
+      "swatches": [],
+      "badges": [
+        "out_of_stock"
+      ],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    }
+  ],
+  "technical": {
+    "finalUrl": "https://sivanna.com.pk/collections/smudge-proof-mascara",
+    "responseHeaders": {
+      "Date": "Tue, 07 Jul 2026 07:42:31 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "44086",
+      "Connection": "keep-alive",
+      "x-dc": "gcp-europe-west1,gcp-europe-west1,gcp-europe-west1",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "localization=PK; path=/; expires=Wed, 07 Jul 2027 07:42:30 GMT; SameSite=Lax, _shopify_y=17e78261-d8a3-4bad-8a95-f754c0415905; domain=sivanna.com.pk; path=/; expires=Wed, 07 Jul 2027 13:42:30 GMT; SameSite=Lax, _shopify_s=cf6ed27d-7d58-4ddd-8781-6e0aaffdb515; domain=sivanna.com.pk; path=/; expires=Tue, 07 Jul 2026 08:12:30 GMT; SameSite=Lax, _shopify_essential=:AZ87h01xAAEA1hCRLVBawOT0fN8L-hrAV6olUlVocn41B_Sofa-H50WUlmiHTwjExg_RwvweD-3G5ZoFxe9UZLfLlcgoChgL6MT8B3A03OwbXA2ThMA0ASWccL4xh6VRj-ZNZW9NsAdWYLHCjF3CBoXrx4ABIxhNuv3YZw_GROydyqK_pixdM3w7CDIdtUDdmAVexqFZwOKdK1tZGZShiRr2QXWMOJrogyIx2jrqEBL3fP9pEuD-nT64aM6x1knl3CWhTZ9C77AI_z9_TQn7_jsEK_qbkSsISEPo8J6bTnrF0ZWu_tSREXQ7tnBvuNM4xVZYxzRb3PDBhOncne1ly1VaAvRWQGuvzHyw37H6NSbA8sifCd_r5ZpF2vH7hwZSmUNL0kZm1Ic48OYYUdkQL2dXOQ4:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_analytics=:AZ87h05cAAEAMFX_a22M4w6EGYxzQmtnSJ8d-vxdmVwa45KHIJIPOu3TeCkeL-zOSKU-RuMdWmHVdMFjHmt_ugsKBKCXpbbB67HXIKt5vLJYMjBKXZZ8e79glyDL7Xi_8SVOYnG6MaHLqQ5AUg:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_marketing=:AZ87h05cAAEAtSk8mKgWlVkMGa8IEvsJMsH8TlXs6bdQaeHDLmjazyU7zGn9WClotppW7BHNQn7pIgWTEDH0H3xwyxQ:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <https://fonts.googleapis.com>; rel=\"preconnect\"",
+      "speculation-rules": "\"/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json\"",
+      "etag": "\"page_cache:61869490278:CollectionDetailsController:c4ddb25ebdff4dfc744c77df6bdcbe31\"",
+      "content-encoding": "br",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "shopify-complexity-score": "242",
+      "shopify-complexity-score-v2": "242",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "X-Content-Type-Options": "nosniff",
+      "vary": "Accept, accept-encoding",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "content-language": "en-PK",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=246, db;dur=78, db_async;dur=11.912, fetch;dur=11, render;dur=127, asn;desc=\"135407\", edge;desc=\"KHI\", country;desc=\"PK\", theme;desc=\"132946165862\", pageType;desc=\"collection\", servedBy;desc=\"k92x\", requestID;desc=\"3b0faad5-bc2a-4cf5-80dc-3d2ecec89423-1783410150\", _y;desc=\"17e78261-d8a3-4bad-8a95-f754c0415905\", _s;desc=\"cf6ed27d-7d58-4ddd-8781-6e0aaffdb515\", _cmp;desc=\"3.AMPS_PKPB_f_f_yIsMdaLaRVGyMaWDNA4IpA\", compressionLevel;desc=\"5\", compressionTime;dur=7.05",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "server": "cloudflare",
+      "X-XSS-Protection": "1; mode=block",
+      "x-request-id": "3b0faad5-bc2a-4cf5-80dc-3d2ecec89423-1783410150",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=B9NHnU61wKSi%2BEbASsTEYHcwe3sp%2FbWjm%2Fh7LvEehL%2FAVmsEh8Recn2ZFZobQF6Dd7WaQFONfU6rsiaDoQIKasa6nKawlnCR%2Fn%2F5E8FgniNGrg9B4rnwZUy25kqfx1S3\"}]}",
+      "CF-RAY": "a17536818d21c914-KHI",
+      "status_code": 200,
+      "fetch_method": "requests",
+      "blocked": false
+    }
+  },
+  "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+  },
+  "collectionSummary": {
+    "name": "Sivanna Colors",
+    "productCount": 12,
+    "priceRange": {
+      "min": 1090,
+      "max": 2800
+    },
+    "source": "unknown"
+  },
+  "success": true,
+  "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+  },
+  "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+      "url": "https://sivanna.com.pk/collections/smudge-proof-mascara",
+      "domain": "sivanna.com.pk",
+      "pageType": "collection",
+      "platform": "Shopify",
+      "title": "Smudge Proof Mascara | Long Lasting Waterproof Formula – Sivanna Colors",
+      "description": "Smudge proof mascara with a waterproof, long-lasting formula that lengthens and volumizes lashes for an all-day flawless eye makeup look.",
+      "h1": "Sivanna Colors",
+      "canonical": "https://sivanna.com.pk/collections/smudge-proof-mascara"
+    },
+    "competitiveSignals": {
+      "positioning": [
+        "long-lasting",
+        "long-lasting formula",
+        "volumizes lashes",
+        "mascara",
+        "long",
+        "lasting",
+        "long lasting"
+      ],
+      "promotionalSignals": [],
+      "pricingSignals": {
+        "pricesDetected": 12,
+        "samplePrices": [
+          {
+            "currency": "PKR",
+            "current": 2400,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 2800,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 2400,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1190,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1950,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 2495,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1295,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1195,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1090,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 1290,
+            "compareAt": null,
+            "isOnSale": false,
+            "priceTextRaw": null
+          }
+        ]
+      },
+      "productFocus": [
+        "Waterproof Lengthening Mascara for Long Lashes - Smudge Proof Volume",
+        "Volume Mascara Thick Volumizing Long Lasting Eyelash Makeup",
+        "Waterproof Lengthening Curling Mascara for Long Lashes Volume",
+        "Waterproof Mascara Long Lasting Smudge Proof Volumizing Lash Makeup",
+        "Duo Color Mascara Dual Shade Volumizing Long Lasting Lash Makeup",
+        "Double Extend Mascara Waterproof Long Lasting",
+        "Waterproof Volume Mascara Smudge Proof Long Wear",
+        "Volume Curl Mascara Thick Long Lasting Curling Eyelashes",
+        "Sivanna Mascara Waterproof Long Lasting Volume Curl",
+        "Gina Glam Mascara - Long Lash Volumizing Mascara",
+        "Curling Mascara for Long Lasting Lash Lift & Curl",
+        "Double Sided Waterproof Mascara - Long Lasting Volume Lash Makeup"
+      ],
+      "trustSignals": [],
+      "ctaStrategy": {
+        "primaryCtas": [
+          {
+            "text": "Out Of Stock",
+            "url": null
+          },
+          {
+            "text": "View Product",
+            "url": null
+          }
+        ],
+        "ctaCount": 2
+      },
+      "contentAngles": [
+        "Sivanna Colors"
+      ],
+      "ecommerceSignals": {
+        "hasProducts": true,
+        "productCountExtracted": 12,
+        "hasPrices": true,
+        "hasCartOrCheckout": false,
+        "hasRealEcommerceEvidence": true
+      }
+    },
+    "extractionQuality": {
+      "score": 1,
+      "warnings": [],
+      "missingFields": [],
+      "unfetchedFields": [],
+      "dataConsistency": {
+        "structuredDataFound": false,
+        "structuredDataProductFound": false,
+        "priceConsistent": null,
+        "currencyPlausible": null,
+        "suspiciousName": false,
+        "flags": []
+      }
+    },
+    "merger": {
+      "extractionMethod": "requests",
+      "qualityScore": 1,
+      "qualityBucket": "good",
+      "needsAIInsightReview": false,
+      "fallbacksTried": [
+        "requests"
+      ],
+      "usableForMerge": true,
+      "usableForInsights": true
+    }
+  }
+}

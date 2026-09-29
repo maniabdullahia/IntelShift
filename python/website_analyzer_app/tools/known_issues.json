@@ -1,0 +1,25 @@
+{
+  "_readme": [
+    "Accepted / triaged failures. The accuracy scorecard marks matching failures",
+    "as KNOWN: they are reported separately and do NOT fail the run (exit code),",
+    "so only NEW regressions gate a release.",
+    "Fields: urlPrefix (match by startswith), checks (list or ['*'] for any),",
+    "reason (why accepted), added (date)."
+  ],
+  "issues": [
+    {"urlPrefix": "https://www.hp.com/", "checks": ["*"], "reason": "rate-limits repeated same-day testing; passes when fresh", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.lenovo.com/", "checks": ["*"], "reason": "rate-limits repeated same-day testing; passes when fresh", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.spotify.com/", "checks": ["*"], "reason": "genuine bot wall", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.asus.com/us/support", "checks": ["*"], "reason": "genuine bot wall (support portal)", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.christianlouboutin.com/", "checks": ["page_type_matches_expected"], "reason": "geo-redirect artifact", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.coca-cola.com/", "checks": ["page_type_matches_expected", "crawl_ok"], "reason": "geo-redirect subpages", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.paulsmith.com/", "checks": ["page_type_matches_expected", "price_coverage_80", "seo_h1"], "reason": "custom-platform collection detection long tail", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.mollybracken.com/", "checks": ["page_type_matches_expected", "price_coverage_80"], "reason": "custom-platform collection detection long tail", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.bleu-de-chauffe.com/", "checks": ["page_type_matches_expected"], "reason": "custom-platform collection detection long tail", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.sonos.com/", "checks": ["page_type_matches_expected"], "reason": "custom /shop collection detection long tail", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.byredo.com/", "checks": ["page_type_matches_expected", "price_coverage_80"], "reason": "custom-platform collection detection long tail", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.nespresso.com/", "checks": ["page_type_matches_expected", "price_coverage_80"], "reason": "custom-platform collection detection long tail", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.chipotle.com/", "checks": ["*"], "reason": "SPA hydration waits backlog", "added": "2026-07-10"},
+    {"urlPrefix": "https://www.dominos.com/", "checks": ["page_type_matches_expected", "has_sections", "has_nav_links"], "reason": "SPA hydration waits backlog", "added": "2026-07-10"}
+  ]
+}

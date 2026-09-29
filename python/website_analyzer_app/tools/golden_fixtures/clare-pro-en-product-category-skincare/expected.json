@@ -1,0 +1,16 @@
+{
+  "_instructions": "VERIFY each value against the real page in your browser. Fix wrong values, delete fields you don't want checked.",
+  "fields": {
+    "page.pageType": "collection",
+    "platform": "WordPress / WooCommerce",
+    "collectionSummary.name": "Skincare - Claré PRO",
+    "collectionSummary.productCount": 20,
+    "products[0].name": "Protective lipgloss / GLOSSY LIP BARRIER - CORALISS 01",
+    "products[0].price.current": 3200,
+    "products[0].price.currency": "EUR",
+    "products[1].name": "Protective lipgloss / GLOSSY LIP BARRIER - MUTY 04",
+    "products[1].price.current": 3200,
+    "products[1].price.currency": "EUR",
+    "products.__len__": 20
+  }
+}

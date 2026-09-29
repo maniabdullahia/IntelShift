@@ -1,0 +1,14 @@
+# Minimal SearXNG config for the IntelShift competitor-discovery API.
+use_default_settings: true
+
+server:
+  secret_key: "posklndabwekqbjks"
+  limiter: false          # allow server-to-server JSON requests
+  bind_address: "0.0.0.0"
+
+search:
+  formats:
+    - html
+    - json                # REQUIRED: enables the JSON API we call
+  safe_search: 0
+  autocomplete: ""

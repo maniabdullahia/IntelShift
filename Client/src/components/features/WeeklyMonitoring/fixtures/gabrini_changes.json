@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "change_detection_v1",
+  "generatedAt": "2026-07-22T08:20:46.501399+00:00",
+  "domain": "gabrini.pk",
+  "previousGeneratedAt": "2026-07-15T07:20:00+00:00",
+  "currentGeneratedAt": "2026-07-22T07:20:00+00:00",
+  "overallSeverity": "high",
+  "changeScore": 74,
+  "shouldSendToAI": true,
+  "summary": {
+    "totalChanges": 9,
+    "criticalChanges": 0,
+    "highChanges": 7,
+    "mediumChanges": 2,
+    "lowChanges": 0,
+    "changesByType": {
+      "price_change": 2,
+      "categories_added": 1,
+      "new_product": 1,
+      "sale_started": 1,
+      "out_of_stock": 1,
+      "rank_change": 1,
+      "navigation_change": 1,
+      "removed_product": 1
+    }
+  },
+  "changes": [
+    {
+      "type": "categories_added",
+      "severity": "high",
+      "whyImportant": "New product categories detected - assortment expansion.",
+      "categories": [
+        "fragrance",
+        "gift_sets"
+      ]
+    },
+    {
+      "type": "new_product",
+      "severity": "high",
+      "whyImportant": "New product detected since the previous snapshot.",
+      "product": {
+        "name": "Gabrini Glow Serum Foundation SPF30",
+        "productUrl": "https://gabrini.pk/products/glow-serum-foundation-spf30",
+        "category": null
+      },
+      "price": 2450.0
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "whyImportant": "Price moved beyond the configured threshold.",
+      "product": {
+        "name": "Eye Brow Pencil 1",
+        "productUrl": "https://gabrini.pk/products/eye-brow-pencil-1",
+        "category": null
+      },
+      "oldValue": 795.0,
+      "newValue": 995.0,
+      "changePercent": 25.16,
+      "direction": "increase"
+    },
+    {
+      "type": "price_change",
+      "severity": "high",
+      "whyImportant": "Price moved beyond the configured threshold.",
+      "product": {
+        "name": "Gabrini Argan Miracle Hair Oil",
+        "productUrl": "https://gabrini.pk/products/gabrini-argan-miracle-hair-oil",
+        "category": null
+      },
+      "oldValue": 2995.0,
+      "newValue": 2295.0,
+      "changePercent": -23.37,
+      "direction": "decrease"
+    },
+    {
+      "type": "sale_started",
+      "severity": "high",
+      "whyImportant": "Promotion state changed - a direct competitive pricing move.",
+      "product": {
+        "name": "Gabrini Bb Powder",
+        "productUrl": "https://gabrini.pk/products/gabrini-bb-powder",
+        "category": null
+      },
+      "discountPercent": 30
+    },
+    {
+      "type": "out_of_stock",
+      "severity": "high",
+      "whyImportant": "Stock availability changed.",
+      "product": {
+        "name": "Gabrini Kajal Pencil Extra Black Long Lasting Upto 12 Hours",
+        "productUrl": "https://gabrini.pk/products/gabrini-kajal-pencil-extra-black-long-lasting-upto-12-hours",
+        "category": null
+      },
+      "oldValue": true,
+      "newValue": false
+    },
+    {
+      "type": "rank_change",
+      "severity": "high",
+      "whyImportant": "Listing position changed significantly - merchandising signal.",
+      "product": {
+        "name": "Gabrini Photo Finish Primer Base",
+        "productUrl": "https://gabrini.pk/products/gabrini-photo-finish-primer-base",
+        "category": null
+      },
+      "oldRank": 12,
+      "newRank": 1,
+      "positionsMoved": 11
+    },
+    {
+      "type": "navigation_change",
+      "severity": "medium",
+      "whyImportant": "Main navigation changed - new categories or repositioned priorities.",
+      "addedLabels": [
+        "Fragrance",
+        "Gift Sets"
+      ],
+      "removedLabels": []
+    },
+    {
+      "type": "removed_product",
+      "severity": "medium",
+      "whyImportant": "Previously seen product is no longer present in the analyzed pages.",
+      "product": {
+        "name": "Foundation 3In1",
+        "productUrl": "https://gabrini.pk/products/foundation-3in1",
+        "category": "Foundations"
+      }
+    }
+  ],
+  "changesTruncated": false,
+  "extractionStable": true,
+  "warnings": [],
+  "aiPromptHint": "These are deterministic week-over-week changes for one site. Explain what the site owner should notice and do; do not invent changes."
+}

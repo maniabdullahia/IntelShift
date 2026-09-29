@@ -1,0 +1,3440 @@
+{
+  "level1": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "isKnownPlatform": true,
+    "platformSignals": {
+      "Shopify": 44,
+      "WooCommerce / WordPress": 2,
+      "WordPress": 0,
+      "Wix": 0,
+      "Webflow": 0,
+      "Magento": 0,
+      "Next.js / React": 0,
+      "React": 0,
+      "Vue": 0
+    },
+    "pageType": "homepage",
+    "pageTypeConfidence": 0.98,
+    "pageTypeSignals": {
+      "homepage": 20,
+      "collection": 0,
+      "product": 0,
+      "blog": 0,
+      "cart_checkout": 0,
+      "general": 0
+    },
+    "pageTypeDebug": {
+      "reason": "homepage_path_priority",
+      "signals": {
+        "product": {
+          "isProduct": true,
+          "score": 12,
+          "signals": [
+            "product_title_dom",
+            "add_to_cart_text",
+            "stock_text",
+            "wix_product_section"
+          ]
+        },
+        "collection": {
+          "isCollection": true,
+          "score": 23,
+          "signals": [
+            "seo_collection_terms",
+            "product_grid_dom",
+            "multiple_product_links",
+            "high_product_link_density",
+            "category_link_density_medium",
+            "category_link_density_high"
+          ],
+          "metrics": {
+            "productLinkCount": 55,
+            "categoryLinkCount": 68,
+            "hasProductGrid": true,
+            "priceTextCount": 0,
+            "textCollectionBoost": 0
+          }
+        },
+        "blog": {
+          "isBlog": false,
+          "score": 0,
+          "signals": []
+        },
+        "platform": "Shopify"
+      }
+    }
+  },
+  "platform": "Shopify",
+  "page": {
+    "url": "https://rivaj-uk.com/",
+    "pageType": "homepage"
+  },
+  "seo": {
+    "title": "Affordable Makeup, Skincare & Fragrances in Pakistan #ISetMyOwnRivaj",
+    "metaDescription": "Rivaj Cosmetics is a rapidly growing best makeup brand in Pakistan. Rivaj cosmetics offers a wide range of beauty, skincare, haircare, healthcare and fragrances products for men &amp; women. Place order and get discounts on every new order. We deliver in all rural and urban areas of Pakistan.",
+    "canonical": "https://rivaj-uk.com/",
+    "h1": "Rivaj"
+  },
+  "openGraph": {
+    "url": "https://rivaj-uk.com/",
+    "site_name": "Rivaj",
+    "type": "website",
+    "title": "Affordable Makeup, Skincare &amp; Fragrances in Pakistan #ISetMyOwnRivaj",
+    "description": "Rivaj Cosmetics is a rapidly growing best makeup brand in Pakistan. Rivaj cosmetics offers a wide range of beauty, skincare, haircare, healthcare and fragrances products for men &amp; women. Place order and get discounts on every new order. We deliver in all rural and urban areas of Pakistan.",
+    "image": "http://rivaj-uk.com/cdn/shopifycloud/storefront/assets/no-image-100-2a702f30_small.gif",
+    "image:secure_url": "https://rivaj-uk.com/cdn/shopifycloud/storefront/assets/no-image-100-2a702f30_small.gif"
+  },
+  "navigation": {
+    "links": [
+      {
+        "text": "Rivaj",
+        "url": "https://rivaj-uk.com/"
+      },
+      {
+        "text": "Create account",
+        "url": "https://shopify.com/62120395002/account?locale=en&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyaXZhai11ay1vbmxpbmUubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgzNjg2ODc2LCJuYmYiOjE3ODMwODIwNzZ9.oBNBIjs5-X-AZwJWc8BkNqXGRiRliNQk5crq-eSGlVE"
+      },
+      {
+        "text": "Summer Radiance Sale",
+        "url": "https://rivaj-uk.com/collections/summer-radiance-sale"
+      },
+      {
+        "text": "RHD",
+        "url": "https://rivaj-uk.com/collections/rhd"
+      },
+      {
+        "text": "Face",
+        "url": "https://rivaj-uk.com/collections/face-hd"
+      },
+      {
+        "text": "Primer",
+        "url": "https://rivaj-uk.com/collections/primer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://rivaj-uk.com/collections/foundation-hd"
+      },
+      {
+        "text": "Powder",
+        "url": "https://rivaj-uk.com/collections/powder-hd"
+      },
+      {
+        "text": "Contour",
+        "url": "https://rivaj-uk.com/collections/contour-hd"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://rivaj-uk.com/collections/concealer-hd"
+      },
+      {
+        "text": "Makeup Fixer",
+        "url": "https://rivaj-uk.com/collections/makeup-fixer-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/face-makeup-remover-hd"
+      },
+      {
+        "text": "Toner",
+        "url": "https://rivaj-uk.com/collections/toner"
+      },
+      {
+        "text": "Makeup Brush",
+        "url": "https://rivaj-uk.com/collections/makeup-brush-hd"
+      },
+      {
+        "text": "Accessories",
+        "url": "https://rivaj-uk.com/collections/face-accessories-hd"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://rivaj-uk.com/collections/eyes-hd"
+      },
+      {
+        "text": "Eye Lashes",
+        "url": "https://rivaj-uk.com/collections/eye-lashes-hd"
+      },
+      {
+        "text": "Eye Shadow",
+        "url": "https://rivaj-uk.com/collections/eye-shadow-hd"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://rivaj-uk.com/collections/mascara-hd"
+      },
+      {
+        "text": "Eye Liner",
+        "url": "https://rivaj-uk.com/collections/eye-liner-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/eyes-makeup-remover-hd"
+      },
+      {
+        "text": "Lips",
+        "url": "https://rivaj-uk.com/collections/lips-hd"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://rivaj-uk.com/collections/lipstick-hd"
+      },
+      {
+        "text": "Lip Gloss",
+        "url": "https://rivaj-uk.com/collections/lip-gloss-hd"
+      },
+      {
+        "text": "Evernoya🌟",
+        "url": "https://rivaj-uk.com/pages/evernoya"
+      },
+      {
+        "text": "Self-Care Kits",
+        "url": "https://rivaj-uk.com/collections/summer-bundles"
+      },
+      {
+        "text": "Makeup",
+        "url": "https://rivaj-uk.com/collections/makeup"
+      },
+      {
+        "text": "Skin Care",
+        "url": "https://rivaj-uk.com/collections/skin-care"
+      },
+      {
+        "text": "Face Serum",
+        "url": "https://rivaj-uk.com/collections/face-serum"
+      },
+      {
+        "text": "Sunblock",
+        "url": "https://rivaj-uk.com/collections/sunblock"
+      },
+      {
+        "text": "Face Wash",
+        "url": "https://rivaj-uk.com/collections/face-wash"
+      },
+      {
+        "text": "Cleanser",
+        "url": "https://rivaj-uk.com/collections/cleanser"
+      },
+      {
+        "text": "Facial Range",
+        "url": "https://rivaj-uk.com/collections/facial"
+      },
+      {
+        "text": "Mask",
+        "url": "https://rivaj-uk.com/collections/mask"
+      },
+      {
+        "text": "Gel / Cream",
+        "url": "https://rivaj-uk.com/collections/gel-cream"
+      },
+      {
+        "text": "Lotion / Oil",
+        "url": "https://rivaj-uk.com/collections/lotion-oil"
+      },
+      {
+        "text": "Wax / Strips",
+        "url": "https://rivaj-uk.com/collections/wax-strips"
+      },
+      {
+        "text": "Beauty Soaps",
+        "url": "https://rivaj-uk.com/collections/soap-liquid-soap"
+      },
+      {
+        "text": "Hair Care",
+        "url": "https://rivaj-uk.com/collections/hair-care"
+      },
+      {
+        "text": "Developer / Blonder",
+        "url": "https://rivaj-uk.com/collections/developer-blonder"
+      },
+      {
+        "text": "Hair Color",
+        "url": "https://rivaj-uk.com/collections/hair-color"
+      },
+      {
+        "text": "Hair Serum",
+        "url": "https://rivaj-uk.com/collections/hair-serum"
+      },
+      {
+        "text": "Hair Fibers",
+        "url": "https://rivaj-uk.com/collections/hair-treatment"
+      },
+      {
+        "text": "Hair Oil",
+        "url": "https://rivaj-uk.com/collections/hair-oil"
+      },
+      {
+        "text": "Hair Spray",
+        "url": "https://rivaj-uk.com/collections/hair-spray"
+      },
+      {
+        "text": "Personal Care",
+        "url": "https://rivaj-uk.com/collections/personal-care"
+      },
+      {
+        "text": "Feminine Care",
+        "url": "https://rivaj-uk.com/collections/feminine-care"
+      },
+      {
+        "text": "Hair Removal",
+        "url": "https://rivaj-uk.com/collections/hair-removal"
+      },
+      {
+        "text": "Oral Care",
+        "url": "https://rivaj-uk.com/collections/oral-care"
+      },
+      {
+        "text": "Razor",
+        "url": "https://rivaj-uk.com/collections/razor-1"
+      },
+      {
+        "text": "Fragrances",
+        "url": "https://rivaj-uk.com/pages/perfume"
+      },
+      {
+        "text": "Men Perfume",
+        "url": "https://rivaj-uk.com/collections/for-men/Men-Perfume"
+      },
+      {
+        "text": "Women Perfume",
+        "url": "https://rivaj-uk.com/collections/women-perfume"
+      },
+      {
+        "text": "Unisex Perfume",
+        "url": "https://rivaj-uk.com/collections/perfume-unisex"
+      },
+      {
+        "text": "Fragrance Mist",
+        "url": "https://rivaj-uk.com/collections/fragrance-mist"
+      },
+      {
+        "text": "Roll ons",
+        "url": "https://rivaj-uk.com/collections/rivaj-deodorants-roll-ons"
+      },
+      {
+        "text": "Accessories",
+        "url": "https://rivaj-uk.com/collections/accessories"
+      },
+      {
+        "text": "Face Accessories",
+        "url": "https://rivaj-uk.com/collections/face-accessories-uk"
+      },
+      {
+        "text": "Foot Accessories",
+        "url": "https://rivaj-uk.com/collections/foot-care"
+      },
+      {
+        "text": "Nails Accessories",
+        "url": "https://rivaj-uk.com/collections/hands-accessories"
+      },
+      {
+        "text": "Hair Accessories",
+        "url": "https://rivaj-uk.com/collections/hair-accessories"
+      },
+      {
+        "text": "Face",
+        "url": "https://rivaj-uk.com/collections/face"
+      },
+      {
+        "text": "Blush on",
+        "url": "https://rivaj-uk.com/collections/blush-on"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://rivaj-uk.com/collections/concealer"
+      },
+      {
+        "text": "Contour",
+        "url": "https://rivaj-uk.com/collections/contour"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://rivaj-uk.com/collections/foundation"
+      },
+      {
+        "text": "Highlighter",
+        "url": "https://rivaj-uk.com/collections/highlighter"
+      },
+      {
+        "text": "Makeup Fixer",
+        "url": "https://rivaj-uk.com/collections/makeup-fixer"
+      },
+      {
+        "text": "Makeup Brush",
+        "url": "https://rivaj-uk.com/collections/makeup-brush"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/makeup-remover"
+      },
+      {
+        "text": "Powder",
+        "url": "https://rivaj-uk.com/collections/powder"
+      },
+      {
+        "text": "Primer",
+        "url": "https://rivaj-uk.com/collections/primer-1"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://rivaj-uk.com/collections/eyes"
+      },
+      {
+        "text": "Eye Brows",
+        "url": "https://rivaj-uk.com/collections/brow-palette"
+      },
+      {
+        "text": "Eye Palette",
+        "url": "https://rivaj-uk.com/collections/eye-palette"
+      },
+      {
+        "text": "Eye Shadow",
+        "url": "https://rivaj-uk.com/collections/eye-shadow"
+      },
+      {
+        "text": "Eye Lashes",
+        "url": "https://rivaj-uk.com/collections/eye-lashes"
+      },
+      {
+        "text": "Kajal",
+        "url": "https://rivaj-uk.com/collections/kajal"
+      },
+      {
+        "text": "Eye Care",
+        "url": "https://rivaj-uk.com/collections/eye-care"
+      },
+      {
+        "text": "Eye Liner",
+        "url": "https://rivaj-uk.com/collections/eye-liner"
+      },
+      {
+        "text": "Eye Pencil",
+        "url": "https://rivaj-uk.com/collections/eye-pencil"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://rivaj-uk.com/collections/mascara"
+      },
+      {
+        "text": "Lips",
+        "url": "https://rivaj-uk.com/collections/lips"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://rivaj-uk.com/collections/lipstick"
+      },
+      {
+        "text": "Lip Gloss",
+        "url": "https://rivaj-uk.com/collections/lip-gloss"
+      },
+      {
+        "text": "Lip Pencil",
+        "url": "https://rivaj-uk.com/collections/lip-pencil"
+      },
+      {
+        "text": "Lip Care",
+        "url": "https://rivaj-uk.com/collections/lip-care"
+      },
+      {
+        "text": "Nails",
+        "url": "https://rivaj-uk.com/collections/hands"
+      }
+    ],
+    "footerLinks": [
+      {
+        "text": "Returns & Exchanges",
+        "url": "https://rivaj-uk.com/pages/returns-exchanges"
+      },
+      {
+        "text": "Privacy Policy",
+        "url": "https://rivaj-uk.com/pages/privacy-policy"
+      },
+      {
+        "text": "Contact Us",
+        "url": "https://rivaj-uk.com/pages/contact"
+      },
+      {
+        "text": "FAQs",
+        "url": "https://rivaj-uk.com/pages/faqs"
+      },
+      {
+        "text": "Refund policy",
+        "url": "https://rivaj-uk.com/policies/refund-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "url": "https://rivaj-uk.com/policies/terms-of-service"
+      },
+      {
+        "text": "CAREER@RIVAJ",
+        "url": "https://sjs.flowhcm.com/"
+      },
+      {
+        "text": "Happy Customers",
+        "url": "https://rivaj-uk.com/pages/happy-customers"
+      },
+      {
+        "text": "New Arrivals",
+        "url": "https://rivaj-uk.com/collections/new-arrivals"
+      },
+      {
+        "text": "About RIVAJ",
+        "url": "https://rivaj-uk.com/pages/about-us"
+      },
+      {
+        "text": "Store Locator",
+        "url": "https://rivaj-uk.com/pages/store"
+      },
+      {
+        "text": "Shipping",
+        "url": "https://rivaj-uk.com/pages/shipping-policy"
+      },
+      {
+        "text": "TRACK YOUR ORDER",
+        "url": "https://rivaj.ginkgoretail.net/ordertracking/15326563844"
+      },
+      {
+        "text": "Rivaj",
+        "url": "https://rivaj-uk.com/"
+      },
+      {
+        "text": "Powered by Shopify",
+        "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+      }
+    ]
+  },
+  "content": {
+    "siteName": "Rivaj",
+    "announcementBar": {
+      "text": null,
+      "detected": false,
+      "selector": null
+    },
+    "heroMedia": [
+      {
+        "type": "image",
+        "url": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2026-06-03_at_5.44.15_PM.jpg?v=1780639755",
+        "posterImage": null,
+        "heading": null,
+        "textPreview": null,
+        "ctas": [],
+        "sourceSelector": "slideshow/slide",
+        "confidence": 0.9
+      }
+    ],
+    "collectionBanners": [
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2026-06-03_at_5.44.15_PM.jpg?v=1780639755",
+        "ctas": [],
+        "source": {
+          "selector": ".slideshow",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/Soap-Banner-Mobile_jpg.jpg?v=1775457631",
+        "ctas": [],
+        "source": {
+          "selector": "[class*='slideshow']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/800x1200_copy_jpg.jpg?v=1772704241",
+        "ctas": [],
+        "source": {
+          "selector": "[class*='slideshow']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/body-mist-Mob-Size_jpg.jpg?v=1774500861",
+        "ctas": [],
+        "source": {
+          "selector": "[class*='slideshow']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/Face-Wash-Mob-Size_jpg.jpg?v=1774500858",
+        "ctas": [],
+        "source": {
+          "selector": "[class*='slideshow']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/Deodorant-Mob-Size_jpg.jpg?v=1773828286",
+        "ctas": [],
+        "source": {
+          "selector": "[class*='slideshow']",
+          "confidence": 0.8
+        }
+      },
+      {
+        "heading": null,
+        "textPreview": null,
+        "imageUrl": "https://rivaj-uk.com/cdn/shop/files/rivaj-Hd_1_copy.jpg?v=1746595553",
+        "ctas": [],
+        "source": {
+          "selector": "[class*='hero']",
+          "confidence": 0.8
+        }
+      }
+    ],
+    "sections": [
+      {
+        "rank": 1,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": "Summer Essentials",
+        "heading": "Summer Essentials",
+        "textPreview": "Summer Essentials 5% off SPF60 Whitening & Vanishing Sunblock Regular price Rs.300.00 from Rs.285.00 Unit price / per Regular price Rs.300.00 from Rs.285.00 Unit price / per In stock Choose options 0 in your cart Quantity Choose options 0 in your cart Quantity 5% off Whitening Face Serum 30ml Regular price Rs.595.00 Rs.565.00 Unit price / per Regul",
+        "links": [],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_40ml.jpg?v=1745997625",
+            "alt": "SPF60 Whitening & Vanishing Sunblock"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_100ML.jpg?v=1745997625",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+            "alt": "Whitening Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Whitening_4b56144e-692d-4a0c-b557-a1d790d955d5.jpg?v=1768816426",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+            "alt": "Vitamin C Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/VITAMINC_1da46686-02b8-4cb1-a7f9-7b24592fa20c.jpg?v=1768816924",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_40ml.jpg?v=1748418047",
+            "alt": "SPF90 Sunblock"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_100ml.jpg?v=1745997526",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID1.jpg?v=1778496686",
+            "alt": "Hyaluronic Acid Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID.jpg?v=1768816684",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315",
+            "alt": "Pinkish Whitening Face Wash"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/pINKISH-WHITE-ML-100.gif?v=1745997315",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 40
+        },
+        "products": [
+          {
+            "title": "SPF60 Whitening & Vanishing Sunblock",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-whitening-vanishing-spf60-40ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_40ml.jpg?v=1745997625",
+            "currentPrice": 285,
+            "comparePrice": 300,
+            "currency": "PKR",
+            "handle": "sunblock-whitening-vanishing-spf60-40ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Whitening Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-whitening-30ml-1710378",
+            "image": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "face-serum-whitening-30ml-1710378",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Vitamin C Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-vitamin-c-30ml-1710217",
+            "image": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "face-serum-vitamin-c-30ml-1710217",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "SPF90 Sunblock",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf90-120ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_40ml.jpg?v=1748418047",
+            "currentPrice": 285,
+            "comparePrice": 300,
+            "currency": "PKR",
+            "handle": "sunblock-spf90-120ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Hyaluronic Acid Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-hyaluronic-acid-30ml-1710218",
+            "image": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID1.jpg?v=1778496686",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "face-serum-hyaluronic-acid-30ml-1710218",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Pinkish Whitening Face Wash",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/pinkish-whitening-face-wash",
+            "image": "https://rivaj-uk.com/cdn/shop/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315",
+            "currentPrice": 214,
+            "comparePrice": 225,
+            "currency": "PKR",
+            "handle": "pinkish-whitening-face-wash",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "SPF50 Kids Sunblock",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf50-120ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/SunblockKids_40ml.jpg?v=1745997527",
+            "currentPrice": 285,
+            "comparePrice": 300,
+            "currency": "PKR",
+            "handle": "sunblock-spf50-120ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Rose Water - 100ml",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/rose-water-100ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/ROSEWATERMOCKUP.png?v=1768817204",
+            "currentPrice": 162,
+            "comparePrice": 170,
+            "currency": "PKR",
+            "handle": "rose-water-100ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Acne Treatment Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-acne-treatment-30ml-1710216",
+            "image": "https://rivaj-uk.com/cdn/shop/files/Acne1.jpg?v=1778496231",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "face-serum-acne-treatment-30ml-1710216",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Cleansing Milk 150ml",
+            "url": "https://rivaj-uk.com/collections/skin-care/products/cleansing-milk-150ml-1170150",
+            "image": "https://rivaj-uk.com/cdn/shop/files/cleasing-milk.png?v=1745997531",
+            "currentPrice": 413,
+            "comparePrice": 435,
+            "currency": "PKR",
+            "handle": "cleansing-milk-150ml-1170150",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "type": "content_section",
+        "intent": null,
+        "label": "SULPHATE-FREE HAIR CARE",
+        "heading": "SULPHATE-FREE HAIR CARE",
+        "textPreview": "SULPHATE-FREE HAIR CARE Evernoya is Rivaj’s premium sulphate-free haircare brand, made to offer a complete solution for modern hair needs, featuring shampoo, serum, and hair mask variants. Each product is crafted with advanced formulations designed to target key hair concerns like dryness, dullness, damage, hair fall, and dandruff, while nourishing",
+        "links": [
+          {
+            "text": "Evernoya",
+            "url": "https://rivaj-uk.com/collections/evernoya"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Shampoo_jpg.jpg?v=1772438360",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        }
+      },
+      {
+        "rank": 3,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+        "heading": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+        "textPreview": "10% off Evernoya Keratin Sulphate-Free Shampoo 350ml Regular price Rs.1,795.00 Rs.1,616.00 Unit price / per Regular price Rs.1,795.00 Rs.1,616.00 Unit price / per In stock Add to Cart 0 in your cart Quantity Add to Cart 0 in your cart Quantity 10% off Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml Regular price Rs.1,795.00 Rs.1,616.00 Unit pr",
+        "links": [],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo.jpg?v=1771391734",
+            "alt": "Evernoya Keratin Sulphate-Free Shampoo 350ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/hyaluronicacidhsampoo.jpg?v=1771391413",
+            "alt": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo2.jpg?v=1771391676",
+            "alt": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/HAirGrowthShampoo.jpg?v=1771391636",
+            "alt": "Evernoya Rosemary Sulphate-Free Shampoo 350ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/ArganShampoo.jpg?v=1771391483",
+            "alt": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/1_aca84be1-e525-48e5-b27a-90da0872e225.jpg?v=1770873646",
+            "alt": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/2_c105fc2c-3985-4c96-ab9a-c0deaa36f7f9.jpg?v=1770873561",
+            "alt": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/3_15b1ad83-7e19-426f-8f4a-1b3ed1d5fd28.jpg?v=1770873482",
+            "alt": "Evernoya Keratin Sulphate-Free Hair Serum 100ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/4_2bd521fe-0b5d-44b2-ac54-f2d214d131c7.jpg?v=1770873354",
+            "alt": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/1b.jpg?v=1770873104",
+            "alt": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g"
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 40
+        },
+        "products": [
+          {
+            "title": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/aloe-vera-moisturizing-shampoo-150ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo.jpg?v=1771391734",
+            "currentPrice": 1616,
+            "comparePrice": 1795,
+            "currency": "PKR",
+            "handle": "aloe-vera-moisturizing-shampoo-150ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-shampoo-350ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/hyaluronicacidhsampoo.jpg?v=1771391413",
+            "currentPrice": 1616,
+            "comparePrice": 1795,
+            "currency": "PKR",
+            "handle": "evernoya-hyaluronic-acid-shampoo-350ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-shampoo-350ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo2.jpg?v=1771391676",
+            "currentPrice": 1616,
+            "comparePrice": 1795,
+            "currency": "PKR",
+            "handle": "evernoya-anti-dandruff-shampoo-350ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Rosemary Sulphate-Free Shampoo 350ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-shampoo-350ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/HAirGrowthShampoo.jpg?v=1771391636",
+            "currentPrice": 1616,
+            "comparePrice": 1795,
+            "currency": "PKR",
+            "handle": "evernoya-rosemary-shampoo-350ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-shampoo-350ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/ArganShampoo.jpg?v=1771391483",
+            "currentPrice": 1616,
+            "comparePrice": 1795,
+            "currency": "PKR",
+            "handle": "evernoya-argan-oil-shampoo-350ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-hair-serum-100ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/1_aca84be1-e525-48e5-b27a-90da0872e225.jpg?v=1770873646",
+            "currentPrice": 1706,
+            "comparePrice": 1895,
+            "currency": "PKR",
+            "handle": "evernoya-rosemary-hair-serum-100ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-hair-serum-100ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/2_c105fc2c-3985-4c96-ab9a-c0deaa36f7f9.jpg?v=1770873561",
+            "currentPrice": 1706,
+            "comparePrice": 1895,
+            "currency": "PKR",
+            "handle": "evernoya-anti-dandruff-hair-serum-100ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Keratin Sulphate-Free Hair Serum 100ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-keratin-hair-serum-100ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/3_15b1ad83-7e19-426f-8f4a-1b3ed1d5fd28.jpg?v=1770873482",
+            "currentPrice": 1706,
+            "comparePrice": 1895,
+            "currency": "PKR",
+            "handle": "evernoya-keratin-hair-serum-100ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-hair-serum-100ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/4_2bd521fe-0b5d-44b2-ac54-f2d214d131c7.jpg?v=1770873354",
+            "currentPrice": 1706,
+            "comparePrice": 1895,
+            "currency": "PKR",
+            "handle": "evernoya-argan-oil-hair-serum-100ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g",
+            "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-hair-mask-350ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/1b.jpg?v=1770873104",
+            "currentPrice": 1976,
+            "comparePrice": 2195,
+            "currency": "PKR",
+            "handle": "evernoya-hyaluronic-acid-hair-mask-350ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": null,
+        "heading": null,
+        "textPreview": "FACE EYES LIPS 20% off Makeup Brush #04 -RHD Regular price Rs.1,545.00 Rs.1,236.00 Unit price / per Regular price Rs.1,545.00 Rs.1,236.00 Unit price / per In stock Add to Cart 0 in your cart Quantity Add to Cart 0 in your cart Quantity 20% off Makeup Brush #06 -RHD Regular price Rs.1,845.00 Rs.1,476.00 Unit price / per Regular price Rs.1,845.00 Rs.",
+        "links": [],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-04-RIOS-816.jpg?v=1756711976",
+            "alt": "Makeup Brush #04 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-06-RIOS-825.jpg?v=1756711978",
+            "alt": "Makeup Brush #06 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-05-RIOS-21.jpg?v=1756711977",
+            "alt": "Makeup Brush #05 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-07-RIOS-356.jpg?v=1756711979",
+            "alt": "Makeup Brush #07 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-10-RIOS-216.jpg?v=1756711982",
+            "alt": "Makeup Brush #10 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-03-RIOS-974.jpg?v=1756711975",
+            "alt": "Makeup Brush #03 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/5_5314f2d9-8984-4e49-bcca-56b2be0268ad.jpg?v=1774682037",
+            "alt": "Blush Me Pink Powder Kit-RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Shade1_1.jpg?v=1774693496",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-09-RIOS-347.jpg?v=1756711981",
+            "alt": "Makeup Brush #09 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-01-RIOS-241_1db88754-9d27-43eb-8119-681be45bc1cf.jpg?v=1756711974",
+            "alt": "Makeup Brush #01 -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+            "alt": "Pressed Sparkle Palette -RHD"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/Pressed-Sparkle-Palette-RIOS-297.jpg?v=1756711950",
+            "alt": "#N/A"
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 36
+        },
+        "products": [
+          {
+            "title": "Brush #04 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-04-rivaj-hd-2290417",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-04-RIOS-816.jpg?v=1756711976",
+            "currentPrice": 1236,
+            "comparePrice": 1545,
+            "currency": "PKR",
+            "handle": "makeup-brush-04-rivaj-hd-2290417",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #06 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-06-rivaj-hd-2290419",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-06-RIOS-825.jpg?v=1756711978",
+            "currentPrice": 1476,
+            "comparePrice": 1845,
+            "currency": "PKR",
+            "handle": "makeup-brush-06-rivaj-hd-2290419",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #05 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-05-rivaj-hd-2290418",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-05-RIOS-21.jpg?v=1756711977",
+            "currentPrice": 1476,
+            "comparePrice": 1845,
+            "currency": "PKR",
+            "handle": "makeup-brush-05-rivaj-hd-2290418",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #07 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-07-rivaj-hd-2290420",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-07-RIOS-356.jpg?v=1756711979",
+            "currentPrice": 1476,
+            "comparePrice": 1845,
+            "currency": "PKR",
+            "handle": "makeup-brush-07-rivaj-hd-2290420",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #10 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-10-rivaj-hd-2290423",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-10-RIOS-216.jpg?v=1756711982",
+            "currentPrice": 2716,
+            "comparePrice": 3395,
+            "currency": "PKR",
+            "handle": "makeup-brush-10-rivaj-hd-2290423",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #03 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-03-rivaj-hd-2290416",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-03-RIOS-974.jpg?v=1756711975",
+            "currentPrice": 1236,
+            "comparePrice": 1545,
+            "currency": "PKR",
+            "handle": "makeup-brush-03-rivaj-hd-2290416",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Blush Me Pink Powder Kit-RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/blush-me-pink-powder-kit",
+            "image": "https://rivaj-uk.com/cdn/shop/files/5_5314f2d9-8984-4e49-bcca-56b2be0268ad.jpg?v=1774682037",
+            "currentPrice": 3600,
+            "comparePrice": 4500,
+            "currency": "PKR",
+            "handle": "blush-me-pink-powder-kit",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #09 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-09-rivaj-hd-2290422",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-09-RIOS-347.jpg?v=1756711981",
+            "currentPrice": 1716,
+            "comparePrice": 2145,
+            "currency": "PKR",
+            "handle": "makeup-brush-09-rivaj-hd-2290422",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Brush #01 -RHD",
+            "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-01-rivaj-hd-2290414",
+            "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-01-RIOS-241_1db88754-9d27-43eb-8119-681be45bc1cf.jpg?v=1756711974",
+            "currentPrice": 1236,
+            "comparePrice": 1545,
+            "currency": "PKR",
+            "handle": "makeup-brush-01-rivaj-hd-2290414",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Pressed Sparkle Palette Rivaj Hd 114 2",
+            "url": "https://rivaj-uk.com/collections/eyes-hd/products/pressed-sparkle-palette-rivaj-hd-114-2",
+            "image": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+            "currentPrice": 1116,
+            "comparePrice": 3395,
+            "currency": "PKR",
+            "handle": "pressed-sparkle-palette-rivaj-hd-114-2",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Pigment Eyeshadow Rivaj Hd 107 2",
+            "url": "https://rivaj-uk.com/collections/eyes-hd/products/pigment-eyeshadow-rivaj-hd-107-2",
+            "image": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+            "currentPrice": 1116,
+            "comparePrice": 3395,
+            "currency": "PKR",
+            "handle": "pigment-eyeshadow-rivaj-hd-107-2",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Chubby Lash Jumbo Brush Mascara Rivaj Hd 1050519",
+            "url": "https://rivaj-uk.com/collections/eyes-hd/products/chubby-lash-jumbo-brush-mascara-rivaj-hd-1050519",
+            "image": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+            "currentPrice": 1116,
+            "comparePrice": 3395,
+            "currency": "PKR",
+            "handle": "chubby-lash-jumbo-brush-mascara-rivaj-hd-1050519",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "type": "category_showcase",
+        "intent": "category_showcase",
+        "label": "FRAGRANCES FOR MEN & WOMEN",
+        "heading": "FRAGRANCES FOR MEN & WOMEN",
+        "textPreview": "FRAGRANCES FOR MEN & WOMEN A journey of confidence and refinement: Immerse yourself in our men's and women Fragrance World FOR MEN FOR WOMEN",
+        "links": [
+          {
+            "text": "FOR MEN",
+            "url": "https://rivaj-uk.com/collections/for-men"
+          },
+          {
+            "text": "FOR WOMEN",
+            "url": "https://rivaj-uk.com/collections/for-women"
+          }
+        ],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/perfume_27583224-9200-4a91-89c9-d63a2678dc46.jpg?v=1753443994",
+            "alt": null
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 0
+        }
+      },
+      {
+        "rank": 6,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": "Whitening Face Serum 30ml",
+        "heading": "Whitening Face Serum 30ml",
+        "textPreview": "5% off Whitening Face Serum 30ml Regular price Rs.595.00 Rs.565.00 Unit price / per Regular price Rs.595.00 Rs.565.00 Unit price / per In stock Add to Cart 0 in your cart Quantity Add to Cart 0 in your cart Quantity 5% off Vitamin C Face Serum 30ml Regular price Rs.595.00 Rs.565.00 Unit price / per Regular price Rs.595.00 Rs.565.00 Unit price / per",
+        "links": [],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Whigtingng-serum-Photoroom.jpg?v=1753683042",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+            "alt": "Whitening Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/Whitening_4b56144e-692d-4a0c-b557-a1d790d955d5.jpg?v=1768816426",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+            "alt": "Vitamin C Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/VITAMINC_1da46686-02b8-4cb1-a7f9-7b24592fa20c.jpg?v=1768816924",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/SNAIL1.jpg?v=1778497380",
+            "alt": "Snail Skin Restoring Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/SNAIL.jpg?v=1768816886",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/SALICYLICACID2_1.jpg?v=1778497329",
+            "alt": "Salicylic Acid 2% Acne Control Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/SALICYLICACID2.jpg?v=1768816820",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/GLUTATHIONE.jpg?v=1768816641",
+            "alt": "Glutathione Youthful Face Serum 30ml"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/UpdatedSerumcopy9.jpg?v=1768816641",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/UpdatedSerumcopy4.jpg?v=1745997270",
+            "alt": "Vitamin A+ Anti-Freckle Complexion Reversal Face Serum 30ml"
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 24
+        },
+        "products": [
+          {
+            "title": "Whitening Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/face-serum/products/face-serum-whitening-30ml-1710378",
+            "image": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "face-serum-whitening-30ml-1710378",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Vitamin C Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/face-serum/products/face-serum-vitamin-c-30ml-1710217",
+            "image": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "face-serum-vitamin-c-30ml-1710217",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Snail Skin Restoring Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/face-serum/products/snail-face-serum-30ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/SNAIL1.jpg?v=1778497380",
+            "currentPrice": 945,
+            "comparePrice": 995,
+            "currency": "PKR",
+            "handle": "snail-face-serum-30ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Salicylic Acid 2% Acne Control Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/face-serum/products/rivaj-salicyclic-acid-face-serum-30ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/SALICYLICACID2_1.jpg?v=1778497329",
+            "currentPrice": 945,
+            "comparePrice": 995,
+            "currency": "PKR",
+            "handle": "rivaj-salicyclic-acid-face-serum-30ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Glutathione Youthful Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/face-serum/products/rivaj-glutatione-face-serum-30ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/GLUTATHIONE.jpg?v=1768816641",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "rivaj-glutatione-face-serum-30ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Vitamin A+ Anti-Freckle Complexion Reversal Face Serum 30ml",
+            "url": "https://rivaj-uk.com/collections/face-serum/products/rivaj-vitamin-a-anti-wrinkle-face-serum-30ml",
+            "image": "https://rivaj-uk.com/cdn/shop/files/UpdatedSerumcopy4.jpg?v=1745997270",
+            "currentPrice": 945,
+            "comparePrice": 995,
+            "currency": "PKR",
+            "handle": "rivaj-vitamin-a-anti-wrinkle-face-serum-30ml",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "type": "product_section",
+        "intent": "general_product_grid",
+        "label": "Ultra Thin Bloom Sanitary Pads 8 PCS - Large",
+        "heading": "Ultra Thin Bloom Sanitary Pads 8 PCS - Large",
+        "textPreview": "5% off Ultra Thin Bloom Sanitary Pads 8 PCS - Large Regular price Rs.325.00 Rs.309.00 Unit price / per Regular price Rs.325.00 Rs.309.00 Unit price / per In stock Add to Cart 0 in your cart Quantity Add to Cart 0 in your cart Quantity 5% off Lemon & Honey Hair Removing Body Wax Strips Regular price Rs.695.00 Rs.660.00 Unit price / per Regular price",
+        "links": [],
+        "images": [
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/pcare1.jpg?v=1753444033",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/1580348-1.jpg?v=1745997353",
+            "alt": "Ultra Thin Bloom Sanitary Pads 8 PCS - Large"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2025-09-05_at_11.25.54_1_1.jpg?v=1770205170",
+            "alt": "Lemon & Honey Hair Removing Body Wax Strips"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/DSC09065_copy.jpg?v=1770205170",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/DSC09053_copy.jpg?v=1745997581",
+            "alt": "Charcoal Face Wax Strips"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/DSC09056_copy_a81c75ef-11b0-49cf-984a-5f0d17bebb84.jpg?v=1745997581",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2025-09-05_at_11.25.53_2_copy.jpg?v=1770205037",
+            "alt": "Charcoal Hair Removing Body Wax Strips"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/1580349-1.jpg?v=1745997354",
+            "alt": "Ultra Thin Bloom Sanitary Pads 16 PCS - Large"
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/products/1580349-2.jpg?v=1745997355",
+            "alt": null
+          },
+          {
+            "url": "https://rivaj-uk.com/cdn/shop/files/DSC07236.jpg?v=1745997591",
+            "alt": "Natural Depilatory Hot Wax"
+          }
+        ],
+        "source": {
+          "selector": "section_or_shopify_section",
+          "confidence": 0.8,
+          "priceCount": 24
+        },
+        "products": [
+          {
+            "title": "Ultra Thin Bloom Sanitary Pads 8 PCS - Large",
+            "url": "https://rivaj-uk.com/collections/personal-care/products/rivaj-uk-single-pack-thin-bloom-sanitary-pads-8s",
+            "image": "https://rivaj-uk.com/cdn/shop/products/1580348-1.jpg?v=1745997353",
+            "currentPrice": 309,
+            "comparePrice": 325,
+            "currency": "PKR",
+            "handle": "rivaj-uk-single-pack-thin-bloom-sanitary-pads-8s",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Lemon & Honey Hair Removing Body Wax Strips",
+            "url": "https://rivaj-uk.com/collections/personal-care/products/hair-removing-body-wax-strips-lemon-honey-1540077",
+            "image": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2025-09-05_at_11.25.54_1_1.jpg?v=1770205170",
+            "currentPrice": 660,
+            "comparePrice": 695,
+            "currency": "PKR",
+            "handle": "hair-removing-body-wax-strips-lemon-honey-1540077",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Charcoal Face Wax Strips",
+            "url": "https://rivaj-uk.com/collections/personal-care/products/charcoal-face-wax-strips-1540097",
+            "image": "https://rivaj-uk.com/cdn/shop/files/DSC09053_copy.jpg?v=1745997581",
+            "currentPrice": 456,
+            "comparePrice": 480,
+            "currency": "PKR",
+            "handle": "charcoal-face-wax-strips-1540097",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Charcoal Hair Removing Body Wax Strips",
+            "url": "https://rivaj-uk.com/collections/personal-care/products/charcoal-hair-removing-body-wax-strips-1540098",
+            "image": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2025-09-05_at_11.25.53_2_copy.jpg?v=1770205037",
+            "currentPrice": 660,
+            "comparePrice": 695,
+            "currency": "PKR",
+            "handle": "charcoal-hair-removing-body-wax-strips-1540098",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Ultra Thin Bloom Sanitary Pads 16 PCS - Large",
+            "url": "https://rivaj-uk.com/collections/personal-care/products/rivaj-uk-double-pack-thin-bloom-sanitary-pads-16s",
+            "image": "https://rivaj-uk.com/cdn/shop/products/1580349-1.jpg?v=1745997354",
+            "currentPrice": 565,
+            "comparePrice": 595,
+            "currency": "PKR",
+            "handle": "rivaj-uk-double-pack-thin-bloom-sanitary-pads-16s",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          },
+          {
+            "title": "Natural Depilatory Hot Wax",
+            "url": "https://rivaj-uk.com/collections/personal-care/products/depilatory-hot-wax-natural-1610044",
+            "image": "https://rivaj-uk.com/cdn/shop/files/DSC07236.jpg?v=1745997591",
+            "currentPrice": 713,
+            "comparePrice": 750,
+            "currency": "PKR",
+            "handle": "depilatory-hot-wax-natural-1610044",
+            "source": {
+              "selector": "homepage_product_card_v2",
+              "confidence": 0.88
+            }
+          }
+        ]
+      }
+    ],
+    "sectionHeadings": [
+      {
+        "text": "Rivaj",
+        "tag": "h1"
+      },
+      {
+        "text": "Reset your password",
+        "tag": "h2"
+      },
+      {
+        "text": "Your cart",
+        "tag": "h2"
+      },
+      {
+        "text": "Summer Essentials",
+        "tag": "h2"
+      },
+      {
+        "text": "SPF60 Whitening & Vanishing Sunblock",
+        "tag": "h3"
+      },
+      {
+        "text": "Whitening Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Vitamin C Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "SPF90 Sunblock",
+        "tag": "h3"
+      },
+      {
+        "text": "Hyaluronic Acid Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Pinkish Whitening Face Wash",
+        "tag": "h3"
+      },
+      {
+        "text": "SPF50 Kids Sunblock",
+        "tag": "h3"
+      },
+      {
+        "text": "Rose Water - 100ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Acne Treatment Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Cleansing Milk 150ml",
+        "tag": "h3"
+      },
+      {
+        "text": "SULPHATE-FREE HAIR CARE",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Rosemary Sulphate-Free Shampoo 350ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Keratin Sulphate-Free Hair Serum 100ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #04 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #06 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #05 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #07 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #10 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #03 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Blush Me Pink Powder Kit-RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #09 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "Makeup Brush #01 -RHD",
+        "tag": "h3"
+      },
+      {
+        "text": "FRAGRANCES FOR MEN & WOMEN",
+        "tag": "h3"
+      },
+      {
+        "text": "Snail Skin Restoring Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Salicylic Acid 2% Acne Control Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Glutathione Youthful Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Vitamin A+ Anti-Freckle Complexion Reversal Face Serum 30ml",
+        "tag": "h3"
+      },
+      {
+        "text": "Ultra Thin Bloom Sanitary Pads 8 PCS - Large",
+        "tag": "h3"
+      },
+      {
+        "text": "Lemon & Honey Hair Removing Body Wax Strips",
+        "tag": "h3"
+      },
+      {
+        "text": "Charcoal Face Wax Strips",
+        "tag": "h3"
+      },
+      {
+        "text": "Charcoal Hair Removing Body Wax Strips",
+        "tag": "h3"
+      },
+      {
+        "text": "Ultra Thin Bloom Sanitary Pads 16 PCS - Large",
+        "tag": "h3"
+      },
+      {
+        "text": "Natural Depilatory Hot Wax",
+        "tag": "h3"
+      },
+      {
+        "text": "Follow us",
+        "tag": "h3"
+      },
+      {
+        "text": "Info",
+        "tag": "h3"
+      },
+      {
+        "text": "Newsletter",
+        "tag": "h3"
+      }
+    ],
+    "primaryCtas": [],
+    "ctas": [
+      {
+        "text": "Evernoya",
+        "url": "https://rivaj-uk.com/collections/evernoya"
+      },
+      {
+        "text": "FOR MEN",
+        "url": "https://rivaj-uk.com/collections/for-men"
+      },
+      {
+        "text": "FOR WOMEN",
+        "url": "https://rivaj-uk.com/collections/for-women"
+      }
+    ],
+    "featuredProducts": [
+      {
+        "title": "SPF60 Whitening & Vanishing Sunblock",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-whitening-vanishing-spf60-40ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_40ml.jpg?v=1745997625",
+        "currentPrice": 285,
+        "comparePrice": 300,
+        "currency": "PKR",
+        "handle": "sunblock-whitening-vanishing-spf60-40ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Whitening Face Serum 30ml",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-whitening-30ml-1710378",
+        "image": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+        "currentPrice": 565,
+        "comparePrice": 595,
+        "currency": "PKR",
+        "handle": "face-serum-whitening-30ml-1710378",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Vitamin C Face Serum 30ml",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-vitamin-c-30ml-1710217",
+        "image": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+        "currentPrice": 565,
+        "comparePrice": 595,
+        "currency": "PKR",
+        "handle": "face-serum-vitamin-c-30ml-1710217",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "SPF90 Sunblock",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf90-120ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_40ml.jpg?v=1748418047",
+        "currentPrice": 285,
+        "comparePrice": 300,
+        "currency": "PKR",
+        "handle": "sunblock-spf90-120ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Hyaluronic Acid Face Serum 30ml",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-hyaluronic-acid-30ml-1710218",
+        "image": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID1.jpg?v=1778496686",
+        "currentPrice": 565,
+        "comparePrice": 595,
+        "currency": "PKR",
+        "handle": "face-serum-hyaluronic-acid-30ml-1710218",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Pinkish Whitening Face Wash",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/pinkish-whitening-face-wash",
+        "image": "https://rivaj-uk.com/cdn/shop/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315",
+        "currentPrice": 214,
+        "comparePrice": 225,
+        "currency": "PKR",
+        "handle": "pinkish-whitening-face-wash",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "SPF50 Kids Sunblock",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf50-120ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/SunblockKids_40ml.jpg?v=1745997527",
+        "currentPrice": 285,
+        "comparePrice": 300,
+        "currency": "PKR",
+        "handle": "sunblock-spf50-120ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Rose Water - 100ml",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/rose-water-100ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/ROSEWATERMOCKUP.png?v=1768817204",
+        "currentPrice": 162,
+        "comparePrice": 170,
+        "currency": "PKR",
+        "handle": "rose-water-100ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Acne Treatment Face Serum 30ml",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-acne-treatment-30ml-1710216",
+        "image": "https://rivaj-uk.com/cdn/shop/files/Acne1.jpg?v=1778496231",
+        "currentPrice": 565,
+        "comparePrice": 595,
+        "currency": "PKR",
+        "handle": "face-serum-acne-treatment-30ml-1710216",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Cleansing Milk 150ml",
+        "url": "https://rivaj-uk.com/collections/skin-care/products/cleansing-milk-150ml-1170150",
+        "image": "https://rivaj-uk.com/cdn/shop/files/cleasing-milk.png?v=1745997531",
+        "currentPrice": 413,
+        "comparePrice": 435,
+        "currency": "PKR",
+        "handle": "cleansing-milk-150ml-1170150",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/aloe-vera-moisturizing-shampoo-150ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo.jpg?v=1771391734",
+        "currentPrice": 1616,
+        "comparePrice": 1795,
+        "currency": "PKR",
+        "handle": "aloe-vera-moisturizing-shampoo-150ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-shampoo-350ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/hyaluronicacidhsampoo.jpg?v=1771391413",
+        "currentPrice": 1616,
+        "comparePrice": 1795,
+        "currency": "PKR",
+        "handle": "evernoya-hyaluronic-acid-shampoo-350ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-shampoo-350ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo2.jpg?v=1771391676",
+        "currentPrice": 1616,
+        "comparePrice": 1795,
+        "currency": "PKR",
+        "handle": "evernoya-anti-dandruff-shampoo-350ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Rosemary Sulphate-Free Shampoo 350ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-shampoo-350ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/HAirGrowthShampoo.jpg?v=1771391636",
+        "currentPrice": 1616,
+        "comparePrice": 1795,
+        "currency": "PKR",
+        "handle": "evernoya-rosemary-shampoo-350ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-shampoo-350ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/ArganShampoo.jpg?v=1771391483",
+        "currentPrice": 1616,
+        "comparePrice": 1795,
+        "currency": "PKR",
+        "handle": "evernoya-argan-oil-shampoo-350ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-hair-serum-100ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/1_aca84be1-e525-48e5-b27a-90da0872e225.jpg?v=1770873646",
+        "currentPrice": 1706,
+        "comparePrice": 1895,
+        "currency": "PKR",
+        "handle": "evernoya-rosemary-hair-serum-100ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-hair-serum-100ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/2_c105fc2c-3985-4c96-ab9a-c0deaa36f7f9.jpg?v=1770873561",
+        "currentPrice": 1706,
+        "comparePrice": 1895,
+        "currency": "PKR",
+        "handle": "evernoya-anti-dandruff-hair-serum-100ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Keratin Sulphate-Free Hair Serum 100ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-keratin-hair-serum-100ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/3_15b1ad83-7e19-426f-8f4a-1b3ed1d5fd28.jpg?v=1770873482",
+        "currentPrice": 1706,
+        "comparePrice": 1895,
+        "currency": "PKR",
+        "handle": "evernoya-keratin-hair-serum-100ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-hair-serum-100ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/4_2bd521fe-0b5d-44b2-ac54-f2d214d131c7.jpg?v=1770873354",
+        "currentPrice": 1706,
+        "comparePrice": 1895,
+        "currency": "PKR",
+        "handle": "evernoya-argan-oil-hair-serum-100ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g",
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-hair-mask-350ml",
+        "image": "https://rivaj-uk.com/cdn/shop/files/1b.jpg?v=1770873104",
+        "currentPrice": 1976,
+        "comparePrice": 2195,
+        "currency": "PKR",
+        "handle": "evernoya-hyaluronic-acid-hair-mask-350ml",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #04 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-04-rivaj-hd-2290417",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-04-RIOS-816.jpg?v=1756711976",
+        "currentPrice": 1236,
+        "comparePrice": 1545,
+        "currency": "PKR",
+        "handle": "makeup-brush-04-rivaj-hd-2290417",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #06 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-06-rivaj-hd-2290419",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-06-RIOS-825.jpg?v=1756711978",
+        "currentPrice": 1476,
+        "comparePrice": 1845,
+        "currency": "PKR",
+        "handle": "makeup-brush-06-rivaj-hd-2290419",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #05 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-05-rivaj-hd-2290418",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-05-RIOS-21.jpg?v=1756711977",
+        "currentPrice": 1476,
+        "comparePrice": 1845,
+        "currency": "PKR",
+        "handle": "makeup-brush-05-rivaj-hd-2290418",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #07 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-07-rivaj-hd-2290420",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-07-RIOS-356.jpg?v=1756711979",
+        "currentPrice": 1476,
+        "comparePrice": 1845,
+        "currency": "PKR",
+        "handle": "makeup-brush-07-rivaj-hd-2290420",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #10 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-10-rivaj-hd-2290423",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-10-RIOS-216.jpg?v=1756711982",
+        "currentPrice": 2716,
+        "comparePrice": 3395,
+        "currency": "PKR",
+        "handle": "makeup-brush-10-rivaj-hd-2290423",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #03 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-03-rivaj-hd-2290416",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-03-RIOS-974.jpg?v=1756711975",
+        "currentPrice": 1236,
+        "comparePrice": 1545,
+        "currency": "PKR",
+        "handle": "makeup-brush-03-rivaj-hd-2290416",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Blush Me Pink Powder Kit-RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/blush-me-pink-powder-kit",
+        "image": "https://rivaj-uk.com/cdn/shop/files/5_5314f2d9-8984-4e49-bcca-56b2be0268ad.jpg?v=1774682037",
+        "currentPrice": 3600,
+        "comparePrice": 4500,
+        "currency": "PKR",
+        "handle": "blush-me-pink-powder-kit",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #09 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-09-rivaj-hd-2290422",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-09-RIOS-347.jpg?v=1756711981",
+        "currentPrice": 1716,
+        "comparePrice": 2145,
+        "currency": "PKR",
+        "handle": "makeup-brush-09-rivaj-hd-2290422",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Brush #01 -RHD",
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-01-rivaj-hd-2290414",
+        "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-01-RIOS-241_1db88754-9d27-43eb-8119-681be45bc1cf.jpg?v=1756711974",
+        "currentPrice": 1236,
+        "comparePrice": 1545,
+        "currency": "PKR",
+        "handle": "makeup-brush-01-rivaj-hd-2290414",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      },
+      {
+        "title": "Pressed Sparkle Palette Rivaj Hd 114 2",
+        "url": "https://rivaj-uk.com/collections/eyes-hd/products/pressed-sparkle-palette-rivaj-hd-114-2",
+        "image": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+        "currentPrice": 1116,
+        "comparePrice": 3395,
+        "currency": "PKR",
+        "handle": "pressed-sparkle-palette-rivaj-hd-114-2",
+        "source": {
+          "selector": "homepage_product_card_v2",
+          "confidence": 0.88
+        }
+      }
+    ],
+    "featuredCollections": [
+      {
+        "name": "Summer Radiance Sale",
+        "handle": "summer-radiance-sale",
+        "url": "https://rivaj-uk.com/collections/summer-radiance-sale"
+      },
+      {
+        "name": "Soap Liquid Soap",
+        "handle": "soap-liquid-soap",
+        "url": "https://rivaj-uk.com/collections/soap-liquid-soap"
+      },
+      {
+        "name": "Evernoya",
+        "handle": "evernoya",
+        "url": "https://rivaj-uk.com/collections/evernoya"
+      },
+      {
+        "name": "Fragrance Mist",
+        "handle": "fragrance-mist",
+        "url": "https://rivaj-uk.com/collections/fragrance-mist"
+      },
+      {
+        "name": "Face Wash",
+        "handle": "face-wash",
+        "url": "https://rivaj-uk.com/collections/face-wash"
+      },
+      {
+        "name": "Rivaj Deodorants Roll Ons",
+        "handle": "rivaj-deodorants-roll-ons",
+        "url": "https://rivaj-uk.com/collections/rivaj-deodorants-roll-ons"
+      },
+      {
+        "name": "Rhd",
+        "handle": "rhd",
+        "url": "https://rivaj-uk.com/collections/rhd"
+      },
+      {
+        "name": "Eyes Hd",
+        "handle": "eyes-hd",
+        "url": "https://rivaj-uk.com/collections/eyes-hd"
+      },
+      {
+        "name": "Lips Hd",
+        "handle": "lips-hd",
+        "url": "https://rivaj-uk.com/collections/lips-hd"
+      },
+      {
+        "name": "FOR MEN",
+        "handle": "for-men",
+        "url": "https://rivaj-uk.com/collections/for-men"
+      },
+      {
+        "name": "FOR WOMEN",
+        "handle": "for-women",
+        "url": "https://rivaj-uk.com/collections/for-women"
+      },
+      {
+        "name": "Face Serum",
+        "handle": "face-serum",
+        "url": "https://rivaj-uk.com/collections/face-serum"
+      },
+      {
+        "name": "Personal Care",
+        "handle": "personal-care",
+        "url": "https://rivaj-uk.com/collections/personal-care"
+      }
+    ],
+    "blogLinks": [],
+    "images": [
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/logo-01-8.svg?v=1710403052",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2026-06-03_at_5.44.15_PM.jpg?v=1780639755",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/summer1.jpg_1.jpg?v=1780639758",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Soap-Banner-Mobile_jpg.jpg?v=1775457631",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Soap-Banner-Web_jpg.jpg?v=1776850524",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/800x1200_copy_jpg.jpg?v=1772704241",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/1560x550_copy_jpg.jpg?v=1772704241",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/body-mist-Mob-Size_jpg.jpg?v=1774500861",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Body-mist-Web-Size_jpg.jpg?v=1774500859",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Face-Wash-Mob-Size_jpg.jpg?v=1774500858",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Face-Wash-Web-Size_jpg.jpg?v=1774500856",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Deodorant-Mob-Size_jpg.jpg?v=1773828286",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Deodorant-Web-Size_jpg_d925bd15-7f2b-422f-8740-d6be7ca85792.jpg?v=1773828804",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_40ml.jpg?v=1745997625",
+        "alt": "SPF60 Whitening & Vanishing Sunblock"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_100ML.jpg?v=1745997625",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+        "alt": "Whitening Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Whitening_4b56144e-692d-4a0c-b557-a1d790d955d5.jpg?v=1768816426",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+        "alt": "Vitamin C Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/VITAMINC_1da46686-02b8-4cb1-a7f9-7b24592fa20c.jpg?v=1768816924",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_40ml.jpg?v=1748418047",
+        "alt": "SPF90 Sunblock"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_100ml.jpg?v=1745997526",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID1.jpg?v=1778496686",
+        "alt": "Hyaluronic Acid Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID.jpg?v=1768816684",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315",
+        "alt": "Pinkish Whitening Face Wash"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/pINKISH-WHITE-ML-100.gif?v=1745997315",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SunblockKids_40ml.jpg?v=1745997527",
+        "alt": "SPF50 Kids Sunblock"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SunblockKids_100ml.jpg?v=1745997527",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/ROSEWATERMOCKUP.png?v=1768817204",
+        "alt": "Rose Water - 100ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Acne1.jpg?v=1778496231",
+        "alt": "Acne Treatment Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Acne_5c2d425e-ecd1-478b-9257-0c0f6d6cd624.jpg?v=1778496231",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/cleasing-milk.png?v=1745997531",
+        "alt": "Cleansing Milk 150ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shampoo_jpg.jpg?v=1772438360",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo.jpg?v=1771391734",
+        "alt": "Evernoya Keratin Sulphate-Free Shampoo 350ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/hyaluronicacidhsampoo.jpg?v=1771391413",
+        "alt": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo2.jpg?v=1771391676",
+        "alt": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/HAirGrowthShampoo.jpg?v=1771391636",
+        "alt": "Evernoya Rosemary Sulphate-Free Shampoo 350ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/ArganShampoo.jpg?v=1771391483",
+        "alt": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/1_aca84be1-e525-48e5-b27a-90da0872e225.jpg?v=1770873646",
+        "alt": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/2_c105fc2c-3985-4c96-ab9a-c0deaa36f7f9.jpg?v=1770873561",
+        "alt": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/3_15b1ad83-7e19-426f-8f4a-1b3ed1d5fd28.jpg?v=1770873482",
+        "alt": "Evernoya Keratin Sulphate-Free Hair Serum 100ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/4_2bd521fe-0b5d-44b2-ac54-f2d214d131c7.jpg?v=1770873354",
+        "alt": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/1b.jpg?v=1770873104",
+        "alt": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/rivaj-Hd_1_copy.jpg?v=1746595553",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-04-RIOS-816.jpg?v=1756711976",
+        "alt": "Makeup Brush #04 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-06-RIOS-825.jpg?v=1756711978",
+        "alt": "Makeup Brush #06 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-05-RIOS-21.jpg?v=1756711977",
+        "alt": "Makeup Brush #05 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-07-RIOS-356.jpg?v=1756711979",
+        "alt": "Makeup Brush #07 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-10-RIOS-216.jpg?v=1756711982",
+        "alt": "Makeup Brush #10 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-03-RIOS-974.jpg?v=1756711975",
+        "alt": "Makeup Brush #03 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/5_5314f2d9-8984-4e49-bcca-56b2be0268ad.jpg?v=1774682037",
+        "alt": "Blush Me Pink Powder Kit-RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shade1_1.jpg?v=1774693496",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-09-RIOS-347.jpg?v=1756711981",
+        "alt": "Makeup Brush #09 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-01-RIOS-241_1db88754-9d27-43eb-8119-681be45bc1cf.jpg?v=1756711974",
+        "alt": "Makeup Brush #01 -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+        "alt": "Pressed Sparkle Palette -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Pressed-Sparkle-Palette-RIOS-297.jpg?v=1756711950",
+        "alt": "#N/A"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/3_55a35ac8-5963-49c7-9d4e-4de3e81ce07a.jpg?v=1774681786",
+        "alt": "Pigment Eyeshadow - RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shade1_6b91fc6c-14ea-4de9-9e84-d5bb712b4792.jpg?v=1776234443",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/chubby-lash-2.jpg?v=1774682120",
+        "alt": "Chubby Lash Jumbo Brush Mascara - RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/chubby-lash-1.jpg?v=1774682120",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/10_27e7f46e-2094-4d9a-a890-f46cd0ffb08a.jpg?v=1774682356",
+        "alt": "Long Wear Gel Eyeliner - RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Eye-Lip-Makeup-Remover-RIOS-394.jpg?v=1756711966",
+        "alt": "Eye & Lip Makeup Remover -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Makeup-Cleansing-Beauty-Oil-RIOS-421.jpg?v=1756711968",
+        "alt": "Makeup Cleansing Beauty Oil - RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Big-Eyes-Magical-Maximizer-Mascara-RIOS-690.jpg?v=1756711969",
+        "alt": "HD 2 in 1 Big Eyes Magical Maximizer Mascara"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Glitter-Sealant-Stick-RIOS-382.jpg?v=1756711971",
+        "alt": "Glitter Sealant Stick -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/Precise-Eye-Lashes-RIOS-702.jpg?v=1756711984",
+        "alt": "Precise Eye Lashes -RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/7_48a5537d-d5d8-46a5-9891-24cb2bde7405.jpg?v=1774682171",
+        "alt": "Color Crush Matte Liquid Lipstick - RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shade5_7d86af34-f483-4ea8-8b44-3b82181a2e14.jpg?v=1774692779",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/8_a9b6efaf-f4b6-4f21-b5d8-d04c201d858a.jpg?v=1774682212",
+        "alt": "Color Crush Matte Lipstick - RHD"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shade1_3b3cf645-2e48-4520-8284-02455b54f0d6.jpg?v=1774693060",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shade-1_ed3a7f71-e899-4869-b8ae-9bf9f627d236.jpg?v=1776315512",
+        "alt": "RHD Lipstick Butter Glaze"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Shade-2_a53dbaf1-299f-48b8-9f9d-a864dfa6fb13.jpg?v=1776315513",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/perfume_27583224-9200-4a91-89c9-d63a2678dc46.jpg?v=1753443994",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/Whigtingng-serum-Photoroom.jpg?v=1753683042",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SNAIL1.jpg?v=1778497380",
+        "alt": "Snail Skin Restoring Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SNAIL.jpg?v=1768816886",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SALICYLICACID2_1.jpg?v=1778497329",
+        "alt": "Salicylic Acid 2% Acne Control Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/SALICYLICACID2.jpg?v=1768816820",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/GLUTATHIONE.jpg?v=1768816641",
+        "alt": "Glutathione Youthful Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/UpdatedSerumcopy9.jpg?v=1768816641",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/UpdatedSerumcopy4.jpg?v=1745997270",
+        "alt": "Vitamin A+ Anti-Freckle Complexion Reversal Face Serum 30ml"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/pcare1.jpg?v=1753444033",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/1580348-1.jpg?v=1745997353",
+        "alt": "Ultra Thin Bloom Sanitary Pads 8 PCS - Large"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2025-09-05_at_11.25.54_1_1.jpg?v=1770205170",
+        "alt": "Lemon & Honey Hair Removing Body Wax Strips"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/DSC09065_copy.jpg?v=1770205170",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/DSC09053_copy.jpg?v=1745997581",
+        "alt": "Charcoal Face Wax Strips"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/DSC09056_copy_a81c75ef-11b0-49cf-984a-5f0d17bebb84.jpg?v=1745997581",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/WhatsApp_Image_2025-09-05_at_11.25.53_2_copy.jpg?v=1770205037",
+        "alt": "Charcoal Hair Removing Body Wax Strips"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/1580349-1.jpg?v=1745997354",
+        "alt": "Ultra Thin Bloom Sanitary Pads 16 PCS - Large"
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/products/1580349-2.jpg?v=1745997355",
+        "alt": null
+      },
+      {
+        "url": "https://rivaj-uk.com/cdn/shop/files/DSC07236.jpg?v=1745997591",
+        "alt": "Natural Depilatory Hot Wax"
+      }
+    ]
+  },
+  "ecommerce": {
+    "products": [
+      {
+        "name": "SPF60 Whitening & Vanishing Sunblock",
+        "price": 285,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-whitening-vanishing-spf60-40ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Whitening Face Serum 30ml",
+        "price": 565,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-whitening-30ml-1710378",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Vitamin C Face Serum 30ml",
+        "price": 565,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-vitamin-c-30ml-1710217",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "SPF90 Sunblock",
+        "price": 285,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf90-120ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Hyaluronic Acid Face Serum 30ml",
+        "price": 565,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-hyaluronic-acid-30ml-1710218",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Pinkish Whitening Face Wash",
+        "price": 214,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/pinkish-whitening-face-wash",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "SPF50 Kids Sunblock",
+        "price": 285,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf50-120ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Rose Water - 100ml",
+        "price": 162,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/rose-water-100ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Acne Treatment Face Serum 30ml",
+        "price": 565,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-acne-treatment-30ml-1710216",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Cleansing Milk 150ml",
+        "price": 413,
+        "url": "https://rivaj-uk.com/collections/skin-care/products/cleansing-milk-150ml-1170150",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+        "price": 1616,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/aloe-vera-moisturizing-shampoo-150ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml",
+        "price": 1616,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-shampoo-350ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml",
+        "price": 1616,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-shampoo-350ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Rosemary Sulphate-Free Shampoo 350ml",
+        "price": 1616,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-shampoo-350ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml",
+        "price": 1616,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-shampoo-350ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml",
+        "price": 1706,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-hair-serum-100ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml",
+        "price": 1706,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-hair-serum-100ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Keratin Sulphate-Free Hair Serum 100ml",
+        "price": 1706,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-keratin-hair-serum-100ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml",
+        "price": 1706,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-hair-serum-100ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g",
+        "price": 1976,
+        "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-hair-mask-350ml",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #04 -RHD",
+        "price": 1236,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-04-rivaj-hd-2290417",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #06 -RHD",
+        "price": 1476,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-06-rivaj-hd-2290419",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #05 -RHD",
+        "price": 1476,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-05-rivaj-hd-2290418",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #07 -RHD",
+        "price": 1476,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-07-rivaj-hd-2290420",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #10 -RHD",
+        "price": 2716,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-10-rivaj-hd-2290423",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #03 -RHD",
+        "price": 1236,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-03-rivaj-hd-2290416",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Blush Me Pink Powder Kit-RHD",
+        "price": 3600,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/blush-me-pink-powder-kit",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #09 -RHD",
+        "price": 1716,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-09-rivaj-hd-2290422",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Brush #01 -RHD",
+        "price": 1236,
+        "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-01-rivaj-hd-2290414",
+        "availability": null,
+        "category": null,
+        "badges": []
+      },
+      {
+        "name": "Pressed Sparkle Palette Rivaj Hd 114 2",
+        "price": 1116,
+        "url": "https://rivaj-uk.com/collections/eyes-hd/products/pressed-sparkle-palette-rivaj-hd-114-2",
+        "availability": null,
+        "category": null,
+        "badges": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "title": "SPF60 Whitening & Vanishing Sunblock",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-whitening-vanishing-spf60-40ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/SunblockSPF60_40ml.jpg?v=1745997625",
+      "currentPrice": 285,
+      "comparePrice": 300,
+      "currency": "PKR",
+      "handle": "sunblock-whitening-vanishing-spf60-40ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Whitening Face Serum 30ml",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-whitening-30ml-1710378",
+      "image": "https://rivaj-uk.com/cdn/shop/files/Whitening1.jpg?v=1778496879",
+      "currentPrice": 565,
+      "comparePrice": 595,
+      "currency": "PKR",
+      "handle": "face-serum-whitening-30ml-1710378",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Vitamin C Face Serum 30ml",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-vitamin-c-30ml-1710217",
+      "image": "https://rivaj-uk.com/cdn/shop/files/VITAMINC1.jpg?v=1778496786",
+      "currentPrice": 565,
+      "comparePrice": 595,
+      "currency": "PKR",
+      "handle": "face-serum-vitamin-c-30ml-1710217",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "SPF90 Sunblock",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf90-120ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/Sunblock90SPF_40ml.jpg?v=1748418047",
+      "currentPrice": 285,
+      "comparePrice": 300,
+      "currency": "PKR",
+      "handle": "sunblock-spf90-120ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Hyaluronic Acid Face Serum 30ml",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-hyaluronic-acid-30ml-1710218",
+      "image": "https://rivaj-uk.com/cdn/shop/files/HYALURONICACID1.jpg?v=1778496686",
+      "currentPrice": 565,
+      "comparePrice": 595,
+      "currency": "PKR",
+      "handle": "face-serum-hyaluronic-acid-30ml-1710218",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Pinkish Whitening Face Wash",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/pinkish-whitening-face-wash",
+      "image": "https://rivaj-uk.com/cdn/shop/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315",
+      "currentPrice": 214,
+      "comparePrice": 225,
+      "currency": "PKR",
+      "handle": "pinkish-whitening-face-wash",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "SPF50 Kids Sunblock",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/sunblock-spf50-120ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/SunblockKids_40ml.jpg?v=1745997527",
+      "currentPrice": 285,
+      "comparePrice": 300,
+      "currency": "PKR",
+      "handle": "sunblock-spf50-120ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Rose Water - 100ml",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/rose-water-100ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/ROSEWATERMOCKUP.png?v=1768817204",
+      "currentPrice": 162,
+      "comparePrice": 170,
+      "currency": "PKR",
+      "handle": "rose-water-100ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Acne Treatment Face Serum 30ml",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/face-serum-acne-treatment-30ml-1710216",
+      "image": "https://rivaj-uk.com/cdn/shop/files/Acne1.jpg?v=1778496231",
+      "currentPrice": 565,
+      "comparePrice": 595,
+      "currency": "PKR",
+      "handle": "face-serum-acne-treatment-30ml-1710216",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Cleansing Milk 150ml",
+      "url": "https://rivaj-uk.com/collections/skin-care/products/cleansing-milk-150ml-1170150",
+      "image": "https://rivaj-uk.com/cdn/shop/files/cleasing-milk.png?v=1745997531",
+      "currentPrice": 413,
+      "comparePrice": 435,
+      "currency": "PKR",
+      "handle": "cleansing-milk-150ml-1170150",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/aloe-vera-moisturizing-shampoo-150ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo.jpg?v=1771391734",
+      "currentPrice": 1616,
+      "comparePrice": 1795,
+      "currency": "PKR",
+      "handle": "aloe-vera-moisturizing-shampoo-150ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-shampoo-350ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/hyaluronicacidhsampoo.jpg?v=1771391413",
+      "currentPrice": 1616,
+      "comparePrice": 1795,
+      "currency": "PKR",
+      "handle": "evernoya-hyaluronic-acid-shampoo-350ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-shampoo-350ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/AntiDandruffShampoo2.jpg?v=1771391676",
+      "currentPrice": 1616,
+      "comparePrice": 1795,
+      "currency": "PKR",
+      "handle": "evernoya-anti-dandruff-shampoo-350ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Rosemary Sulphate-Free Shampoo 350ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-shampoo-350ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/HAirGrowthShampoo.jpg?v=1771391636",
+      "currentPrice": 1616,
+      "comparePrice": 1795,
+      "currency": "PKR",
+      "handle": "evernoya-rosemary-shampoo-350ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Argan Oil Sulphate-Free Shampoo 350ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-shampoo-350ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/ArganShampoo.jpg?v=1771391483",
+      "currentPrice": 1616,
+      "comparePrice": 1795,
+      "currency": "PKR",
+      "handle": "evernoya-argan-oil-shampoo-350ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Rosemary Sulphate-Free Hair Serum 100ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-rosemary-hair-serum-100ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/1_aca84be1-e525-48e5-b27a-90da0872e225.jpg?v=1770873646",
+      "currentPrice": 1706,
+      "comparePrice": 1895,
+      "currency": "PKR",
+      "handle": "evernoya-rosemary-hair-serum-100ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-anti-dandruff-hair-serum-100ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/2_c105fc2c-3985-4c96-ab9a-c0deaa36f7f9.jpg?v=1770873561",
+      "currentPrice": 1706,
+      "comparePrice": 1895,
+      "currency": "PKR",
+      "handle": "evernoya-anti-dandruff-hair-serum-100ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Keratin Sulphate-Free Hair Serum 100ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-keratin-hair-serum-100ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/3_15b1ad83-7e19-426f-8f4a-1b3ed1d5fd28.jpg?v=1770873482",
+      "currentPrice": 1706,
+      "comparePrice": 1895,
+      "currency": "PKR",
+      "handle": "evernoya-keratin-hair-serum-100ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-argan-oil-hair-serum-100ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/4_2bd521fe-0b5d-44b2-ac54-f2d214d131c7.jpg?v=1770873354",
+      "currentPrice": 1706,
+      "comparePrice": 1895,
+      "currency": "PKR",
+      "handle": "evernoya-argan-oil-hair-serum-100ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g",
+      "url": "https://rivaj-uk.com/collections/evernoya/products/evernoya-hyaluronic-acid-hair-mask-350ml",
+      "image": "https://rivaj-uk.com/cdn/shop/files/1b.jpg?v=1770873104",
+      "currentPrice": 1976,
+      "comparePrice": 2195,
+      "currency": "PKR",
+      "handle": "evernoya-hyaluronic-acid-hair-mask-350ml",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #04 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-04-rivaj-hd-2290417",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-04-RIOS-816.jpg?v=1756711976",
+      "currentPrice": 1236,
+      "comparePrice": 1545,
+      "currency": "PKR",
+      "handle": "makeup-brush-04-rivaj-hd-2290417",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #06 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-06-rivaj-hd-2290419",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-06-RIOS-825.jpg?v=1756711978",
+      "currentPrice": 1476,
+      "comparePrice": 1845,
+      "currency": "PKR",
+      "handle": "makeup-brush-06-rivaj-hd-2290419",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #05 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-05-rivaj-hd-2290418",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-05-RIOS-21.jpg?v=1756711977",
+      "currentPrice": 1476,
+      "comparePrice": 1845,
+      "currency": "PKR",
+      "handle": "makeup-brush-05-rivaj-hd-2290418",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #07 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-07-rivaj-hd-2290420",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-07-RIOS-356.jpg?v=1756711979",
+      "currentPrice": 1476,
+      "comparePrice": 1845,
+      "currency": "PKR",
+      "handle": "makeup-brush-07-rivaj-hd-2290420",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #10 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-10-rivaj-hd-2290423",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-10-RIOS-216.jpg?v=1756711982",
+      "currentPrice": 2716,
+      "comparePrice": 3395,
+      "currency": "PKR",
+      "handle": "makeup-brush-10-rivaj-hd-2290423",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #03 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-03-rivaj-hd-2290416",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-03-RIOS-974.jpg?v=1756711975",
+      "currentPrice": 1236,
+      "comparePrice": 1545,
+      "currency": "PKR",
+      "handle": "makeup-brush-03-rivaj-hd-2290416",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Blush Me Pink Powder Kit-RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/blush-me-pink-powder-kit",
+      "image": "https://rivaj-uk.com/cdn/shop/files/5_5314f2d9-8984-4e49-bcca-56b2be0268ad.jpg?v=1774682037",
+      "currentPrice": 3600,
+      "comparePrice": 4500,
+      "currency": "PKR",
+      "handle": "blush-me-pink-powder-kit",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #09 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-09-rivaj-hd-2290422",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-09-RIOS-347.jpg?v=1756711981",
+      "currentPrice": 1716,
+      "comparePrice": 2145,
+      "currency": "PKR",
+      "handle": "makeup-brush-09-rivaj-hd-2290422",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Brush #01 -RHD",
+      "url": "https://rivaj-uk.com/collections/face-hd/products/makeup-brush-01-rivaj-hd-2290414",
+      "image": "https://rivaj-uk.com/cdn/shop/products/Makeup-Brush-01-RIOS-241_1db88754-9d27-43eb-8119-681be45bc1cf.jpg?v=1756711974",
+      "currentPrice": 1236,
+      "comparePrice": 1545,
+      "currency": "PKR",
+      "handle": "makeup-brush-01-rivaj-hd-2290414",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    },
+    {
+      "title": "Pressed Sparkle Palette Rivaj Hd 114 2",
+      "url": "https://rivaj-uk.com/collections/eyes-hd/products/pressed-sparkle-palette-rivaj-hd-114-2",
+      "image": "https://rivaj-uk.com/cdn/shop/products/PressedSparklePalette-RIVAJHD_dd5558cd-e776-441b-b97b-4171e64d6398.jpg?v=1756711950",
+      "currentPrice": 1116,
+      "comparePrice": 3395,
+      "currency": "PKR",
+      "handle": "pressed-sparkle-palette-rivaj-hd-114-2",
+      "source": {
+        "selector": "homepage_product_card_v2",
+        "confidence": 0.88
+      }
+    }
+  ],
+  "technical": {
+    "finalUrl": "https://rivaj-uk.com/",
+    "responseHeaders": {
+      "Date": "Fri, 03 Jul 2026 12:34:36 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "66688",
+      "Connection": "keep-alive",
+      "x-dc": "gcp-asia-southeast1,gcp-asia-southeast1,gcp-asia-southeast1",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "localization=PK; path=/; expires=Sat, 03 Jul 2027 12:34:36 GMT; SameSite=Lax, _shopify_y=e3232b03-0ac9-456c-94fc-a0d5a0c52db5; domain=rivaj-uk.com; path=/; expires=Sat, 03 Jul 2027 18:34:36 GMT; SameSite=Lax, _shopify_s=f4eea4d7-7434-49df-9179-5375ff99c7aa; domain=rivaj-uk.com; path=/; expires=Fri, 03 Jul 2026 13:04:36 GMT; SameSite=Lax, _shopify_essential=:AZ8n-UfdAAEABz7dB2_K3dd0asl9qorp4dlZfTQ-QthNJ6BulrDwpPvpOJB23rUilUHWwV3_9pue0vWBxxNgZV36NWO6jQ5mu5eWyfWP0XIcst0oJPjSe2BS0HPunW0bwIwvhc0TGDwLA47FRt-Kgo1jc40EcDjdK4lZ96lyKsqAiOmCHe56LLz0Oe4pv5wSK6oXOOsVc9Ua4Xy0M0elHmv5GPN__Kb_shrOLU074niPtbcpXRMPGKIoTBGFkWrRj1cZ-LdmF0jdHMYcc7mNCYBeeLx0FhWoVB5WCYTmvd-4v4H-_3zVoQTWtcq0K8LjHcBDiloE6EZzL1_aLF5WVzWudkuG722l3zVs4Vy0x0tYxe3EakRBvRrA44LZXGIpqT521M0IF5ElrKoNofWLT1Kn:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_analytics=:AZ8n-UmqAAEATQBFns2lXL7Q8rVTzfi9Mt5K4QE26owD6tetSmTriVdBytrr-03hKwSbOFJAjo103oWCEWXpDqabLeN3cbmz9ToKg2M:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_marketing=:AZ8n-UmqAAEARp1tHyqBebavkgEHwj1B27n39M_RmYBsOV1_L3FkJyE8UdmXDfPx35nWxMmpwdJpQ8Pvfl94iCODa5M:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <//rivaj-uk.com/cdn/shop/t/36/assets/theme.css?v=74450073783372036231780136570>; as=\"style\"; rel=\"preload\"",
+      "speculation-rules": "\"/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json\"",
+      "etag": "\"page_cache:62120395002:IndexController:7fed502d181bc561414ee0470a1ffaba\"",
+      "content-encoding": "br",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "shopify-complexity-score": "0",
+      "shopify-complexity-score-v2": "467",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "X-Content-Type-Options": "nosniff",
+      "vary": "Accept, accept-encoding",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "content-language": "en-PK",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=471;desc=\"gc:34\", db;dur=59, db_async;dur=11.582, render;dur=273, asn;desc=\"135407\", edge;desc=\"SIN\", country;desc=\"PK\", theme;desc=\"163374465274\", pageType;desc=\"index\", servedBy;desc=\"vp7p\", requestID;desc=\"b0f0cdd4-7694-42dc-aae5-386a9b2b8d02-1783082076\", _y;desc=\"e3232b03-0ac9-456c-94fc-a0d5a0c52db5\", _s;desc=\"f4eea4d7-7434-49df-9179-5375ff99c7aa\", _cmp;desc=\"3.AMPS_PKPB_f_f_o1EffNo6Q3aNNTMDk-J1sw\", compressionLevel;desc=\"5\", compressionTime;dur=41.234",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "server": "cloudflare",
+      "X-XSS-Protection": "1; mode=block",
+      "x-request-id": "b0f0cdd4-7694-42dc-aae5-386a9b2b8d02-1783082076",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7mmaP2Ij9E9Sg0uv247%2FlnmknKW6nnxIa1nBP5BGay%2BDzprXXynI0SFMmVV8fQlH5xs1FTNyJh7CCNZajXW29knrrkRrL4Loi14Ouz4Oqk%2BfetQDOoSDKv5hgbwNWQ%3D%3D\"}]}",
+      "CF-RAY": "a155ecdf7d9b8bc6-SIN",
+      "status_code": 200,
+      "fetch_method": "requests",
+      "blocked": false
+    }
+  },
+  "source": {
+    "extractor": "Shopify Homepage Extractor v3.0",
+    "confidence": 0.9
+  },
+  "features": {
+    "hasAnnouncementBar": false,
+    "hasHero": true,
+    "hasCollectionBanners": true,
+    "hasFeaturedProducts": true,
+    "hasFeaturedCollections": true,
+    "hasBlogPreview": false,
+    "hasNewsletter": false,
+    "hasTestimonials": false,
+    "hasTrustSignals": false,
+    "hasInstagramFeed": false,
+    "hasWhatsapp": false,
+    "hasDiscountMessaging": true,
+    "hasProducts": true,
+    "hasPrices": true
+  },
+  "metrics": {
+    "sectionCount": 7,
+    "heroCount": 1,
+    "collectionBannerCount": 7,
+    "imageCount": 90,
+    "featuredProductCount": 30,
+    "featuredProductWithPriceCount": 30,
+    "featuredCollectionCount": 13,
+    "ctaCount": 3,
+    "blogLinkCount": 0,
+    "hasAnnouncementBar": false,
+    "productSectionCount": 5,
+    "productSectionWithPriceCount": 5,
+    "productCardEstimate": 30
+  },
+  "homepageSummary": {
+    "siteName": "Rivaj",
+    "primaryCategory": "makeup",
+    "positioning": [
+      "Summer Essentials",
+      "SULPHATE-FREE HAIR CARE",
+      "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+      "FRAGRANCES FOR MEN & WOMEN",
+      "Whitening Face Serum 30ml",
+      "Ultra Thin Bloom Sanitary Pads 8 PCS - Large"
+    ],
+    "heroCount": 1,
+    "heroType": "image",
+    "heroStyle": "single_image",
+    "heroHasText": false,
+    "collectionCount": 13,
+    "featuredProductCount": 30,
+    "productSectionCount": 5,
+    "testimonialCount": 0,
+    "trustSignalCount": 0,
+    "primaryCtas": [],
+    "topSections": [
+      "product_section",
+      "content_section",
+      "category_showcase"
+    ],
+    "homepageType": "beauty_cosmetics",
+    "businessClassification": {
+      "homepageType": "beauty_cosmetics",
+      "subCategories": [
+        "face_makeup",
+        "eye_makeup",
+        "lip_makeup",
+        "skincare",
+        "makeup_remover",
+        "nail"
+      ]
+    }
+  },
+  "warnings": [
+    "hero_text_not_detected_possible_embedded_media_text"
+  ],
+  "success": true,
+  "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+  },
+  "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+      "url": "https://rivaj-uk.com/",
+      "domain": "rivaj-uk.com",
+      "pageType": "homepage",
+      "platform": "Shopify",
+      "title": "Affordable Makeup, Skincare & Fragrances in Pakistan #ISetMyOwnRivaj",
+      "description": "Rivaj Cosmetics is a rapidly growing best makeup brand in Pakistan. Rivaj cosmetics offers a wide range of beauty, skincare, haircare, healthcare and fragrances products for men &amp; women. Place order and get discounts on every new order. We deliver in all rural and urban areas of Pakistan.",
+      "h1": "Affordable Makeup, Skincare &amp; Fragrances in Pakistan #ISetMyOwnRivaj",
+      "canonical": "https://rivaj-uk.com/"
+    },
+    "competitiveSignals": {
+      "positioning": [
+        "affordable"
+      ],
+      "promotionalSignals": [
+        "discount",
+        "offer",
+        "% off"
+      ],
+      "pricingSignals": {
+        "pricesDetected": 20,
+        "samplePrices": [
+          285,
+          565,
+          565,
+          285,
+          565,
+          214,
+          285,
+          162,
+          565,
+          413
+        ]
+      },
+      "productFocus": [
+        "SPF60 Whitening & Vanishing Sunblock",
+        "Whitening Face Serum 30ml",
+        "Vitamin C Face Serum 30ml",
+        "SPF90 Sunblock",
+        "Hyaluronic Acid Face Serum 30ml",
+        "Pinkish Whitening Face Wash",
+        "SPF50 Kids Sunblock",
+        "Rose Water - 100ml",
+        "Acne Treatment Face Serum 30ml",
+        "Cleansing Milk 150ml",
+        "Evernoya Keratin Sulphate-Free Shampoo 350ml",
+        "Evernoya Hyaluronic Acid Sulphate-Free Shampoo 350ml",
+        "Evernoya Anti-Dandruff Sulphate-Free Shampoo 350ml",
+        "Evernoya Rosemary Sulphate-Free Shampoo 350ml",
+        "Evernoya Argan Oil Sulphate-Free Shampoo 350ml",
+        "Evernoya Rosemary Sulphate-Free Hair Serum 100ml",
+        "Evernoya Anti-Dandruff Sulphate-Free Hair Serum 100ml",
+        "Evernoya Keratin Sulphate-Free Hair Serum 100ml",
+        "Evernoya Argan Oil Sulphate-Free Hair Serum 100ml",
+        "Evernoya Hyaluronic Sulphate-Free Acid Hair Mask 320g"
+      ],
+      "trustSignals": [],
+      "ctaStrategy": {
+        "primaryCtas": [
+          {
+            "text": "Evernoya",
+            "url": "https://rivaj-uk.com/collections/evernoya"
+          },
+          {
+            "text": "FOR MEN",
+            "url": "https://rivaj-uk.com/collections/for-men"
+          },
+          {
+            "text": "FOR WOMEN",
+            "url": "https://rivaj-uk.com/collections/for-women"
+          },
+          {
+            "text": "Contact Us",
+            "url": null
+          }
+        ],
+        "ctaCount": 4
+      },
+      "contentAngles": [
+        "Rivaj"
+      ],
+      "ecommerceSignals": {
+        "hasProducts": true,
+        "productCountExtracted": 30,
+        "hasPrices": true,
+        "hasCartOrCheckout": true,
+        "hasRealEcommerceEvidence": true
+      }
+    },
+    "extractionQuality": {
+      "score": 0.96,
+      "warnings": [],
+      "missingFields": [
+        "homepage.ecommerceSignals"
+      ],
+      "unfetchedFields": []
+    },
+    "merger": {
+      "extractionMethod": "requests",
+      "qualityScore": 0.96,
+      "qualityBucket": "good",
+      "needsAIInsightReview": false,
+      "fallbacksTried": [
+        "requests"
+      ],
+      "usableForMerge": true,
+      "usableForInsights": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_instructions": "VERIFY each value against the real page in your browser. Fix wrong values, delete fields you don't want checked.",
+  "fields": {
+    "page.pageType": "general",
+    "platform": "Unknown",
+    "pricing.plans.__len__": 5,
+    "pricing.plans[0].name": "Free",
+    "pricing.plans[0].price.amount": 0,
+    "pricing.plans[0].price.currency": "$",
+    "pricing.plans[0].price.raw": "$0",
+    "pricing.plans[0].price.period": "/mo",
+    "pricing.plans[1].name": "Pro",
+    "pricing.plans[1].price.amount": 17.0,
+    "pricing.plans[1].price.currency": "$",
+    "pricing.plans[1].price.raw": "$17 Per month",
+    "pricing.plans[1].price.period": "/mo",
+    "pricing.plans[2].name": "Max",
+    "pricing.plans[2].price.amount": 100.0,
+    "pricing.plans[2].price.currency": "$",
+    "pricing.plans[2].price.raw": "$100 Per month",
+    "pricing.plans[2].price.period": "/mo",
+    "pricing.plans[3].name": "Team",
+    "pricing.plans[3].price.amount": 20.0,
+    "pricing.plans[3].price.currency": "$",
+    "pricing.plans[3].price.raw": "$20 per seat / month if billed annually",
+    "pricing.plans[3].price.period": "/seat/mo",
+    "pricing.plans[4].name": "Enterprise",
+    "pricing.plans[4].price.currency": "$",
+    "pricing.plans[4].price.raw": "$20.0/seat + usage at API rates",
+    "pricing.plans[4].price.period": "/seat"
+  }
+}

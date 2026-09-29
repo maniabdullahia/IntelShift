@@ -1,0 +1,16 @@
+{
+  "_instructions": "VERIFY each value against the real page in your browser. Fix wrong values, delete fields you don't want checked.",
+  "fields": {
+    "page.pageType": "collection",
+    "platform": "Shopify",
+    "collectionSummary.name": "Lips",
+    "collectionSummary.productCount": 10,
+    "products[0].name": "Kiss Me Long Lasting Matte Lipstick - Bold Smooth Lip Color",
+    "products[0].price.current": 1890,
+    "products[0].price.currency": "PKR",
+    "products[1].name": "Matte Lipstick Sivanna Soft Long Lasting Lipstick",
+    "products[1].price.current": 1650,
+    "products[1].price.currency": "PKR",
+    "products.__len__": 10
+  }
+}

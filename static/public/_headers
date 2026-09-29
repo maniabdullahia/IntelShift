@@ -1,0 +1,32 @@
+# Netlify cache headers
+# Hashed JS/CSS/images — safe to cache for 1 year (Vite adds content hash to filenames)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts — 1 year
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+
+# Favicon — 1 week
+/favicon.*
+  Cache-Control: public, max-age=604800
+
+# OG image — 1 month
+/og-image.png
+  Cache-Control: public, max-age=2592000
+
+# robots.txt, sitemap — 1 day
+/robots.txt
+  Cache-Control: public, max-age=86400
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+# HTML (index.html served for all SPA routes) — no cache so deploys are instant
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

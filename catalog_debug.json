@@ -1,0 +1,515 @@
+﻿{
+    "success":  true,
+    "base":  "https://stdbeauty.com",
+    "platform":  null,
+    "catalogSource":  "sitemap",
+    "isShopify":  false,
+    "_menuDebug":  {
+                       "renderLen":  72597,
+                       "menuEntries":  12,
+                       "collectionsInDom":  [
+                                                "brow-brushes",
+                                                "eye-brushes",
+                                                "eye-makeup",
+                                                "eyelashes",
+                                                "face-brushes",
+                                                "face",
+                                                "highlighters",
+                                                "lip-brushes",
+                                                "lip-makeup",
+                                                "lip-tints",
+                                                "lipsticks",
+                                                "makeup-brushes"
+                                            ],
+                       "collectionsNotInDom":  [
+
+                                               ],
+                       "navHtml":  "\u003cheader class=\"sticky top-0 z-50\"\u003e\u003cdiv class=\"overflow-hidden border-b border-ink/10 bg-ink text-cream\"\u003e\u003cdiv class=\"flex w-max animate-marquee items-center gap-0 py-2.5\"\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eFree delivery on orders over Rs 4,000\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eCash on delivery all over Pakistan\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eCruelty-free Â· Dermatologically tested\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eNew: the Nudes lip collection\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eFree delivery on orders over Rs 4,000\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eCash on delivery all over Pakistan\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eCruelty-free Â· Dermatologically tested\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003cspan class=\"flex items-center gap-6 whitespace-nowrap px-6\"\u003e\u003cspan class=\"text-[10px] font-medium uppercase tracking-[0.2em]\"\u003eNew: the Nudes lip collection\u003c/span\u003e\u003csvg aria-hidden=\"true\" class=\"text-copper\" fill=\"none\" height=\"11\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"11\"\u003e\u003cpath d=\"M12 3l1.9 5.6L19.5 10.5 13.9 12.4 12 18l-1.9-5.6L4.5 10.5l5.6-1.9z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv class=\"border-b bg-cream/92 backdrop-blur-md transition-[border-color,box-shadow] border-line shadow-[0_1px_24px_rgba(25,21,18,0.05)]\"\u003e\u003cdiv class=\"shell\"\u003e\u003cdiv class=\"grid grid-cols-[1fr_auto_1fr] items-center transition-[height] duration-300 h-16\"\u003e\u003cnav aria-label=\"Main\" class=\"hidden items-center gap-7 lg:flex\"\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"false\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"false\" data-discover=\"true\" href=\"/collections/face\"\u003eFace Makeup\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/highlighters\"\u003eHighlighters\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"false\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"false\" data-discover=\"true\" href=\"/collections/lip-makeup\"\u003eLip Makeup\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lipsticks\"\u003eLipstick\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-tints\"\u003eLip Tints\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"false\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"false\" data-discover=\"true\" href=\"/collections/eye-makeup\"\u003eEye Makeup\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/eyelashes\"\u003eEyelashes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"true\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"true\" data-discover=\"true\" href=\"/collections/makeup-brushes\"\u003eMakeup Brushs\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/face-brushes\"\u003eFace Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/eye-brushes\"\u003eEye Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/brow-brushes\"\u003eBrow Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-brushes\"\u003eLip Brushes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"absolute left-1/2 top-full z-20 -translate-x-1/2 pt-3\"\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/face-brushes\"\u003eFace Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/eye-brushes\"\u003eEye Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/brow-brushes\"\u003eBrow Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-brushes\"\u003eLip Brushes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003c/div\u003e\u003c/nav\u003e\u003cbutton aria-label=\"Open menu\" class=\"justify-self-start p-2 text-ink lg:hidden\"\u003e\u003csvg aria-hidden=\"true\" fill=\"none\" height=\"22\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"22\"\u003e\u003cpath d=\"M3.5 7h17M3.5 12h17M3.5 17h11\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\u003ca aria-label=\"STD Beauty â home\" class=\"justify-self-center px-4\" data-discover=\"true\" href=\"/\"\u003e\u003cimg alt=\"STD Beauty\" class=\"w-auto transition-[height] duration-300 h-9 md:h-11\" src=\"/assets/wordmark-CtcEskOn.png\"/\u003e\u003c/a\u003e\u003cdiv class=\"flex items-center justify-end gap-0.5 md:gap-1\"\u003e\u003cbutton aria-label=\"Search\" class=\"p-2.5 text-ink-soft transition-colors hover:text-ink\"\u003e\u003csvg aria-hidden=\"true\" fill=\"none\" height=\"19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"19\"\u003e\u003ccircle cx=\"11\" cy=\"11\" r=\"7\"\u003e\u003c/circle\u003e\u003cpath d=\"M20 20l-3.6-3.6\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\u003cbutton aria-label=\"Bag, 0 items\" class=\"relative p-2.5 text-ink-soft transition-colors hover:text-ink\"\u003e\u003csvg aria-hidden=\"true\" fill=\"none\" height=\"19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\" viewbox=\"0 0 24 24\" width=\"19\"\u003e\u003cpath d=\"M4.5 7.5h15l-1 12.5a1.5 1.5 0 0 1-1.5 1.4H7a1.5 1.5 0 0 1-1.5-1.4z\"\u003e\u003c/path\u003e\u003cpath d=\"M8.75 10V6.75a3.25 3.25 0 0 1 6.5 0V10\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/button\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/header\u003e \u003cnav aria-label=\"Main\" class=\"hidden items-center gap-7 lg:flex\"\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"false\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"false\" data-discover=\"true\" href=\"/collections/face\"\u003eFace Makeup\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/highlighters\"\u003eHighlighters\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"false\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"false\" data-discover=\"true\" href=\"/collections/lip-makeup\"\u003eLip Makeup\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lipsticks\"\u003eLipstick\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-tints\"\u003eLip Tints\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"false\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"false\" data-discover=\"true\" href=\"/collections/eye-makeup\"\u003eEye Makeup\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/eyelashes\"\u003eEyelashes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003cdiv class=\"relative\"\u003e\u003ca aria-expanded=\"true\" aria-haspopup=\"true\" class=\"link-underline label-caps block py-2 text-ink-soft transition-colors hover:text-ink\" data-active=\"true\" data-discover=\"true\" href=\"/collections/makeup-brushes\"\u003eMakeup Brushs\u003c/a\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\" data-persisted=\"1\" style=\"display: block !important; visibility: visible !important; position: static !important;\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/face-brushes\"\u003eFace Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/eye-brushes\"\u003eEye Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/brow-brushes\"\u003eBrow Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-brushes\"\u003eLip Brushes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003cdiv class=\"absolute left-1/2 top-full z-20 -translate-x-1/2 pt-3\"\u003e\u003cul class=\"animate-slide-down min-w-[190px] border border-line bg-cream py-2 shadow-[0_16px_40px_rgba(25,21,18,0.10)]\"\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/face-brushes\"\u003eFace Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/eye-brushes\"\u003eEye Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/brow-brushes\"\u003eBrow Brushes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"block whitespace-nowrap px-5 py-2.5 text-[13.5px] text-ink-soft transition-colors hover:bg-cream-deep/60 hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-brushes\"\u003eLip Brushes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\u003c/div\u003e\u003c/nav\u003e \u003cnav aria-label=\"Shop\"\u003e\u003ch3 class=\"label-caps mb-4 text-ink\"\u003eShop\u003c/h3\u003e\u003cul class=\"space-y-2.5\"\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/shop\"\u003eAll products\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/collections/face\"\u003eFace Makeup\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/collections/lip-makeup\"\u003eLip Makeup\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/collections/eye-makeup\"\u003eEye Makeup\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/collections/makeup-brushes\"\u003eMakeup Brushes\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/nav\u003e \u003cnav aria-label=\"Help\"\u003e\u003ch3 class=\"label-caps mb-4 text-ink\"\u003eHelp\u003c/h3\u003e\u003cul class=\"space-y-2.5\"\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/track\"\u003eTrack your order\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/shipping\"\u003eShipping \u0026amp; delivery\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/returns\"\u003eReturns \u0026amp; exchanges\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/contact\"\u003eContact us\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/nav\u003e \u003cnav aria-label=\"Policies\"\u003e\u003ch3 class=\"label-caps mb-4 text-ink\"\u003ePolicies\u003c/h3\u003e\u003cul class=\"space-y-2.5\"\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/privacy\"\u003ePrivacy policy\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca class=\"text-[13.5px] text-ink-soft transition-colors hover:text-ink\" data-discover=\"true\" href=\"/terms\"\u003eTerms of service\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/nav\u003e"
+                   },
+    "collections":  [
+                        {
+                            "url":  "https://stdbeauty.com/collections/brow-brushes",
+                            "handle":  "brow-brushes",
+                            "title":  "Brow Brushes",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/eye-brushes",
+                            "handle":  "eye-brushes",
+                            "title":  "Eye Brushes",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/eye-makeup",
+                            "handle":  "eye-makeup",
+                            "title":  "Eye Makeup",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/eyelashes",
+                            "handle":  "eyelashes",
+                            "title":  "Eyelashes",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/face-brushes",
+                            "handle":  "face-brushes",
+                            "title":  "Face Brushes",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/face",
+                            "handle":  "face",
+                            "title":  "Face",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/highlighters",
+                            "handle":  "highlighters",
+                            "title":  "Highlighters",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/lip-brushes",
+                            "handle":  "lip-brushes",
+                            "title":  "Lip Brushes",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/lip-makeup",
+                            "handle":  "lip-makeup",
+                            "title":  "Lip Makeup",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/lip-tints",
+                            "handle":  "lip-tints",
+                            "title":  "Lip Tints",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/lipsticks",
+                            "handle":  "lipsticks",
+                            "title":  "Lipsticks",
+                            "products_count":  null
+                        },
+                        {
+                            "url":  "https://stdbeauty.com/collections/makeup-brushes",
+                            "handle":  "makeup-brushes",
+                            "title":  "Makeup Brushes",
+                            "products_count":  null
+                        }
+                    ],
+    "products":  [
+                     {
+                         "url":  "https://stdbeauty.com/products/lip-tint-sd354",
+                         "handle":  "lip-tint-sd354",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/nudes-lipstick-sd169",
+                         "handle":  "nudes-lipstick-sd169",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/foundation-brush-gs-154",
+                         "handle":  "foundation-brush-gs-154",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/spooly-brush-gs-163",
+                         "handle":  "spooly-brush-gs-163",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/round-header-multipurpose-brush-mb-378",
+                         "handle":  "round-header-multipurpose-brush-mb-378",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/powder-brush-ps-191",
+                         "handle":  "powder-brush-ps-191",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/medium-size-eye-shadow-brush-wb-141",
+                         "handle":  "medium-size-eye-shadow-brush-wb-141",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/lower-liner-eyeshadow-brush-gs-160",
+                         "handle":  "lower-liner-eyeshadow-brush-gs-160",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/lip-liner-brush-ps-196",
+                         "handle":  "lip-liner-brush-ps-196",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/lip-brush-gs-161",
+                         "handle":  "lip-brush-gs-161",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/liner-brush-ps-199",
+                         "handle":  "liner-brush-ps-199",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/liner-brush-gs-162",
+                         "handle":  "liner-brush-gs-162",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/larger-eyeshadow-brush-wb-131",
+                         "handle":  "larger-eyeshadow-brush-wb-131",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/highlighter-brush-ps-193",
+                         "handle":  "highlighter-brush-ps-193",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/highlighter-brush-gs-155",
+                         "handle":  "highlighter-brush-gs-155",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/false-eyelashes-sd-67",
+                         "handle":  "false-eyelashes-sd-67",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/highlighter-sh957",
+                         "handle":  "highlighter-sh957",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/flat-blending-brush-gs-158",
+                         "handle":  "flat-blending-brush-gs-158",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/false-eyelashes-sd-17",
+                         "handle":  "false-eyelashes-sd-17",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/flat-blending-brush",
+                         "handle":  "flat-blending-brush",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/false-eyelashes-sd-11",
+                         "handle":  "false-eyelashes-sd-11",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/eyeshadow-shaping-brush-ps-197",
+                         "handle":  "eyeshadow-shaping-brush-ps-197",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/eyeshadow-creasing-brush-wb-149",
+                         "handle":  "eyeshadow-creasing-brush-wb-149",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/eyeshadow-brush-ps-195",
+                         "handle":  "eyeshadow-brush-ps-195",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/false-eyelashes-sd-09",
+                         "handle":  "false-eyelashes-sd-09",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/eyeshadow-brush-gs-159",
+                         "handle":  "eyeshadow-brush-gs-159",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/contour-brush-ps-192",
+                         "handle":  "contour-brush-ps-192",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/contour-brush-gs-163",
+                         "handle":  "contour-brush-gs-163",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/false-eyelashes-sd-07",
+                         "handle":  "false-eyelashes-sd-07",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/concealer-brush-ps-198",
+                         "handle":  "concealer-brush-ps-198",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/false-eyelashes-sd-03",
+                         "handle":  "false-eyelashes-sd-03",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/blush-on-brush-gs-153",
+                         "handle":  "blush-on-brush-gs-153",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/blush-on-and-bronze-brush-wb-136",
+                         "handle":  "blush-on-and-bronze-brush-wb-136",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/blending-brush-ps-194",
+                         "handle":  "blending-brush-ps-194",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/blending-brush-gs-156",
+                         "handle":  "blending-brush-gs-156",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     },
+                     {
+                         "url":  "https://stdbeauty.com/products/angled-liner-eyebrow-brush-wb-132",
+                         "handle":  "angled-liner-eyebrow-brush-wb-132",
+                         "title":  null,
+                         "product_type":  null,
+                         "tags":  [
+
+                                  ]
+                     }
+                 ],
+    "menu":  [
+                 {
+                     "url":  "https://stdbeauty.com/collections/face",
+                     "title":  "Face",
+                     "path":  [
+                                  "Face Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/highlighters",
+                     "title":  "Highlighters",
+                     "path":  [
+                                  "Face Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/lip-makeup",
+                     "title":  "Lip Makeup",
+                     "path":  [
+                                  "Lip Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/lipsticks",
+                     "title":  "Lipsticks",
+                     "path":  [
+                                  "Lip Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/lip-tints",
+                     "title":  "Lip Tints",
+                     "path":  [
+                                  "Lip Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/eye-makeup",
+                     "title":  "Eye Makeup",
+                     "path":  [
+                                  "Eye Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/eyelashes",
+                     "title":  "Eyelashes",
+                     "path":  [
+                                  "Eye Makeup"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/makeup-brushes",
+                     "title":  "Makeup Brushes",
+                     "path":  [
+                                  "Makeup Brushs"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/face-brushes",
+                     "title":  "Face Brushes",
+                     "path":  [
+                                  "Makeup Brushs"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/eye-brushes",
+                     "title":  "Eye Brushes",
+                     "path":  [
+                                  "Makeup Brushs"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/brow-brushes",
+                     "title":  "Brow Brushes",
+                     "path":  [
+                                  "Makeup Brushs"
+                              ]
+                 },
+                 {
+                     "url":  "https://stdbeauty.com/collections/lip-brushes",
+                     "title":  "Lip Brushes",
+                     "path":  [
+                                  "Makeup Brushs"
+                              ]
+                 }
+             ]
+}

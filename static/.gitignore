@@ -1,0 +1,6 @@
+node_modules/
+.hintrc
+
+dist/
+
+.env.development

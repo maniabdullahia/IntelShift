@@ -1,0 +1,4090 @@
+{
+ "schemaVersion": "site_snapshot_v2",
+ "generatedAt": "2026-07-15T07:20:00+00:00",
+ "site": {
+  "domain": "gabrini.pk",
+  "siteName": "Gabrini Cosmetics Pakistan",
+  "platform": "Shopify",
+  "platformConfidence": 0.95,
+  "siteType": "ecommerce",
+  "businessCategory": "beauty_cosmetics",
+  "subCategories": [
+   "face_makeup",
+   "eye_makeup",
+   "lip_makeup",
+   "nail"
+  ],
+  "positioning": [
+   "SHOP OUR COLLECTION",
+   "Face",
+   "Trusted By 1,000+ Customers",
+   "Newsletter"
+  ],
+  "pagesAnalyzedCount": 5,
+  "pageTypesAnalyzed": {
+   "homepage": 1,
+   "collection": 4
+  },
+  "analyzedUrls": [
+   "https://gabrini.pk/",
+   "https://gabrini.pk/collections/foundations",
+   "https://gabrini.pk/collections/highlighters",
+   "https://gabrini.pk/collections/eyeliners",
+   "https://gabrini.pk/collections/mascaras"
+  ],
+  "catalog": {
+   "totalUniqueProducts": 36,
+   "productsWithPrice": 31,
+   "productsWithoutPrice": 5,
+   "priceCoverageRate": 0.861,
+   "currency": "PKR",
+   "priceRange": {
+    "min": 795,
+    "max": 3195,
+    "average": 1804.68
+   },
+   "onSaleCount": 0,
+   "inStockCount": 13,
+   "categoriesDetected": [
+    "Eyeliners",
+    "Foundations",
+    "Highlighters",
+    "Mascaras"
+   ],
+   "vendorsDetected": [
+    "Gabrini Cosmetics Pakistan"
+   ]
+  },
+  "collections": [
+   {
+    "url": "https://gabrini.pk/collections/foundations",
+    "name": "Foundations",
+    "productCount": 9,
+    "inStockCount": 0,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   },
+   {
+    "url": "https://gabrini.pk/collections/highlighters",
+    "name": "Highlighters",
+    "productCount": 6,
+    "inStockCount": 0,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   },
+   {
+    "url": "https://gabrini.pk/collections/eyeliners",
+    "name": "Eyeliners",
+    "productCount": 4,
+    "currency": "PKR",
+    "priceRange": {
+     "min": 1195,
+     "max": 1595
+    },
+    "inStockCount": 4,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   },
+   {
+    "url": "https://gabrini.pk/collections/mascaras",
+    "name": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+    "productCount": 9,
+    "currency": "PKR",
+    "priceRange": {
+     "min": 1495,
+     "max": 1645
+    },
+    "inStockCount": 9,
+    "outOfStockCount": 0,
+    "hasFilters": true,
+    "hasSort": true
+   }
+  ],
+  "navigation": {
+   "mainLinkCount": 23,
+   "footerLinkCount": 11,
+   "topLabels": [
+    "Face",
+    "Foundations",
+    "Concealers",
+    "Compacts & BB Powders",
+    "Blush On",
+    "Highlighters",
+    "Makeup Fixer",
+    "Eyes",
+    "Mascaras",
+    "Eyeliners",
+    "Kajal Pencil",
+    "Eyebrows",
+    "Express Pencils",
+    "Lips",
+    "Lipstick & Lipgloss"
+   ]
+  },
+  "homepageFeatures": {
+   "hasAnnouncementBar": true,
+   "hasHero": true,
+   "hasCollectionBanners": false,
+   "hasFeaturedProducts": true,
+   "hasFeaturedCollections": true,
+   "hasBlogPreview": false,
+   "hasNewsletter": true,
+   "hasTestimonials": true,
+   "hasTrustSignals": true,
+   "hasInstagramFeed": false,
+   "hasWhatsapp": false,
+   "hasDiscountMessaging": true,
+   "hasProducts": true,
+   "hasPrices": true
+  },
+  "homepageMetrics": {
+   "sectionCount": 6,
+   "heroCount": 3,
+   "collectionBannerCount": 0,
+   "imageCount": 67,
+   "featuredProductCount": 30,
+   "featuredProductWithPriceCount": 0,
+   "featuredCollectionCount": 6,
+   "ctaCount": 5,
+   "blogLinkCount": 0,
+   "hasAnnouncementBar": true,
+   "productSectionCount": 2,
+   "productSectionWithPriceCount": 0,
+   "productCardEstimate": 30
+  },
+  "totalUniqueProducts": 36,
+  "productsWithPrice": 31,
+  "productsWithoutPrice": 5,
+  "categoriesDetected": [
+   "Eyeliners",
+   "Foundations",
+   "Highlighters",
+   "Mascaras"
+  ],
+  "vendorsDetected": [
+   "Gabrini Cosmetics Pakistan"
+  ]
+ },
+ "pagesAnalyzed": [
+  {
+   "url": "https://gabrini.pk/",
+   "pageType": "homepage",
+   "platform": "Shopify",
+   "title": "Gabrini Cosmetics Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://gabrini.pk/",
+     "domain": "gabrini.pk",
+     "pageType": "homepage",
+     "platform": "Shopify",
+     "title": "Gabrini Cosmetics Pakistan",
+     "description": "",
+     "h1": "",
+     "canonical": "https://gabrini.pk/"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "SHOP OUR COLLECTION",
+      "Trusted By 1,000+ Customers",
+      "Newsletter"
+     ],
+     "promotionalSignals": [
+      "sale",
+      "discount",
+      "bundle",
+      "save",
+      "promo"
+     ],
+     "pricingSignals": {
+      "pricesDetected": 20,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 2495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "2495.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 3195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3195.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 1995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1995.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 2995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "2995.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 1995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1995.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 2295,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "2295.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 3195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "3195.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 1695,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1695.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 1495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "1495.0"
+       },
+       {
+        "currency": "PKR",
+        "current": 995,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": "995.0"
+       }
+      ]
+     },
+     "productFocus": [
+      "Derma Make Up Cover Foundation",
+      "Gabrini Hd Matte Foundation",
+      "Gabrini Compact Powder",
+      "Gabrini Argan Miracle Hair Oil",
+      "Gabrini Makeup Fixing Spray",
+      "Highlighter Palette A",
+      "Visible Matt Foundation",
+      "Gabrini Liquid Concealer",
+      "Silicon Mascara Long Lash",
+      "Lovers Rouge Lipstick",
+      "Professional Matte Powder",
+      "Foundation 3In1",
+      "Gabrini Bb Powder",
+      "Gabrini Photo Finish Primer Base",
+      "Gabrini Professional Blush On",
+      "Single Highlighter",
+      "Matt Eyeliner Black",
+      "Eye Brow Pencil 1",
+      "Gabrini Kajal Pencil Extra Black Long Lasting Upto 12 Hours",
+      "Eyebrow Mascara Dark Brown"
+     ],
+     "trustSignals": [
+      "trusted"
+     ],
+     "ctaStrategy": {
+      "primaryCtas": [
+       {
+        "text": "Contact Us",
+        "url": null
+       },
+       {
+        "text": "Subscribe",
+        "url": null
+       }
+      ],
+      "ctaCount": 2
+     },
+     "contentAngles": [],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 21,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.9,
+     "warnings": [
+      "no_ctas_detected"
+     ],
+     "missingFields": [
+      "seo.metaDescription",
+      "homepage.primaryCtas"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.9,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Gabrini Cosmetics Pakistan",
+    "canonical": "https://gabrini.pk/"
+   },
+   "openGraph": {
+    "type": "website",
+    "title": "Gabrini Cosmetics Pakistan",
+    "url": "https://gabrini.pk/",
+    "site_name": "Gabrini Cosmetics Pakistan"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     },
+     {
+      "text": "Track your order",
+      "url": "https://postex.pk/tracking"
+     }
+    ],
+    "footerLinks": [
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "About Us",
+      "url": "https://gabrini.pk/pages/about"
+     },
+     {
+      "text": "Contact Us",
+      "url": "https://gabrini.pk/pages/contact"
+     },
+     {
+      "text": "Track Your Order",
+      "url": "https://postex.pk/tracking"
+     },
+     {
+      "text": "Shipping Policy",
+      "url": "https://gabrini.pk/policies/shipping-policy"
+     },
+     {
+      "text": "Return Policy",
+      "url": "https://gabrini.pk/policies/refund-policy"
+     },
+     {
+      "text": "Privacy Policy",
+      "url": "https://gabrini.pk/policies/privacy-policy"
+     },
+     {
+      "text": "Gabrini Cosmetics Pakistan",
+      "url": "https://gabrini.pk/"
+     }
+    ]
+   },
+   "content": {
+    "siteName": "Gabrini Cosmetics Pakistan",
+    "announcementBar": {
+     "text": "FAST SHIPPING ON ALL ORDERS SAVE MONEY IN OUR SALE Track your order",
+     "detected": true,
+     "selector": "[class*='announcement']"
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "url": "https://cdn.shopify.com/videos/c/o/v/8f71beeaab634e6f90e542d61c429fa2.mp4",
+      "sourceSelector": "hero_container/video",
+      "confidence": 0.9
+     },
+     {
+      "type": "video",
+      "url": "https://cdn.shopify.com/videos/c/o/v/993da8f460a246dca09a1004172300a9.mp4",
+      "sourceSelector": "hero_container/video",
+      "confidence": 0.9
+     },
+     {
+      "type": "video",
+      "url": "https://cdn.shopify.com/videos/c/o/v/1d60017e9b9748d98923c10f56b46460.mp4",
+      "sourceSelector": "hero_container/video",
+      "confidence": 0.9
+     }
+    ],
+    "sections": [
+     {
+      "rank": 1,
+      "type": "promotion",
+      "textPreview": "SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE SAVE NOW IN OUR SALE",
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 2,
+      "type": "product_section",
+      "intent": "category_showcase",
+      "label": "SHOP OUR COLLECTION",
+      "heading": "SHOP OUR COLLECTION",
+      "textPreview": "SHOP OUR COLLECTION",
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 3,
+      "type": "category_showcase",
+      "intent": "category_showcase",
+      "label": "Face",
+      "heading": "Face",
+      "textPreview": "Face Eyes Lips Nails",
+      "images": [
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/image_36_3.png?v=1764931135"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/image_35_1.png?v=1764931826"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/image_37_1.png?v=1764931906"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/image_38.png?v=1764931954"
+       }
+      ],
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 4,
+      "type": "product_section",
+      "intent": "general_product_grid",
+      "textPreview": "Kept me shine-free all day \u2014 finally a matte foundation that actually stays matte! Aleezay Khan Gabrini HD Matte Foundation View this product Gave such a smooth, skin-like finish that people asked if I got a facial! Sanam Ch Derma Make-Up Cover Foundation View this product Perfect for quick touch-ups \u2014 makes my skin look fresh in seconds! Aaida Mh ",
+      "images": [
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/01_c0d1299e-655d-4edd-8de7-13c32fdbf009.png?v=1764590037"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/02_6a6ac192-900c-4111-9f11-b8c121d7bc11.png?v=1764590077",
+        "alt": "Gabrini HD Matte Foundation"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/dermamakeupcover01.png?v=1767607871"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/derma_all.jpg?v=1767607871",
+        "alt": "Derma Make-Up Cover Foundation"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/compctpowder.png?v=1764060546"
+       },
+       {
+        "url": "https://gabrini.pk/cdn/shop/files/01.png?v=1764333515",
+        "alt": "Gabrini Compact Powder"
+       }
+      ],
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      },
+      "products": [
+       {
+        "title": "Gabrini Hd Matte Foundation",
+        "url": "https://gabrini.pk/products/gabrini-hd-matte-foundation",
+        "image": "https://gabrini.pk/cdn/shop/files/01_c0d1299e-655d-4edd-8de7-13c32fdbf009.png?v=1764590037",
+        "handle": "gabrini-hd-matte-foundation",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.76
+        }
+       },
+       {
+        "title": "Derma Make Up Cover Foundation",
+        "url": "https://gabrini.pk/products/derma-make-up-cover-foundation",
+        "image": "https://gabrini.pk/cdn/shop/files/dermamakeupcover01.png?v=1767607871",
+        "handle": "derma-make-up-cover-foundation",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.76
+        }
+       },
+       {
+        "title": "Compact Powder",
+        "url": "https://gabrini.pk/products/gabrini-compact-powder",
+        "image": "https://gabrini.pk/cdn/shop/files/compctpowder.png?v=1764060546",
+        "handle": "gabrini-compact-powder",
+        "source": {
+         "selector": "homepage_product_card_v2",
+         "confidence": 0.76
+        }
+       }
+      ]
+     },
+     {
+      "rank": 5,
+      "type": "newsletter",
+      "label": "Trusted By 1,000+ Customers",
+      "heading": "Trusted By 1,000+ Customers",
+      "textPreview": "Trusted By 1,000+ Customers Subscribe to our newsletter for exclusive discount codes, PR boxes, exclusive bundles & makeup tips. Enter Email Address Join",
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     },
+     {
+      "rank": 6,
+      "type": "newsletter",
+      "label": "Newsletter",
+      "heading": "Newsletter",
+      "textPreview": "Newsletter Subscribe to our newsletter for exclusive discount codes, PR boxes, exclusive bundles & makeup tips. Enter Email Address Join *By completing this form you're signing up to receive our emails and can unsubscribe at any time",
+      "source": {
+       "selector": "section_or_shopify_section",
+       "confidence": 0.8,
+       "priceCount": 0
+      }
+     }
+    ]
+   },
+   "ecommerce": {
+    "featuredProducts": [
+     {
+      "title": "Derma Make Up Cover Foundation",
+      "url": "https://gabrini.pk/products/derma-make-up-cover-foundation",
+      "price": {
+       "currency": "PKR",
+       "current": 2495,
+       "isOnSale": false,
+       "priceTextRaw": "2495.0"
+      }
+     },
+     {
+      "title": "Gabrini Hd Matte Foundation",
+      "url": "https://gabrini.pk/products/gabrini-hd-matte-foundation",
+      "price": {
+       "currency": "PKR",
+       "current": 3195,
+       "isOnSale": false,
+       "priceTextRaw": "3195.0"
+      }
+     },
+     {
+      "title": "Gabrini Compact Powder",
+      "url": "https://gabrini.pk/products/gabrini-compact-powder",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      }
+     },
+     {
+      "title": "Gabrini Argan Miracle Hair Oil",
+      "url": "https://gabrini.pk/products/gabrini-argan-miracle-hair-oil",
+      "price": {
+       "currency": "PKR",
+       "current": 2995,
+       "isOnSale": false,
+       "priceTextRaw": "2995.0"
+      }
+     },
+     {
+      "title": "Gabrini Makeup Fixing Spray",
+      "url": "https://gabrini.pk/products/gabrini-makeup-fixing-spray",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      }
+     },
+     {
+      "title": "Highlighter Palette A",
+      "url": "https://gabrini.pk/products/highlighter-palette-a",
+      "price": {
+       "currency": "PKR",
+       "current": 2295,
+       "isOnSale": false,
+       "priceTextRaw": "2295.0"
+      }
+     },
+     {
+      "title": "Visible Matt Foundation",
+      "url": "https://gabrini.pk/products/visible-matt-foundation",
+      "price": {
+       "currency": "PKR",
+       "current": 3195,
+       "isOnSale": false,
+       "priceTextRaw": "3195.0"
+      }
+     },
+     {
+      "title": "Gabrini Liquid Concealer",
+      "url": "https://gabrini.pk/products/gabrini-liquid-concealer",
+      "price": {
+       "currency": "PKR",
+       "current": 1695,
+       "isOnSale": false,
+       "priceTextRaw": "1695.0"
+      }
+     },
+     {
+      "title": "Silicon Mascara Long Lash",
+      "url": "https://gabrini.pk/products/silicon-mascara-long-lash",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false,
+       "priceTextRaw": "1495.0"
+      }
+     },
+     {
+      "title": "Lovers Rouge Lipstick",
+      "url": "https://gabrini.pk/products/lovers-rouge-lipstick",
+      "price": {
+       "currency": "PKR",
+       "current": 995,
+       "isOnSale": false,
+       "priceTextRaw": "995.0"
+      }
+     },
+     {
+      "title": "Professional Matte Powder",
+      "url": "https://gabrini.pk/products/professional-matte-powder",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      }
+     },
+     {
+      "title": "Foundation 3In1",
+      "url": "https://gabrini.pk/products/foundation-3in1",
+      "price": {
+       "currency": "PKR",
+       "current": 2595,
+       "isOnSale": false,
+       "priceTextRaw": "2595.0"
+      }
+     },
+     {
+      "title": "Gabrini Bb Powder",
+      "url": "https://gabrini.pk/products/gabrini-bb-powder",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      }
+     },
+     {
+      "title": "Gabrini Photo Finish Primer Base",
+      "url": "https://gabrini.pk/products/gabrini-photo-finish-primer-base",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      }
+     },
+     {
+      "title": "Gabrini Professional Blush On",
+      "url": "https://gabrini.pk/products/gabrini-professional-blush-on",
+      "price": {
+       "currency": "PKR",
+       "current": 1795,
+       "isOnSale": false,
+       "priceTextRaw": "1795.0"
+      }
+     },
+     {
+      "title": "Single Highlighter",
+      "url": "https://gabrini.pk/products/single-highlighter",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      }
+     },
+     {
+      "title": "Matt Eyeliner Black",
+      "url": "https://gabrini.pk/products/matt-eyeliner-black",
+      "price": {
+       "currency": "PKR",
+       "current": 1195,
+       "isOnSale": false,
+       "priceTextRaw": "1195.0"
+      }
+     },
+     {
+      "title": "Eye Brow Pencil 1",
+      "url": "https://gabrini.pk/products/eye-brow-pencil-1",
+      "price": {
+       "currency": "PKR",
+       "current": 795,
+       "isOnSale": false,
+       "priceTextRaw": "795.0"
+      }
+     },
+     {
+      "title": "Gabrini Kajal Pencil Extra Black Long Lasting Upto 12 Hours",
+      "url": "https://gabrini.pk/products/gabrini-kajal-pencil-extra-black-long-lasting-upto-12-hours",
+      "price": {
+       "currency": "PKR",
+       "current": 1145,
+       "isOnSale": false,
+       "priceTextRaw": "1145.0"
+      }
+     },
+     {
+      "title": "Eyebrow Mascara Dark Brown",
+      "url": "https://gabrini.pk/products/eyebrow-mascara-dark-brown",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false,
+       "priceTextRaw": "1495.0"
+      }
+     }
+    ],
+    "featuredCollections": [
+     {
+      "name": "All",
+      "handle": "all",
+      "url": "https://gabrini.pk/collections/all"
+     },
+     {
+      "name": "View collection",
+      "handle": "featured",
+      "url": "https://gabrini.pk/collections/featured"
+     },
+     {
+      "name": "Face",
+      "handle": "face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "name": "Eyes",
+      "handle": "eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "name": "Lips",
+      "handle": "lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "name": "Nail Paints",
+      "handle": "nail-paints",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     }
+    ],
+    "hasEcommerceSignals": false,
+    "products": [
+     {
+      "name": "Derma Make Up Cover Foundation",
+      "price": {
+       "currency": "PKR",
+       "current": 2495,
+       "isOnSale": false,
+       "priceTextRaw": "2495.0"
+      },
+      "url": "https://gabrini.pk/products/derma-make-up-cover-foundation"
+     },
+     {
+      "name": "Gabrini Hd Matte Foundation",
+      "price": {
+       "currency": "PKR",
+       "current": 3195,
+       "isOnSale": false,
+       "priceTextRaw": "3195.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-hd-matte-foundation"
+     },
+     {
+      "name": "Gabrini Compact Powder",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-compact-powder"
+     },
+     {
+      "name": "Gabrini Argan Miracle Hair Oil",
+      "price": {
+       "currency": "PKR",
+       "current": 2995,
+       "isOnSale": false,
+       "priceTextRaw": "2995.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-argan-miracle-hair-oil"
+     },
+     {
+      "name": "Gabrini Makeup Fixing Spray",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-makeup-fixing-spray"
+     },
+     {
+      "name": "Highlighter Palette A",
+      "price": {
+       "currency": "PKR",
+       "current": 2295,
+       "isOnSale": false,
+       "priceTextRaw": "2295.0"
+      },
+      "url": "https://gabrini.pk/products/highlighter-palette-a"
+     },
+     {
+      "name": "Visible Matt Foundation",
+      "price": {
+       "currency": "PKR",
+       "current": 3195,
+       "isOnSale": false,
+       "priceTextRaw": "3195.0"
+      },
+      "url": "https://gabrini.pk/products/visible-matt-foundation"
+     },
+     {
+      "name": "Gabrini Liquid Concealer",
+      "price": {
+       "currency": "PKR",
+       "current": 1695,
+       "isOnSale": false,
+       "priceTextRaw": "1695.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-liquid-concealer"
+     },
+     {
+      "name": "Silicon Mascara Long Lash",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false,
+       "priceTextRaw": "1495.0"
+      },
+      "url": "https://gabrini.pk/products/silicon-mascara-long-lash"
+     },
+     {
+      "name": "Lovers Rouge Lipstick",
+      "price": {
+       "currency": "PKR",
+       "current": 995,
+       "isOnSale": false,
+       "priceTextRaw": "995.0"
+      },
+      "url": "https://gabrini.pk/products/lovers-rouge-lipstick"
+     },
+     {
+      "name": "Professional Matte Powder",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      },
+      "url": "https://gabrini.pk/products/professional-matte-powder"
+     },
+     {
+      "name": "Foundation 3In1",
+      "price": {
+       "currency": "PKR",
+       "current": 2595,
+       "isOnSale": false,
+       "priceTextRaw": "2595.0"
+      },
+      "url": "https://gabrini.pk/products/foundation-3in1"
+     },
+     {
+      "name": "Gabrini Bb Powder",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-bb-powder"
+     },
+     {
+      "name": "Gabrini Photo Finish Primer Base",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-photo-finish-primer-base"
+     },
+     {
+      "name": "Gabrini Professional Blush On",
+      "price": {
+       "currency": "PKR",
+       "current": 1795,
+       "isOnSale": false,
+       "priceTextRaw": "1795.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-professional-blush-on"
+     },
+     {
+      "name": "Single Highlighter",
+      "price": {
+       "currency": "PKR",
+       "current": 1995,
+       "isOnSale": false,
+       "priceTextRaw": "1995.0"
+      },
+      "url": "https://gabrini.pk/products/single-highlighter"
+     },
+     {
+      "name": "Matt Eyeliner Black",
+      "price": {
+       "currency": "PKR",
+       "current": 1195,
+       "isOnSale": false,
+       "priceTextRaw": "1195.0"
+      },
+      "url": "https://gabrini.pk/products/matt-eyeliner-black"
+     },
+     {
+      "name": "Eye Brow Pencil 1",
+      "price": {
+       "currency": "PKR",
+       "current": 795,
+       "isOnSale": false,
+       "priceTextRaw": "795.0"
+      },
+      "url": "https://gabrini.pk/products/eye-brow-pencil-1"
+     },
+     {
+      "name": "Gabrini Kajal Pencil Extra Black Long Lasting Upto 12 Hours",
+      "price": {
+       "currency": "PKR",
+       "current": 1145,
+       "isOnSale": false,
+       "priceTextRaw": "1145.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-kajal-pencil-extra-black-long-lasting-upto-12-hours"
+     },
+     {
+      "name": "Eyebrow Mascara Dark Brown",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false,
+       "priceTextRaw": "1495.0"
+      },
+      "url": "https://gabrini.pk/products/eyebrow-mascara-dark-brown"
+     },
+     {
+      "name": "Silicon Mascara Water Proof",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false,
+       "priceTextRaw": "1495.0"
+      },
+      "url": "https://gabrini.pk/products/silicon-mascara-water-proof"
+     },
+     {
+      "name": "Black Dip Liner",
+      "price": {
+       "currency": "PKR",
+       "current": 1195,
+       "isOnSale": false,
+       "priceTextRaw": "1195.0"
+      },
+      "url": "https://gabrini.pk/products/black-dip-liner"
+     },
+     {
+      "name": "Liquid Eyeliner Pen",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false,
+       "priceTextRaw": "1595.0"
+      },
+      "url": "https://gabrini.pk/products/liquid-eyeliner-pen"
+     },
+     {
+      "name": "Gabrini 3D Mascara Long",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false,
+       "priceTextRaw": "1595.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-3d-mascara-long"
+     },
+     {
+      "name": "Super Stay Mascara",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false,
+       "priceTextRaw": "1595.0"
+      },
+      "url": "https://gabrini.pk/products/super-stay-mascara"
+     },
+     {
+      "name": "Silicon Mascara Volume",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false,
+       "priceTextRaw": "1495.0"
+      },
+      "url": "https://gabrini.pk/products/silicon-mascara-volume"
+     },
+     {
+      "name": "Gabrini 3 In 1 Maxi Mascaras Long Lash Volume",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false,
+       "priceTextRaw": "1595.0"
+      },
+      "url": "https://gabrini.pk/products/gabrini-3-in-1-maxi-mascaras-long-lash-volume"
+     },
+     {
+      "name": "Matte Lipgloss Long Lasting",
+      "price": {
+       "currency": "PKR",
+       "current": 1695,
+       "isOnSale": false,
+       "priceTextRaw": "1695.0"
+      },
+      "url": "https://gabrini.pk/products/matte-lipgloss-long-lasting"
+     },
+     {
+      "name": "Matte Lipstick Crayon",
+      "price": {
+       "currency": "PKR",
+       "current": 1145,
+       "isOnSale": false,
+       "priceTextRaw": "1145.0"
+      },
+      "url": "https://gabrini.pk/products/matte-lipstick-crayon"
+     },
+     {
+      "name": "Lip Oil 5Ml",
+      "price": {
+       "currency": "PKR",
+       "current": 895,
+       "isOnSale": false,
+       "priceTextRaw": "895.0"
+      },
+      "url": "https://gabrini.pk/products/lip-oil-5ml"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://gabrini.pk/"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Homepage Extractor v2",
+    "confidence": 0.85,
+    "pageTypeValidated": true
+   },
+   "summary": {
+    "siteName": "Gabrini Cosmetics Pakistan",
+    "primaryCategory": "makeup",
+    "positioning": [
+     "SHOP OUR COLLECTION",
+     "Face",
+     "Trusted By 1,000+ Customers",
+     "Newsletter"
+    ],
+    "heroCount": 3,
+    "heroType": "video",
+    "heroStyle": "video_carousel",
+    "heroHasText": false,
+    "collectionCount": 6,
+    "featuredProductCount": 30,
+    "productSectionCount": 2,
+    "testimonialCount": 0,
+    "trustSignalCount": 0,
+    "primaryCtas": [
+     {
+      "text": "View collection",
+      "url": "https://gabrini.pk/collections/featured"
+     }
+    ],
+    "topSections": [
+     "promotion",
+     "product_section",
+     "category_showcase",
+     "newsletter"
+    ],
+    "homepageType": "beauty_cosmetics",
+    "businessClassification": {
+     "homepageType": "beauty_cosmetics",
+     "subCategories": [
+      "face_makeup",
+      "eye_makeup",
+      "lip_makeup",
+      "nail"
+     ]
+    },
+    "warnings": [
+     {
+      "type": "media_no_text",
+      "url": "https://cdn.shopify.com/videos/c/o/v/8f71beeaab634e6f90e542d61c429fa2.mp4"
+     },
+     {
+      "type": "media_no_text",
+      "url": "https://cdn.shopify.com/videos/c/o/v/993da8f460a246dca09a1004172300a9.mp4"
+     },
+     {
+      "type": "media_no_text",
+      "url": "https://cdn.shopify.com/videos/c/o/v/1d60017e9b9748d98923c10f56b46460.mp4"
+     }
+    ],
+    "extractionMethod": "dom"
+   },
+   "features": {
+    "hasAnnouncementBar": true,
+    "hasHero": true,
+    "hasCollectionBanners": false,
+    "hasFeaturedProducts": true,
+    "hasFeaturedCollections": true,
+    "hasBlogPreview": false,
+    "hasNewsletter": true,
+    "hasTestimonials": true,
+    "hasTrustSignals": true,
+    "hasInstagramFeed": false,
+    "hasWhatsapp": false,
+    "hasDiscountMessaging": true,
+    "hasProducts": true,
+    "hasPrices": true
+   },
+   "metrics": {
+    "sectionCount": 6,
+    "heroCount": 3,
+    "collectionBannerCount": 0,
+    "imageCount": 67,
+    "featuredProductCount": 30,
+    "featuredProductWithPriceCount": 0,
+    "featuredCollectionCount": 6,
+    "ctaCount": 5,
+    "blogLinkCount": 0,
+    "hasAnnouncementBar": true,
+    "productSectionCount": 2,
+    "productSectionWithPriceCount": 0,
+    "productCardEstimate": 30
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.98
+   },
+   "productCountOnPage": 20
+  },
+  {
+   "url": "https://gabrini.pk/collections/foundations",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://gabrini.pk/collections/foundations",
+     "domain": "gabrini.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "description": "",
+     "h1": "Foundations",
+     "canonical": "https://gabrini.pk/collections/foundations"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "foundation",
+      "base makeup",
+      "nail",
+      "polish",
+      "nail polish"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 9,
+      "samplePrices": [
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "Express Pencil",
+      "3D Nail Polish",
+      "Brilliant Nail Polish B",
+      "Matte Nail Polish",
+      "Derma Make Up Cover Foundation",
+      "Gabrini Hd Matte Foundation",
+      "Visible Matt Foundation",
+      "Foundation 3In1",
+      "Gabrini Touch Me Matte Foundation With Spf 15"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "Foundations"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 9,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.82,
+     "warnings": [],
+     "missingFields": [
+      "seo.metaDescription",
+      "collection.prices",
+      "collection.availability",
+      "collection.priceRange"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": [
+       "collection_prices_missing",
+       "products_may_be_service_links"
+      ]
+     },
+     "qualityBucket": "good"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.82,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+    "canonical": "https://gabrini.pk/collections/foundations",
+    "h1": "Foundations"
+   },
+   "openGraph": {
+    "image": "http://gabrini.pk/cdn/shop/collections/Face_1_ac167a54-a873-44ba-a8b9-be694f1c4ef6.jpg?v=1765180160&width=1024",
+    "image:secure_url": "https://gabrini.pk/cdn/shop/collections/Face_1_ac167a54-a873-44ba-a8b9-be694f1c4ef6.jpg?v=1765180160&width=1024",
+    "image:width": "1080",
+    "image:height": "450",
+    "site_name": "Gabrini Cosmetics Pakistan"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Cart 0",
+      "url": "https://gabrini.pk/cart"
+     },
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     },
+     {
+      "text": "Track your order",
+      "url": "https://postex.pk/tracking"
+     },
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     }
+    ]
+   },
+   "content": {
+    "collectionName": "Foundations"
+   },
+   "ecommerce": {
+    "productStats": {
+     "productCount": 9,
+     "inStockCount": 0,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "Express Pencil",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/express-pencil",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "3D Nail Polish",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/3d-nail-polish",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Brilliant Nail Polish B",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Matte Nail Polish",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/matte-nail-polish",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Derma Make Up Cover Foundation",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/derma-make-up-cover-foundation",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Gabrini Hd Matte Foundation",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/gabrini-hd-matte-foundation",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Visible Matt Foundation",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/visible-matt-foundation",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Foundation 3In1",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/foundation-3in1",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     },
+     {
+      "name": "Gabrini Touch Me Matte Foundation With Spf 15",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/gabrini-touch-me-matte-foundation-with-spf-15",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "foundations"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://gabrini.pk/collections/foundations"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.72
+   },
+   "summary": {
+    "name": "Foundations",
+    "category": "foundations",
+    "productCount": 9,
+    "inStockCount": 0,
+    "outOfStockCount": 0,
+    "availabilityRatio": 0,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "unknown",
+    "consistencyFlags": [
+     "collection_prices_missing",
+     "products_may_be_service_links"
+    ]
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 9
+  },
+  {
+   "url": "https://gabrini.pk/collections/highlighters",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "domain": "gabrini.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "description": "",
+     "h1": "Highlighters",
+     "canonical": "https://gabrini.pk/collections/highlighters"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "nail",
+      "polish",
+      "nail polish",
+      "highlighter"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 6,
+      "samplePrices": [
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": null,
+        "current": null,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "Express Pencil",
+      "3D Nail Polish",
+      "Brilliant Nail Polish B",
+      "Matte Nail Polish",
+      "Highlighter Palette A",
+      "Single Highlighter"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "Highlighters"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 6,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.77,
+     "warnings": [
+      "images_missing"
+     ],
+     "missingFields": [
+      "seo.metaDescription",
+      "collection.productImages",
+      "collection.prices",
+      "collection.availability",
+      "collection.priceRange"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": [
+       "collection_prices_missing",
+       "products_may_be_service_links"
+      ]
+     },
+     "qualityBucket": "partial"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.77,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+    "canonical": "https://gabrini.pk/collections/highlighters",
+    "h1": "Highlighters"
+   },
+   "openGraph": {
+    "image": "http://gabrini.pk/cdn/shop/collections/Face_1.jpg?v=1765180016&width=1024",
+    "image:secure_url": "https://gabrini.pk/cdn/shop/collections/Face_1.jpg?v=1765180016&width=1024",
+    "image:width": "1080",
+    "image:height": "450",
+    "site_name": "Gabrini Cosmetics Pakistan"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Cart 0",
+      "url": "https://gabrini.pk/cart"
+     },
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     },
+     {
+      "text": "Track your order",
+      "url": "https://postex.pk/tracking"
+     },
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     }
+    ]
+   },
+   "content": {
+    "collectionName": "Highlighters"
+   },
+   "ecommerce": {
+    "productStats": {
+     "productCount": 6,
+     "inStockCount": 0,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "Express Pencil",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/express-pencil",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "highlighters"
+     },
+     {
+      "name": "3D Nail Polish",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/3d-nail-polish",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "highlighters"
+     },
+     {
+      "name": "Brilliant Nail Polish B",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "highlighters"
+     },
+     {
+      "name": "Matte Nail Polish",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/matte-nail-polish",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "highlighters"
+     },
+     {
+      "name": "Highlighter Palette A",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/highlighter-palette-a",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "highlighters"
+     },
+     {
+      "name": "Single Highlighter",
+      "price": {
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/single-highlighter",
+      "availability": {
+       "status": "unknown"
+      },
+      "category": "highlighters"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://gabrini.pk/collections/highlighters"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.72
+   },
+   "summary": {
+    "name": "Highlighters",
+    "category": "highlighters",
+    "productCount": 6,
+    "inStockCount": 0,
+    "outOfStockCount": 0,
+    "availabilityRatio": 0,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "unknown",
+    "consistencyFlags": [
+     "collection_prices_missing",
+     "products_may_be_service_links"
+    ]
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 6
+  },
+  {
+   "url": "https://gabrini.pk/collections/eyeliners",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://gabrini.pk/collections/eyeliners",
+     "domain": "gabrini.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+     "description": "",
+     "h1": "Eyeliners",
+     "canonical": "https://gabrini.pk/collections/eyeliners"
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "eyeliner",
+      "black"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 4,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 1195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1195,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "Matt Eyeliner Black",
+      "Black Dip Liner",
+      "Liquid Eyeliner Pen",
+      "Gabrini Gold Dip Eyeliner"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [],
+      "ctaCount": 0
+     },
+     "contentAngles": [
+      "Eyeliners"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 4,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.95,
+     "warnings": [],
+     "missingFields": [
+      "seo.metaDescription"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "excellent"
+    },
+    "merger": {
+     "extractionMethod": "requests",
+     "qualityScore": 0.95,
+     "qualityBucket": "good",
+     "needsAIInsightReview": false,
+     "fallbacksTried": [
+      "requests"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+    "canonical": "https://gabrini.pk/collections/eyeliners",
+    "h1": "Eyeliners"
+   },
+   "openGraph": {
+    "image": "http://gabrini.pk/cdn/shop/collections/Eye_c005ae5a-daad-4edb-920e-5ae2006db198.png?v=1764931984&width=1024",
+    "image:secure_url": "https://gabrini.pk/cdn/shop/collections/Eye_c005ae5a-daad-4edb-920e-5ae2006db198.png?v=1764931984&width=1024",
+    "image:width": "3200",
+    "image:height": "1312",
+    "site_name": "Gabrini Cosmetics Pakistan"
+   },
+   "navigation": {
+    "links": [
+     {
+      "text": "Cart 0",
+      "url": "https://gabrini.pk/cart"
+     },
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     },
+     {
+      "text": "Track your order",
+      "url": "https://postex.pk/tracking"
+     },
+     {
+      "text": "Face",
+      "url": "https://gabrini.pk/collections/face"
+     },
+     {
+      "text": "Foundations",
+      "url": "https://gabrini.pk/collections/foundations"
+     },
+     {
+      "text": "Concealers",
+      "url": "https://gabrini.pk/collections/concealers"
+     },
+     {
+      "text": "Compacts & BB Powders",
+      "url": "https://gabrini.pk/collections/compacts-bb-powders"
+     },
+     {
+      "text": "Blush On",
+      "url": "https://gabrini.pk/collections/blush-on"
+     },
+     {
+      "text": "Highlighters",
+      "url": "https://gabrini.pk/collections/highlighters"
+     },
+     {
+      "text": "Makeup Fixer",
+      "url": "https://gabrini.pk/collections/makeup-fixer"
+     },
+     {
+      "text": "Eyes",
+      "url": "https://gabrini.pk/collections/eyes"
+     },
+     {
+      "text": "Mascaras",
+      "url": "https://gabrini.pk/collections/mascaras"
+     },
+     {
+      "text": "Eyeliners",
+      "url": "https://gabrini.pk/collections/eyeliners"
+     },
+     {
+      "text": "Kajal Pencil",
+      "url": "https://gabrini.pk/collections/kajal-pencil"
+     },
+     {
+      "text": "Eyebrows",
+      "url": "https://gabrini.pk/collections/eyebrows"
+     },
+     {
+      "text": "Express Pencils",
+      "url": "https://gabrini.pk/products/express-pencil"
+     },
+     {
+      "text": "Lips",
+      "url": "https://gabrini.pk/collections/lips"
+     },
+     {
+      "text": "Lipstick & Lipgloss",
+      "url": "https://gabrini.pk/collections/lipstick-lipgloss"
+     },
+     {
+      "text": "Lip Oils",
+      "url": "https://gabrini.pk/collections/lip-oils"
+     },
+     {
+      "text": "Lip Pencils",
+      "url": "https://gabrini.pk/collections/lip-pencils"
+     },
+     {
+      "text": "Nails",
+      "url": "https://gabrini.pk/collections/nail-paints"
+     },
+     {
+      "text": "3D Nail Polish",
+      "url": "https://gabrini.pk/products/3d-nail-polish"
+     },
+     {
+      "text": "Brilliant Nail Polish",
+      "url": "https://gabrini.pk/products/brilliant-nail-polish-b"
+     },
+     {
+      "text": "Matte Nail Polish",
+      "url": "https://gabrini.pk/products/matte-nail-polish"
+     },
+     {
+      "text": "Beauty & Care",
+      "url": "https://gabrini.pk/collections/beauty-care"
+     }
+    ]
+   },
+   "content": {
+    "collectionName": "Eyeliners"
+   },
+   "ecommerce": {
+    "productStats": {
+     "currency": "PKR",
+     "productCount": 4,
+     "priceRange": {
+      "min": 1195,
+      "max": 1595
+     },
+     "inStockCount": 4,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "Matt Eyeliner Black",
+      "price": {
+       "currency": "PKR",
+       "current": 1195,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/matt-eyeliner-black",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliners"
+     },
+     {
+      "name": "Black Dip Liner",
+      "price": {
+       "currency": "PKR",
+       "current": 1195,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/black-dip-liner",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliners"
+     },
+     {
+      "name": "Liquid Eyeliner Pen",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/liquid-eyeliner-pen",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliners"
+     },
+     {
+      "name": "Gabrini Gold Dip Eyeliner",
+      "price": {
+       "currency": "PKR",
+       "current": 1195,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/gabrini-gold-dip-eyeliner",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "eyeliners"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://gabrini.pk/collections/eyeliners"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+   },
+   "summary": {
+    "name": "Eyeliners",
+    "category": "eyeliners",
+    "productCount": 4,
+    "inStockCount": 4,
+    "outOfStockCount": 0,
+    "priceRange": {
+     "min": 1195,
+     "max": 1595
+    },
+    "topBrands": [
+     "Gabrini Cosmetics Pakistan"
+    ],
+    "availabilityRatio": 1,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "unknown"
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 4
+  },
+  {
+   "url": "https://gabrini.pk/collections/mascaras",
+   "pageType": "collection",
+   "platform": "Shopify",
+   "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+   "success": true,
+   "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "domain": "gabrini.pk",
+     "pageType": "collection",
+     "platform": "Shopify",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "description": "",
+     "h1": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "canonical": null
+    },
+    "competitiveSignals": {
+     "positioning": [
+      "mascara",
+      "eye makeup",
+      "lash",
+      "long",
+      "long lash"
+     ],
+     "promotionalSignals": [],
+     "pricingSignals": {
+      "pricesDetected": 9,
+      "samplePrices": [
+       {
+        "currency": "PKR",
+        "current": 1495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1495,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1645,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       },
+       {
+        "currency": "PKR",
+        "current": 1595,
+        "compareAt": null,
+        "isOnSale": false,
+        "priceTextRaw": null
+       }
+      ]
+     },
+     "productFocus": [
+      "Silicon Mascara Water Proof",
+      "Silicon Mascara Long Lash",
+      "Gabrini 3D Mascaras - Long Lash & Voluminous",
+      "Super Stay Mascara",
+      "Silicon Mascara Volume",
+      "Gabrini 3 in 1 Maxi Mascaras - Long Lash & Volume",
+      "Gabrini Lash Exceptional Mascara",
+      "Designer Mascara Long Lash",
+      "Designer Mascara Water Proof"
+     ],
+     "trustSignals": [],
+     "ctaStrategy": {
+      "primaryCtas": [
+       {
+        "text": "Download",
+        "url": null
+       }
+      ],
+      "ctaCount": 1
+     },
+     "contentAngles": [
+      "Mascaras \u2013 Gabrini Cosmetics Pakistan"
+     ],
+     "ecommerceSignals": {
+      "hasProducts": true,
+      "productCountExtracted": 9,
+      "hasPrices": true,
+      "hasCartOrCheckout": false,
+      "hasRealEcommerceEvidence": true
+     }
+    },
+    "extractionQuality": {
+     "score": 0.58,
+     "warnings": [
+      "Page was blocked; extracted via fallback method.",
+      "Extracted from Jina Reader fallback (markdown converted to HTML). Some fields may be incomplete."
+     ],
+     "missingFields": [
+      "seo.metaDescription"
+     ],
+     "unfetchedFields": [],
+     "dataConsistency": {
+      "structuredDataFound": false,
+      "structuredDataProductFound": false,
+      "priceConsistent": null,
+      "currencyPlausible": null,
+      "suspiciousName": false,
+      "flags": []
+     },
+     "qualityBucket": "good"
+    },
+    "merger": {
+     "extractionMethod": "jina",
+     "qualityScore": 0.58,
+     "qualityBucket": "partial",
+     "needsAIInsightReview": true,
+     "fallbacksTried": [
+      "requests",
+      "jina"
+     ],
+     "usableForMerge": true,
+     "usableForInsights": true
+    }
+   },
+   "seo": {
+    "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+    "h1": "Mascaras \u2013 Gabrini Cosmetics Pakistan"
+   },
+   "content": {
+    "collectionName": "Mascaras \u2013 Gabrini Cosmetics Pakistan"
+   },
+   "ecommerce": {
+    "productStats": {
+     "currency": "PKR",
+     "productCount": 9,
+     "priceRange": {
+      "min": 1495,
+      "max": 1645
+     },
+     "inStockCount": 9,
+     "outOfStockCount": 0,
+     "hasFilters": true,
+     "hasSort": true
+    },
+    "products": [
+     {
+      "name": "Silicon Mascara Water Proof",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/silicon-mascara-water-proof",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Silicon Mascara Long Lash",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/silicon-mascara-long-lash",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Gabrini 3D Mascaras - Long Lash & Voluminous",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/gabrini-3d-mascara-long",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Super Stay Mascara",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/super-stay-mascara",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Silicon Mascara Volume",
+      "price": {
+       "currency": "PKR",
+       "current": 1495,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/silicon-mascara-volume",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Gabrini 3 in 1 Maxi Mascaras - Long Lash & Volume",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/gabrini-3-in-1-maxi-mascaras-long-lash-volume",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Gabrini Lash Exceptional Mascara",
+      "price": {
+       "currency": "PKR",
+       "current": 1645,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/gabrini-lash-exceptional-mascara",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Designer Mascara Long Lash",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/designer-mascara-long-lash",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     },
+     {
+      "name": "Designer Mascara Water Proof",
+      "price": {
+       "currency": "PKR",
+       "current": 1595,
+       "isOnSale": false
+      },
+      "url": "https://gabrini.pk/products/designer-mascara-water-proof-1",
+      "availability": {
+       "status": "in_stock",
+       "inStock": true
+      },
+      "category": "mascaras"
+     }
+    ]
+   },
+   "technical": {
+    "finalUrl": "https://gabrini.pk/collections/mascaras"
+   },
+   "crawl": {
+    "success": true,
+    "blocked": true,
+    "crawlBlocked": true,
+    "statusCode": 200,
+    "reason": "Normal crawler blocked; platform detected and extracted from Jina Reader fallback.",
+    "retryable": true,
+    "jinaAnalyzed": true
+   },
+   "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92,
+    "qualityScore": 0.58,
+    "qualityBucket": "low"
+   },
+   "summary": {
+    "name": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+    "category": "mascaras",
+    "productCount": 9,
+    "inStockCount": 9,
+    "outOfStockCount": 0,
+    "priceRange": {
+     "min": 1495,
+     "max": 1645
+    },
+    "topBrands": [
+     "Gabrini Cosmetics Pakistan"
+    ],
+    "availabilityRatio": 1,
+    "hasFilters": true,
+    "hasSort": true,
+    "categoryMismatch": false,
+    "source": "jina_fallback"
+   },
+   "detection": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "pageTypeConfidence": 0.99
+   },
+   "productCountOnPage": 9
+  }
+ ],
+ "products": [
+  {
+   "name": "Eye Brow Pencil 1",
+   "handle": "eye-brow-pencil-1",
+   "productUrl": "https://gabrini.pk/products/eye-brow-pencil-1",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/101_31e46dd3-2541-468c-944c-3c53c579e23c.jpg?v=1764326969",
+   "price": {
+    "currency": "PKR",
+    "current": 795,
+    "priceTextRaw": "795.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Eyebrow Mascara Dark Brown",
+   "handle": "eyebrow-mascara-dark-brown",
+   "productUrl": "https://gabrini.pk/products/eyebrow-mascara-dark-brown",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/eyebrow_mascara_dark.png?v=1771573708",
+   "price": {
+    "currency": "PKR",
+    "current": 1495,
+    "priceTextRaw": "1495.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Argan Miracle Hair Oil",
+   "handle": "gabrini-argan-miracle-hair-oil",
+   "productUrl": "https://gabrini.pk/products/gabrini-argan-miracle-hair-oil",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/gabribiarganoil2.jpg?v=1770993281",
+   "price": {
+    "currency": "PKR",
+    "current": 2995,
+    "priceTextRaw": "2995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Bb Powder",
+   "handle": "gabrini-bb-powder",
+   "productUrl": "https://gabrini.pk/products/gabrini-bb-powder",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/BBpowderallinone01copy.jpg?v=1764058903",
+   "price": {
+    "currency": "PKR",
+    "current": 1995,
+    "priceTextRaw": "1995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Compact Powder",
+   "handle": "gabrini-compact-powder",
+   "productUrl": "https://gabrini.pk/products/gabrini-compact-powder",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/compctpowder.png?v=1764060546",
+   "price": {
+    "currency": "PKR",
+    "current": 1995,
+    "priceTextRaw": "1995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Kajal Pencil Extra Black Long Lasting Upto 12 Hours",
+   "handle": "gabrini-kajal-pencil-extra-black-long-lasting-upto-12-hours",
+   "productUrl": "https://gabrini.pk/products/gabrini-kajal-pencil-extra-black-long-lasting-upto-12-hours",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/gabrinicolormaxkajalbox.png?v=1771574952",
+   "price": {
+    "currency": "PKR",
+    "current": 1145,
+    "priceTextRaw": "1145.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan",
+     "rank": 14
+    }
+   ],
+   "availability": {
+    "inStock": true
+   }
+  },
+  {
+   "name": "Gabrini Liquid Concealer",
+   "handle": "gabrini-liquid-concealer",
+   "productUrl": "https://gabrini.pk/products/gabrini-liquid-concealer",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/gabrini_liquid_concealer_01.jpg?v=1764592582",
+   "price": {
+    "currency": "PKR",
+    "current": 1695,
+    "priceTextRaw": "1695.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Makeup Fixing Spray",
+   "handle": "gabrini-makeup-fixing-spray",
+   "productUrl": "https://gabrini.pk/products/gabrini-makeup-fixing-spray",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/Gabrinimakeupfixer3.jpg?v=1770978463",
+   "price": {
+    "currency": "PKR",
+    "current": 1995,
+    "priceTextRaw": "1995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Photo Finish Primer Base",
+   "handle": "gabrini-photo-finish-primer-base",
+   "productUrl": "https://gabrini.pk/products/gabrini-photo-finish-primer-base",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/1gabrini-photofinishcopy.jpg?v=1763461580",
+   "price": {
+    "currency": "PKR",
+    "current": 1995,
+    "priceTextRaw": "1995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan",
+     "rank": 12
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Professional Blush On",
+   "handle": "gabrini-professional-blush-on",
+   "productUrl": "https://gabrini.pk/products/gabrini-professional-blush-on",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/blushon.jpg?v=1763983746",
+   "price": {
+    "currency": "PKR",
+    "current": 1795,
+    "priceTextRaw": "1795.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Lovers Rouge Lipstick",
+   "handle": "lovers-rouge-lipstick",
+   "productUrl": "https://gabrini.pk/products/lovers-rouge-lipstick",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/8696814087416.jpg?v=1764326090",
+   "price": {
+    "currency": "PKR",
+    "current": 995,
+    "priceTextRaw": "995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Professional Matte Powder",
+   "handle": "professional-matte-powder",
+   "productUrl": "https://gabrini.pk/products/professional-matte-powder",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/01_a68d07fd-c3df-4de8-b3dc-a3fa7ff2716f.jpg?v=1764577859",
+   "price": {
+    "currency": "PKR",
+    "current": 1995,
+    "priceTextRaw": "1995.0"
+   },
+   "source": {
+    "selector": "homepage_product_card_v2",
+    "confidence": 0.76
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    }
+   ]
+  },
+  {
+   "name": "Black Dip Liner",
+   "handle": "black-dip-liner",
+   "productUrl": "https://gabrini.pk/products/black-dip-liner",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/soft-dipliner.png?v=1764328907",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1195
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliners",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p><b>Matte Eyeliner Black \u2013 Bold, Smudge-Proof &amp; Long-Lasting</b></p> <p>Define your eyes with our Matte Black Eyeliner, designed for a deep, ult",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/eyeliners",
+     "pageType": "collection",
+     "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Gold Dip Eyeliner",
+   "handle": "gabrini-gold-dip-eyeliner",
+   "productUrl": "https://gabrini.pk/products/gabrini-gold-dip-eyeliner",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/golddipliner.png?v=1771574332",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1195
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliners",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p><meta charset=\"UTF-8\"><strong data-start=\"0\" data-end=\"26\">Gabrini Dipliner Black</strong><span> is a high-quality liquid eyeliner designed for pre",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/eyeliners",
+     "pageType": "collection",
+     "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 4
+    }
+   ]
+  },
+  {
+   "name": "Liquid Eyeliner Pen",
+   "handle": "liquid-eyeliner-pen",
+   "productUrl": "https://gabrini.pk/products/liquid-eyeliner-pen",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/liquideyelinerpencil.jpg?v=1764328560",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliners",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p><b>Matte Eyeliner Black \u2013 Bold, Smudge-Proof &amp; Long-Lasting</b></p> <p>Define your eyes with our Matte Black Eyeliner, designed for a deep, ult",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/eyeliners",
+     "pageType": "collection",
+     "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "name": "Matt Eyeliner Black",
+   "handle": "matt-eyeliner-black",
+   "productUrl": "https://gabrini.pk/products/matt-eyeliner-black",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/matteeyelinerblackwaterproof.jpg?v=1764329239",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1195,
+    "priceTextRaw": "1195.0"
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Eyeliners",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p><b>Matte Eyeliner Black \u2013 Bold, Smudge-Proof &amp; Long-Lasting</b></p> <p>Define your eyes with our Matte Black Eyeliner, designed for a deep, ult",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/eyeliners",
+     "pageType": "collection",
+     "title": "Eyeliners \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "name": "3D Nail Polish",
+   "handle": "3d-nail-polish",
+   "productUrl": "https://gabrini.pk/products/3d-nail-polish",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 2
+    },
+    {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "pageType": "collection",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "name": "Brilliant Nail Polish B",
+   "handle": "brilliant-nail-polish-b",
+   "productUrl": "https://gabrini.pk/products/brilliant-nail-polish-b",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 3
+    },
+    {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "pageType": "collection",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "name": "Derma Make Up Cover Foundation",
+   "handle": "derma-make-up-cover-foundation",
+   "productUrl": "https://gabrini.pk/products/derma-make-up-cover-foundation",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/dermamakeupcover01.png?v=1767607871&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 5
+    }
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 2495,
+    "priceTextRaw": "2495.0"
+   }
+  },
+  {
+   "name": "Express Pencil",
+   "handle": "express-pencil",
+   "productUrl": "https://gabrini.pk/products/express-pencil",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 1
+    },
+    {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "pageType": "collection",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "name": "Foundation 3In1",
+   "handle": "foundation-3in1",
+   "productUrl": "https://gabrini.pk/products/foundation-3in1",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/01_d0f1380d-e483-4a25-8a1c-69cc762ef013.jpg?v=1764577495&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 8
+    }
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 2595,
+    "priceTextRaw": "2595.0"
+   }
+  },
+  {
+   "name": "Gabrini Hd Matte Foundation",
+   "handle": "gabrini-hd-matte-foundation",
+   "productUrl": "https://gabrini.pk/products/gabrini-hd-matte-foundation",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/01_c0d1299e-655d-4edd-8de7-13c32fdbf009.png?v=1764590037&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 6
+    }
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 3195,
+    "priceTextRaw": "3195.0"
+   }
+  },
+  {
+   "name": "Gabrini Touch Me Matte Foundation With Spf 15",
+   "handle": "gabrini-touch-me-matte-foundation-with-spf-15",
+   "productUrl": "https://gabrini.pk/products/gabrini-touch-me-matte-foundation-with-spf-15",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/TouchMeFoundation01.png?v=1771482633&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 9
+    }
+   ]
+  },
+  {
+   "name": "Matte Nail Polish",
+   "handle": "matte-nail-polish",
+   "productUrl": "https://gabrini.pk/products/matte-nail-polish",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 4
+    },
+    {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "pageType": "collection",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 4
+    }
+   ]
+  },
+  {
+   "name": "Visible Matt Foundation",
+   "handle": "visible-matt-foundation",
+   "productUrl": "https://gabrini.pk/products/visible-matt-foundation",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/visible-matte-foundation-04.png?v=1767249839&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Foundations",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/foundations",
+     "pageType": "collection",
+     "title": "Foundations \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 7
+    }
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 3195,
+    "priceTextRaw": "3195.0"
+   }
+  },
+  {
+   "name": "Highlighter Palette A",
+   "handle": "highlighter-palette-a",
+   "productUrl": "https://gabrini.pk/products/highlighter-palette-a",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/Gabrini-Highlighter-A-3--39-lu-Palet-resim-981.jpg?v=1764144719&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Highlighters",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "pageType": "collection",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 5
+    }
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 2295,
+    "priceTextRaw": "2295.0"
+   }
+  },
+  {
+   "name": "Single Highlighter",
+   "handle": "single-highlighter",
+   "productUrl": "https://gabrini.pk/products/single-highlighter",
+   "imageUrl": "https://gabrini.pk/cdn/shop/files/GabriniSingleHighlighter01.jpg?v=1764146520&width=800",
+   "availability": {
+    "status": "unknown"
+   },
+   "category": "Highlighters",
+   "source": {
+    "cardSelector": "shopify_dom_v3",
+    "confidence": 0.72
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/highlighters",
+     "pageType": "collection",
+     "title": "Highlighters \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 6
+    }
+   ],
+   "price": {
+    "currency": "PKR",
+    "current": 1995,
+    "priceTextRaw": "1995.0"
+   }
+  },
+  {
+   "name": "Designer Mascara Long Lash",
+   "handle": "designer-mascara-long-lash",
+   "productUrl": "https://gabrini.pk/products/designer-mascara-long-lash",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/GabriniDesignerLonglashmascara.jpg?v=1763450405",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p>Gabrini Designer Mascara Long Lash (Non-Waterproof)</p> <p>Long Lash Effect Mascara \u2013 Volumizing, Lengthening &amp; Smudge-Free Achieve show-stoppi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 8
+    }
+   ]
+  },
+  {
+   "name": "Designer Mascara Water Proof",
+   "handle": "designer-mascara-water-proof-1",
+   "productUrl": "https://gabrini.pk/products/designer-mascara-water-proof-1",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/GabriniDesignerWaterproofmacara.jpg?v=1763451189",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p>Gabrini Designer Mascara Long Lash (Non-Waterproof)</p> <p>Long Lash Effect Mascara \u2013 Volumizing, Lengthening &amp; Smudge-Free Achieve show-stoppi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 9
+    }
+   ]
+  },
+  {
+   "name": "Gabrini 3 in 1 Maxi Mascaras - Long Lash & Volume",
+   "handle": "gabrini-3-in-1-maxi-mascaras-long-lash-volume",
+   "productUrl": "https://gabrini.pk/products/gabrini-3-in-1-maxi-mascaras-long-lash-volume",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/maxivolumemascara.png?v=1771572783",
+   "additionalImageCount": 1,
+   "price": {
+    "currency": "PKR",
+    "current": 1595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p data-start=\"293\" data-end=\"353\"><strong>Gabrini 3 in 1 Maxi Mascara \u2013 Long Lash &amp; Volume Variants</strong></p> <p data-start=\"355\" data-end=\"62",
+   "swatches": [
+    {
+     "label": "Volumizing",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/maxivolumemascara.png?v=1771572783"
+    },
+    {
+     "label": "Lengthening",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/maxilonglashmascara.png?v=1771572783"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 6
+    }
+   ]
+  },
+  {
+   "name": "Gabrini 3D Mascaras - Long Lash & Voluminous",
+   "handle": "gabrini-3d-mascara-long",
+   "productUrl": "https://gabrini.pk/products/gabrini-3d-mascara-long",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/3d_mascara_1.png?v=1771571456",
+   "additionalImageCount": 1,
+   "price": {
+    "currency": "PKR",
+    "current": 1595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<h2>Gabrini 3D Mascaras \u2013 Long Lash &amp; Voluminous Variants</h2> <p>Enhance your eye makeup with <strong>Gabrini 3D Mascara</strong>, designed to gi",
+   "swatches": [
+    {
+     "label": "Volumizing",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/3d_mascara_1.png?v=1771571456"
+    },
+    {
+     "label": "Lengthening",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/3dmascara2.png?v=1771571388"
+    }
+   ],
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "name": "Gabrini Lash Exceptional Mascara",
+   "handle": "gabrini-lash-exceptional-mascara",
+   "productUrl": "https://gabrini.pk/products/gabrini-lash-exceptional-mascara",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/gabrinilashexceptionalmascaraA.png?v=1771485114",
+   "additionalImageCount": 1,
+   "price": {
+    "currency": "PKR",
+    "current": 1645
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p data-start=\"242\" data-end=\"311\"><strong>Gabrini Lash Exceptional Mascara \u2013 Ultra Long Lash &amp; Extra Volume</strong></p> <p data-start=\"313\" data",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 7
+    }
+   ]
+  },
+  {
+   "name": "Silicon Mascara Long Lash",
+   "handle": "silicon-mascara-long-lash",
+   "productUrl": "https://gabrini.pk/products/silicon-mascara-long-lash",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/siliconemascaralonglash.jpg?v=1763453602",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1495,
+    "priceTextRaw": "1495.0"
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p>Gabrini Designer Mascara Long Lash (Non-Waterproof)</p> <p>Long Lash Effect Mascara \u2013 Volumizing, Lengthening &amp; Smudge-Free Achieve show-stoppi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/",
+     "pageType": "homepage",
+     "title": "Gabrini Cosmetics Pakistan"
+    },
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "name": "Silicon Mascara Volume",
+   "handle": "silicon-mascara-volume",
+   "productUrl": "https://gabrini.pk/products/silicon-mascara-volume",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/siliconemascaravolume.jpg?v=1763452991",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1495
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p>Gabrini Designer Mascara Long Lash (Non-Waterproof)</p> <p>Long Lash Effect Mascara \u2013 Volumizing, Lengthening &amp; Smudge-Free Achieve show-stoppi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "name": "Silicon Mascara Water Proof",
+   "handle": "silicon-mascara-water-proof",
+   "productUrl": "https://gabrini.pk/products/silicon-mascara-water-proof",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/siliconemascarawaterproof.jpg?v=1763457546",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1495
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p>Gabrini Designer Mascara Long Lash (Non-Waterproof)</p> <p>Long Lash Effect Mascara \u2013 Volumizing, Lengthening &amp; Smudge-Free Achieve show-stoppi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "name": "Super Stay Mascara",
+   "handle": "super-stay-mascara",
+   "productUrl": "https://gabrini.pk/products/super-stay-mascara",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0776/1569/4076/files/4.png?v=1763459882",
+   "additionalImageCount": 0,
+   "price": {
+    "currency": "PKR",
+    "current": 1595
+   },
+   "availability": {
+    "status": "in_stock",
+    "inStock": true
+   },
+   "category": "Mascaras",
+   "vendor": "Gabrini Cosmetics Pakistan",
+   "shortDescription": "<p>Gabrini Designer Mascara Long Lash (Non-Waterproof)</p> <p>Long Lash Effect Mascara \u2013 Volumizing, Lengthening &amp; Smudge-Free Achieve show-stoppi",
+   "source": {
+    "cardSelector": "shopify_products_json",
+    "confidence": 0.92
+   },
+   "sourcePages": [
+    {
+     "url": "https://gabrini.pk/collections/mascaras",
+     "pageType": "collection",
+     "title": "Mascaras \u2013 Gabrini Cosmetics Pakistan",
+     "rank": 4
+    }
+   ]
+  }
+ ],
+ "quality": {
+  "warnings": [],
+  "coverage": {
+   "hasHomepage": true,
+   "collectionPages": 4
+  },
+  "openAIReady": true,
+  "notes": [
+   "Products are deduped by productUrl, then handle, then productId, then name.",
+   "When the same product appears on several pages, the richer page type (product > collection > homepage) wins field-by-field.",
+   "Each product includes sourcePages so analysis can trace where it appeared.",
+   "Internal keys (prefixed with _) and raw HTML are stripped; long text is truncated.",
+   "site.catalog / site.collections / site.homepageFeatures summarize the site for AI comparison.",
+   "SaaS/business analyzer blocks (pricing, saas, business, homepageStrategy, generalPage) are preserved per page; site.pricingSummary aggregates plans."
+  ]
+ }
+}

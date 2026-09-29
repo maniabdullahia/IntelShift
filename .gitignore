@@ -1,0 +1,66 @@
+# ── Secrets — NEVER commit. Provide these to local/cloud runs via the machine's
+#    own environment, not the repo. (Rotate any key that was ever committed.) ──
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# ── Node ──
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Build output ──
+dist/
+build/
+**/dist/
+**/build/
+.vite/
+.cache/
+
+# ── Python ──
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Playwright / browsers ──
+playwright-report/
+test-results/
+.playwright/
+
+# ── Logs & local scratch ──
+*.log
+logs/
+tmp/
+.DS_Store
+Thumbs.db
+
+# ── Local analysis dumps / generated artifacts (not source) ──
+Server/analysis_dump.json
+**/analysis_dump.json
+**/*-merger-output.json
+comparison_output*.json
+
+# ── Files with hardcoded secrets — keep LOCAL, provide via env on the server ──
+# (ecosystem.config.cjs has a Paddle key; LOCAL_SETUP.md has Paddle keys.)
+Server/ecosystem.config.cjs
+**/ecosystem.config.cjs
+LOCAL_SETUP.md
+
+# ── Editor / OS ──
+.idea/
+.vscode/
+*.swp
+*.swo

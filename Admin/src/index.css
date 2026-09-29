@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --primary: #1a1a2e;
+  --accent: #ff6b6b;
+  --secondary: #4ecdc4;
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #2d3436;
+  --text-light: #636e72;
+  --border: #e8eaed;
+  --success: #26de81;
+  --warning: #fed330;
+  --danger: #fc5c65;
+  --blue: #4b7bec;
+  --purple: #8854d0;
+  --orange: #fa8231;
+  --shadow-sm: rgba(26, 26, 46, 0.08);
+  --shadow-md: rgba(26, 26, 46, 0.12);
+  --shadow-lg: rgba(26, 26, 46, 0.14);
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+}
+
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  background-image:
+    radial-gradient(circle at top left, rgba(78, 205, 196, 0.06), transparent 30%),
+    radial-gradient(circle at top right, rgba(255, 107, 107, 0.05), transparent 24%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+@layer base {
+  :focus-visible {
+    outline: none;
+  }
+}
+
+@layer components {
+  .admin-card {
+    @apply rounded-lg border border-(--border) bg-white shadow-[0_12px_30px_var(--shadow-sm)];
+  }
+
+  .admin-section-title {
+    @apply font-serif text-xl font-semibold text-(--primary);
+  }
+}

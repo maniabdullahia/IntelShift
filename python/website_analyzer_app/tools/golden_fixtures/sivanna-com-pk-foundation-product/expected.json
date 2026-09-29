@@ -1,0 +1,14 @@
+{
+  "_verified_by": "human spot-check during 2026-07-07 session",
+  "fields": {
+    "page.pageType": "product",
+    "platform": "Shopify",
+    "products[0].name": "Liquid Foundation Full Coverage Face Makeup",
+    "products[0].handle": "liquid-foundation-full-coverage-face-makeup",
+    "products[0].price.current": 2750,
+    "products[0].price.currency": "PKR",
+    "products[0].vendor": "Sivanna Colors",
+    "products[0].productType": "Foundation",
+    "products[0].variants.__len__": 2
+  }
+}

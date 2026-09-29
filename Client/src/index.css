@@ -1,0 +1,185 @@
+/* Brand fonts — matched to the marketing site: Inter (body) + Fraunces (display). */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  /* ===== CORE UI COLORS (matched to the marketing site) ===== */
+  --primary: #1a1a2e;      /* Sidebar / dark navy */
+  --primary-2: #242442;    /* Elevated dark surface / gradients */
+  --accent: #ff6b6b;       /* Primary actions / alerts (coral) */
+  --accent-dark: #ee5a6f;  /* Accent hover/pressed */
+  --secondary: #4ecdc4;    /* Info / success highlights (teal) */
+  --secondary-dark: #38b5ac; /* Teal hover/pressed + readable teal text */
+
+  --bg: #f8f9fa;           /* App background (marketing-site name) */
+  --background: #f8f9fa;   /* App background (alias kept for existing utilities) */
+  --card: #ffffff;         /* Cards */
+  --text: #2d3436;         /* Main text */
+  --text-light: #636e72;   /* Secondary text */
+  --border: #e8eaed;       /* Borders */
+
+  /* ===== STATUS COLORS ===== */
+  --success: #26de81;
+  --warning: #fed330;
+  --danger: #fc5c65;
+
+  /* ===== IMPACT LEVELS ===== */
+  --high: #ff6b6b;
+  --medium: #fed330;
+  --low: #4ecdc4;
+
+  /* ===== GLOWS (accent halos, matched to marketing site) ===== */
+  --glow-teal: rgba(78, 205, 196, 0.18);
+  --glow-coral: rgba(255, 107, 107, 0.18);
+
+  /* ===== UI SHADOWS ===== */
+  --shadow-sm: 0 2px 8px rgba(26, 26, 46, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 26, 46, 0.08);
+  --shadow-lg: 0 8px 24px rgba(26, 26, 46, 0.12);
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 32px;
+
+  /* ===== FONTS (matched to the marketing site) =====
+     Headings are Inter (800, tight tracking) just like the site. Fraunces is
+     reserved for the elegant italic emphasis accent — use the .serif class. */
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-mono: "Inter", monospace;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* Elegant italic emphasis accent — mirrors the marketing site's <em>/.serif
+   (e.g. a teal italic word inside an Inter heading). */
+.serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ===== INTERACTIVE CURSORS =====
+   Tailwind v4's preflight no longer sets the hand cursor on <button>, so
+   clickable elements looked non-interactive. Restore it site-wide. */
+button,
+[role="button"],
+a[href],
+summary,
+label[for] {
+  cursor: pointer;
+}
+button:disabled,
+button[disabled],
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+/* ===== RED → TEAL BUTTON HOVER =====
+   Accent (red/coral) and danger buttons/links turn teal with white text on
+   hover and while active — a single, consistent interaction across the app. */
+button.bg-\(--accent\):hover,
+a.bg-\(--accent\):hover,
+button.bg-\(--danger\):hover,
+a.bg-\(--danger\):hover,
+button.bg-\(--accent\):active,
+a.bg-\(--accent\):active,
+button.bg-\(--danger\):active,
+a.bg-\(--danger\):active {
+  background-color: var(--secondary) !important;
+  color: #fff !important;
+  border-color: var(--secondary) !important;
+}
+
+
+
+/* ===== BODY BASE STYLE ===== */
+body {
+  font-family: var(--font-body);
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===== SCROLLBAR (clean SaaS look) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}
+
+.compana-swal-popup {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  padding: 1.4rem;
+}
+
+.compana-swal-title {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  font-size: 1.45rem;
+}
+
+.compana-swal-text {
+  font-family: var(--font-body);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* Keep the checkbox consent on a single line, aligned with its box. */
+.compana-swal-popup .swal2-checkbox {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.compana-swal-popup .swal2-checkbox input {
+  margin: 0 0.5em 0 0;
+}
+
+.compana-swal-actions {
+  gap: 0.6rem;
+}
+
+.compana-swal-confirm,
+.compana-swal-cancel {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.62rem 1.1rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.compana-swal-confirm {
+  background: var(--accent);
+  color: #fff;
+}
+
+.compana-swal-cancel {
+  background: var(--border);
+  color: var(--text);
+}
+
+.compana-swal-confirm:hover,
+.compana-swal-cancel:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.98);
+}
+

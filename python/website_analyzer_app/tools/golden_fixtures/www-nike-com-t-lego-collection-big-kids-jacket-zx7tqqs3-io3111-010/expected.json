@@ -1,0 +1,10 @@
+{
+  "_verified_by": "human + frozen HTML (2026-07-10): JSON-LD ProductGroup offer shows price 130 USD; extractor previously grabbed a stray $50 from page text",
+  "fields": {
+    "page.pageType": "product",
+    "products[0].name": "Nike x LEGO® Collection Big Kids' Jacket",
+    "products[0].price.current": 130.0,
+    "products[0].price.currency": "USD",
+    "products[0].vendor": "Nike"
+  }
+}

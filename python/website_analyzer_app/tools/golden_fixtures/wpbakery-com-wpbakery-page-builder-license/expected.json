@@ -1,0 +1,15 @@
+{
+  "_verified_by": "human (session 2026-07-10): frozen page.html shows Regular $82, 5 Sites $299 (was $410), 10 Sites $592 (was $820), lifetime licenses",
+  "fields": {
+    "page.pageType": "general",
+    "pricing.pricingModel": "plan_based",
+    "pricing.plans.__len__": 3,
+    "pricing.plans[0].name": "Regular",
+    "pricing.plans[0].price.amount": 82.0,
+    "pricing.plans[0].price.period": "/lifetime",
+    "pricing.plans[1].name": "5 Sites",
+    "pricing.plans[1].price.amount": 299.0,
+    "pricing.plans[2].name": "10 Sites",
+    "pricing.plans[2].price.amount": 592.0
+  }
+}

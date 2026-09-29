@@ -1,0 +1,41 @@
+# CompIntel accuracy baseline - diverse platforms, verticals and page types.
+# Add ~2-3 sites per vertical you plan to support. Comment lines with #.
+# Run:  python tools\accuracy_check.py baseline_urls.txt
+
+# --- Shopify ecommerce (cosmetics - your core market) ---
+https://sivanna.com.pk/
+https://sivanna.com.pk/collections/matte-lipstick
+https://sivanna.com.pk/collections/full-coverage-liquid-foundation/products/liquid-foundation-full-coverage-face-makeup
+https://gabrini.pk/
+https://gabrini.pk/collections/lips
+https://gabrini.pk/products/foundation-3in1
+https://rivaj-uk.com/
+https://rivaj-uk.com/collections/face-wash
+
+# --- Shopify apparel (headless / JS-heavy) ---
+https://www.gymshark.com/collections/all-products/womens
+https://tooneyteez.com/collections/t-shirts-women
+
+# --- Big-brand ecommerce (JS frameworks, bot protection) ---
+https://www.nike.com/w/mens-clothing-6ymx6znik1
+https://www.adidas.com/us/women-shoes
+
+# --- SaaS pricing pages ---
+https://elementor.com/pricing/
+https://wpbakery.com/wpbakery-page-builder-license/
+https://wpforms.com/pricing/
+https://www.canva.com/pricing/
+
+# --- SaaS / platform homepages ---
+https://elementor.com/
+https://www.canva.com/
+
+# --- Business / services sites ---
+https://www.webfx.com/digital-marketing/services/
+https://www.smartbugmedia.com/
+https://www.totalityservices.co.uk/it-support-london/
+https://focuspc.co.uk/
+
+# --- Known-hard cases (expected partial/blocked - watch they FAIL HONESTLY) ---
+https://www2.hm.com/en_us/index.html
+https://cheezious.com/

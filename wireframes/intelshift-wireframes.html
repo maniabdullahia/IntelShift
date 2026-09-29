@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IntelShift AI — Wireframes (Homepage &amp; About)</title>
+<style>
+  :root{
+    --ink:#2b2b33; --mut:#8a8a99; --line:#c9c9d2; --fill:#e9e9ef;
+    --fill2:#f2f2f6; --card:#fff; --bg:#f6f6f9; --accent:#b9c4c2; --tagbg:#2b2b33;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  a{color:inherit}
+  .switcher{position:sticky;top:0;z-index:50;background:#1a1a2e;color:#fff;
+    display:flex;gap:10px;align-items:center;padding:10px 16px}
+  .switcher b{font-size:13px;letter-spacing:.02em}
+  .switcher .sp{flex:1}
+  .switcher button{font:inherit;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);
+    padding:6px 12px;border-radius:6px;cursor:pointer}
+  .switcher button.on{background:#fff;color:#1a1a2e;border-color:#fff}
+  .page{max-width:1080px;margin:0 auto;padding:24px 16px 80px}
+  .page[hidden]{display:none}
+
+  /* wireframe primitives */
+  .sec{position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:10px;padding:26px;margin:16px 0}
+  .tag{position:absolute;top:-9px;left:14px;background:var(--tagbg);color:#fff;
+    font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:4px}
+  .center{text-align:center}
+  .row{display:flex;gap:16px}
+  .col{flex:1;min-width:0}
+  .grid{display:grid;gap:14px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .g6{grid-template-columns:repeat(6,1fr)}
+  @media(max-width:760px){.row{flex-direction:column}.g3,.g4,.g6{grid-template-columns:repeat(2,1fr)}}
+
+  .h1{height:22px;background:var(--fill);border-radius:4px;margin:6px 0;width:88%}
+  .h1.sm{height:16px;width:60%}
+  .line{height:9px;background:var(--fill2);border-radius:3px;margin:7px 0}
+  .line.s{width:70%}.line.xs{width:45%}.line.l{width:95%}
+  .eyebrow{display:inline-block;height:12px;width:120px;background:var(--fill);border-radius:20px;margin-bottom:8px}
+  .btn{display:inline-block;height:34px;min-width:120px;border:1px solid var(--line);
+    border-radius:8px;background:var(--fill2);margin:4px 6px 4px 0;
+    line-height:34px;text-align:center;color:var(--mut);font-size:11px;padding:0 12px}
+  .btn.pri{background:#dfe6e5;border-color:var(--accent);color:#4a5a58}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .card.dash{border-style:dashed}
+  .img{background:repeating-linear-gradient(45deg,#eee,#eee 10px,#f5f5f8 10px,#f5f5f8 20px);
+    border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;
+    color:var(--mut);font-size:11px;min-height:90px}
+  .pill{display:inline-block;height:22px;padding:0 12px;line-height:22px;border:1px solid var(--line);
+    border-radius:20px;background:var(--fill2);color:var(--mut);font-size:11px;margin:3px 4px 3px 0}
+  .icon{width:34px;height:34px;border:1px solid var(--line);border-radius:8px;background:var(--fill2);
+    display:flex;align-items:center;justify-content:center;color:var(--mut);margin-bottom:8px;font-size:14px}
+  .note{color:var(--mut);font-size:11px;margin-top:6px}
+  .num{font-size:26px;color:var(--ink);font-weight:700}
+  .center .btnwrap{margin-top:10px}
+  .kv{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:7px 0;color:var(--mut);font-size:11px}
+  .stat{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+</style>
+</head>
+<body>
+
+<div class="switcher">
+  <b>IntelShift AI — Wireframes</b>
+  <span class="sp"></span>
+  <button id="btn-home" class="on" onclick="show('home')">Homepage</button>
+  <button id="btn-about" onclick="show('about')">About page</button>
+</div>
+
+<!-- ============================= HOMEPAGE ============================= -->
+<div class="page" id="page-home">
+
+  <!-- NAVBAR -->
+  <div class="sec" style="display:flex;align-items:center;gap:14px">
+    <span class="tag">Navbar</span>
+    <div class="icon" style="margin:0">◆</div>
+    <b style="font-size:13px">IntelShift AI</b>
+    <span class="sp" style="flex:1"></span>
+    <span class="pill">Features</span><span class="pill">How it works</span>
+    <span class="pill">Pricing</span><span class="pill">Use cases</span>
+    <span class="pill">FAQ</span><span class="pill">About</span>
+    <span class="btn pri" style="margin:0 0 0 8px">Start free trial</span>
+  </div>
+
+  <!-- HERO -->
+  <div class="sec">
+    <span class="tag">Hero</span>
+    <div class="row">
+      <div class="col">
+        <span class="eyebrow"></span>
+        <div class="h1"></div><div class="h1" style="width:70%"></div>
+        <div class="line l"></div><div class="line"></div><div class="line s"></div>
+        <div style="margin-top:12px"><span class="btn pri">Start monitoring →</span><span class="btn">View sample report</span></div>
+        <div style="margin-top:14px">
+          <span class="pill">✓ AI recommendations</span>
+          <span class="pill">✓ Executive reports</span>
+          <span class="pill">✓ Meaningful changes</span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="note">◦ ◦ ◦ &nbsp; IntelShift — Competitor Intelligence</div>
+          <div class="kv"><span>Competitor Changes</span><span>Last 7 days</span></div>
+          <div class="grid g3" style="margin:10px 0">
+            <div class="card center"><div class="num">3</div><div class="stat">High</div></div>
+            <div class="card center"><div class="num">7</div><div class="stat">Medium</div></div>
+            <div class="card center"><div class="num">22</div><div class="stat">Total</div></div>
+          </div>
+          <div class="card dash"><div class="line s"></div><div class="line xs"></div></div>
+          <div class="card dash" style="margin-top:8px"><div class="line s"></div><div class="line xs"></div></div>
+        </div>
+        <div class="note">Floating: “AI Insight” chip · “High-impact change detected” alert</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="sec center">
+    <span class="tag">The Problem</span>
+    <div class="eyebrow"></div>
+    <div class="h1 sm" style="margin:6px auto;width:70%"></div>
+    <div class="line l" style="margin:8px auto;width:60%"></div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card"><div class="icon">!</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">~</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">✕</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="sec center">
+    <span class="tag">How It Works</span>
+    <div class="eyebrow"></div>
+    <div class="h1 sm" style="margin:6px auto;width:65%"></div>
+    <div class="grid g4" style="margin-top:16px">
+      <div class="card center"><div class="icon" style="margin:0 auto 8px;border-radius:50%">1</div><div class="line s" style="margin:auto"></div><div class="line xs" style="margin:6px auto"></div></div>
+      <div class="card center"><div class="icon" style="margin:0 auto 8px;border-radius:50%">2</div><div class="line s" style="margin:auto"></div><div class="line xs" style="margin:6px auto"></div></div>
+      <div class="card center"><div class="icon" style="margin:0 auto 8px;border-radius:50%">3</div><div class="line s" style="margin:auto"></div><div class="line xs" style="margin:6px auto"></div></div>
+      <div class="card center"><div class="icon" style="margin:0 auto 8px;border-radius:50%">4</div><div class="line s" style="margin:auto"></div><div class="line xs" style="margin:6px auto"></div></div>
+    </div>
+  </div>
+
+  <!-- PRODUCT INTELLIGENCE -->
+  <div class="sec">
+    <span class="tag">Product Intelligence (Report — AI Analysis View)</span>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="note">◦ ◦ ◦ &nbsp; Competitor Report — AI Analysis View</div>
+          <div class="kv"><span>Pricing page change detected</span><span>High · 91/100</span></div>
+          <div style="margin:8px 0"><span class="pill">AI Insight</span><span class="pill">Before</span><span class="pill">After</span><span class="pill">Actions</span></div>
+          <div class="card dash"><div class="line"></div><div class="line s"></div></div>
+          <div class="grid g2" style="margin-top:8px">
+            <div class="card"><div class="stat">Intent</div><div class="line xs"></div></div>
+            <div class="card"><div class="stat">Impact 91/100</div><div class="line xs"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="eyebrow"></div>
+        <div class="h1 sm"></div>
+        <div class="line l"></div><div class="line"></div>
+        <div class="card" style="margin-top:10px"><div class="line s"></div><div class="line xs"></div></div>
+        <div class="card" style="margin-top:8px"><div class="line s"></div><div class="line xs"></div></div>
+        <div class="btnwrap"><span class="btn pri">Start monitoring competitors →</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAMPLE REPORT / DEMO -->
+  <div class="sec">
+    <span class="tag">Sample Report (interactive dashboard mockup)</span>
+    <div class="row">
+      <div class="col">
+        <span class="eyebrow"></span>
+        <div class="h1 sm"></div><div class="line l"></div><div class="line"></div>
+        <div class="card dash" style="margin-top:10px"><div class="icon">▤</div><div class="line s"></div></div>
+        <div class="card dash" style="margin-top:8px"><div class="icon">▦</div><div class="line s"></div></div>
+        <div class="btnwrap"><span class="btn pri">Get your analysis →</span></div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="row" style="gap:8px;align-items:center">
+            <div class="icon" style="margin:0">◆</div><b style="font-size:12px">yourbrand vs competitor</b>
+            <span class="sp" style="flex:1"></span><span class="pill">Ecommerce</span>
+          </div>
+          <div class="grid g2" style="margin:8px 0">
+            <div class="card center"><div class="num">43</div><div class="stat">You</div></div>
+            <div class="card center"><div class="num">86</div><div class="stat">Competitor</div></div>
+          </div>
+          <div style="margin:6px 0"><span class="pill">Overview</span><span class="pill">Pricing•</span><span class="pill">Catalog•</span><span class="pill">Positioning</span><span class="pill">SEO</span><span class="pill">Actions 5</span></div>
+          <div class="card dash"><div class="line"></div><div class="line s"></div><div class="line xs"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES GRID -->
+  <div class="sec center">
+    <span class="tag">Features</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:55%"></div>
+    <div class="grid g3" style="margin-top:16px;text-align:left">
+      <div class="card"><div class="icon">◱</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">⚡</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">▤</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">▦</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">◔</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">🛡</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+    </div>
+  </div>
+
+  <!-- USE CASES -->
+  <div class="sec center">
+    <span class="tag">Use Cases</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:60%"></div>
+    <div class="grid g3" style="margin-top:16px;text-align:left">
+      <div class="card"><div class="icon">◆</div><div class="stat">For founders</div><div class="line"></div><div class="line s"></div><div class="line xs"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">◆</div><div class="stat">For marketing</div><div class="line"></div><div class="line s"></div><div class="line xs"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">◆</div><div class="stat">For sales</div><div class="line"></div><div class="line s"></div><div class="line xs"></div><div class="line xs"></div></div>
+    </div>
+  </div>
+
+  <!-- TRUST -->
+  <div class="sec center">
+    <span class="tag">Responsible by Design (Trust)</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:55%"></div>
+    <div class="grid g3" style="margin-top:16px;text-align:left">
+      <div class="card"><div class="icon">🛡</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">⊘</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">✓</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">🔒</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">▥</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">◷</div><div class="line s"></div><div class="line xs"></div></div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div class="sec center">
+    <span class="tag">Pricing</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:55%"></div>
+    <div class="line" style="margin:6px auto;width:65%"></div>
+    <div class="card dash" style="margin:14px 0;text-align:left;display:flex;align-items:center;gap:12px">
+      <div><span class="pill">Free trial</span><div class="line s" style="width:180px"></div><div class="line xs" style="width:240px"></div></div>
+      <span class="sp" style="flex:1"></span><span class="btn pri">Start free trial</span>
+    </div>
+    <div class="grid g3" style="text-align:left">
+      <div class="card"><div class="stat">Starter</div><div class="num">$39</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div><div class="btn" style="width:100%">Start</div></div>
+      <div class="card" style="border-color:var(--accent)"><span class="pill">Most popular</span><div class="stat">Growth</div><div class="num">$99</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div><div class="btn pri" style="width:100%">Start</div></div>
+      <div class="card"><div class="stat">Pro</div><div class="num">$199</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div><div class="btn" style="width:100%">Start</div></div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="sec center">
+    <span class="tag">FAQ</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:50%"></div>
+    <div style="margin-top:14px;text-align:left">
+      <div class="kv"><span>Question ▾</span><span>+</span></div>
+      <div class="kv"><span>Question ▾</span><span>+</span></div>
+      <div class="kv"><span>Question ▾</span><span>+</span></div>
+      <div class="kv"><span>Question ▾</span><span>+</span></div>
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div class="sec center" style="background:#eceef2">
+    <span class="tag">Final CTA</span>
+    <div class="eyebrow"></div>
+    <div class="h1 sm" style="margin:6px auto;width:45%"></div>
+    <div class="line" style="margin:8px auto;width:55%"></div>
+    <div class="btnwrap"><span class="btn pri">Start monitoring in 5 min →</span><span class="btn">View sample report</span></div>
+    <div style="margin-top:8px"><span class="pill">Setup in minutes</span><span class="pill">Public pages only</span><span class="pill">Plan-based alerts</span><span class="pill">Cancel anytime</span></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="sec">
+    <span class="tag">Footer</span>
+    <div class="grid g4">
+      <div><b style="font-size:12px">◆ IntelShift AI</b><div class="line xs"></div><div class="line xs"></div></div>
+      <div><div class="stat">Product</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div></div>
+      <div><div class="stat">Company</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div></div>
+      <div><div class="stat">Legal</div><div class="line xs">Terms · Privacy · Refund</div><div class="line xs"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= ABOUT ============================= -->
+<div class="page" id="page-about" hidden>
+
+  <!-- NAVBAR -->
+  <div class="sec" style="display:flex;align-items:center;gap:14px">
+    <span class="tag">Navbar</span>
+    <div class="icon" style="margin:0">◆</div><b style="font-size:13px">IntelShift AI</b>
+    <span class="sp" style="flex:1"></span>
+    <span class="pill">Features</span><span class="pill">Pricing</span><span class="pill">About</span>
+    <span class="btn pri" style="margin:0 0 0 8px">Start free trial</span>
+  </div>
+
+  <!-- ABOUT HERO -->
+  <div class="sec center">
+    <span class="tag">About Hero</span>
+    <span class="eyebrow"></span>
+    <div class="h1" style="margin:6px auto;width:60%"></div>
+    <div class="h1" style="margin:2px auto;width:40%"></div>
+    <div class="line" style="margin:8px auto;width:64%"></div>
+    <div class="btnwrap"><span class="btn pri">Start monitoring →</span><span class="btn">Our story</span></div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="sec">
+    <span class="tag">Stats bar</span>
+    <div class="grid g4 center">
+      <div><div class="num">10+</div><div class="stat">Brands monitored</div></div>
+      <div><div class="num">100s</div><div class="stat">Competitor changes tracked</div></div>
+      <div><div class="num">5min</div><div class="stat">Avg setup time</div></div>
+      <div><div class="num">3x</div><div class="stat">Plans to fit every team</div></div>
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <div class="sec">
+    <span class="tag">Our Story</span>
+    <div class="row">
+      <div class="col">
+        <span class="eyebrow"></span>
+        <div class="h1 sm"></div>
+        <div class="line l"></div><div class="line"></div><div class="line"></div><div class="line s"></div>
+        <div class="btnwrap"><span class="btn pri">Try it yourself →</span></div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="stat">What started it all</div>
+          <div class="line l"></div><div class="line"></div>
+          <div class="row" style="gap:8px;align-items:center;margin:8px 0">
+            <div class="icon" style="margin:0;border-radius:50%">IS</div>
+            <div><div class="line xs" style="width:120px"></div><div class="line xs" style="width:160px"></div></div>
+          </div>
+          <div class="kv"><span>● The problem became clear</span></div>
+          <div class="kv"><span>● IntelShift was born</span></div>
+          <div class="kv"><span>● First teams onboarded</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <div class="sec center" style="background:#eceef2">
+    <span class="tag">Our Mission</span>
+    <div class="eyebrow"></div>
+    <div class="h1 sm" style="margin:8px auto;width:70%"></div>
+    <div class="line" style="margin:6px auto;width:60%"></div>
+    <div class="line" style="margin:2px auto;width:52%"></div>
+  </div>
+
+  <!-- VALUES -->
+  <div class="sec center">
+    <span class="tag">Our Values</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:55%"></div>
+    <div class="grid g3" style="margin-top:16px;text-align:left">
+      <div class="card"><div class="icon">◉</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">⚡</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">🛡</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">◔</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">✓</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+      <div class="card"><div class="icon">◆</div><div class="line s"></div><div class="line"></div><div class="line xs"></div></div>
+    </div>
+  </div>
+
+  <!-- PRINCIPLES -->
+  <div class="sec center">
+    <span class="tag">How We Build (Principles)</span>
+    <div class="eyebrow"></div><div class="h1 sm" style="margin:6px auto;width:55%"></div>
+    <div class="grid g3" style="margin-top:16px;text-align:left">
+      <div class="card"><div class="num">01</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="num">02</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="num">03</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="num">04</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="num">05</div><div class="line s"></div><div class="line xs"></div></div>
+      <div class="card"><div class="num">06</div><div class="line s"></div><div class="line xs"></div></div>
+    </div>
+  </div>
+
+  <!-- HIRING BANNER -->
+  <div class="sec" style="display:flex;align-items:center;gap:16px;background:#eceef2">
+    <span class="tag">We're hiring</span>
+    <div style="flex:1">
+      <span class="eyebrow"></span>
+      <div class="h1 sm"></div>
+      <div class="line l"></div><div class="line s"></div>
+    </div>
+    <span class="btn pri">Get in touch</span>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="sec">
+    <span class="tag">Footer</span>
+    <div class="grid g4">
+      <div><b style="font-size:12px">◆ IntelShift AI</b><div class="line xs"></div><div class="line xs"></div></div>
+      <div><div class="stat">Product</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div></div>
+      <div><div class="stat">Company</div><div class="line xs"></div><div class="line xs"></div><div class="line xs"></div></div>
+      <div><div class="stat">Legal</div><div class="line xs">Terms · Privacy · Refund</div><div class="line xs"></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function show(which){
+    document.getElementById('page-home').hidden = which!=='home';
+    document.getElementById('page-about').hidden = which!=='about';
+    document.getElementById('btn-home').classList.toggle('on', which==='home');
+    document.getElementById('btn-about').classList.toggle('on', which==='about');
+    window.scrollTo(0,0);
+  }
+</script>
+</body>
+</html>

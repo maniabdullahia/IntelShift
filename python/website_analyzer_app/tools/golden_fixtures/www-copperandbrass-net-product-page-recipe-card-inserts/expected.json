@@ -1,0 +1,10 @@
+{
+  "_instructions": "VERIFY each value against the real page in your browser. Fix wrong values, delete fields you don't want checked.",
+  "fields": {
+    "page.pageType": "product",
+    "platform": "Wix",
+    "products[0].name": "Recipe Card Inserts",
+    "products[0].price.current": 5.0,
+    "products[0].price.currency": "USD"
+  }
+}

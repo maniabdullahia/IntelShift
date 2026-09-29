@@ -1,0 +1,21 @@
+# Unified CompIntel API - covers all four sub-apps.
+# Install from the project root:  pip install -r requirements_unified_api.txt
+# Then run once:                  playwright install chromium
+# Start the API:                  uvicorn compintel_api:app --reload --port 8000
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+python-multipart==0.0.20
+
+# Website analyzer dependencies
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+cloudscraper==1.2.71
+playwright==1.49.1
+playwright-stealth==1.0.6
+python-dotenv==1.0.1
+
+# OpenAI (analyzer LLM fallback + /api/v1/generate-insights)
+openai==1.59.7

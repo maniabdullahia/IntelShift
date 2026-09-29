@@ -1,0 +1,8 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+
+# Optional: only needed for server-side insights (--call / generate-insights)
+openai==1.59.7
+# Anthropic/Claude provider (AI_PROVIDER=claude)
+anthropic>=0.40.0

@@ -1,0 +1,1897 @@
+{
+  "level1": {
+    "platform": "Shopify",
+    "platformConfidence": 0.95,
+    "isKnownPlatform": true,
+    "platformSignals": {
+      "Shopify": 47,
+      "WooCommerce / WordPress": 2,
+      "WordPress": 0,
+      "Wix": 0,
+      "Webflow": 0,
+      "Magento": 0,
+      "Next.js / React": 0,
+      "React": 0,
+      "Vue": 0
+    },
+    "pageType": "collection",
+    "pageTypeConfidence": 0.99,
+    "pageTypeSignals": {
+      "homepage": 0,
+      "collection": 1043,
+      "product": 12,
+      "blog": 0,
+      "cart_checkout": 0,
+      "general": 0
+    },
+    "pageTypeDebug": {
+      "reason": "shopify_collection_url_priority",
+      "signals": {
+        "product": {
+          "isProduct": true,
+          "score": 12,
+          "signals": [
+            "product_title_dom",
+            "add_to_cart_text",
+            "stock_text",
+            "wix_product_section"
+          ]
+        },
+        "collection": {
+          "isCollection": true,
+          "score": 43,
+          "signals": [
+            "url_collections",
+            "seo_collection_terms",
+            "product_grid_dom",
+            "sort_filter_dom",
+            "multiple_product_links",
+            "high_product_link_density",
+            "category_link_density_medium",
+            "category_link_density_high",
+            "ecommerce_collection_wording",
+            "text_product_facet_counts",
+            "text_result_count"
+          ],
+          "metrics": {
+            "productLinkCount": 15,
+            "categoryLinkCount": 16,
+            "hasProductGrid": true,
+            "priceTextCount": 0,
+            "textCollectionBoost": 8
+          }
+        },
+        "blog": {
+          "isBlog": false,
+          "score": 0,
+          "signals": []
+        },
+        "generalSubtype": "unknown",
+        "platform": "Shopify"
+      }
+    }
+  },
+  "platform": "Shopify",
+  "page": {
+    "url": "https://rivaj-uk.com/collections/face-wash",
+    "pageType": "collection"
+  },
+  "seo": {
+    "title": "Buy Best Face Wash For Oily Skin Online In Pakistan | Rivaj Cosmetics",
+    "metaDescription": "Get great cosmetics and related products like face wash and face wash for dry skin, only from Rivaj. So, grab the best face wash for oily skin from Rivaj today and enjoy. Their face wash is truly unbeatable and offer a high degree of satisfaction. Rivaj offers best face wash in Pakistan to their customers all the time.",
+    "canonical": "https://rivaj-uk.com/collections/face-wash",
+    "h1": "Face Wash"
+  },
+  "openGraph": {
+    "url": "https://rivaj-uk.com/collections/face-wash",
+    "site_name": "Rivaj",
+    "type": "website",
+    "title": "Buy Best Face Wash For Oily Skin Online In Pakistan | Rivaj Cosmetics",
+    "description": "Get great cosmetics and related products like face wash and face wash for dry skin, only from Rivaj. So, grab the best face wash for oily skin from Rivaj today and enjoy. Their face wash is truly unbeatable and offer a high degree of satisfaction. Rivaj offers best face wash in Pakistan to their customers all the time.",
+    "image": "http://rivaj-uk.com/cdn/shop/collections/Facewash_Main.jpg?v=1713339000",
+    "image:secure_url": "https://rivaj-uk.com/cdn/shop/collections/Facewash_Main.jpg?v=1713339000"
+  },
+  "navigation": {
+    "links": [
+      {
+        "text": "Skip to content",
+        "url": "https://rivaj-uk.com/collections/face-wash#main"
+      },
+      {
+        "text": "Rivaj",
+        "url": "https://rivaj-uk.com/"
+      },
+      {
+        "text": "Create account",
+        "url": "https://shopify.com/62120395002/account?locale=en&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyaXZhai11ay1vbmxpbmUubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgzNjg2OTE3LCJuYmYiOjE3ODMwODIxMTd9.qH_EqyPxTRsWrJkVGlEF4DmjF5hqiSyLBp_CQHHSuwY"
+      },
+      {
+        "text": "Cart",
+        "url": "https://rivaj-uk.com/cart"
+      },
+      {
+        "text": "Rivaj",
+        "url": "https://rivaj-uk.com/"
+      },
+      {
+        "text": "Summer Radiance Sale",
+        "url": "https://rivaj-uk.com/collections/summer-radiance-sale"
+      },
+      {
+        "text": "RHD",
+        "url": "https://rivaj-uk.com/collections/rhd"
+      },
+      {
+        "text": "Face",
+        "url": "https://rivaj-uk.com/collections/face-hd"
+      },
+      {
+        "text": "Primer",
+        "url": "https://rivaj-uk.com/collections/primer"
+      },
+      {
+        "text": "Foundation",
+        "url": "https://rivaj-uk.com/collections/foundation-hd"
+      },
+      {
+        "text": "Powder",
+        "url": "https://rivaj-uk.com/collections/powder-hd"
+      },
+      {
+        "text": "Contour",
+        "url": "https://rivaj-uk.com/collections/contour-hd"
+      },
+      {
+        "text": "Concealer",
+        "url": "https://rivaj-uk.com/collections/concealer-hd"
+      },
+      {
+        "text": "Makeup Fixer",
+        "url": "https://rivaj-uk.com/collections/makeup-fixer-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/face-makeup-remover-hd"
+      },
+      {
+        "text": "Toner",
+        "url": "https://rivaj-uk.com/collections/toner"
+      },
+      {
+        "text": "Makeup Brush",
+        "url": "https://rivaj-uk.com/collections/makeup-brush-hd"
+      },
+      {
+        "text": "Accessories",
+        "url": "https://rivaj-uk.com/collections/face-accessories-hd"
+      },
+      {
+        "text": "Eyes",
+        "url": "https://rivaj-uk.com/collections/eyes-hd"
+      },
+      {
+        "text": "Eye Lashes",
+        "url": "https://rivaj-uk.com/collections/eye-lashes-hd"
+      },
+      {
+        "text": "Eye Shadow",
+        "url": "https://rivaj-uk.com/collections/eye-shadow-hd"
+      },
+      {
+        "text": "Mascara",
+        "url": "https://rivaj-uk.com/collections/mascara-hd"
+      },
+      {
+        "text": "Eye Liner",
+        "url": "https://rivaj-uk.com/collections/eye-liner-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/eyes-makeup-remover-hd"
+      },
+      {
+        "text": "Lips",
+        "url": "https://rivaj-uk.com/collections/lips-hd"
+      },
+      {
+        "text": "Lipstick",
+        "url": "https://rivaj-uk.com/collections/lipstick-hd"
+      },
+      {
+        "text": "Lip Gloss",
+        "url": "https://rivaj-uk.com/collections/lip-gloss-hd"
+      },
+      {
+        "text": "Makeup Remover",
+        "url": "https://rivaj-uk.com/collections/eyes-makeup-remover-hd"
+      },
+      {
+        "text": "Evernoya🌟",
+        "url": "https://rivaj-uk.com/pages/evernoya"
+      },
+      {
+        "text": "Self-Care Kits",
+        "url": "https://rivaj-uk.com/collections/summer-bundles"
+      },
+      {
+        "text": "Makeup",
+        "url": "https://rivaj-uk.com/collections/makeup"
+      },
+      {
+        "text": "Skin Care",
+        "url": "https://rivaj-uk.com/collections/skin-care"
+      },
+      {
+        "text": "Face Serum",
+        "url": "https://rivaj-uk.com/collections/face-serum"
+      },
+      {
+        "text": "Sunblock",
+        "url": "https://rivaj-uk.com/collections/sunblock"
+      },
+      {
+        "text": "Face Wash",
+        "url": "https://rivaj-uk.com/collections/face-wash"
+      },
+      {
+        "text": "Cleanser",
+        "url": "https://rivaj-uk.com/collections/cleanser"
+      },
+      {
+        "text": "Facial Range",
+        "url": "https://rivaj-uk.com/collections/facial"
+      },
+      {
+        "text": "Mask",
+        "url": "https://rivaj-uk.com/collections/mask"
+      },
+      {
+        "text": "Gel / Cream",
+        "url": "https://rivaj-uk.com/collections/gel-cream"
+      },
+      {
+        "text": "Lotion / Oil",
+        "url": "https://rivaj-uk.com/collections/lotion-oil"
+      },
+      {
+        "text": "Wax / Strips",
+        "url": "https://rivaj-uk.com/collections/wax-strips"
+      },
+      {
+        "text": "Beauty Soaps",
+        "url": "https://rivaj-uk.com/collections/soap-liquid-soap"
+      },
+      {
+        "text": "Hair Care",
+        "url": "https://rivaj-uk.com/collections/hair-care"
+      },
+      {
+        "text": "Developer / Blonder",
+        "url": "https://rivaj-uk.com/collections/developer-blonder"
+      },
+      {
+        "text": "Hair Color",
+        "url": "https://rivaj-uk.com/collections/hair-color"
+      },
+      {
+        "text": "Hair Serum",
+        "url": "https://rivaj-uk.com/collections/hair-serum"
+      },
+      {
+        "text": "Hair Fibers",
+        "url": "https://rivaj-uk.com/collections/hair-treatment"
+      },
+      {
+        "text": "Hair Oil",
+        "url": "https://rivaj-uk.com/collections/hair-oil"
+      },
+      {
+        "text": "Hair Spray",
+        "url": "https://rivaj-uk.com/collections/hair-spray"
+      },
+      {
+        "text": "Personal Care",
+        "url": "https://rivaj-uk.com/collections/personal-care"
+      }
+    ]
+  },
+  "content": {
+    "collectionName": "Face Wash",
+    "ctas": [
+      {
+        "text": "Add to Cart 0 in your cart",
+        "source": "product_card"
+      },
+      {
+        "text": "Choose options 0 in your cart",
+        "source": "product_card"
+      }
+    ]
+  },
+  "ecommerce": {
+    "productStats": {
+      "currency": "PKR",
+      "productCount": 16,
+      "priceRange": {
+        "min": 181,
+        "max": 618
+      },
+      "inStockCount": 16,
+      "outOfStockCount": 0,
+      "hasFilters": true,
+      "hasSort": true
+    },
+    "products": [
+      {
+        "name": "FACE WASH RICE EXTRACT 100ML",
+        "price": {
+          "currency": "PKR",
+          "current": 618,
+          "compareAt": 650,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/face-wash-rice-extract-100ml",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "FACE WASH SAFFRON WHITENING 100ML",
+        "price": {
+          "currency": "PKR",
+          "current": 618,
+          "compareAt": 650,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/face-wash-saffron-whitening-100ml",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Men Acno Fight Face Wash 100ml",
+        "price": {
+          "currency": "PKR",
+          "current": 413,
+          "compareAt": 435,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/men-acno-fight-face-wash-150ml-1210849",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Men Active Purifying Charcoal Face Wash 100ml",
+        "price": {
+          "currency": "PKR",
+          "current": 451,
+          "compareAt": 475,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/men-expert-charcoal-white-face-wash-150ml-1210851",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Charcoal White Face Wash 100ml",
+        "price": {
+          "currency": "PKR",
+          "current": 451,
+          "compareAt": 475,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/charcoal-white-face-wash-150ml-1210852",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Pimples Clear Face Wash 100ml",
+        "price": {
+          "currency": "PKR",
+          "current": 451,
+          "compareAt": 475,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/pimples-clear-face-wash-150ml-1210853",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Pinkish Whitening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 214,
+          "compareAt": 225,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/pinkish-whitening-face-wash",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Men Active White Power Face Wash 100ml",
+        "price": {
+          "currency": "PKR",
+          "current": 413,
+          "compareAt": 435,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/men-expert-white-active-face-wash-150ml-1210850",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Daily Essentials Refreshing Gel Wash (100ml)",
+        "price": {
+          "currency": "PKR",
+          "current": 413,
+          "compareAt": 435,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/daily-essentials-refreshing-gel-wash-150ml-1210778",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Bamboo Charcoal Whitening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 181,
+          "compareAt": 190,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/whitening-face-wash-bamboo-charcoal",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Neem Extract Whitening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 181,
+          "compareAt": 190,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/whitening-face-wash-neem-extract",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Papaya Extract Brightening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 181,
+          "compareAt": 190,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/brightening-face-wash-papaya-extract",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Milk Extract Whitening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 181,
+          "compareAt": 190,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/rivaj-whitening-face-wash-milk-extract",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Lemon Extract Whitening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 181,
+          "compareAt": 190,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/whitening-face-wash-lemon-extract",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "FACE WASH VITAMIN C 100ML",
+        "price": {
+          "currency": "PKR",
+          "current": 618,
+          "compareAt": 650,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/face-wash-vitamin-c-100ml",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      },
+      {
+        "name": "Cucumber Extract Whitening Face Wash",
+        "price": {
+          "currency": "PKR",
+          "current": 181,
+          "compareAt": 190,
+          "isOnSale": true,
+          "priceTextRaw": null
+        },
+        "url": "https://rivaj-uk.com/products/whitening-face-wash-cucumber-extract",
+        "availability": {
+          "status": "in_stock",
+          "label": "In Stock",
+          "inStock": true,
+          "stockTextRaw": null
+        },
+        "category": "Face Wash",
+        "badges": []
+      }
+    ]
+  },
+  "products": [
+    {
+      "rank": 1,
+      "name": "FACE WASH RICE EXTRACT 100ML",
+      "handle": "face-wash-rice-extract-100ml",
+      "productUrl": "https://rivaj-uk.com/products/face-wash-rice-extract-100ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/RiceFW.png?v=1773813539",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 618,
+        "compareAt": 650,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Gentle cleansing power infused with rice extract to purify and refresh your skin. This 100ml face wash removes impurities and makeup while maintain",
+      "productType": "Face Wash",
+      "tags": [
+        "15 May 26",
+        "beat the heat 26",
+        "Eid may 26",
+        "Face",
+        "Face Wash",
+        "New Arrivals",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 2,
+      "name": "FACE WASH SAFFRON WHITENING 100ML",
+      "handle": "face-wash-saffron-whitening-100ml",
+      "productUrl": "https://rivaj-uk.com/products/face-wash-saffron-whitening-100ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/SaffronFW.png?v=1773813949",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 618,
+        "compareAt": 650,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Gentle yet effective saffron-infused face wash designed to cleanse and brighten your complexion. This 100ml formula removes impurities and makeup w",
+      "productType": "Face Wash",
+      "tags": [
+        "15 May 26",
+        "beat the heat 26",
+        "Eid may 26",
+        "Face",
+        "Face Wash",
+        "New Arrivals",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 3,
+      "name": "Men Acno Fight Face Wash 100ml",
+      "handle": "men-acno-fight-face-wash-150ml-1210849",
+      "productUrl": "https://rivaj-uk.com/products/men-acno-fight-face-wash-150ml-1210849",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Acno.png?v=1745997582",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 413,
+        "compareAt": 435,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Deeply cleanse your face while battling the seven indicators of acne and 99.9% of pimple-causing bacteria. Anti-inflammatory properties in this ant",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "2023 Eid Sale Upto 80%",
+        "501 - 1000",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Blessed Friday",
+        "Cares",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Rivaj Uk",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "super-weekend-sale",
+        "V-days",
+        "valentine Sale-24",
+        "w9",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 4,
+      "name": "Men Active Purifying Charcoal Face Wash 100ml",
+      "handle": "men-expert-charcoal-white-face-wash-150ml-1210851",
+      "productUrl": "https://rivaj-uk.com/products/men-expert-charcoal-white-face-wash-150ml-1210851",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/purifying-charcoal.png?v=1745997583",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 451,
+        "compareAt": 475,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>With super absorbing charcoal, fight pollution, dust, grime, dead skin cells, sweat, and oil. It works like a magnet to lift deep-buried pollutants",
+      "productType": "Face Wash",
+      "tags": [
+        "10feb",
+        "11:11 Sale-24",
+        "15 May 26",
+        "2023 Eid Sale Upto 80%",
+        "501 - 1000",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Blessed Friday",
+        "Cares",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Express Care",
+        "Express Shopping",
+        "Express-Care1'",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Rivaj Uk",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "super-weekend-sale",
+        "V-days",
+        "valentine Sale-24",
+        "w9",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 5,
+      "name": "Charcoal White Face Wash 100ml",
+      "handle": "charcoal-white-face-wash-150ml-1210852",
+      "productUrl": "https://rivaj-uk.com/products/charcoal-white-face-wash-150ml-1210852",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Charcoalwhitefacewash.jpg?v=1745997586",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 451,
+        "compareAt": 475,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Everyday chemicals and daily exposure to pollution can leave your skin feeling dull and lifeless. Activated charcoal helps bring back your skins he",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "2023 Eid Sale Upto 80%",
+        "501 - 1000",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Best Selling",
+        "Blessed Friday",
+        "Cares",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Rivaj Uk",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "super-weekend-sale",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 6,
+      "name": "Pimples Clear Face Wash 100ml",
+      "handle": "pimples-clear-face-wash-150ml-1210853",
+      "productUrl": "https://rivaj-uk.com/products/pimples-clear-face-wash-150ml-1210853",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Pimple.jpg?v=1748417547",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 451,
+        "compareAt": 475,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>It helps to clear up acne and blackheads and even helps prevent future breakouts. The acne-fighting formula oil-free formula rinses clean without o",
+      "productType": "Face Wash",
+      "tags": [
+        "10feb",
+        "11:11 Sale-24",
+        "15 May 26",
+        "2023 Eid Sale Upto 80%",
+        "501 - 1000",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Blessed Friday",
+        "Cares",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Rivaj Uk",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "super-weekend-sale",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 7,
+      "name": "Pinkish Whitening Face Wash",
+      "handle": "pinkish-whitening-face-wash",
+      "productUrl": "https://rivaj-uk.com/products/pinkish-whitening-face-wash",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 214,
+        "compareAt": 225,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>With a soap-free formula, it stimulates and rejuvenates the face. With everyday use, skin tone is evened, and pigmentation and freckles are reduced",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Brands",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Rivaj Uk",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/pinkish-white-50ml_6c2bdc04-0df2-4d3a-8488-49af102ef7ed.gif?v=1745997315"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/pINKISH-WHITE-ML-100.gif?v=1745997315"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 8,
+      "name": "Men Active White Power Face Wash 100ml",
+      "handle": "men-expert-white-active-face-wash-150ml-1210850",
+      "productUrl": "https://rivaj-uk.com/products/men-expert-white-active-face-wash-150ml-1210850",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/white-power-f.png?v=1745997584",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 413,
+        "compareAt": 435,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Contains a strong anti-darkening active ingredient that strengthens the skins natural resistance. Without the discomfort of a sticky or oily cream,",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "2023 Eid Sale Upto 80%",
+        "501 - 1000",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Blessed Friday",
+        "Cares",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Express Care",
+        "Express Shopping",
+        "Express-Care1'",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Rivaj Uk",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "super-weekend-sale",
+        "V-days",
+        "valentine Sale-24",
+        "w9",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 9,
+      "name": "Daily Essentials Refreshing Gel Wash (100ml)",
+      "handle": "daily-essentials-refreshing-gel-wash-150ml-1210778",
+      "productUrl": "https://rivaj-uk.com/products/daily-essentials-refreshing-gel-wash-150ml-1210778",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/WhatsAppImage2025-05-22at12.59.51_51dc9622.jpg?v=1747909614",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 413,
+        "compareAt": 435,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Rivaj Daily Essentials Refreshing Gel Wash boosts skin hydration for soft, supple skin. This mild, easy-to-apply facial cleansing gel transforms in",
+      "productType": "Gel / Cream",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "2023 Eid Sale Upto 80%",
+        "501 - 1000",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "Bari Eid Sale 23",
+        "beat the heat 26",
+        "Best Selling",
+        "Blessed Friday",
+        "Cares",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Mother Day Sale24",
+        "Mother_day_sale23",
+        "new year sale 22",
+        "Rivaj Uk",
+        "sale upto 25%",
+        "sale-2023",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "super-weekend-sale",
+        "V-days",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 10,
+      "name": "Bamboo Charcoal Whitening Face Wash",
+      "handle": "whitening-face-wash-bamboo-charcoal",
+      "productUrl": "https://rivaj-uk.com/products/whitening-face-wash-bamboo-charcoal",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_3.jpg?v=1745997316",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 181,
+        "compareAt": 190,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p data-mce-fragment=\"1\">Whitening Face Wash Bamboo Charcoal Deeply cleanses, detoxifies, unclogs clogged pores, and reduces the appearance of pores f",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Brands",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 26-1-24",
+        "Flat 40",
+        "Mother Day Sale24",
+        "Rivaj Uk",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 26",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Bamboo-Charcoa-Facewash_50ml.jpg?v=1777542739"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_3.jpg?v=1745997316"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 11,
+      "name": "Neem Extract Whitening Face Wash",
+      "handle": "whitening-face-wash-neem-extract",
+      "productUrl": "https://rivaj-uk.com/products/whitening-face-wash-neem-extract",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_4.jpg?v=1748416741",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 181,
+        "compareAt": 190,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p data-mce-fragment=\"1\">Whitening Face Wash - Neem Extract Helps to cleanse and purify, improve resilience and keep your skin clean and healthy-looki",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Brands",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Flat 40",
+        "Mother Day Sale24",
+        "Rivaj Uk",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 26",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Neem-Facewash_50ml.jpg?v=1777882279"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_4.jpg?v=1748416741"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 12,
+      "name": "Papaya Extract Brightening Face Wash",
+      "handle": "brightening-face-wash-papaya-extract",
+      "productUrl": "https://rivaj-uk.com/products/brightening-face-wash-papaya-extract",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_5.jpg?v=1748418047",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 181,
+        "compareAt": 190,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">This brightening face wash is enriched with high quality natural plant, fruit and herbal extracts",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Best Selling",
+        "Brands",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 26-1-24",
+        "Flat 40",
+        "Mother Day Sale24",
+        "Rivaj Uk",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 26",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Papaya-Facewash_50ml.jpg?v=1777881725"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_5.jpg?v=1748418047"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 13,
+      "name": "Milk Extract Whitening Face Wash",
+      "handle": "rivaj-whitening-face-wash-milk-extract",
+      "productUrl": "https://rivaj-uk.com/products/rivaj-whitening-face-wash-milk-extract",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_7.jpg?v=1748417072",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 181,
+        "compareAt": 190,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p data-mce-fragment=\"1\">Whitening Face Wash Milk Extract cleanses and helps improve skin tone, texture, and clarity, for softer, brighter skin. White",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Bundleup",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 26-1-24",
+        "Flat 40",
+        "Mother Day Sale24",
+        "Rivaj",
+        "Rivaj UK",
+        "Season-end-sale24",
+        "spring bloom sale 26",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Milk-Extract-Facewash_50ml.jpg?v=1777881507"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_7.jpg?v=1748417072"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 14,
+      "name": "Lemon Extract Whitening Face Wash",
+      "handle": "whitening-face-wash-lemon-extract",
+      "productUrl": "https://rivaj-uk.com/products/whitening-face-wash-lemon-extract",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_6.jpg?v=1745997317",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 181,
+        "compareAt": 190,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p data-mce-fragment=\"1\">Rivaj Whitening Face Wash Lemon Extract is a vitamin C-enriched fairness facewash for women. Reduces dullness by cleansing, c",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Brands",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Flat 40",
+        "home-4",
+        "Mother Day Sale24",
+        "Rivaj Uk",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 26",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/lemon-Facewash_50ml.jpg?v=1777882006"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_6.jpg?v=1745997317"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 15,
+      "name": "FACE WASH VITAMIN C 100ML",
+      "handle": "face-wash-vitamin-c-100ml",
+      "productUrl": "https://rivaj-uk.com/products/face-wash-vitamin-c-100ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/VitaminC.png?v=1773902727",
+      "additionalImageCount": 0,
+      "price": {
+        "currency": "PKR",
+        "current": 618,
+        "compareAt": 650,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p>Brighten and refresh your complexion with our Vitamin C Face Wash. This 100ml formula gently cleanses while infusing your skin with the power of Vi",
+      "productType": "Face Wash",
+      "tags": [
+        "15 May 26",
+        "beat the heat 26",
+        "Eid may 26",
+        "Face",
+        "Face Wash",
+        "New Arrivals",
+        "spring bloom sale 2026",
+        "summer radiance sale 2026"
+      ],
+      "swatches": [],
+      "badges": [],
+      "variantCount": 1,
+      "variantOptions": [],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    },
+    {
+      "rank": 16,
+      "name": "Cucumber Extract Whitening Face Wash",
+      "handle": "whitening-face-wash-cucumber-extract",
+      "productUrl": "https://rivaj-uk.com/products/whitening-face-wash-cucumber-extract",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_2.jpg?v=1745997318",
+      "additionalImageCount": 1,
+      "price": {
+        "currency": "PKR",
+        "current": 181,
+        "compareAt": 190,
+        "isOnSale": true,
+        "priceTextRaw": null
+      },
+      "availability": {
+        "status": "in_stock",
+        "label": "In Stock",
+        "inStock": true,
+        "stockTextRaw": null
+      },
+      "category": "Face Wash",
+      "vendor": "Rivaj",
+      "shortDescription": "<p data-mce-fragment=\"1\">Whitening Face Wash Cucumber Extract helps to remove excess oil and dull surface pollutants, leaving your skin looking bright",
+      "productType": "Face Wash",
+      "tags": [
+        "11:11 Sale-24",
+        "15 May 26",
+        "Azadi Sale",
+        "Azadi Sale24",
+        "Bachat Sale24",
+        "beat the heat 26",
+        "Brands",
+        "Cares",
+        "Eid Blessing Sale24",
+        "Eid may 26",
+        "End Of Season Sale-24",
+        "Face Wash",
+        "Flash Sale 23",
+        "Flash Sale 26-1-24",
+        "Flat 40",
+        "Mother Day Sale24",
+        "Rivaj Uk",
+        "Season-end-sale24",
+        "SKIN CARE",
+        "spring bloom sale 26",
+        "summer radiance sale 2026",
+        "Summer Sale24",
+        "valentine Sale-24",
+        "wfsale20/05/29",
+        "Women Day Sale24"
+      ],
+      "swatches": [
+        {
+          "label": "50ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/Cucumber-Facewash_50ml_87e2e9ac-eee2-452b-873d-a70b8e3ef9d2.jpg?v=1777882655"
+        },
+        {
+          "label": "100ml",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0621/2039/5002/files/AllIn1Facewash_2.jpg?v=1745997318"
+        }
+      ],
+      "badges": [],
+      "variantCount": 2,
+      "variantOptions": [
+        "100ml",
+        "50ml"
+      ],
+      "source": {
+        "cardSelector": "shopify_products_json",
+        "confidence": 0.92
+      }
+    }
+  ],
+  "technical": {
+    "finalUrl": "https://rivaj-uk.com/collections/face-wash",
+    "responseHeaders": {
+      "Date": "Fri, 03 Jul 2026 12:35:17 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "51695",
+      "Connection": "keep-alive",
+      "x-dc": "gcp-asia-southeast1,gcp-asia-southeast1,gcp-asia-southeast1",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "localization=PK; path=/; expires=Sat, 03 Jul 2027 12:35:17 GMT; SameSite=Lax, _shopify_y=04dd6943-fc7c-46eb-8240-569a749cfd16; domain=rivaj-uk.com; path=/; expires=Sat, 03 Jul 2027 18:35:17 GMT; SameSite=Lax, _shopify_s=74486e33-a918-40c2-992b-63f0b7c7904a; domain=rivaj-uk.com; path=/; expires=Fri, 03 Jul 2026 13:05:17 GMT; SameSite=Lax, _shopify_essential=:AZ8n-emAAAEAGTcJ8BS7r869jI_9aGmduc01YaODGpmotztFuDVhfNLChMl9gG9gW_rJwhRpISPlpY2LcSLepndCM4c5JJgz14uqvNj0TQFogmZTL-3YLjpo57Oflrz4NDClOLZXs4zHb3uSaH8_9CR-4vXfwrRdA5PgEMqbYe0qrJbSfiH6mHsy24aLiJHMUXFTkN2R3SKCR0cSSCERsJ7z3MQWYUiTcz3DzPPV5ny8CKZLKP7bL8az9P-ndW07w09BaCFwwRR8IbT-nig3cNFYiJD4zXzXQR0AMqHYy1ic0W1ZdRQ-79sNE0Irvwld9XhM9ulmsASVL4UhkMbHHFEPdr1JvkWn3Rw8GP8XBXTMDTrZeysXE1tUCXXnvWsCLkzepvWoxQufVYqy0thOVFFT:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_analytics=:AZ8n-eoiAAEAMU8Uw9BmDrQTJN4LmerFxBvPaLJe_D5su9vUNswJZNS9I9itca1m1Rh3QzSY2PvSz9J6yRZkRFyi1h9bEbxAhBonjMN7pgPlGcXKe6mwvOyT8igNyDsrt5c:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax, _shopify_marketing=:AZ8n-eoiAAEAxpD5pnQvZIfTOdDcuh5CSOmh-yGrML0-dwgBfqY8dNt3n2pnszQzhaDvPguF9pXc9bKytBKKd1RNBbA:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax",
+      "link": "<https://cdn.shopify.com>; rel=\"preconnect\", <https://cdn.shopify.com>; rel=\"preconnect\"; crossorigin, <//rivaj-uk.com/cdn/shop/t/36/assets/theme.css?v=74450073783372036231780136570>; as=\"style\"; rel=\"preload\"",
+      "speculation-rules": "\"/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json\"",
+      "etag": "\"page_cache:62120395002:CollectionDetailsController:09135e67e47ba02e176182dd534784ea\"",
+      "content-encoding": "br",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "shopify-complexity-score": "168",
+      "shopify-complexity-score-v2": "168",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "strict-transport-security": "max-age=7889238",
+      "X-Content-Type-Options": "nosniff",
+      "vary": "Accept, accept-encoding",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "content-language": "en-PK",
+      "powered-by": "Shopify",
+      "server-timing": "processing;dur=172;desc=\"gc:3\", db;dur=42, db_async;dur=2.136, fetch;dur=9, render;dur=83, asn;desc=\"135407\", edge;desc=\"SIN\", country;desc=\"PK\", theme;desc=\"163374465274\", pageType;desc=\"collection\", servedBy;desc=\"778q\", requestID;desc=\"77416e0f-ddb0-44ac-9186-f5785d6720da-1783082117\", _y;desc=\"04dd6943-fc7c-46eb-8240-569a749cfd16\", _s;desc=\"74486e33-a918-40c2-992b-63f0b7c7904a\", _cmp;desc=\"3.AMPS_PKPB_f_f_P930mIt9QiSCmoFCgGkStQ\", compressionLevel;desc=\"5\", compressionTime;dur=6.173",
+      "X-Download-Options": "noopen",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "server": "cloudflare",
+      "X-XSS-Protection": "1; mode=block",
+      "x-request-id": "77416e0f-ddb0-44ac-9186-f5785d6720da-1783082117",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wMlPYgEzSer9e9tlO1UzlPVT%2FqDiFPu7lvNZ1yc3OPXmA7aacHp1i9sdcVR14Q0ftTLz5GJ6unPWMukcx5ZPApiGgl9nmHNqxeLDdMn5UHWKM4y6X6hRspa0mDdaMQ%3D%3D\"}]}",
+      "CF-RAY": "a155ede21c44fd2b-SIN",
+      "status_code": 200,
+      "fetch_method": "requests",
+      "blocked": false
+    }
+  },
+  "source": {
+    "extractor": "Shopify Collection Extractor v4",
+    "confidence": 0.92
+  },
+  "collectionSummary": {
+    "name": "Face Wash",
+    "productCount": 16,
+    "priceRange": {
+      "min": 181,
+      "max": 618
+    },
+    "source": "unknown"
+  },
+  "success": true,
+  "crawl": {
+    "success": true,
+    "blocked": false,
+    "crawlBlocked": false,
+    "statusCode": 200
+  },
+  "analysisReady": {
+    "schemaVersion": "competitive-analysis-v1",
+    "pageSummary": {
+      "url": "https://rivaj-uk.com/collections/face-wash",
+      "domain": "rivaj-uk.com",
+      "pageType": "collection",
+      "platform": "Shopify",
+      "title": "Buy Best Face Wash For Oily Skin Online In Pakistan | Rivaj Cosmetics",
+      "description": "Get great cosmetics and related products like face wash and face wash for dry skin, only from Rivaj. So, grab the best face wash for oily skin from Rivaj today and enjoy. Their face wash is truly unbeatable and offer a high degree of satisfaction. Rivaj offers best face wash in Pakistan to their customers all the time.",
+      "h1": "Face Wash",
+      "canonical": "https://rivaj-uk.com/collections/face-wash"
+    },
+    "competitiveSignals": {
+      "positioning": [
+        "wash",
+        "face wash",
+        "whitening",
+        "extract"
+      ],
+      "promotionalSignals": [
+        "sale",
+        "offer",
+        "new arrival"
+      ],
+      "pricingSignals": {
+        "pricesDetected": 16,
+        "samplePrices": [
+          {
+            "currency": "PKR",
+            "current": 618,
+            "compareAt": 650,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 618,
+            "compareAt": 650,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 413,
+            "compareAt": 435,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 451,
+            "compareAt": 475,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 451,
+            "compareAt": 475,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 451,
+            "compareAt": 475,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 214,
+            "compareAt": 225,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 413,
+            "compareAt": 435,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 413,
+            "compareAt": 435,
+            "isOnSale": true,
+            "priceTextRaw": null
+          },
+          {
+            "currency": "PKR",
+            "current": 181,
+            "compareAt": 190,
+            "isOnSale": true,
+            "priceTextRaw": null
+          }
+        ]
+      },
+      "productFocus": [
+        "FACE WASH RICE EXTRACT 100ML",
+        "FACE WASH SAFFRON WHITENING 100ML",
+        "Men Acno Fight Face Wash 100ml",
+        "Men Active Purifying Charcoal Face Wash 100ml",
+        "Charcoal White Face Wash 100ml",
+        "Pimples Clear Face Wash 100ml",
+        "Pinkish Whitening Face Wash",
+        "Men Active White Power Face Wash 100ml",
+        "Daily Essentials Refreshing Gel Wash (100ml)",
+        "Bamboo Charcoal Whitening Face Wash",
+        "Neem Extract Whitening Face Wash",
+        "Papaya Extract Brightening Face Wash",
+        "Milk Extract Whitening Face Wash",
+        "Lemon Extract Whitening Face Wash",
+        "FACE WASH VITAMIN C 100ML",
+        "Cucumber Extract Whitening Face Wash"
+      ],
+      "trustSignals": [],
+      "ctaStrategy": {
+        "primaryCtas": [
+          {
+            "text": "Add to Cart 0 in your cart",
+            "url": null
+          },
+          {
+            "text": "Choose options 0 in your cart",
+            "url": null
+          }
+        ],
+        "ctaCount": 2
+      },
+      "contentAngles": [
+        "Face Wash"
+      ],
+      "ecommerceSignals": {
+        "hasProducts": true,
+        "productCountExtracted": 16,
+        "hasPrices": true,
+        "hasCartOrCheckout": false,
+        "hasRealEcommerceEvidence": true
+      }
+    },
+    "extractionQuality": {
+      "score": 1,
+      "warnings": [],
+      "missingFields": [],
+      "unfetchedFields": []
+    },
+    "collectionSummary": {
+      "name": "Face Wash",
+      "productCount": 16,
+      "priceRange": {
+        "min": 181,
+        "max": 618
+      },
+      "source": "unknown"
+    },
+    "merger": {
+      "extractionMethod": "requests",
+      "qualityScore": 1,
+      "qualityBucket": "good",
+      "needsAIInsightReview": false,
+      "fallbacksTried": [
+        "requests"
+      ],
+      "usableForMerge": true,
+      "usableForInsights": true
+    }
+  }
+}
