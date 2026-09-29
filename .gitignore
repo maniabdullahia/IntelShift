@@ -54,9 +54,8 @@ Server/analysis_dump.json
 comparison_output*.json
 
 # ── Files with hardcoded secrets — keep LOCAL, provide via env on the server ──
-# (ecosystem.config.cjs has a Paddle key; LOCAL_SETUP.md has Paddle keys.)
-Server/ecosystem.config.cjs
-**/ecosystem.config.cjs
+# (LOCAL_SETUP.md still has Paddle keys. ecosystem.config.cjs was scrubbed to read
+#  from process.env, so it's now safe to track.)
 LOCAL_SETUP.md
 
 # ── Editor / OS ──
