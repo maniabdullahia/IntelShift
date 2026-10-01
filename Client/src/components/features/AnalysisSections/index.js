@@ -1,7 +1,6 @@
 export { default as AnalysisPage } from './AnalysisPage';
 export { default as AnalysisIdentity } from './AnalysisIdentity';
 export { default as CollectionData } from './CollectionData';
-export { default as FeatureMatrix } from './FeatureMatrix';
 export { default as KeyInsights } from './KeyInsights';
 export { default as PortfolioMatrix } from './PortfolioMatrix';
 export { default as Positioning } from './Positioning';

@@ -446,8 +446,6 @@ def build_ai_payload(comparison: Dict[str, Any], options: Optional[Dict[str, Any
         "modules": {
             "navigation": summarize_navigation(obj(comparison.get("navigationComparison")), max_nav_links),
             "collectionGapAnalysis": summarize_collection_gaps(obj(comparison.get("collectionGapAnalysis"))),
-            "pricingPages": summarize_pricing_services(obj(comparison.get("pricingPageComparison"))),
-            "services": summarize_pricing_services(obj(comparison.get("servicesComparison"))),
             "marketCoverage": summarize_market_coverage(obj(comparison.get("marketCoverageComparison"))),
             "categoryCoverage": summarize_category_coverage(obj(comparison.get("categoryCoverageComparison"))),
             "saleAndDiscount": summarize_sale_discount(obj(comparison.get("saleAndDiscountComparison"))),

@@ -336,7 +336,9 @@ export function getSites(ai,comparison,aiPayload){
   return firstAvailable(arr(comparison?.sites), arr(aiPayload?.snapshotScope?.sites), arr(aiPayload?.sites), Object.entries(obj(ai?.snapshotScope?.pagesAnalyzedCount)).map(([domain,pages],idx)=>({key:idx===0?'user':`competitor_${idx}`,domain,pagesAnalyzedCount:pages,pageTypesAnalyzed:ai?.snapshotScope?.pageTypesAnalyzed?.[domain]}))) || [];
 }
 export function getDomains(ai,comparison,aiPayload){ const sites=getSites(ai,comparison,aiPayload); const user=firstAvailable(ai?.domains?.user, ai?.userDomain, aiPayload?.domains?.user, comparison?.summary?.userDomain, sites.find(s=>s.key==='user'||s.role==='user')?.domain, sites[0]?.domain); const competitor=firstAvailable(ai?.domains?.competitor, arr(ai?.competitorDomains)[0], arr(aiPayload?.domains?.competitors)[0], arr(comparison?.summary?.competitorDomains)[0], sites.find(s=>s.key!=='user'&&s.role!=='user')?.domain, sites[1]?.domain); return {user,competitor}; }
-export function inferBusinessType(comparison,aiPayload){ const sites=arr(comparison?.sites).length?arr(comparison?.sites):arr(aiPayload?.snapshotScope?.sites); const hasProducts=sites.some(s=>(s.uniqueProducts||0)>0 || (s.collectionCount||0)>0); const hasPricing=sites.some(s=>(s.pricingPageCount||0)>0); const hasServices=sites.some(s=>(s.servicePageCount||0)>0); if(hasProducts) return 'ecommerce'; if(hasPricing) return 'saas'; if(hasServices) return 'services'; return 'website'; }
+// IntelShift targets e-commerce. A store with products/collections is "ecommerce";
+// anything else falls back to a neutral "website" (SaaS/services types were retired).
+export function inferBusinessType(comparison,aiPayload){ const sites=arr(comparison?.sites).length?arr(comparison?.sites):arr(aiPayload?.snapshotScope?.sites); const hasProducts=sites.some(s=>(s.uniqueProducts||0)>0 || (s.collectionCount||0)>0); return hasProducts ? 'ecommerce' : 'website'; }
 
 // Currency comes from the data, never hardcoded. Scans price rows, matchup
 // collections and price-anchor products for the first declared currency.

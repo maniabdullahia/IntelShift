@@ -39,7 +39,6 @@ import ShippingPayment from './ShippingPayment';
 import ProductDepth from './ProductDepth';
 import Navigation from './Navigation';
 import Merchandising from './Merchandising';
-import FeatureMatrix from './FeatureMatrix';
 import Positioning from './Positioning';
 import SeoAnalysis from './SeoAnalysis';
 import TrustSignals from './TrustSignals';
@@ -115,18 +114,8 @@ export default function AnalysisPage(props) {
     return out;
   }, [insights, cards]);
 
-  const hasFeatureData = Boolean(
-    arr(comparison?.pricingPageComparison?.competitors).length ||
-    arr(comparison?.servicesComparison?.competitors).length ||
-    arr(aiPayload?.modules?.pricingPages?.competitors).length ||
-    arr(aiPayload?.modules?.services?.competitors).length ||
-    arr(aiPayload?.pricingPageComparison?.competitors).length ||
-    arr(aiPayload?.servicesComparison?.competitors).length
-  );
-
-  const catalogLabel = businessType === 'ecommerce' ? 'Assortment'
-    : businessType === 'saas' ? 'Features & Plans'
-    : businessType === 'services' ? 'Services & Coverage' : 'Coverage';
+  // IntelShift is e-commerce only — assortment is always the catalog framing.
+  const catalogLabel = 'Assortment';
 
   // What did the user choose to analyze? Analysis emphasis follows that
   // choice: product pages analyzed → product matchups lead; collections
@@ -143,12 +132,10 @@ export default function AnalysisPage(props) {
     { key: 'pricing', label: 'Pricing', show: priceRows.length > 0 || matchups.some((m) => arr(m.topProductMatches).length),
       render: (p) => <><PriceAnalysis {...p} /><TopProducts {...p} /></> },
     { key: 'catalog', label: catalogLabel,
-      show: matchups.length > 0 || gaps.length > 0 || marketRows.length > 0 || catalogRows.length > 0 || inventoryRows.length > 0 || hasFeatureData,
-      render: (p) => businessType === 'saas' || businessType === 'services'
-        ? <><FeatureMatrix {...p} /><CollectionData {...p} /><ProductComparison {...p} /></>
-        : productFocused
-          ? <><ProductComparison {...p} /><SuggestedMatches {...p} /><CollectionData {...p} /><FeatureMatrix {...p} /></>
-          : <><CollectionData {...p} /><ProductComparison {...p} /><SuggestedMatches {...p} /><FeatureMatrix {...p} /></> },
+      show: matchups.length > 0 || gaps.length > 0 || marketRows.length > 0 || catalogRows.length > 0 || inventoryRows.length > 0,
+      render: (p) => productFocused
+        ? <><ProductComparison {...p} /><SuggestedMatches {...p} /><CollectionData {...p} /></>
+        : <><CollectionData {...p} /><ProductComparison {...p} /><SuggestedMatches {...p} /></> },
     { key: 'brand', label: 'Brand & Trust', show: matchups.length > 0 || homepageRows.length > 0 || seoRows.length > 0 || trustRows.length > 0,
       render: (p) => <><Positioning {...p} /><TrustSignals {...p} /><ShippingPayment {...p} /><SeoAnalysis {...p} /></> },
     { key: 'actions', label: 'Actions', show: recommendations.length > 0 || insights.length > 0,
@@ -156,7 +143,7 @@ export default function AnalysisPage(props) {
       render: (p) => <><KeyInsights {...p} /><Recommendation {...p} /></> },
     { key: 'history', label: 'History', show: !!props.competitorId,
       render: (p) => <CompetitorHistory competitorId={p.competitorId} /> },
-  ].filter((t) => t.show), [businessType, catalogLabel, productFocused, priceRows.length, matchups, gaps.length, marketRows.length, catalogRows.length, inventoryRows.length, hasFeatureData, seoRows.length, trustRows.length, homepageRows.length, recommendations.length, insights.length, props.competitorId]);
+  ].filter((t) => t.show), [catalogLabel, productFocused, priceRows.length, matchups, gaps.length, marketRows.length, catalogRows.length, inventoryRows.length, seoRows.length, trustRows.length, homepageRows.length, recommendations.length, insights.length, props.competitorId]);
 
   const [active, setActive] = useState(() => {
     const fromUrl = readTabFromUrl();

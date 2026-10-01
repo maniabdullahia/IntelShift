@@ -162,7 +162,7 @@ export default function Summary(props) {
 
     {catalog.length || inventory.length || price.length ? <ChartBox
       title="Competitive score radar"
-      subtitle={`The dimensions behind the header scores — catalog depth, price access, stock health, SEO, trust, collection breadth, content depth, promotions and navigation — weighted for ${businessType === 'saas' ? 'SaaS' : businessType} analysis. Each compares the two stores on the analyzed pages.`}
+      subtitle={`The dimensions behind the header scores — catalog depth, price access, stock health, SEO, trust, collection breadth, content depth, promotions and navigation — weighted for ${businessType} analysis. Each compares the two stores on the analyzed pages.`}
       config={competitiveRadarChart(scoreData, domains.user || 'User', domains.competitor || 'Competitor')}
     /> : null}
   </div>;

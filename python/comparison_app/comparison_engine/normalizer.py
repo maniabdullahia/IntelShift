@@ -29,6 +29,21 @@ def normalize_site_snapshot(raw: Dict[str, Any], key: str | None = None) -> Dict
     normalized_pages = [normalize_page(p, domain=domain) for p in pages if isinstance(p, dict)]
     normalized_products = normalize_products(products, normalized_pages, domain=domain)
 
+    # Reconcile per-product currency to the site's DOMINANT currency. Per-product
+    # detection reads the price symbol, and a Shopify store that renders "$" for a
+    # non-USD locale (common for PKR/INR stores) can get a few products mis-tagged
+    # USD. A store sells in ONE currency, so stamp the majority currency onto the
+    # minority outliers — this stops a stray "USD" leaking into price-band evidence
+    # and AI reasoning for, e.g., a PKR store.
+    _site_currency = None
+    _curs = [p.get("currency") for p in normalized_products if p.get("currency")]
+    if _curs:
+        from collections import Counter
+        _site_currency = Counter(_curs).most_common(1)[0][0]
+        for p in normalized_products:
+            if p.get("currency") and p.get("currency") != _site_currency:
+                p["currency"] = _site_currency
+
     page_type_counts: Dict[str, int] = {}
     for page in normalized_pages:
         page_type_counts[page["pageType"]] = page_type_counts.get(page["pageType"], 0) + 1
@@ -93,7 +108,7 @@ def normalize_site_snapshot(raw: Dict[str, Any], key: str | None = None) -> Dict
             "vendorsDetected": sorted([clean_text(x) for x in vendors if clean_text(x)]),
             "priceMin": min([p["priceValue"] for p in priced], default=None),
             "priceMax": max([p["priceValue"] for p in priced], default=None),
-            "currency": next((p.get("currency") for p in priced if p.get("currency")), None),
+            "currency": _site_currency or next((p.get("currency") for p in priced if p.get("currency")), None),
         },
         "homepage": extract_homepage_summary(normalized_pages),
         "collections": extract_collection_summaries(normalized_pages),

@@ -100,7 +100,7 @@ DASHBOARD_CARD = {
             "enum": ["priceComparison", "categoryCoverageComparison", "oneToOneComparison",
                      "saleAndDiscountComparison", "contentDepthComparison", "homepageComparison",
                      "navigationComparison", "seoComparison", "inventoryComparison",
-                     "trustAndConversionComparison", "pricingPageComparison", "servicesComparison"],
+                     "trustAndConversionComparison", "shippingPaymentComparison", "merchandisingComparison"],
         },
         "title": {"type": "string"},
         "headlineMetric": {"type": "string", "description": "The single number/fact to display large, e.g. '+15% median price gap'."},

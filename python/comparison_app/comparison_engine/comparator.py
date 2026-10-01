@@ -34,8 +34,6 @@ def compare_sites(user_raw: Dict[str, Any], competitor_raws: List[Dict[str, Any]
     page_match = build_page_match_comparison(user, competitors)
     navigation = build_navigation_comparison(user, competitors)
     collection_gaps = build_collection_gap_analysis(user, competitors)
-    pricing_pages = build_pricing_page_comparison(user, competitors)
-    services = build_services_comparison(user, competitors)
     homepage = build_homepage_comparison(all_sites)
     category_coverage = build_category_coverage_comparison(all_sites)
     sales_discounts = build_sale_discount_comparison(all_sites)
@@ -46,8 +44,6 @@ def compare_sites(user_raw: Dict[str, Any], competitor_raws: List[Dict[str, Any]
         "navigationComparison": navigation,
         "pageMatchComparison": page_match,
         "collectionGapAnalysis": collection_gaps,
-        "pricingPageComparison": pricing_pages,
-        "servicesComparison": services,
         "oneToOneComparison": one_to_one,
         "categoryCoverageComparison": category_coverage,
         "saleAndDiscountComparison": sales_discounts,
@@ -67,8 +63,6 @@ def compare_sites(user_raw: Dict[str, Any], competitor_raws: List[Dict[str, Any]
         "pageMatchComparison": page_match,
         "navigationComparison": navigation,
         "collectionGapAnalysis": collection_gaps,
-        "pricingPageComparison": pricing_pages,
-        "servicesComparison": services,
         "marketCoverageComparison": build_market_coverage_comparison(user, competitors),
         "priceComparison": build_price_comparison(all_sites),
         "inventoryComparison": build_inventory_comparison(all_sites),
@@ -80,7 +74,7 @@ def compare_sites(user_raw: Dict[str, Any], competitor_raws: List[Dict[str, Any]
         "trustAndConversionComparison": build_trust_conversion_comparison(all_sites),
         "shippingPaymentComparison": _safe_shipping_payment(all_sites),
         "dataQuality": build_data_quality(all_sites),
-        "rankedInsights": build_ranked_insights(user, competitors, one_to_one, category_coverage, sales_discounts, content_depth, pricing_pages),
+        "rankedInsights": build_ranked_insights(user, competitors, one_to_one, category_coverage, sales_discounts, content_depth),
         "recommendations": build_recommendations(user, competitors),
         "workspaceLayoutHints": build_workspace_layout_hints(user, competitors),
         "appIntegrationContract": build_app_integration_contract(),
@@ -110,12 +104,10 @@ def site_overview(site: Dict[str, Any]) -> Dict[str, Any]:
 
 def build_summary(user: Dict[str, Any], competitors: List[Dict[str, Any]]) -> Dict[str, Any]:
     site_type = user.get("siteType") or ("ecommerce" if user["catalog"]["totalUniqueProducts"] else "unknown")
-    focus_by_type = {
-        "ecommerce": ["categoryCoverageComparison", "oneToOneComparison", "priceComparison", "saleAndDiscountComparison", "inventoryComparison"],
-        "saas": ["pricingPageComparison", "pageMatchComparison", "navigationComparison"],
-        "business": ["servicesComparison", "pageMatchComparison", "navigationComparison"],
-        "content": ["pageMatchComparison", "seoComparison", "navigationComparison"],
-    }
+    # IntelShift targets e-commerce — the focus modules are the e-commerce set for
+    # every store (non-ecommerce types fall back to the same list).
+    _ecom_focus = ["categoryCoverageComparison", "oneToOneComparison", "priceComparison", "saleAndDiscountComparison", "inventoryComparison"]
+    focus_by_type = {"ecommerce": _ecom_focus}
     return {
         "mode": "competitive_comparison" if competitors else "single_site_baseline",
         "userDomain": user["domain"],
@@ -345,49 +337,63 @@ def score_product_ai_usefulness(p: Dict[str, Any]) -> Dict[str, Any]:
 
 # -----------------------------------------------------------------------------
 # v4 Comparison Intelligence Layer
-# Covers: homepage, navigation, page matching, collection gaps, SaaS pricing,
-# services pages, and a stable AI/app contract.
+# Covers: homepage, navigation, page matching, collection gaps, pricing/plan pages
+# (when a store has them), and a stable AI/app contract.
 # -----------------------------------------------------------------------------
 
+# UNIVERSAL e-commerce navigation concepts — vertical-AGNOSTIC merchandising &
+# utility structure that applies to ANY online store (apparel, electronics, beauty,
+# grocery, home, toys, …). We intentionally do NOT hardcode product categories here
+# (those differ per vertical and are compared deterministically by categoryCoverage
+# / oneToOne from each store's OWN taxonomy). This matrix answers "what merchandising
+# & trust structure does each store surface" — e.g. does it have a sale section, a
+# gifts hub, bundles, a loyalty program, reviews, a blog — which is comparable across
+# every e-commerce type. Matched on word boundaries (see infer_concepts).
 CONCEPT_ALIASES: Dict[str, Set[str]] = {
-    # Ecommerce / beauty
-    "foundation": {"foundation", "foundations", "base", "bb cream", "cc cream", "concealer", "coverage"},
-    "eyeshadow": {"eyeshadow", "eye shadow", "palette", "palettes", "eye makeup"},
-    "lip_products": {"lipstick", "lip gloss", "lipgloss", "lip liner", "lip"},
-    "skincare": {"skincare", "skin care", "serum", "cream", "cleanser", "face wash", "moisturizer"},
-    "primer": {"primer", "makeup base", "base makeup"},
-    "blush": {"blush", "blusher", "cheek"},
-    "mascara": {"mascara", "lash"},
-    "eyeliner": {"eyeliner", "kajal", "eye liner"},
-    "sale_offers": {"sale", "discount", "offer", "bundle", "clearance", "deal"},
-
-    # SaaS / B2B
-    "pricing": {"pricing", "plans", "packages", "subscription", "billing", "starter", "growth", "pro", "enterprise"},
-    "features": {"features", "product", "platform", "solutions", "capabilities"},
-    "integrations": {"integrations", "apps", "connectors", "api", "webhooks"},
-    "customers": {"customers", "case studies", "reviews", "testimonials", "logos"},
-    "resources": {"blog", "resources", "guides", "help", "learn", "academy"},
-    "security": {"security", "compliance", "privacy", "gdpr", "soc", "trust"},
-    "demo_trial": {"demo", "trial", "book a demo", "start free", "free trial", "contact sales"},
-
-    # Services / agency / local business
-    "services": {"services", "service", "what we do", "solutions"},
-    "consulting": {"consulting", "consultation", "strategy", "advisory"},
-    "development": {"development", "web development", "software", "app development", "website"},
-    "marketing": {"marketing", "seo", "social media", "ads", "ppc", "branding"},
-    "support": {"support", "maintenance", "managed", "care plan", "helpdesk"},
-    "contact": {"contact", "quote", "estimate", "inquiry", "consultation"},
+    # Merchandising / promotions
+    "sale_offers": {"sale", "discount", "offer", "offers", "clearance", "outlet", "deal", "deals", "promo", "promotions"},
+    "new_arrivals": {"new arrivals", "new in", "just in", "just dropped", "latest", "new collection"},
+    "best_sellers": {"best sellers", "bestsellers", "best selling", "top sellers", "trending", "popular", "most loved", "must have", "must haves"},
+    "bundles_sets": {"bundle", "bundles", "set", "sets", "kit", "kits", "combo", "combos", "pack", "packs", "value pack"},
+    "gifts": {"gift", "gifts", "gift set", "gift sets", "gift card", "gift cards", "gift guide", "gifting"},
+    "featured": {"featured", "shop the look", "collections", "lookbook", "editorial"},
+    # Catalog navigation / discovery
+    "shop_all": {"shop all", "all products", "view all", "shop now", "shop"},
+    "shop_by_category": {"shop by category", "categories", "category", "departments", "browse"},
+    "brands": {"brands", "shop by brand", "our brands", "designers"},
+    "accessories": {"accessories", "add ons", "add-ons", "extras"},
+    # Loyalty / account / retention
+    "loyalty_rewards": {"rewards", "loyalty", "points", "membership", "vip", "club", "perks"},
+    "wishlist": {"wishlist", "wish list", "favourites", "favorites", "saved items"},
+    "subscription": {"subscribe", "subscription", "subscriptions", "auto reorder", "auto-replenish", "replenish"},
+    # Trust / content / support
+    "reviews": {"reviews", "testimonials", "ratings", "customer reviews", "as seen", "press"},
+    "blog": {"blog", "journal", "magazine", "articles", "stories", "tips", "guides", "advice", "learn"},
+    "help_support": {"help", "support", "faq", "faqs", "customer service", "customer care", "how to", "size guide", "size chart"},
+    "policies": {"shipping", "returns", "refund", "exchange", "exchanges", "delivery", "track order", "order tracking", "warranty"},
+    "sustainability": {"sustainability", "sustainable", "eco", "ethical", "our impact", "responsibility"},
+    # Company / contact
+    "about": {"about", "about us", "our story", "who we are", "brand story"},
+    "contact": {"contact", "contact us", "get in touch", "store locator", "find a store", "stores", "locations"},
+    "wholesale_b2b": {"wholesale", "bulk", "trade", "b2b", "corporate", "resellers", "stockists"},
 }
+
+# Page-INTENT word sets — kept separate so page-type classification still works
+# regardless of the e-commerce concept vocabulary above. These stay broad because a
+# store CAN have a genuine pricing/services/blog page.
+_INTENT_PRICING = {"pricing", "plans", "packages", "subscription", "billing"}
+_INTENT_SERVICES = {"services", "service", "what we do", "consulting", "consultation", "development", "marketing", "support", "maintenance"}
+_INTENT_CONTACT = {"contact", "quote", "estimate", "inquiry", "get in touch"}
 
 PAGE_INTENT_ALIASES: Dict[str, Set[str]] = {
     "homepage": {"homepage", "home"},
-    "pricing": CONCEPT_ALIASES["pricing"],
-    "services": CONCEPT_ALIASES["services"] | CONCEPT_ALIASES["consulting"] | CONCEPT_ALIASES["development"] | CONCEPT_ALIASES["marketing"] | CONCEPT_ALIASES["support"],
-    "collection": {"collection", "collections", "category", "shop", "products"},
+    "pricing": _INTENT_PRICING,
+    "services": _INTENT_SERVICES,
+    "collection": {"collection", "collections", "category", "categories", "shop", "catalog"},
     "product": {"product", "products", "item"},
-    "blog": {"blog", "article", "resources", "guide"},
+    "blog": {"blog", "article", "articles", "journal", "guide", "guides"},
     "about": {"about", "company", "story", "team"},
-    "contact": CONCEPT_ALIASES["contact"],
+    "contact": _INTENT_CONTACT,
 }
 
 
@@ -414,11 +420,19 @@ def _seq(a: Any, b: Any) -> float:
     return SequenceMatcher(None, a_s, b_s).ratio()
 
 
+def _alias_hit(alias: str, blob: str) -> bool:
+    """Whole-word / whole-phrase match, so 'pro' doesn't match 'protection' and
+    'product' doesn't match a longer word. Works for multi-word aliases too."""
+    if not alias or not blob:
+        return False
+    return re.search(r"\b" + re.escape(alias) + r"\b", blob) is not None
+
+
 def infer_concepts(*parts: Any) -> List[str]:
     blob = _blob(*parts)
     found = []
     for concept, aliases in CONCEPT_ALIASES.items():
-        if any(alias in blob for alias in aliases):
+        if any(_alias_hit(alias, blob) for alias in aliases):
             found.append(concept)
     return sorted(set(found))
 
@@ -447,7 +461,7 @@ def infer_page_intent(page: Dict[str, Any]) -> str:
     for intent, aliases in PAGE_INTENT_ALIASES.items():
         if intent in page_type:
             return intent
-        if any(alias in combined for alias in aliases):
+        if any(_alias_hit(alias, combined) for alias in aliases):
             return intent
     return page_type or "general"
 
@@ -647,166 +661,16 @@ def build_collection_gap_analysis(user: Dict[str, Any], competitors: List[Dict[s
             "potentialUserGaps": [
                 {
                     "concept": c,
-                    "severity": "high" if c in {"pricing", "demo_trial", "services"} or infer_category_label(c.replace("_", " ")) else "medium",
+                    "severity": "high" if c in {"reviews", "loyalty_rewards", "best_sellers", "bundles_sets", "gifts", "subscription"} or infer_category_label(c.replace("_", " ")) else "medium",
                     "whyImportant": "Competitor has visible coverage for this collection/page/service concept while user snapshot does not show it clearly.",
                 }
                 for c in competitor_only[:30]
             ],
-            "aiPromptHint": "Use this to identify missing collections, services, SaaS pages, or positioning themes. Verify with evidence before recommending.",
+            "aiPromptHint": "Use this to identify missing collections/categories or positioning themes. Verify with evidence before recommending.",
         })
     return {"displayType": "concept_gap_analysis", "userDomain": user.get("domain"), "competitors": blocks}
 
 
-def extract_pricing_signals(page: Dict[str, Any]) -> Dict[str, Any]:
-    # Prefer the analyzer's STRUCTURED pricing/saas blocks when present.
-    pricing = page.get("pricing") or (page.get("generalPage") or {}).get("pricing") or {}
-    saas = page.get("saas") or {}
-    if pricing.get("hasPricing") and (pricing.get("plans") or []):
-        plans = [p for p in (pricing.get("plans") or []) if isinstance(p, dict)]
-        plan_details = [{
-            "name": p.get("name"),
-            "type": p.get("type"),
-            "description": p.get("description"),
-            "priceRaw": (p.get("price") or {}).get("raw"),
-            "amount": (p.get("price") or {}).get("amount"),
-            "period": (p.get("price") or {}).get("period"),
-        } for p in plans]
-        billing = pricing.get("billing") or {}
-        return {
-            "page": compact_page(page),
-            "structured": True,
-            "pricingModel": pricing.get("pricingModel"),
-            "currency": pricing.get("currency"),
-            "planNamesDetected": [p.get("name") for p in plans if p.get("name")],
-            "plans": plan_details,
-            "priceMentions": [d["priceRaw"] for d in plan_details if d.get("priceRaw")][:30],
-            "billing": billing,
-            "hasFreeTrial": bool(saas.get("hasFreeTrial")),
-            "hasEnterprise": bool(saas.get("hasEnterpriseOffering")) or any("enterprise" in clean_text(p.get("name")).lower() for p in plans),
-            "hasMonthlyPricing": bool(billing.get("monthly")),
-            "hasAnnualPricing": bool(billing.get("annual")),
-            "moneyBackGuarantee": billing.get("moneyBackGuarantee"),
-            "hasApi": saas.get("hasApi"),
-            "hasFeatureComparison": saas.get("hasFeatureComparison"),
-            "aiCapabilities": saas.get("aiCapabilities") or [],
-            "ctaLinks": [],
-        }
-
-    # Fallback: text-based heuristics (legacy snapshots).
-    text = _blob(page.get("url"), page.get("title"), page.get("seo", {}).get("title"), page.get("textEvidence", {}).get("summary"), page.get("textEvidence", {}).get("mainTextPreview"))
-    sections = page.get("sections") or []
-    plan_names = []
-    known = ["free", "starter", "basic", "growth", "professional", "pro", "business", "team", "enterprise", "custom"]
-    for name in known:
-        if re.search(rf"\b{name}\b", text):
-            plan_names.append(name)
-    prices = []
-    for m in re.finditer(r"(?:\$|£|€|rs\.?|pkr)?\s?\d+(?:,\d{3})*(?:\.\d+)?\s?(?:/\s?(?:mo|month|yr|year|user|seat))?", text, re.I):
-        raw = clean_text(m.group(0))
-        if raw and any(ch.isdigit() for ch in raw):
-            prices.append(raw)
-    ctas = []
-    for s in sections:
-        for l in s.get("links") or []:
-            label = clean_text(l.get("text"))
-            if any(x in label.lower() for x in ["start", "trial", "demo", "buy", "subscribe", "contact", "sales"]):
-                ctas.append({"text": label, "url": l.get("url")})
-    return {
-        "page": compact_page(page),
-        "planNamesDetected": sorted(set(plan_names)),
-        "priceMentions": prices[:30],
-        "ctaLinks": ctas[:20],
-        "hasFreeTrial": "free trial" in text or "start free" in text,
-        "hasEnterprise": "enterprise" in text or "contact sales" in text,
-        "hasMonthlyPricing": any(x in text for x in ["/mo", "/month", "monthly"]),
-        "hasAnnualPricing": any(x in text for x in ["/yr", "/year", "annual", "yearly"]),
-    }
-
-
-def build_pricing_page_comparison(user: Dict[str, Any], competitors: List[Dict[str, Any]]) -> Dict[str, Any]:
-    def signal_rank(sig):
-        return (1 if sig.get("structured") else 0, len(sig.get("plans") or []))
-
-    user_pages = pages_by_intent(user, "pricing")
-    user_signals = sorted([extract_pricing_signals(p) for p in user_pages], key=signal_rank, reverse=True)
-    blocks = []
-    for comp in competitors:
-        comp_pages = pages_by_intent(comp, "pricing")
-        comp_signals = sorted([extract_pricing_signals(p) for p in comp_pages], key=signal_rank, reverse=True)
-        user_plans = set(x for sig in user_signals for x in sig["planNamesDetected"])
-        comp_plans = set(x for sig in comp_signals for x in sig["planNamesDetected"])
-
-        def plan_amounts(signals):
-            return [p.get("amount") for sig in signals for p in (sig.get("plans") or []) if isinstance(p.get("amount"), (int, float))]
-
-        def iso_currency(value):
-            symbol_map = {"$": "USD", "US$": "USD", "£": "GBP", "€": "EUR", "₹": "INR", "₨": "PKR", "RS": "PKR", "RS.": "PKR"}
-            v = clean_text(value).upper()
-            return symbol_map.get(v, v or None)
-
-        u_amounts, c_amounts = plan_amounts(user_signals), plan_amounts(comp_signals)
-        u_cur = iso_currency(next((sig.get("currency") for sig in user_signals if sig.get("currency")), None))
-        c_cur = iso_currency(next((sig.get("currency") for sig in comp_signals if sig.get("currency")), None))
-        plan_price_comparison = None
-        if u_amounts and c_amounts:
-            plan_price_comparison = {
-                "sameCurrency": bool(u_cur and c_cur and u_cur == c_cur),
-                "userCurrency": u_cur,
-                "competitorCurrency": c_cur,
-                "userEntryPrice": min(u_amounts),
-                "competitorEntryPrice": min(c_amounts),
-                "userTopPrice": max(u_amounts),
-                "competitorTopPrice": max(c_amounts),
-                "userPlanCount": len(u_amounts),
-                "competitorPlanCount": len(c_amounts),
-            }
-
-        blocks.append({
-            "planPriceComparison": plan_price_comparison,
-            "competitorDomain": comp.get("domain"),
-            "userPricingPageDetected": bool(user_signals),
-            "competitorPricingPageDetected": bool(comp_signals),
-            "userPricingSignals": user_signals,
-            "competitorPricingSignals": comp_signals,
-            "sharedPlanNames": sorted(user_plans & comp_plans),
-            "competitorOnlyPlanNames": sorted(comp_plans - user_plans),
-            "userOnlyPlanNames": sorted(user_plans - comp_plans),
-            "aiPromptHint": "For SaaS, pricing pages are high priority. Compare plan structure, trial/demo CTAs, enterprise motion, price visibility, and packaging differences.",
-        })
-    return {"displayType": "saas_pricing_comparison", "userDomain": user.get("domain"), "competitors": blocks}
-
-
-def extract_service_signals(page: Dict[str, Any]) -> Dict[str, Any]:
-    concepts = infer_concepts(page.get("url"), page.get("title"), page.get("seo", {}).get("title"), page.get("textEvidence", {}).get("summary"), page.get("textEvidence", {}).get("mainTextPreview"))
-    return {
-        "page": compact_page(page),
-        "serviceConcepts": [c for c in concepts if c in {"services", "consulting", "development", "marketing", "support", "contact"}],
-        "ctaCount": sum(len(s.get("links") or []) for s in page.get("sections") or []),
-        "topSections": (page.get("sections") or [])[:10],
-    }
-
-
-def build_services_comparison(user: Dict[str, Any], competitors: List[Dict[str, Any]]) -> Dict[str, Any]:
-    user_pages = [p for p in user.get("pages", []) if infer_page_intent(p) in {"services", "contact"}]
-    user_signals = [extract_service_signals(p) for p in user_pages]
-    user_services = set(c for sig in user_signals for c in sig["serviceConcepts"])
-    blocks = []
-    for comp in competitors:
-        comp_pages = [p for p in comp.get("pages", []) if infer_page_intent(p) in {"services", "contact"}]
-        comp_signals = [extract_service_signals(p) for p in comp_pages]
-        comp_services = set(c for sig in comp_signals for c in sig["serviceConcepts"])
-        blocks.append({
-            "competitorDomain": comp.get("domain"),
-            "userServicePageCount": len(user_pages),
-            "competitorServicePageCount": len(comp_pages),
-            "sharedServiceConcepts": sorted(user_services & comp_services),
-            "competitorOnlyServiceConcepts": sorted(comp_services - user_services),
-            "userOnlyServiceConcepts": sorted(user_services - comp_services),
-            "userServiceSignals": user_signals,
-            "competitorServiceSignals": comp_signals,
-            "aiPromptHint": "For service businesses, compare service coverage, CTA strength, page depth, proof/trust sections, and contact/quote paths.",
-        })
-    return {"displayType": "services_comparison", "userDomain": user.get("domain"), "competitors": blocks}
 
 
 def build_market_coverage_comparison(user: Dict[str, Any], competitors: List[Dict[str, Any]]) -> Dict[str, Any]:
@@ -836,9 +700,7 @@ def build_app_integration_contract() -> Dict[str, Any]:
             {"key": "pageMatchComparison", "label": "Page Matchups", "priority": 8},
             {"key": "collectionGapAnalysis", "label": "Missing Collections / Concepts", "priority": 9},
             {"key": "contentDepthComparison", "label": "Product Content Depth", "priority": 10},
-            {"key": "pricingPageComparison", "label": "SaaS Pricing", "priority": 11},
-            {"key": "servicesComparison", "label": "Services", "priority": 12},
-            {"key": "dataQuality", "label": "Data Quality", "priority": 13},
+            {"key": "dataQuality", "label": "Data Quality", "priority": 11},
         ],
         "aiResultRecommendedSchema": {
             "executiveSummary": "string",
@@ -856,8 +718,6 @@ def build_ai_analysis_input(user: Dict[str, Any], competitors: List[Dict[str, An
         "navigationComparison": build_navigation_comparison(user, competitors),
         "pageMatchComparison": build_page_match_comparison(user, competitors),
         "collectionGapAnalysis": build_collection_gap_analysis(user, competitors),
-        "pricingPageComparison": build_pricing_page_comparison(user, competitors),
-        "servicesComparison": build_services_comparison(user, competitors),
         "oneToOneComparison": build_one_to_one_comparison(user, competitors),
     }
     return {
@@ -868,7 +728,7 @@ def build_ai_analysis_input(user: Dict[str, Any], competitors: List[Dict[str, An
             "Use pageMatchComparison for like-for-like page analysis.",
             "Use oneToOneComparison only for related collections/products; matches are category-gated.",
             "Use categoryCoverageComparison for assortment gaps and saleAndDiscountComparison for promo pressure.",
-            "For SaaS, prioritize pricingPageComparison. For services, prioritize servicesComparison. For ecommerce, prioritize category/product/price/inventory comparisons.",
+            "Prioritize category/product/price/inventory comparisons; use pricing/plan or services modules only if the store actually has such pages.",
             "If priceComparison.sameCurrency is false, never compare absolute prices across sites.",
         ],
         "userDomain": user.get("domain"),
@@ -1204,7 +1064,6 @@ def build_ranked_insights(
     category_coverage: Dict[str, Any] | None = None,
     sales_discounts: Dict[str, Any] | None = None,
     content_depth: Dict[str, Any] | None = None,
-    pricing_pages: Dict[str, Any] | None = None,
 ) -> Dict[str, Any]:
     items = []
     if not competitors:
@@ -1383,45 +1242,28 @@ def build_ranked_insights(
                 "Unique titles, present H1s and meta descriptions are quick on-page SEO wins that improve click-through and ranking. Fix these on your key pages first.",
                 58, {"missingMeta": miss_meta, "missingH1": miss_h1, "duplicateTitles": dup}))
 
-    # --- SaaS plan pricing (structured pricing pages) ---
-    for block in (pricing_pages or {}).get("competitors", []):
-        ppc = block.get("planPriceComparison")
-        if not ppc or not ppc.get("sameCurrency"):
-            continue
-        comp_domain = block.get("competitorDomain")
-        u_entry, c_entry = ppc.get("userEntryPrice"), ppc.get("competitorEntryPrice")
-        if u_entry == 0 and (c_entry or 0) > 0:
-            items.append(make_insight(
-                "saas_pricing", "medium",
-                f"You offer a free tier; {comp_domain} starts at {c_entry}",
-                "A free entry point is a strong acquisition advantage - make it prominent in positioning and SEO.",
-                75, {"userEntryPrice": u_entry, "competitorEntryPrice": c_entry}))
-        elif u_entry is not None and c_entry is not None and c_entry > 0 and u_entry > 0:
-            gap = round((c_entry - u_entry) / u_entry * 100)
-            if abs(gap) >= 20:
-                if gap >= 100:
-                    title = f"{comp_domain}'s entry plan costs {round(c_entry / u_entry, 1)}x yours ({c_entry} vs {u_entry})"
-                elif gap <= -50:
-                    title = f"Your entry plan costs {round(u_entry / c_entry, 1)}x {comp_domain}'s ({u_entry} vs {c_entry})"
-                else:
-                    direction = "below" if gap > 0 else "above"
-                    title = f"Your entry plan is priced ~{abs(gap)}% {direction} {comp_domain}"
-                items.append(make_insight(
-                    "saas_pricing", "high", title,
-                    f"Entry price: you {u_entry} vs competitor {c_entry}. Entry pricing anchors plan perception and trial conversion.",
-                    82, {"userEntryPrice": u_entry, "competitorEntryPrice": c_entry, "gapPercent": gap}))
-        u_top, c_top = ppc.get("userTopPrice"), ppc.get("competitorTopPrice")
-        if u_top is not None and c_top is not None and u_top > 0 and c_top > u_top * 1.5:
-            items.append(make_insight(
-                "saas_pricing", "low",
-                f"{comp_domain} monetizes a much higher top tier ({c_top} vs your {u_top})",
-                "A higher top tier can indicate an upmarket/enterprise motion you may be leaving unaddressed.",
-                60, {"userTopPrice": u_top, "competitorTopPrice": c_top}))
-
     # --- Catalog breadth ---
     comp_best_product_count = max((c["catalog"]["totalUniqueProducts"] for c in competitors), default=0)
     if user["catalog"]["totalUniqueProducts"] < comp_best_product_count:
         items.append(make_insight("catalog_depth", "medium", "Competitor has broader detected catalog coverage", "A competitor has more unique products in the analyzed snapshot. Note this reflects analyzed pages, not necessarily the full store.", 65, {"userProducts": user["catalog"]["totalUniqueProducts"], "bestCompetitorProducts": comp_best_product_count}))
+
+    # --- Product imagery depth (richer galleries lift conversion in ANY vertical) ---
+    def _avg_images(site):
+        prods = site.get("products") or []
+        if not prods:
+            return None
+        return sum((p.get("imageCount") or 0) for p in prods) / len(prods)
+    _u_img = _avg_images(user)
+    if _u_img is not None and competitors:
+        _best_comp_img = max((_avg_images(c) or 0) for c in competitors)
+        # Flag only a MEANINGFUL gap (avoid noise): competitor averages >=2x AND at
+        # least 2 more images per product AND at least 2 on average.
+        if _best_comp_img >= 2 and _best_comp_img >= _u_img * 2 and (_best_comp_img - _u_img) >= 2:
+            items.append(make_insight(
+                "content_depth", "medium",
+                "Competitor product pages show more images",
+                "Richer product galleries (more angles / lifestyle shots) typically lift conversion and reduce returns. Your products show noticeably fewer images on average.",
+                70, {"userAvgImages": round(_u_img, 1), "competitorAvgImages": round(_best_comp_img, 1)}))
 
     # --- Trust signals ---
     comp_trust = any(c["homepage"].get("features", {}).get("hasTrustSignals") for c in competitors)
@@ -1501,13 +1343,11 @@ def build_workspace_layout_hints(user: Dict[str, Any], competitors: List[Dict[st
         "recommendedDefaultOrder": [
             {"rank": 1, "sectionKey": "rankedInsights", "reason": "Highest action value for users"},
             {"rank": 2, "sectionKey": "homepageComparison", "reason": "Homepage is the front face and should always be reviewed"},
-            {"rank": 3, "sectionKey": "navigationComparison", "reason": "Navigation reveals priority categories, services, and SaaS pages"},
-            {"rank": 4, "sectionKey": "pageMatchComparison", "reason": "Like-for-like homepage, pricing, service, product, collection, and content page matching"},
-            {"rank": 5, "sectionKey": "collectionGapAnalysis", "reason": "Shows missing collections, services, SaaS concepts, and market coverage gaps"},
+            {"rank": 3, "sectionKey": "navigationComparison", "reason": "Navigation reveals the merchandising & trust structure each store surfaces"},
+            {"rank": 4, "sectionKey": "pageMatchComparison", "reason": "Like-for-like homepage, product, collection, and content page matching"},
+            {"rank": 5, "sectionKey": "collectionGapAnalysis", "reason": "Shows missing collections/categories and market coverage gaps"},
             {"rank": 6, "sectionKey": "oneToOneComparison", "reason": "Like-for-like collection and product matching"},
-            {"rank": 7, "sectionKey": "pricingPageComparison", "reason": "Core SaaS packaging and pricing intelligence"},
-            {"rank": 8, "sectionKey": "servicesComparison", "reason": "Core service business coverage and CTA intelligence"},
-            {"rank": 9, "sectionKey": "priceComparison", "reason": "Core ecommerce intelligence"},
+            {"rank": 7, "sectionKey": "priceComparison", "reason": "Core ecommerce intelligence"},
             {"rank": 10, "sectionKey": "inventoryComparison", "reason": "Availability and merchandising opportunity"},
             {"rank": 11, "sectionKey": "sectionComparison", "reason": "Homepage/page structure and content positioning"},
             {"rank": 12, "sectionKey": "productDetailComparison", "reason": "Detailed evidence layer, expandable in UI"},
@@ -1555,12 +1395,10 @@ def build_openai_evidence_pack(user: Dict[str, Any], competitors: List[Dict[str,
     modules = shared_modules or {}
     return {
         "purpose": "Use this detailed evidence pack for narrative explanation, alerts, strategic analysis, and insight generation. Numeric facts are computed deterministically by the comparison engine.",
-        "instructionHint": "Do not invent products, prices, plans, services, or page facts. Use homepage, navigation, page matches, pricing pages, service pages, products, sections, importance ranks, and oneToOneComparison matchups as evidence.",
+        "instructionHint": "Do not invent products, prices, or page facts. Use homepage, navigation, page matches, products, sections, importance ranks, and oneToOneComparison matchups as evidence.",
         "pageMatchComparison": modules.get("pageMatchComparison") or build_page_match_comparison(user, competitors),
         "navigationComparison": modules.get("navigationComparison") or build_navigation_comparison(user, competitors),
         "collectionGapAnalysis": modules.get("collectionGapAnalysis") or build_collection_gap_analysis(user, competitors),
-        "pricingPageComparison": modules.get("pricingPageComparison") or build_pricing_page_comparison(user, competitors),
-        "servicesComparison": modules.get("servicesComparison") or build_services_comparison(user, competitors),
         "oneToOneComparison": modules.get("oneToOneComparison") or build_one_to_one_comparison(user, competitors),
         "categoryCoverageComparison": modules.get("categoryCoverageComparison"),
         "saleAndDiscountComparison": modules.get("saleAndDiscountComparison"),

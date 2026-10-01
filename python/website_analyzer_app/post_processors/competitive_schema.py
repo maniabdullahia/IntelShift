@@ -1226,11 +1226,21 @@ def build_extraction_quality(result):
             # Non-ecommerce models without product focus: don't clutter missingFields
             missing.append("homepage.featuredProductsOrCollections")
 
-        # CTAs — check hero.primaryCtas, content.ctas, and homepage.ctas (unknown analyzer)
+        # CTAs — check hero.primaryCtas, content.ctas, and homepage.ctas (unknown
+        # analyzer). ALSO honour the numeric ctaCount the homepage analyzer records
+        # in its metrics: the CTA lists live in a few shapes and can be empty at these
+        # exact paths even when CTAs were detected, which produced a false
+        # "no_ctas_detected" warning. If any source reports CTAs, don't warn.
         hero_primary_ctas = safe_get(result, ["homepage", "hero", "primaryCtas"]) or []
         homepage_ctas = safe_get(result, ["homepage", "ctas"]) or []
+        _cta_count_metric = (
+            (safe_get(result, ["metrics", "ctaCount"]) or 0)
+            + (safe_get(result, ["homepage", "metrics", "ctaCount"]) or 0)
+            + (safe_get(result, ["analysisReady", "competitiveSignals", "ctaStrategy", "ctaCount"]) or 0)
+        )
         if (not primary_ctas and not (content.get("ctas") or [])
-                and not hero_primary_ctas and not homepage_ctas):
+                and not hero_primary_ctas and not homepage_ctas
+                and not _cta_count_metric):
             score -= 0.05
             missing.append("homepage.primaryCtas")
             warnings.append("no_ctas_detected")
