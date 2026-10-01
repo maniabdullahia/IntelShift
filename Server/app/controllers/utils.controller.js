@@ -1,9 +1,12 @@
+import Workspace from "../models/workspace.js";
+import Competitor from "../models/competitor.js";
+import { domainKey } from "../services/storeProfile.service.js";
 import axios from "axios";
 
 import getImportantPagesFast from "../../utils/pageExtractor.js"
 import UrlTree from "../../utils/urlTree.js";
 import { detectStores as detectStoresApi, debugFetch as debugFetchApi, getCatalog, getCatalogCached, getStoreCategoriesFast, warmCatalog, getStoreCurrencyFast, getCollectionCount, suggestProductMatches } from "../../api/python/analyzer.js";
-import { checkSiteReadiness } from "../services/siteReadiness.service.js";
+import { checkSiteReadiness, readinessVerdict } from "../services/siteReadiness.service.js";
 import { suggestCompetitors as suggestCompetitorsService } from "../services/competitorSuggest.service.js";
 
 
@@ -204,7 +207,11 @@ const validateSite = async (req, res) => {
         // Shared readiness + scale gate (also used when adding/replacing a
         // competitor, so the checks are identical everywhere).
         const result = await checkSiteReadiness(url);
-        return res.json(result);
+        // `verdict` is the same pass/fail the add/replace-competitor gate uses,
+        // so the onboarding UI can show identical messages (incl. ENTERPRISE
+        // types and UNSUPPORTED_LANGUAGE).
+        const { catalogSample, ...rest } = result || {};
+        return res.json({ ...rest, verdict: readinessVerdict(result) });
     } catch (error) {
         return res.status(502).json({
             message:
@@ -223,7 +230,17 @@ const suggestCompetitors = async (req, res) => {
         return res.status(400).json({ message: "URL is required" });
     }
     try {
-        const suggestions = await suggestCompetitorsService(url, industry, pages || [], currency || "", categories || []);
+        // The owner's saved store profile (business type, market, taxonomy), when
+        // this URL is the user's own workspace store.
+        let ownerProfile = null;
+        try {
+            const ws = await Workspace.findOne({ ownerId: req.user?.id }).select("_id").lean();
+            if (ws) {
+                const owner = await Competitor.findOne({ workspaceId: ws._id, role: "Owner" }).select("storeProfile domain websiteUrl").lean();
+                if (owner?.storeProfile && domainKey(owner.websiteUrl || owner.domain) === domainKey(url)) ownerProfile = owner.storeProfile;
+            }
+        } catch { /* optional */ }
+        const suggestions = await suggestCompetitorsService(url, industry, pages || [], currency || "", categories || [], ownerProfile);
         return res.json({ success: true, suggestions });
     } catch (error) {
         console.error("suggestCompetitors error:", error?.message || error);

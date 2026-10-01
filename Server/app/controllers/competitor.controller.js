@@ -67,6 +67,9 @@ const createCompetitor = async (req, res) => {
         // Same onboarding readiness gate — a competitor added here must be readable
         // (homepage + collection + product) and not enterprise-scale, exactly like
         // during onboarding. Blocks bot-protected / unreadable sites up front.
+        // If the check itself fails (timeout / Python down) we still add the
+        // competitor, but mark it "unverified" rather than assuming it's fine.
+        let profileFields = { accessStatus: "unverified" };
         try {
             const readiness = await checkSiteReadiness(url);
             const verdict = readinessVerdict(readiness);
@@ -75,10 +78,12 @@ const createCompetitor = async (req, res) => {
                     message: verdict.message,
                     code: verdict.code,
                     ...(verdict.scale ? { scale: verdict.scale } : {}),
+                    ...(verdict.englishAlternate ? { englishAlternate: verdict.englishAlternate } : {}),
                 });
             }
+            profileFields = { accessStatus: verdict.accessStatus, storeProfile: verdict.profile || undefined };
         } catch (gateErr) {
-            console.warn("createCompetitor readiness gate error (allowing):", gateErr?.message || gateErr);
+            console.warn("createCompetitor readiness gate error (adding as unverified):", gateErr?.message || gateErr);
         }
 
         // Staged add — created now, but only ANALYZED on the next monitoring run.
@@ -90,6 +95,7 @@ const createCompetitor = async (req, res) => {
             domain,
             analysisData: {},
             pendingChange: "add",
+            ...profileFields,
         });
 
         if (Array.isArray(selectedPages) && selectedPages.length > 0) {

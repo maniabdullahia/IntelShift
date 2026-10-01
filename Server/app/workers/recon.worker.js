@@ -7,6 +7,8 @@ import Competitor from "../models/competitor.js";
 import Workspace from "../models/workspace.js";
 import { suggestCompetitors as suggestCompetitorsService } from "../services/competitorSuggest.service.js";
 import { autoSelectAndAnalyze, getCompleteSiteConfig } from "../services/proAutoselect.service.js";
+import { checkSiteReadiness } from "../services/siteReadiness.service.js";
+import { profileFromReadiness, saveProfile } from "../services/storeProfile.service.js";
 
 mongoose.set("bufferCommands", false);
 
@@ -85,16 +87,30 @@ const maybeAdvanceToSelecting = async (workspaceId) => {
   }
 };
 
+const ensureStoreProfile = async (competitorId, url) => {
+  try {
+    if (!competitorId) return;
+    const existing = await Competitor.findById(competitorId).select("storeProfile").lean();
+    if (existing?.storeProfile) return;
+    const readiness = await checkSiteReadiness(url);
+    const profile = profileFromReadiness(readiness);
+    await saveProfile(competitorId, profile);
+    console.log(`🧾 Store profile rebuilt for ${url}: ${profile?.businessTypeLabel || "?"} / ${profile?.taxonomy?.path || "?"} / ${profile?.accessStatus}`);
+  } catch (e) {
+    console.warn(`store profile rebuild failed for ${url}: ${e?.message || e}`);
+  }
+};
+
 const generateAndStoreSuggestions = async (workspaceId) => {
   try {
     const ws = await Workspace.findById(workspaceId).select("url industry suggestedCompetitors focusCategories focusMode").lean();
     if (!ws?.url) return;
     if ((ws.suggestedCompetitors || []).length) return; // already stored — don't redo
-    const owner = await Competitor.findOne({ workspaceId, role: "Owner" }).select("currency").lean();
+    const owner = await Competitor.findOne({ workspaceId, role: "Owner" }).select("currency storeProfile").lean();
     // Feed the user's chosen focus categories (ordered = priority) into the search
     // so suggestions target what they care about; "all"/empty → auto-detect as before.
     const focus = ws.focusMode === "selected" && Array.isArray(ws.focusCategories) ? ws.focusCategories : [];
-    const list = await suggestCompetitorsService(ws.url, ws.industry || "", [], owner?.currency || "", focus);
+    const list = await suggestCompetitorsService(ws.url, ws.industry || "", [], owner?.currency || "", focus, owner?.storeProfile || null);
     const clean = (Array.isArray(list) ? list : [])
       .slice(0, 12)
       .map((s) => ({
@@ -151,6 +167,11 @@ async function startWorker() {
             `🔎 Recon done: ${url} — ${recon.collectionCount} collections, ` +
             `homepage=${recon.homepage ? "yes" : "no"}, ${recon.tookMs}ms`
           );
+
+          // Store profile (Steps 1–4) is normally attached at creation from the
+          // onboarding validation. If it's missing (API restarted in between),
+          // rebuild it in the background — never blocks the recon stage.
+          ensureStoreProfile(competitorId, url);
 
           await maybeAdvanceToSelecting(workspaceId);
           return { competitorId, workspaceId };

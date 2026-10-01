@@ -21,6 +21,17 @@ from comparison_engine.matching import (
 )
 from comparison_engine.comparator import compare_sites
 
+import pytest
+
+
+@pytest.fixture(autouse=True)
+def _fuzzy_matching_on(monkeypatch, request):
+    """The local fuzzy product matcher is OFF in production (pairing is done by
+    AI on paid plans — see Server/app/services/productMatch.service.js). These
+    tests still cover the matcher itself, so they switch it on explicitly."""
+    if "matching_off" not in request.keywords:
+        monkeypatch.setenv("ENABLE_PRODUCT_MATCHING", "1")
+
 
 def P(name, price=None, cur="PKR", desc=None, category=None):
     return {"name": name, "priceValue": price, "currency": cur,
@@ -162,7 +173,17 @@ def test_compare_sites_currency_guard():
     assert result["priceComparison"]["currencyWarning"]
 
 
+@pytest.mark.matching_off
+def test_matching_is_off_by_default(monkeypatch):
+    monkeypatch.delenv("ENABLE_PRODUCT_MATCHING", raising=False)
+    r = match_products([P("Air Fryer 5L", 25000)], [P("Digital Air Fryer 5L", 24000)])
+    assert r["matchedProductCount"] == 0
+    assert r["userUnmatchedProducts"] and r["competitorUnmatchedProducts"]  # lists still exposed
+
+
 if __name__ == "__main__":
+    import os
+    os.environ["ENABLE_PRODUCT_MATCHING"] = "1"
     import traceback
     mod = sys.modules[__name__]
     fns = [getattr(mod, n) for n in dir(mod) if n.startswith("test_")]

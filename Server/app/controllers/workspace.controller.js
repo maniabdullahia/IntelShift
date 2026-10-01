@@ -17,6 +17,7 @@ import { getPlanById } from "../services/plan.service.js";
 import { getNextScanAt } from "../../utils/scan.js";
 import { checkUrlStatus, getCatalogCached, getStoreProductTotal } from "../../api/python/analyzer.js";
 import { checkSiteReadiness, readinessVerdict } from "../services/siteReadiness.service.js";
+import { profileFieldsFor } from "../services/storeProfile.service.js";
 
 
 const createWorkspace = async (req, res) => {
@@ -540,7 +541,7 @@ const createWorkspaceRecon = async (req, res) => {
 
         // Owner site — NO pages yet.
         await createCompetitorService(
-            { name: workspaceName, url, role: "Owner", workspaceId, selectedPages: [], currency, region, storeUrl: storeUrl || url },
+            { name: workspaceName, url, role: "Owner", workspaceId, selectedPages: [], currency, region, storeUrl: storeUrl || url, ...profileFieldsFor(storeUrl || url) },
             session
         );
 
@@ -549,7 +550,7 @@ const createWorkspaceRecon = async (req, res) => {
             const { name: cName, url: cUrl, region: cRegion = "", storeUrl: cStoreUrl = "", currency: cCurrency = "" } = c || {};
             if (cName && cUrl) {
                 await createCompetitorService(
-                    { name: cName, url: cUrl, role: "Competitor", workspaceId, selectedPages: [], region: cRegion, storeUrl: cStoreUrl, currency: cCurrency },
+                    { name: cName, url: cUrl, role: "Competitor", workspaceId, selectedPages: [], region: cRegion, storeUrl: cStoreUrl, currency: cCurrency, ...profileFieldsFor(cStoreUrl || cUrl) },
                     session
                 );
             }
@@ -910,6 +911,7 @@ const replaceCompetitor = async (req, res) => {
         // unreadable site (e.g. fabletics.com) gets accepted and then shows 0
         // categories. Fail-open only on an unexpected gate error, never on a
         // clean "unreadable" verdict.
+        let profileFields = { accessStatus: "unverified", storeProfile: undefined };
         try {
             const readiness = await checkSiteReadiness(cleanUrl);
             const verdict = readinessVerdict(readiness);
@@ -918,10 +920,12 @@ const replaceCompetitor = async (req, res) => {
                     message: verdict.message,
                     code: verdict.code,
                     ...(verdict.scale ? { scale: verdict.scale } : {}),
+                    ...(verdict.englishAlternate ? { englishAlternate: verdict.englishAlternate } : {}),
                 });
             }
+            profileFields = { accessStatus: verdict.accessStatus, storeProfile: verdict.profile || undefined };
         } catch (gateErr) {
-            console.warn("replaceCompetitor readiness gate error (allowing):", gateErr?.message || gateErr);
+            console.warn("replaceCompetitor readiness gate error (adding as unverified):", gateErr?.message || gateErr);
         }
 
         const name = domain.split(".")[0].replace(/[-_]+/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase());
@@ -936,6 +940,8 @@ const replaceCompetitor = async (req, res) => {
         comp.recon = {};
         comp.reconStatus = "Pending";
         comp.reconCapturedAt = null;
+        comp.accessStatus = profileFields.accessStatus;
+        comp.storeProfile = profileFields.storeProfile;
         await comp.save();
 
         // Back to recon while the new site is captured; the recon worker flips the

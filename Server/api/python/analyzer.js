@@ -100,6 +100,24 @@ const checkScale = async ({ url, platform = "", totalProducts = null, vendorCoun
     }
 }
 
+// Marketplace / multinational-brand lists from the Python business-type
+// classifier, so suggestions exclude the same giants the onboarding gate blocks.
+// Cached for an hour; null if Python is unreachable (callers keep built-ins).
+let _btLists = null;
+let _btListsAt = 0;
+const getBusinessTypeLists = async () => {
+    if (_btLists && Date.now() - _btListsAt < 3600_000) return _btLists;
+    try {
+        const response = await pythonApi.get('/v1/business-type/lists', { timeout: 10000 });
+        _btLists = response.data || null;
+        _btListsAt = Date.now();
+        return _btLists;
+    } catch (error) {
+        console.warn('getBusinessTypeLists failed:', error?.message || error);
+        return _btLists;
+    }
+}
+
 // DEBUG — returns exactly what the crawler fetched for a URL (method, status,
 // title, text snippet, per-attempt log). Reserve enough time for a Playwright
 // fallback. Not used by the app flow; powers the /debug-fetch inspector route.
@@ -513,6 +531,7 @@ export {
     debugFetch,
     discoverPolicyPages,
     checkScale,
+    getBusinessTypeLists,
     proAutoselect,
     suggestProductMatches,
     validateSite,

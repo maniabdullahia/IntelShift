@@ -1178,7 +1178,20 @@ class ScaleCheckRequest(BaseModel):
     platform: str = ""
     totalProducts: Optional[int] = None
     vendorCount: Optional[int] = None
+    # Store-profile signals (validate-site + taxonomy). All optional.
+    brandModel: Optional[str] = None          # "single_brand" | "multi_brand"
+    industryCount: Optional[int] = None
+    regionCount: Optional[int] = None
+    marketplaceMarker: Optional[str] = None
     config: Dict[str, Any] = Field(default_factory=dict)
+
+
+@app.get("/api/v1/business-type/lists")
+def business_type_lists() -> Dict[str, Any]:
+    """Marketplace / multinational-brand lists, so Node's competitor suggestions
+    exclude exactly the same giants the onboarding gate blocks."""
+    from level1_detector.business_type import lists_payload  # type: ignore
+    return {"success": True, **lists_payload()}
 
 
 @app.post("/api/v1/scale-check")
@@ -1216,6 +1229,10 @@ def scale_check_endpoint(payload: ScaleCheckRequest) -> Dict[str, Any]:
             robots=robots,
             vendor_count=payload.vendorCount,
             config=payload.config or {},
+            brand_model=payload.brandModel,
+            industry_count=payload.industryCount,
+            region_count=payload.regionCount,
+            marketplace_marker=payload.marketplaceMarker,
         )
         result["success"] = True
         return result

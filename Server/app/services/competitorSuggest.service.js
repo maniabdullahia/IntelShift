@@ -1,6 +1,9 @@
 import { getCatalogCached, getStoreCategoriesFast, quickCatalog, probeStore, sampleStorePrices, getStoreProductTotal, checkScale } from "../../api/python/analyzer.js";
 import { webSearch } from "../../utils/search.js";
 import { llmComplete, parseJsonLoose } from "../../utils/llm.js";
+import { getBusinessTypeLists } from "../../api/python/analyzer.js";
+import { taxonomyFromKeywords, taxonomySimilarity } from "../../utils/taxonomy.js";
+import { getCachedProfile } from "./storeProfile.service.js";
 
 /* ────────────────────────────────────────────────────────────────
    Competitor discovery — SEARCH-FIRST, no LLM.
@@ -224,11 +227,35 @@ function resolveRegion(origin, currency) {
 // multi-brand retailers and marketplace-named shops are valid competitors, so we
 // only apply those soft exclusions to single-brand users. Mega-marketplaces and
 // non-stores are always excluded.
+// Marketplace + multinational-brand lists from the Python business-type
+// classifier (business_type.py) — the SAME giants the onboarding gate routes to
+// Enterprise. Loaded once per suggestion run; empty if Python is unreachable.
+let sharedGiants = { labels: new Set(), hosts: new Set() };
+const registrableLabel = (d) => {
+  const parts = String(d || "").toLowerCase().split(".").filter(Boolean);
+  if (parts.length < 2) return parts[0] || "";
+  if (["co", "com", "net", "org", "gov", "edu", "ac"].includes(parts[parts.length - 2]) && parts.length >= 3) {
+    return parts[parts.length - 3].replace(/-/g, "");
+  }
+  return parts[parts.length - 2].replace(/-/g, "");
+};
+async function loadSharedGiants() {
+  const lists = await getBusinessTypeLists();
+  if (!lists) return;
+  sharedGiants = {
+    labels: new Set([...(lists.marketplaces || []), ...(lists.multinationalBrands || [])]),
+    hosts: new Set([...(lists.marketplaceHosts || []), ...(lists.multinationalHosts || [])]),
+  };
+}
+
 function isExcluded(domain, userMultiBrand = false) {
   const d = domain.toLowerCase();
   // Non-commercial domains are never a store (orgs, govt, universities, news).
   if (/\.(org|gov|edu|mil|ac|int)(\.[a-z]{2})?$/.test(d)) return true;
   if (HARD_EXCLUDED.some((m) => d.includes(m))) return true;
+  // Business Types 1–2 (large marketplaces, multinational brands) are Enterprise —
+  // never a self-serve competitor suggestion.
+  if (sharedGiants.hosts.has(d) || sharedGiants.labels.has(registrableLabel(d))) return true;
   if (!userMultiBrand) {
     if (MULTIBRAND_RETAILERS.some((m) => d.includes(m))) return true;
     if (MARKETPLACE_TOKENS.some((t) => d.includes(t))) return true;
@@ -448,8 +475,8 @@ function sampleSpread(arr, n) {
   return [...new Set(out)];
 }
 
-async function classifyStoreCategory(selfDomain, industry, cats) {
-  if (!cats.length && !industry) return "";
+async function classifyStoreCategory(selfDomain, industry, cats, taxonomyPath = "") {
+  if (!cats.length && !industry && !taxonomyPath) return "";
   try {
     // Sample ACROSS the catalog so a wide store isn't judged by its first few
     // alphabetical categories.
@@ -457,7 +484,8 @@ async function classifyStoreCategory(selfDomain, industry, cats) {
 
 Store: ${selfDomain}
 Industry: ${industry || "unknown"}
-Sells: ${sampleSpread(cats, 20).join(", ") || "unknown"}
+${taxonomyPath ? `Classified as: ${taxonomyPath}
+` : ""}Sells: ${sampleSpread(cats, 20).join(", ") || "unknown"}
 
 If the store spans many unrelated categories (e.g. clothing, beauty, home, toys, electronics), answer exactly: general merchandise.
 Examples of good answers: "activewear clothing", "color cosmetics", "hair care products", "athletic footwear", "general merchandise".
@@ -653,10 +681,18 @@ function _blend(parts) {
  * Discover verified, regional competitors for a store via web search.
  * Returns [{ name, domain, url, reason, matchedCategories, similarityScore, whyMatch }].
  */
-export async function suggestCompetitors(url, industry, pages = [], currency = "", userCategories = []) {
+export async function suggestCompetitors(url, industry, pages = [], currency = "", userCategories = [], ownerProfile = null) {
   const origin = toOrigin(url);
   if (!origin) return [];
   const selfDomain = normDomain(origin);
+
+  // Store profile from onboarding (Steps 2–4): business type, market, taxonomy.
+  // Passed by the recon worker from the saved owner doc, else from the readiness
+  // cache. Every use below is optional — without it the old heuristics run.
+  const profile = ownerProfile || getCachedProfile(origin) || null;
+  const ownTaxonomy = profile?.taxonomy?.industry ? profile.taxonomy : null;
+  const ownType = profile?.businessType ?? null;
+  try { await loadSharedGiants(); } catch { /* keep built-in exclusions */ }
 
   // User-typed target categories (from the "target specific categories" control).
   // When present, they REPLACE auto-detection as the search seeds — so this also
@@ -677,6 +713,13 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
   // user's OWN store's detected currency (a PK store priced in PKR resolves to
   // Pakistan). We never assume a default region — unknown stays unknown.
   let region = resolveRegion(origin, currency);
+  // A detected home country (Shopify store settings / JSON-LD address) beats a
+  // currency guess: a Pakistani store priced in USD is still a Pakistan store.
+  const marketCountry = profile?.market?.confidence !== "low" ? profile?.market?.country : null;
+  if (marketCountry) {
+    const byCountry = Object.entries(REGION_COUNTRY).find(([, iso]) => iso === marketCountry)?.[0];
+    if (byCountry) region = byCountry;
+  }
   let fallbackCurrency = "";
   if (!region) {
     const up = await userProbePromise;
@@ -836,7 +879,7 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
 
   // Umbrella category (LLM classification) — a broad term that finds direct
   // competitors of the same KIND, alongside the per-category searches.
-  const category = await classifyStoreCategory(selfDomain, industry, ownCategories);
+  const category = await classifyStoreCategory(selfDomain, industry, ownCategories, ownTaxonomy?.path || "");
 
   // Build the search queries. We GROUND every query with the store's overall
   // category so brand-specific collection names still search sensibly: a store's
@@ -858,7 +901,8 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
   // "general merchandise", so that case is preserved.
   const classifierGeneral = /general merchandise|multi-?category|marketplace|variety|department store/i.test(catStr);
   const hasSpecificVertical = !!catStr && !classifierGeneral;
-  const isGeneral = classifierGeneral || (broadCatalog && !hasSpecificVertical);
+  // Business Type 3 (General Marketplace) from onboarding is authoritative.
+  const isGeneral = ownType === 3 || classifierGeneral || (broadCatalog && !hasSpecificVertical);
   const queries = [];
   // Narrow store: lead with the umbrella (finds broad same-kind competitors), then
   // per-category queries anchored to it. General/multi-category store: SKIP the
@@ -916,7 +960,11 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
     }
   }
 
-  const userMultiBrand = fastMultiBrand || titleMultiBrand;
+  // Onboarding business type wins when known: Types 3/4 are multi-brand, 5 is a
+  // single brand. Otherwise fall back to the heuristics above.
+  const userMultiBrand = ownType === 3 || ownType === 4 ? true
+    : ownType === 5 && profile?.businessTypeConfidence !== "low" ? false
+    : fastMultiBrand || titleMultiBrand;
   console.log(
     `🔎 [suggest] user store: ${userMultiBrand ? "multi-brand/general" : "single brand"} ` +
     `(areas=${clusterCount} vendors=${userProbeForType?.vendorCount ?? "?"} signals=${userProbeForType?.marketplaceSignals ?? "?"} ` +
@@ -1198,11 +1246,18 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
       const catSim = Math.min(1, (c._cov || 0) / ownCatN);
       const assortSim = _jaccard(userTitleTokens, _titleTokens([...(c._titles || []), ...(sample.titles || [])]));
       const marketSim = userCur && c._currency ? (c._currency === userCur ? 1 : 0.6) : null;
+      // Step 4: same Industry → Category → Subcategory as the user's store?
+      // Prevents suggesting stores that sell similar items to a different audience.
+      const candTax = taxonomyFromKeywords({ titles: [...(c._titles || []), ...(sample.titles || [])] });
+      const taxSim = ownTaxonomy && candTax.industry ? taxonomySimilarity(ownTaxonomy, candTax) : null;
+      c._taxPath = candTax.path;
+      c._offVertical = taxSim === 0 && candTax.confidence !== "low";
 
       c._sim = _blend([
-        [priceSim, 0.35],
-        [sizeSim, 0.20],
-        [catSim, 0.20],
+        [priceSim, 0.30],
+        [sizeSim, 0.15],
+        [catSim, 0.15],
+        [taxSim, 0.15],
         [assortSim, 0.15],
         [marketSim, 0.10],
       ]);
@@ -1212,6 +1267,7 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
       if (sizeSim != null && sizeSim >= 0.5) why.push("similar catalog size");
       if ((c._cov || 0) > 0) why.push(`overlaps ${c._cov} of your categories`);
       if (assortSim >= 0.12) why.push("similar products");
+      if (taxSim != null && taxSim >= 0.85) why.push(`same category (${ownTaxonomy.category})`);
       if (marketSim === 1) why.push("same market");
       c._why = why.slice(0, 3).join(" · ");
     }));
@@ -1219,9 +1275,14 @@ export async function suggestCompetitors(url, industry, pages = [], currency = "
     // Giant exclusion — drop enterprise-scale / marketplace-scale domains entirely
     // (never peers for a self-serve store), unless that would empty the list.
     const nonGiant = deep.filter((c) => !c._enterprise);
-    const pool = nonGiant.length ? nonGiant : deep;
     const droppedGiants = deep.filter((c) => c._enterprise).map((c) => c.domain);
     if (droppedGiants.length) console.log(`🔎 [suggest] excluded giants: ${droppedGiants.join(", ")}`);
+    // Off-vertical (a confidently different industry) — dropped unless that
+    // would leave nothing to suggest.
+    const onVertical = nonGiant.filter((c) => !c._offVertical);
+    const offV = nonGiant.filter((c) => c._offVertical).map((c) => `${c.domain}(${c._taxPath})`);
+    if (offV.length) console.log(`🔎 [suggest] excluded off-vertical: ${offV.join(", ")}`);
+    const pool = onVertical.length ? onVertical : nonGiant.length ? nonGiant : deep;
 
     // Re-rank by similarity (tie-break: same-type, then search breadth).
     pool.sort(

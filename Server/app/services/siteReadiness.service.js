@@ -12,6 +12,9 @@ import {
     checkScale,
     getStoreCategoriesFast,
 } from "../../api/python/analyzer.js";
+import { classifyTaxonomy } from "../../utils/taxonomy.js";
+import { llmComplete, parseJsonLoose } from "../../utils/llm.js";
+import { profileFromReadiness, rememberProfile, domainKey } from "./storeProfile.service.js";
 
 // A store's /collections.json (and Woo's category list) is its full BACKEND set —
 // polluted with admin, meta/smart, promo and seasonal collections that aren't real
@@ -46,6 +49,12 @@ export const BLOCKED_MESSAGE =
     "We couldn't access this store — it uses bot protection or access rules (robots.txt / Cloudflare) that block automated reading. IntelShift respects those protections and doesn't bypass them, so this site can't be monitored.";
 export const GENERAL_UNREADABLE_MESSAGE =
     "We couldn't fully read this store. It likely uses access protection that stops automated reading — and we respect that, so it can't be monitored. Please try a different store URL.";
+export const UNSUPPORTED_LANGUAGE_MESSAGE =
+    "IntelShift currently supports English-language stores only, and this store's content isn't in English.";
+const ENTERPRISE_MESSAGES = {
+    1: "This is a large marketplace (many sellers, a very large catalog). Marketplaces like this are handled on our Enterprise plan — contact us to set it up.",
+    2: "This is a global / multinational brand. Brands at this scale are handled on our Enterprise plan — contact us to set it up.",
+};
 
 /**
  * Run the readiness check + scale gateway for a URL.
@@ -55,17 +64,7 @@ export const GENERAL_UNREADABLE_MESSAGE =
 export const checkSiteReadiness = async (url) => {
     const result = await validateSiteApi(url);
 
-    // Scale/marketplace gateway — best-effort + fail-open, so a gate error never
-    // blocks a real store. Only when the site validated (fetchable).
     if (result && result.fetched !== false) {
-        try {
-            const platform = result.platform || result.displayPlatform || "";
-            const totalProducts = await getStoreProductTotal(url, platform);
-            result.scale = await checkScale({ url, platform, totalProducts });
-        } catch (scaleErr) {
-            console.warn("scale gate skipped (allowing):", scaleErr?.message || scaleErr);
-            result.scale = { scaleTier: "self_serve", isMarketplace: false, totalProducts: null, reason: "gate_error" };
-        }
 
         // Detected categories for the onboarding "focus categories" step — fast
         // Shopify/Woo read (~1s). Empty for custom/JS/blocked stores, in which case
@@ -98,6 +97,53 @@ export const checkSiteReadiness = async (url) => {
             console.warn("category read skipped:", catErr?.message || catErr);
             result.categories = [];
         }
+
+        // Step 4 — Industry → Category → Subcategory (AI picks from the fixed
+        // taxonomy; keyword fallback). Also yields the single/multi-brand read
+        // that Step 2 needs. Only for readable English stores.
+        const sample = result.catalogSample || {};
+        if (result.ok) {
+            try {
+                result.taxonomy = await classifyTaxonomy({
+                    domain: domainKey(url),
+                    categories: (result.categories || []).map((c) => c.name),
+                    productTypes: sample.productTypes || [],
+                    titles: sample.titles || [],
+                    vendors: sample.vendorsTop || [],
+                    llm: llmComplete,
+                    parseJson: parseJsonLoose,
+                });
+            } catch (taxErr) {
+                console.warn("taxonomy skipped:", taxErr?.message || taxErr);
+                result.taxonomy = null;
+            }
+        }
+
+        // Step 2 — business type (Types 1–5) + the self-serve/enterprise gate.
+        // Runs even for unreadable sites: Amazon blocks bots, but the user must
+        // see "contact us", not "we couldn't read it". Fail-open on gate error.
+        try {
+            const platform = result.platform || result.displayPlatform || sample.source || "";
+            const totalProducts = await getStoreProductTotal(url, platform);
+            result.scale = await checkScale({
+                url,
+                platform,
+                totalProducts,
+                vendorCount: sample.vendorCount ?? null,
+                brandModel: result.taxonomy?.brandModel ?? null,
+                industryCount: result.taxonomy?.industryCount ?? null,
+                regionCount: result.signals?.regionCount ?? null,
+                marketplaceMarker: result.signals?.marketplaceMarker ?? null,
+            });
+        } catch (scaleErr) {
+            console.warn("scale gate skipped (allowing):", scaleErr?.message || scaleErr);
+            result.scale = { scaleTier: "self_serve", isMarketplace: false, totalProducts: null, reason: "gate_error" };
+        }
+
+        // Remember the profile so creating the workspace/competitor right after
+        // validation can persist it without re-crawling.
+        result.profile = profileFromReadiness(result);
+        if (result.ok) rememberProfile(url, result.profile);
     }
 
     return result;
@@ -107,7 +153,8 @@ export const checkSiteReadiness = async (url) => {
  * Turn a readiness payload into a pass/fail verdict with a user-facing reason,
  * mirroring the onboarding client's messaging so the experience is identical
  * wherever a competitor is added.
- * @returns { ok:true, currency } | { ok:false, code, message, scale? }
+ * @returns { ok:true, currency, accessStatus, accessIssues, profile }
+ *        | { ok:false, code: "ENTERPRISE"|"UNSUPPORTED_LANGUAGE"|"UNREADABLE", message, scale?, englishAlternate? }
  */
 export const readinessVerdict = (result) => {
     // Giants (Amazon/Daraz) and marketplaces can't be self-served — route to
@@ -118,12 +165,34 @@ export const readinessVerdict = (result) => {
             code: "ENTERPRISE",
             scale: result.scale,
             message:
+                ENTERPRISE_MESSAGES[result.scale.businessType] ||
                 "This store is too large for self-serve monitoring (a marketplace or enterprise-scale catalog). Contact us to set it up.",
         };
     }
 
+    if (result?.unsupportedLanguage || result?.language?.isEnglish === false) {
+        const alt = result?.language?.englishAlternate;
+        return {
+            ok: false,
+            code: "UNSUPPORTED_LANGUAGE",
+            englishAlternate: alt || null,
+            message: alt
+                ? `${UNSUPPORTED_LANGUAGE_MESSAGE} It has an English version — try ${alt}`
+                : UNSUPPORTED_LANGUAGE_MESSAGE,
+        };
+    }
+
     if (result?.ok) {
-        return { ok: true, currency: result.currency || "" };
+        // Readable. "incomplete" = part of the journey (search / cart /
+        // checkout) is blocked — we continue, but record it so reports say so
+        // instead of assuming.
+        return {
+            ok: true,
+            currency: result.currency || "",
+            accessStatus: result.accessStatus === "incomplete" ? "incomplete" : "complete",
+            accessIssues: result.accessIssues || [],
+            profile: result.profile || null,
+        };
     }
 
     // We DON'T surface the raw stage reason ("couldn't open a product page") — that

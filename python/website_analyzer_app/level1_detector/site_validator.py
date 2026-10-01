@@ -26,7 +26,17 @@ from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
+from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 from .fetcher import fetch_with_requests, fetch_with_cloudscraper, fetch_with_playwright
+from .net_guard import is_public_url
+from .business_type import strong_marketplace_marker
+from .store_profile import (
+    countries_mentioned, detect_language, find_cart_link, find_search,
+    hreflang_countries, jsonld_market, localization_countries, resolve_market,
+    shipping_scope_from_text,
+)
 
 
 # ── Tunables ────────────────────────────────────────────────────────────────
@@ -42,6 +52,9 @@ COLLECTION_HINTS = (
 )
 # URL path fragments that usually denote a single product page.
 PRODUCT_HINTS = ("/product/", "/products/", "/p/", "/dp/", "/item/", "/shop/")
+# A URL shaped like a category listing (…/collections/x, /product-category/x,
+# /shop/x) — a price alone on such a page doesn't make it a product page.
+LISTING_PATH_RE = re.compile(r"/(collections|collection|category|categories|product-category|product-cat|shop|c)/[^/]+/?$")
 # Common collection paths to try directly when the homepage exposes no obvious link.
 COLLECTION_FALLBACK_PATHS = ("/collections/all", "/shop", "/products", "/store", "/catalog")
 # Policy/info pages that often state the currency explicitly ("prices are in PKR").
@@ -98,7 +111,8 @@ AMBIGUOUS_SYMBOL_RE = re.compile(r"[$₨]|\bRs\.?\b|\bkr\b", re.I)
 
 def _host(url: str) -> str:
     try:
-        return (urlparse(url).hostname or "").lower().lstrip("www.")
+        host = (urlparse(url).hostname or "").lower()
+        return host[4:] if host.startswith("www.") else host
     except Exception:
         return ""
 
@@ -194,7 +208,7 @@ def _count_products(soup: BeautifulSoup, base_url: str) -> Tuple[int, List[str]]
     return len(prod), prod
 
 
-def _is_product_page(soup: BeautifulSoup) -> Tuple[bool, Optional[str]]:
+def _is_product_page(soup: BeautifulSoup, page_url: Optional[str] = None) -> Tuple[bool, Optional[str]]:
     """True + currency when a page looks like a single product (price present)."""
     currency = _extract_currency(soup)
     # JSON-LD Product with an offer price is the most reliable signal.
@@ -208,9 +222,17 @@ def _is_product_page(soup: BeautifulSoup) -> Tuple[bool, Optional[str]]:
         lambda t: t.name in ("button", "a", "input")
         and re.search(r"add to (cart|bag|basket)|buy now|add to trolley", (t.get_text(" ") or "") + " " + " ".join(t.get("value", "") if isinstance(t.get("value"), str) else []), re.I)
     ))
-    if has_price and (add_to_cart or currency):
+    if has_price and add_to_cart:
         return True, currency
-    if has_price:  # price alone still indicates a product page
+    # A price without a detectable add-to-cart control is ambiguous: listing
+    # pages show prices too (WooCommerce /shop/<category>/ matched our "/shop/"
+    # product hint). Reject it when the URL itself is shaped like a listing.
+    # (We don't count product links — real product pages carry "related
+    # products" carousels and would be rejected.)
+    if has_price:
+        path = urlparse(page_url).path.lower() if page_url else ""
+        if path and LISTING_PATH_RE.search(path) and not re.search(r"/products?/", path):
+            return False, currency
         return True, currency
     return False, currency
 
@@ -218,6 +240,8 @@ def _is_product_page(soup: BeautifulSoup) -> Tuple[bool, Optional[str]]:
 def _raw_json_get(url: str) -> Any:
     """Raw JSON GET that bypasses safe_response (which nulls body-less API
     responses). Uses cloudscraper to clear Cloudflare, falling back to requests."""
+    if not is_public_url(url):
+        return None
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
         "Accept": "application/json,text/plain,*/*",
@@ -337,14 +361,236 @@ def _policy_currency(origin: str) -> Optional[str]:
     return None
 
 
-def validate_site(url: str) -> Dict[str, Any]:
-    """Run the three-stage readiness check. Returns:
-    {
-      ok, currency, fetchedUrl,
-      stages: { homepage:{ok,...}, collection:{ok,url,productCount}, product:{ok,url,currency} }
+# ── Store-profile probes (fast HTTP only — no browser) ───────────────────────
+QUICK_TIMEOUT = 12
+POLICY_SCOPE_PATHS = (
+    "/policies/shipping-policy", "/pages/shipping", "/pages/shipping-policy",
+    "/pages/delivery", "/shipping-policy", "/shipping", "/delivery",
+    "/pages/shipping-delivery", "/delivery-information",
+)
+_CHALLENGE_RE = re.compile(r"cf-chl|captcha|verify you are human|checking your browser|access denied", re.I)
+
+
+def _quick_get(url: str, timeout: int = QUICK_TIMEOUT) -> Tuple[Optional[int], Optional[str], str]:
+    """(status, final_url, text) with a plain browser-like GET. Never raises."""
+    if not is_public_url(url):
+        return None, url, ""
+    import requests
+    try:
+        r = requests.get(url, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+        }, timeout=timeout, allow_redirects=True)
+        if r.url and not is_public_url(r.url):
+            return None, r.url, ""
+        return r.status_code, r.url, (r.text or "")[:400_000]
+    except Exception:
+        return None, url, ""
+
+
+def _stage_from_response(status: Optional[int], text: str, url: Optional[str]) -> Dict[str, Any]:
+    if status is None:
+        return {"ok": False, "status": "error", "url": url}
+    if status in (401, 403, 418, 429, 451, 503) or (status >= 400 and _CHALLENGE_RE.search(text or "")):
+        return {"ok": False, "status": "blocked", "url": url, "httpStatus": status}
+    if status == 404:
+        return {"ok": None, "status": "not_available", "url": url, "httpStatus": status}
+    if status >= 400:
+        return {"ok": False, "status": "error", "url": url, "httpStatus": status}
+    if _CHALLENGE_RE.search((text or "")[:5000]) and len(text or "") < 15000:
+        return {"ok": False, "status": "blocked", "url": url, "httpStatus": status}
+    return {"ok": True, "status": "ok", "url": url, "httpStatus": status}
+
+
+def _probe_search(home_soup, home_url: str, origin: str) -> Dict[str, Any]:
+    info = find_search(home_soup, home_url)
+    if not info.get("found"):
+        # Shopify and WooCommerce always expose search even when the theme hides
+        # the box — try the platform URLs before calling it unavailable.
+        for cand in (f"{origin}/search?q=new", f"{origin}/?s=new&post_type=product"):
+            st, final, text = _quick_get(cand)
+            stage = _stage_from_response(st, text, final)
+            if stage["status"] == "ok" and "search" in (final or "").lower() + text[:3000].lower():
+                stage["via"] = "platform_url"
+                return stage
+        return {"ok": None, "status": "not_available", "url": None}
+    action = info.get("action") or f"{origin}/search"
+    param = info.get("param") or "q"
+    sep = "&" if "?" in action else "?"
+    st, final, text = _quick_get(f"{action}{sep}{param}=new")
+    stage = _stage_from_response(st, text, final)
+    stage["via"] = info.get("via")
+    return stage
+
+
+def _probe_cart(home_soup, home_url: str, origin: str) -> Dict[str, Any]:
+    cands = [c for c in (find_cart_link(home_soup, home_url), f"{origin}/cart") if c]
+    last = {"ok": False, "status": "error", "url": None}
+    for cand in dict.fromkeys(cands):
+        st, final, text = _quick_get(cand)
+        stage = _stage_from_response(st, text, final)
+        if stage["status"] in ("ok", "blocked"):
+            return stage
+        last = stage
+    # Headless / JS carts: the Shopify cart API still answers.
+    st, final, text = _quick_get(f"{origin}/cart.js")
+    if st == 200 and text.strip().startswith("{"):
+        return {"ok": True, "status": "ok", "url": final, "via": "cart_api"}
+    return last
+
+
+def _probe_checkout(origin: str) -> Dict[str, Any]:
+    # With an empty cart Shopify/Woo redirect /checkout back to the cart — that
+    # still proves the checkout route is reachable (we never place orders).
+    st, final, text = _quick_get(f"{origin}/checkout")
+    stage = _stage_from_response(st, text, final)
+    if stage["status"] == "ok" and final and "/cart" in final.lower():
+        stage["note"] = "redirects to cart when empty"
+    return stage
+
+
+def _catalog_sample(origin: str, collection_soup, collection_url: Optional[str]) -> Dict[str, Any]:
+    """Titles / vendors / product types for business-type + taxonomy. Shopify
+    products.json, then WooCommerce Store API, then the collection page links."""
+    data = _raw_json_get(f"{origin}/products.json?limit=250")
+    if isinstance(data, dict) and isinstance(data.get("products"), list) and data["products"]:
+        prods = data["products"]
+        vendors = [str(p.get("vendor") or "").strip() for p in prods if p.get("vendor")]
+        return {
+            "source": "shopify",
+            "titles": [str(p.get("title") or "").strip() for p in prods if p.get("title")][:60],
+            "vendorCount": len({v.lower() for v in vendors}),
+            "vendorsTop": [v for v, _ in Counter(vendors).most_common(12)],
+            "productTypes": [t for t, _ in Counter(str(p.get("product_type") or "").strip() for p in prods if p.get("product_type")).most_common(30)],
+        }
+    data = _raw_json_get(f"{origin}/wp-json/wc/store/v1/products?per_page=100")
+    if isinstance(data, list) and data:
+        brands = []
+        for p in data:
+            for b in (p.get("brands") or []):
+                if isinstance(b, dict) and b.get("name"):
+                    brands.append(str(b["name"]).strip())
+        cats = Counter(c.get("name") for p in data for c in (p.get("categories") or []) if isinstance(c, dict) and c.get("name"))
+        return {
+            "source": "woocommerce",
+            "titles": [re.sub(r"<[^>]+>", "", str(p.get("name") or "")).strip() for p in data if p.get("name")][:60],
+            "vendorCount": len({b.lower() for b in brands}) if brands else None,
+            "vendorsTop": [b for b, _ in Counter(brands).most_common(12)],
+            "productTypes": [c for c, _ in cats.most_common(30)],
+        }
+    titles: List[str] = []
+    if collection_soup is not None and collection_url:
+        seen = set()
+        for a in collection_soup.find_all("a", href=True):
+            path = urlparse(urljoin(collection_url, a["href"])).path.lower()
+            txt = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
+            if any(h in path for h in PRODUCT_HINTS) and 3 <= len(txt) <= 120 and txt.lower() not in seen:
+                seen.add(txt.lower())
+                titles.append(txt)
+    return {"source": "collection_page", "titles": titles[:60], "vendorCount": None, "vendorsTop": [], "productTypes": []}
+
+
+def _shipping_policy_text(origin: str) -> Tuple[Optional[str], Optional[str]]:
+    for p in POLICY_SCOPE_PATHS:
+        st, final, text = _quick_get(origin + p)
+        if st == 200 and text:
+            body = _visible_text(BeautifulSoup(text, "lxml"))
+            if len(body) > 300:
+                return body[:60000], final
+    return None, None
+
+
+def _shopify_meta(origin: str) -> Optional[Dict[str, Any]]:
+    data = _raw_json_get(origin + "/meta.json")
+    return data if isinstance(data, dict) else None
+
+
+def _build_profile(result: Dict[str, Any], *, home_html: str, home_url: str, origin: str,
+                   product_html: Optional[str], collection_html: Optional[str],
+                   collection_url: Optional[str]) -> None:
+    """Journey (Step 1), market (Step 3) and classification signals (Step 2/4).
+    Best-effort: any failure leaves that part empty, never fails validation."""
+    home_soup = BeautifulSoup(home_html, "lxml")
+    prod_soup = BeautifulSoup(product_html, "lxml") if product_html else None
+    coll_soup = BeautifulSoup(collection_html, "lxml") if collection_html else None
+
+    jobs = {
+        "search": lambda: _probe_search(home_soup, home_url, origin),
+        "cart": lambda: _probe_cart(home_soup, home_url, origin),
+        "checkout": lambda: _probe_checkout(origin),
+        "catalog": lambda: _catalog_sample(origin, coll_soup, collection_url),
+        "policy": lambda: _shipping_policy_text(origin),
+        "meta": lambda: _shopify_meta(origin),
     }
+    out: Dict[str, Any] = {}
+    with ThreadPoolExecutor(max_workers=len(jobs)) as pool:
+        futs = {pool.submit(fn): name for name, fn in jobs.items()}
+        for fut in as_completed(futs):
+            try:
+                out[futs[fut]] = fut.result()
+            except Exception as exc:  # fail-open per probe
+                out[futs[fut]] = None
+                print(f"[validate_site] {futs[fut]} probe failed: {exc}")
+
+    # ── Step 1: customer journey beyond the three critical pages ──
+    journey = {k: (out.get(k) or {"ok": False, "status": "error", "url": None}) for k in ("search", "cart", "checkout")}
+    result["stages"].update(journey)
+    problems = [k for k, v in journey.items() if v.get("status") in ("blocked", "error")]
+    result["accessStatus"] = "incomplete" if problems else "complete"
+    result["accessIssues"] = problems
+
+    # ── Step 3: market / service area ──
+    policy_text, policy_url = out.get("policy") or (None, None)
+    scope, evidence = shipping_scope_from_text(policy_text or "")
+    if not scope:
+        scope, evidence = shipping_scope_from_text(_visible_text(BeautifulSoup(home_html, "lxml")))
+    jl_home, jl_ships = jsonld_market(home_soup, prod_soup)
+    meta = out.get("meta") or {}
+    if not result.get("currency") and policy_text:
+        m = re.search(r"prices?\s+(?:are\s+)?(?:\w+\s+)?in\s+([A-Za-z]{3})\b", policy_text, re.I)
+        if m and m.group(1).upper() in CURRENCY_CODES:
+            result["currency"] = m.group(1).upper()
+    hreflang = hreflang_countries(home_soup)
+    result["market"] = resolve_market(
+        url=home_url,
+        currency=result.get("currency") or meta.get("currency"),
+        meta_country=meta.get("country_code") or meta.get("country"),
+        jsonld_home=jl_home,
+        jsonld_ships=jl_ships,
+        localization=localization_countries(home_soup),
+        hreflang=hreflang,
+        policy_scope=scope,
+        policy_evidence=evidence,
+        policy_countries=countries_mentioned(policy_text or "") if scope == "selected" else None,
+        page_text=_visible_text_keep_scripts(home_soup),
+    )
+    if policy_url:
+        result["market"]["policyUrl"] = policy_url
+
+    # ── Step 2/4 inputs (final classification happens in /scale-check, once
+    #    the taxonomy is known) ──
+    link_blob = " ".join(a.get("href", "") for a in home_soup.find_all("a", href=True))
+    result["signals"] = {
+        "regionCount": len(hreflang),
+        "marketplaceMarker": strong_marketplace_marker(_visible_text_keep_scripts(home_soup), link_blob),
+    }
+    result["catalogSample"] = out.get("catalog") or {"source": None, "titles": [], "vendorCount": None}
+
+
+def validate_site(url: str) -> Dict[str, Any]:
+    """Onboarding readiness + store profile. Returns:
+    {
+      ok, currency, fetchedUrl, accessStatus ("complete"|"incomplete"|"unable"),
+      language: { htmlLang, isEnglish, englishAlternate, ... },
+      stages: { homepage, collection, product,          ← critical (must pass)
+                search, cart, checkout },               ← journey (reported)
+      market: store_market_v1, signals: {...}, catalogSample: {...}
+    }
+    `ok` is True only when the three critical pages are readable AND the store is
+    in English. Journey failures make the store "incomplete", not unreadable.
     """
-    result: Dict[str, Any] = {"ok": False, "currency": None, "stages": {}}
+    result: Dict[str, Any] = {"ok": False, "currency": None, "stages": {}, "accessStatus": "unable"}
 
     # ── Stage 1: homepage ────────────────────────────────────────────────────
     home_html, home_url = _fetch(url)
@@ -352,10 +598,12 @@ def validate_site(url: str) -> Dict[str, Any]:
         result["stages"]["homepage"] = {"ok": False, "reason": "Could not load the homepage — the site may be down or blocking automated access."}
         return result
     soup = BeautifulSoup(home_html, "lxml")
+    language = detect_language(soup, _visible_text_keep_scripts(soup))
     text = _visible_text(soup)
     links = _internal_links(soup, home_url)
     home_ok = len(text) >= MIN_HOME_TEXT and len(links) >= MIN_HOME_LINKS
     result["fetchedUrl"] = home_url
+    result["language"] = language
     result["stages"]["homepage"] = {
         "ok": home_ok,
         "textLength": len(text),
@@ -364,12 +612,14 @@ def validate_site(url: str) -> Dict[str, Any]:
     }
     if not home_ok:
         return result
+    # English-only product: stop before the slow collection/product renders.
+    if not language.get("isEnglish"):
+        result["unsupportedLanguage"] = True
+        return result
 
     # ── Stage 2: a collection / category listing ─────────────────────────────
     coll_candidates = [l for l in links if any(h in urlparse(l).path.lower() for h in COLLECTION_HINTS)]
-    # De-prioritise the exact homepage and obvious non-listing utility links.
     coll_candidates = [l for l in coll_candidates if l.rstrip("/") != home_url.rstrip("/")]
-    # Add common fallback paths (Shopify /collections/all, generic /shop) if thin.
     origin = f"{urlparse(home_url).scheme}://{urlparse(home_url).netloc}"
     for p in COLLECTION_FALLBACK_PATHS:
         cand = origin + p
@@ -378,6 +628,7 @@ def validate_site(url: str) -> Dict[str, Any]:
 
     collection = {"ok": False, "reason": "No category/collection page with products could be reached."}
     product_links: List[str] = []
+    collection_html = None
     for cand in coll_candidates[:MAX_CANDIDATES]:
         c_html, c_url = _fetch(cand)
         if not c_html:
@@ -387,51 +638,47 @@ def validate_site(url: str) -> Dict[str, Any]:
         if count >= MIN_COLLECTION_PRODUCTS:
             collection = {"ok": True, "url": c_url, "productCount": count}
             product_links = plinks
+            collection_html = c_html
             break
     result["stages"]["collection"] = collection
     if not collection["ok"]:
         return result
 
     # ── Stage 3: a single product page (+ currency) ──────────────────────────
-    # Prefer products found on the collection; fall back to product-like homepage links.
     prod_candidates = product_links or [l for l in links if any(h in urlparse(l).path.lower() for h in PRODUCT_HINTS)]
     product = {"ok": False, "reason": "No individual product page could be reached or confirmed."}
     currency = None
-    prod_soup = None
+    product_html = None
     for cand in prod_candidates[:MAX_CANDIDATES]:
         p_html, p_url = _fetch(cand)
         if not p_html:
             continue
         p_soup = BeautifulSoup(p_html, "lxml")
-        ok, cur = _is_product_page(p_soup)
+        ok, cur = _is_product_page(p_soup, p_url)
         if ok:
             currency = cur
-            prod_soup = p_soup
+            product_html = p_html
             product = {"ok": True, "url": p_url, "currency": cur}
             break
-    # If the product page priced in an ambiguous symbol (e.g. "Rs.") we may have a
-    # confirmed product but no currency — fall back to Shopify's configured currency.
-    cart_currency = None
     if product["ok"] and not currency:
-        cart_currency = _shopify_currency(origin)
-        currency = cart_currency or _policy_currency(origin)
+        # Ambiguous symbol ("Rs.") → the store's configured currency.
+        currency = _shopify_currency(origin) or _policy_currency(origin)
         product["currency"] = currency
-    # DEBUG — surface WHY currency didn't resolve: the price text as rendered and
-    # what the Shopify endpoints returned. Remove once currency detection is solid.
-    if prod_soup is not None:
-        _ptext = _visible_text(prod_soup)
-        _m = PRICE_NEAR_RE.search(_ptext)
-        result["currencyDebug"] = {
-            "priceSnippet": (_ptext[max(0, _m.start() - 40): _m.end() + 40] if _m else None),
-            "domCurrency": _extract_currency(prod_soup),
-            "cartJsonCurrency": cart_currency if cart_currency is not None else _shopify_currency(origin),
-        }
     result["stages"]["product"] = product
     if not product["ok"]:
         return result
 
     result["ok"] = True
     result["currency"] = currency
+    try:
+        _build_profile(result, home_html=home_html, home_url=home_url, origin=origin,
+                       product_html=product_html, collection_html=collection_html,
+                       collection_url=collection.get("url"))
+    except Exception as exc:  # never fail a readable store over profiling
+        print(f"[validate_site] profile build failed for {url}: {exc}")
+        result.setdefault("accessStatus", "complete")
+    if result.get("accessStatus") == "unable":
+        result["accessStatus"] = "complete"
     return result
 
 

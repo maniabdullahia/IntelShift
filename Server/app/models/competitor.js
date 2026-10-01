@@ -64,6 +64,26 @@ const competitorSchema = new mongoose.Schema(
       default: {},
     },
 
+    // ── Store profile (onboarding Steps 1–4) ──────────────────────────────
+    // Written from the readiness check (validate-site + taxonomy + business
+    // type). Shape: { accessStatus, accessIssues, journey, businessType,
+    // businessTypeLabel, businessTypeConfidence, market, language, taxonomy,
+    // profiledAt } — see services/storeProfile.service.js.
+    storeProfile: {
+      type: mongoose.Schema.Types.Mixed,
+      default: undefined,
+    },
+    // Step 1 outcome, top-level so it can be queried/filtered:
+    //   complete   — homepage, collection, product, cart & checkout readable
+    //   incomplete — analysable, but part of the journey (search/cart/checkout)
+    //                is blocked; reports must say so instead of assuming
+    //   unverified — the readiness check itself failed (timeout); added anyway
+    accessStatus: {
+      type: String,
+      enum: ["complete", "incomplete", "unverified", null],
+      default: null,
+    },
+
     // ── Recon (capture-first) ─────────────────────────────────────────────
     // Breadth-only reconnaissance captured BEFORE the user selects pages:
     // homepage (header-to-footer, nav, banner promos), the full collection
