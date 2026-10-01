@@ -16,7 +16,7 @@ Decision order (first match wins):
   2. Strong marketplace structure (seller sign-up etc.)    → Type 1 (Type 3 if small)
   3. Absurd catalog size (unlisted marketplace backstop)   → Type 1
   4. Known multinational brand domain                      → Type 2
-  5. Many regional storefronts (hreflang countries)        → Type 2
+  5. Many regional storefronts + big/uncountable catalog  → Type 2
   6. Multi-brand catalog + ≥3 industries                   → Type 3
   7. Multi-brand catalog                                   → Type 4
   8. Otherwise                                             → Type 5
@@ -78,7 +78,8 @@ STRONG_MARKETPLACE_MARKERS = (
 )
 
 DEFAULT_SIZE_BACKSTOP = 250_000      # product URLs; real brands (Engine ~85K) stay under
-DEFAULT_REGION_BACKSTOP = 25         # distinct hreflang storefront countries → multinational
+DEFAULT_REGION_BACKSTOP = 30         # distinct hreflang storefront countries → multinational…
+REGION_RULE_MIN_PRODUCTS = 5_000     # …only with a catalog at least this big (or uncountable)
 MULTI_BRAND_VENDOR_MIN = 5           # distinct vendors that make a catalog multi-brand
 LARGE_MARKETPLACE_MIN = 20_000      # products: a multi-seller site this big is a Large Marketplace
 GENERAL_INDUSTRY_MIN = 3             # distinct industries that make a multi-brand store "general"
@@ -177,6 +178,7 @@ def classify_business_type(
     vendor_min = int(cfg.get("multiBrandVendorMin") or MULTI_BRAND_VENDOR_MIN)
     general_min = int(cfg.get("generalIndustryMin") or GENERAL_INDUSTRY_MIN)
     large_min = int(cfg.get("largeMarketplaceMin") or LARGE_MARKETPLACE_MIN)
+    region_min_products = int(cfg.get("regionRuleMinProducts") or REGION_RULE_MIN_PRODUCTS)
 
     label = _norm_label(registrable_label(url))
     signals = {
@@ -203,7 +205,11 @@ def classify_business_type(
         brand_hit = multinational_domain_hit(url)
         if brand_hit:
             return _result(2, "high", f"multinational_brand:{brand_hit}", signals=signals)
-        if isinstance(region_count, int) and region_count >= region_backstop:
+        # Many regional storefronts suggest a multinational — but Shopify Markets
+        # emits an hreflang per market even for mid-size brands, so this only
+        # counts alongside a large (or uncountable/custom-platform) catalog.
+        if (isinstance(region_count, int) and region_count >= region_backstop
+                and (not isinstance(total_products, int) or total_products >= region_min_products)):
             return _result(2, "medium", f"regional_storefronts:{region_count}", signals=signals)
 
     multi = None

@@ -133,6 +133,8 @@ def test_listing_url_with_price_is_not_a_product():
     ("https://www.nike.com", {}, 2),
     ("https://www.zara.com/pk", {}, 2),
     ("https://bigbrand.com", {"region_count": 40}, 2),
+    ("https://bigbrand.com", {"region_count": 40, "total_products": 20000}, 2),
+    ("https://midbrand.com", {"region_count": 40, "total_products": 800, "vendor_count": 1}, 5),  # Shopify Markets brand
     ("https://store.pk", {"vendor_count": 60, "industry_count": 5}, 3),
     ("https://bazaar.pk", {"marketplace_marker": "become a seller", "total_products": 900}, 3),
     ("https://beauty.pk", {"vendor_count": 45, "industry_count": 1}, 4),

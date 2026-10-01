@@ -40,8 +40,11 @@ router.use(urlGuard);
 
 // Crawler-backed endpoints launch real browsers / AI calls — authenticate them
 // and cap per-user throughput so one account (or a script) can't exhaust them.
-const crawlLimit = rateLimit({ name: "crawl", max: Number(process.env.CRAWL_RATE_LIMIT_PER_MIN) || 20 });
-const heavyLimit = rateLimit({ name: "heavy", max: Number(process.env.HEAVY_RATE_LIMIT_PER_MIN) || 6 });
+// Limits sit well above real usage (URL fields probe as the user types; the
+// match card fires one request per collection pair) and only stop scripted abuse.
+const crawlLimit = rateLimit({ name: "crawl", max: Number(process.env.CRAWL_RATE_LIMIT_PER_MIN) || 60 });
+const heavyLimit = rateLimit({ name: "heavy", max: Number(process.env.HEAVY_RATE_LIMIT_PER_MIN) || 20 });
+const matchLimit = rateLimit({ name: "match", max: Number(process.env.MATCH_RATE_LIMIT_PER_MIN) || 60 });
 const authLimit = rateLimit({ name: "auth", max: Number(process.env.AUTH_RATE_LIMIT_PER_MIN) || 10 });
 
 // AUTH ROUTES
@@ -137,7 +140,7 @@ router.get("/plans", getPlans);
 // BUILD URL TREE
 router.post('/url-tree', authenticate, crawlLimit, buildTree);
 router.post('/collection-count', authenticate, crawlLimit, collectionCount);
-router.post('/product-matches', authenticate, heavyLimit, productMatches);
+router.post('/product-matches', authenticate, matchLimit, productMatches);
 router.get('/product-matches/decisions', authenticate, getProductMatchDecisions);
 router.post('/product-matches/decisions', authenticate, saveProductMatchDecisions);
 
