@@ -39,14 +39,29 @@ const createCompetitor = async (req, res) => {
 
         let domain;
         try {
-            domain = new URL(url).hostname.replace("www.", "");
+            domain = new URL(/^https?:\/\//i.test(url) ? url : `https://${url}`).hostname.replace(/^www\./i, "").toLowerCase();
         } catch {
             return res.status(400).json({ message: "Invalid URL" });
         }
 
-        const existing = await Competitor.findOne({ workspaceId, websiteUrl: url });
+        // Same store regardless of scheme / www / trailing slash.
+        const existing = await Competitor.findOne({ workspaceId, domain, pendingChange: { $ne: "remove" } });
         if (existing) {
             return res.status(400).json({ message: "Competitor already exists" });
+        }
+
+        // Plan limit FIRST — it's instant, while the readiness check below can
+        // take minutes of browser rendering. Counts active competitors (excludes
+        // any staged for removal), so removing one frees a slot.
+        const limit = plan?.limits?.competitors;
+        if (limit) {
+            const count = await activeCompetitorCount(workspaceId);
+            if (count >= limit) {
+                return res.status(403).json({
+                    message: `You've reached your plan's limit of ${limit} competitors. Remove one or upgrade first.`,
+                    code: "PLAN_LIMIT",
+                });
+            }
         }
 
         // Same onboarding readiness gate — a competitor added here must be readable
@@ -64,19 +79,6 @@ const createCompetitor = async (req, res) => {
             }
         } catch (gateErr) {
             console.warn("createCompetitor readiness gate error (allowing):", gateErr?.message || gateErr);
-        }
-
-        // Plan limit — count active competitors (excludes any staged for removal),
-        // so removing one frees a slot to add its replacement.
-        const limit = plan?.limits?.competitors;
-        if (limit) {
-            const count = await activeCompetitorCount(workspaceId);
-            if (count >= limit) {
-                return res.status(403).json({
-                    message: `You've reached your plan's limit of ${limit} competitors. Remove one or upgrade first.`,
-                    code: "PLAN_LIMIT",
-                });
-            }
         }
 
         // Staged add — created now, but only ANALYZED on the next monitoring run.

@@ -30,11 +30,35 @@ const DELETION_CRON = process.env.DELETION_CRON || "0 3 * * *"; // daily at 03:0
 let running = false;
 let deletionRunning = false;
 
+// A competitor's "Processing" flag is set/cleared by QueueEvents listeners in
+// the API process. If the API restarts (or a worker dies) mid-scan, the
+// completion event is lost and the flag would stick forever — and the "busy"
+// guard below would then skip that workspace on every tick, silently ending
+// its monitoring. Anything "Processing" for longer than STALE_SCAN_MINUTES is
+// therefore marked Failed so the next tick can rescan it.
+const STALE_SCAN_MINUTES = Number(process.env.STALE_SCAN_MINUTES) || 180;
+
+async function releaseStaleScans(now) {
+    const cutoff = new Date(now.getTime() - STALE_SCAN_MINUTES * 60 * 1000);
+    const res = await Competitor.updateMany(
+        { scanStatus: "Processing", updatedAt: { $lt: cutoff } },
+        { $set: { scanStatus: "Failed" } }
+    );
+    if (res?.modifiedCount) {
+        console.warn(`🧹 Monitoring: reset ${res.modifiedCount} competitor scan(s) stuck in Processing > ${STALE_SCAN_MINUTES}m`);
+    }
+}
+
 async function runDueScans() {
     if (running) return; // don't overlap ticks
     running = true;
     try {
         const now = new Date();
+        try {
+            await releaseStaleScans(now);
+        } catch (err) {
+            console.error("stale-scan sweep failed:", err.message);
+        }
         const due = await Workspace.find({
             nextScanAt: { $ne: null, $lte: now },
         }).select("_id ownerId nextScanAt");

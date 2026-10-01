@@ -2,10 +2,18 @@
 
 import IORedis from "ioredis";
 
+// Connection settings come from the environment (defaults = local Redis). Read
+// lazily-at-import is fine: PM2 injects env before the process starts.
+// In production, run Redis bound to localhost/private network WITH a password.
+const redisOptions = () => ({
+  host: process.env.REDIS_HOST || "127.0.0.1",
+  port: Number(process.env.REDIS_PORT) || 6379,
+  ...(process.env.REDIS_PASSWORD ? { password: process.env.REDIS_PASSWORD } : {}),
+});
+
 // Shared BullMQ connection. maxRetriesPerRequest MUST be null for BullMQ.
 const connection = new IORedis({
-  host: "127.0.0.1",
-  port: 6379,
+  ...redisOptions(),
 
   maxRetriesPerRequest: null,
   // Keep trying to reconnect instead of giving up (capped backoff).
@@ -26,8 +34,7 @@ connection.on("error", (err) => {
  */
 export const createRedis = (label = "redis") => {
   const client = new IORedis({
-    host: "127.0.0.1",
-    port: 6379,
+    ...redisOptions(),
     maxRetriesPerRequest: null,
     retryStrategy: (times) => Math.min(times * 200, 5000),
   });

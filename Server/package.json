@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon bootstrap.js",
-    "start": "tsx bootstrap.js",
+    "test": "node --test test/",
+    "start": "node bootstrap.js",
     "dev": "nodemon --exec tsx bootstrap.js",
     "dev:worker": "concurrently \"nodemon app/workers/competitor.worker.js\" \"nodemon app/workers/workspace.worker.js\" \"nodemon app/workers/analysis.worker.js\" \"nodemon app/workers/alert.worker.js\" \"nodemon app/workers/recon.worker.js\"",
     "build": "",

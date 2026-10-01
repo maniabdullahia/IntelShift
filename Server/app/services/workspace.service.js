@@ -114,19 +114,15 @@ const rescanWorkspace = async (workspaceId) => {
             pendingChange: { $ne: "remove" },
         });
 
-        console.log(`Rescanning workspace: ${workspaceId}`);
-        pages.forEach(async (page) => {
-            console.log( {
-                id: page._id.toString(),
-                url: page.url,
-                competitorId: page.competitorId.toString(),
-                workspaceId: page.workspaceId.toString(),
-            });
-        })
+        console.log(`Rescanning workspace: ${workspaceId} (${pages.length} pages)`);
 
+        // Reset only the pages we're about to queue. ("Pending" must match the
+        // schema enum exactly — updateMany doesn't run enum validators, so the
+        // old lowercase value was silently stored. Pages staged for removal are
+        // left alone.)
         await Page.updateMany(
-            { competitorId: { $in: competitorIds } },
-            { $set: { scanStatus: 'pending' } }
+            { _id: { $in: pages.map((p) => p._id) } },
+            { $set: { scanStatus: "Pending" } }
         );
 
         for (const page of pages) {
