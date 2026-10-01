@@ -579,7 +579,7 @@ def fetch_with_playwright(url):
             # Attach captured Storefront API credentials if found
             if _sf_token[0]:
                 headers["shopify_storefront_token"] = _sf_token[0]
-                print(f"STOREFRONT TOKEN CAPTURED: {_sf_token[0][:12]}...")
+                print("STOREFRONT TOKEN CAPTURED")
             if _sf_domain[0]:
                 headers["shopify_domain"] = _sf_domain[0]
                 print(f"SHOPIFY DOMAIN CAPTURED: {_sf_domain[0]}")
@@ -1202,6 +1202,12 @@ def fetch_with_openai_browse(url: str, page_type: str = "general") -> dict:
         return {"success": False, "reason": f"OpenAI browse exception: {exc}"}
 
 
+def _safe_fetch_summary(h) -> dict:
+    """Loggable subset of a fetch's headers dict (no cookies / tokens)."""
+    h = h or {}
+    return {k: h.get(k) for k in ("status_code", "fetch_method", "blocked", "fetch_error") if k in h}
+
+
 def fetch_html(url: str):
     """Primary fetch dispatcher.
 
@@ -1210,7 +1216,6 @@ def fetch_html(url: str):
     upgrades to Playwright when the page is JS-heavy.
     Always returns (html, final_url, headers).
     """
-    print("USING UPDATED FETCHER")
 
     # -- Tier 1: requests ----------------------------------------------------
     try:
@@ -1222,7 +1227,9 @@ def fetch_html(url: str):
             if force_pw:
                 pw_html, pw_final_url, pw_headers = fetch_with_playwright(final_url or url)
                 print("PLAYWRIGHT HTML RETURNED:", bool(pw_html))
-                print("PLAYWRIGHT HEADERS:", pw_headers)
+                # Never print the raw headers: they include session cookies
+                # (cf_clearance) and captured storefront tokens.
+                print("PLAYWRIGHT RESULT:", _safe_fetch_summary(pw_headers))
                 if pw_html:
                     pw_headers["forced_playwright"] = True
                     pw_headers["forced_playwright_reason"] = "pricing_or_js_heavy_page"
@@ -1251,7 +1258,9 @@ def fetch_html(url: str):
             if force_pw:
                 pw_html, pw_final_url, pw_headers = fetch_with_playwright(final_url or url)
                 print("PLAYWRIGHT HTML RETURNED:", bool(pw_html))
-                print("PLAYWRIGHT HEADERS:", pw_headers)
+                # Never print the raw headers: they include session cookies
+                # (cf_clearance) and captured storefront tokens.
+                print("PLAYWRIGHT RESULT:", _safe_fetch_summary(pw_headers))
                 if pw_html:
                     pw_headers["forced_playwright"] = True
                     pw_headers["forced_playwright_reason"] = "pricing_or_js_heavy_page"

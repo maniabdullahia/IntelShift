@@ -173,6 +173,17 @@ def test_compare_sites_currency_guard():
     assert result["priceComparison"]["currencyWarning"]
 
 
+def test_data_quality_flags_thin_sides():
+    user = make_snapshot("user.pk", [snap_product("Air Fryer 5L", 25000), snap_product("Kettle", 6000)])
+    thin = make_snapshot("comp.pk", [snap_product("Fryer", None), snap_product("Kettle 2", None), snap_product("Toaster", 3000)])
+    dq = compare_sites(user, [thin])["dataQuality"]
+    assert dq["status"] == "partial"
+    comp_row = next(r for r in dq["rows"] if r["domain"] == "comp.pk")
+    assert comp_row["priceCoverage"] < 0.85 and comp_row["issues"]
+    ok = compare_sites(user, [make_snapshot("c2.pk", [snap_product("Fryer", 24000)])])["dataQuality"]
+    assert ok["status"] == "ok" and ok["warnings"] == []
+
+
 @pytest.mark.matching_off
 def test_matching_is_off_by_default(monkeypatch):
     monkeypatch.delenv("ENABLE_PRODUCT_MATCHING", raising=False)

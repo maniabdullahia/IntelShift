@@ -3,6 +3,7 @@ import re
 from urllib.parse import urljoin
 
 from analyzers.pagination_helper import fetch_extra_pages
+from analyzers.unknown.structured_products import structured_collection_products, merge_structured_into
 
 
 def clean_text(text):
@@ -1574,6 +1575,23 @@ def analyze_unknown_collection(self, url, html, headers, page_type, level1):
     if isinstance(pagination, dict):
         pagination["fullCatalogFetched"] = _fetched_all_pages
 
+    # --- Structured data (JSON-LD ItemList/Product + hydration state) -----
+    # Custom / headless / JS storefronts often ship the grid machine-readably
+    # even when the DOM cards are thin. Fill missing prices/images by URL and
+    # add products the DOM pass missed. Best-effort: never fails the page.
+    _structured_meta = None
+    try:
+        _sd = structured_collection_products(html, soup, url)
+        if _sd["products"]:
+            _merge = merge_structured_into(merged_products, _sd["products"], is_valid_product)
+            existing_urls.update(p.get("url") for p in merged_products)
+            for _p in _sd["products"]:
+                if _p.get("price"):
+                    prices.append(_p["price"])
+            _structured_meta = {**_sd["counts"], **_merge}
+    except Exception as _sd_err:  # noqa: BLE001
+        _structured_meta = {"error": str(_sd_err)[:200]}
+
     dynamic_rendering_likely = detect_dynamic_rendering(
         html=html,
         product_count=len(merged_products),
@@ -1722,6 +1740,7 @@ def analyze_unknown_collection(self, url, html, headers, page_type, level1):
         "confidence": extraction_confidence,
         "pageTypeValidated": True,
         "pageTypeMismatchReason": None,
+        "structuredData": _structured_meta,
     }
 
     return result

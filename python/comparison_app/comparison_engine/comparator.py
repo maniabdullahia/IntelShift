@@ -1034,19 +1034,67 @@ def build_trust_conversion_comparison(sites: List[Dict[str, Any]]) -> Dict[str, 
     return {"displayType": "trust_conversion", "rows": rows}
 
 
+# A report is only as good as the thinner side. Below these, the UI must say
+# "we couldn't fully read this store" instead of rendering confident zeros.
+MIN_PRICE_COVERAGE = 0.85
+
+
+def site_read_quality(site: Dict[str, Any]) -> Dict[str, Any]:
+    pages = site.get("pages") or []
+    products = site.get("products") or []
+    priced = sum(1 for p in products if p.get("priceValue") is not None)
+    coverage = round(priced / len(products), 3) if products else None
+    failed = site["quality"].get("failedPages") or 0
+    failed_n = len(failed) if isinstance(failed, list) else int(failed or 0)
+    issues = []
+    if not pages:
+        status = "insufficient"
+        issues.append("no pages could be analysed")
+    elif not products:
+        status = "insufficient"
+        issues.append("no products could be read")
+    else:
+        status = "ok"
+        if coverage is not None and coverage < MIN_PRICE_COVERAGE:
+            status = "partial"
+            issues.append(f"prices read for only {round(coverage * 100)}% of products")
+        if failed_n:
+            status = "partial"
+            issues.append(f"{failed_n} page(s) failed to load")
+    return {
+        "status": status,
+        "pagesAnalyzed": len(pages),
+        "productsRead": len(products),
+        "priceCoverage": coverage,
+        "failedPageCount": failed_n,
+        "issues": issues,
+    }
+
+
+_RANK = {"ok": 0, "partial": 1, "insufficient": 2}
+
+
 def build_data_quality(sites: List[Dict[str, Any]]) -> Dict[str, Any]:
+    rows = []
+    for site in sites:
+        q = site_read_quality(site)
+        rows.append({
+            "domain": site["domain"],
+            "role": "user" if site.get("key") == "user" else "competitor",
+            "averageExtractionScore": site["quality"].get("averageExtractionScore"),
+            "failedPages": site["quality"].get("failedPages"),
+            "warnings": site["quality"].get("warnings"),
+            "pagesWithFallbackContent": [p.get("url") for p in site["pages"] if p.get("fallbackContent")],
+            **q,
+        })
+    overall = max((r["status"] for r in rows), key=lambda s: _RANK[s], default="ok")
+    warnings = [f"{r['domain']}: {'; '.join(r['issues'])}" for r in rows if r["issues"]]
     return {
         "displayType": "detailed",
-        "rows": [
-            {
-                "domain": site["domain"],
-                "averageExtractionScore": site["quality"].get("averageExtractionScore"),
-                "failedPages": site["quality"].get("failedPages"),
-                "warnings": site["quality"].get("warnings"),
-                "pagesWithFallbackContent": [p.get("url") for p in site["pages"] if p.get("fallbackContent")],
-            }
-            for site in sites
-        ]
+        # "ok" | "partial" | "insufficient" — the worst side decides.
+        "status": overall,
+        "warnings": warnings,
+        "rows": rows,
     }
 
 

@@ -211,6 +211,27 @@ const workspaceWorker = new Worker(
           );
           console.log(`⏱️ [${comp.name}] compareSite (Python /compare-one) took ${((Date.now() - tCompare) / 1000).toFixed(1)}s`);
 
+          // Step 1 outcome on the report: a store whose cart / checkout / search
+          // was blocked is "incomplete" — say so next to the read-quality verdict.
+          if (comparison?.dataQuality) {
+            const access = [
+              { domain: owner?.domain, status: owner?.accessStatus, issues: owner?.storeProfile?.accessIssues },
+              { domain: comp?.domain, status: comp?.accessStatus, issues: comp?.storeProfile?.accessIssues },
+            ];
+            comparison.dataQuality.access = access;
+            for (const a of access) {
+              if (a.status === "incomplete" || a.status === "unverified") {
+                comparison.dataQuality.warnings = [
+                  ...(comparison.dataQuality.warnings || []),
+                  a.status === "incomplete"
+                    ? `${a.domain}: couldn't access ${(a.issues || []).join(", ") || "part of the shopping journey"} — those areas aren't reflected in this report`
+                    : `${a.domain}: store access couldn't be verified during setup`,
+                ];
+                if (comparison.dataQuality.status === "ok") comparison.dataQuality.status = "partial";
+              }
+            }
+          }
+
           // Growth / Pro: AI pairs products inside every mapped collection pair.
           // Written into the comparison before the insights payload is built, so
           // the report and the UI both use the AI matches. Fail-open.
