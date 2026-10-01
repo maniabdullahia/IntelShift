@@ -85,11 +85,17 @@ const suggestProductMatches = async ({ userProducts = [], competitorProducts = [
 // Marketplace-first (denylist + structural signals via robots), size only as a high
 // backstop. Node computes the true catalog total; Python makes the decision.
 // Returns { scaleTier, isMarketplace, totalProducts, reason } (never throws).
-const checkScale = async ({ url, platform = "", totalProducts = null, vendorCount = null, config = {} }) => {
+// BUSINESS_TYPE_ALLOWLIST (comma-separated registrable names, e.g. "gymshark,khaadi")
+// lets support release a store wrongly classified as Type 1/2 (Enterprise)
+// without a code change. Extra signals (brandModel, industryCount, regionCount,
+// marketplaceMarker) come from the onboarding store profile.
+const checkScale = async ({ url, platform = "", totalProducts = null, vendorCount = null, config = {}, ...signals }) => {
+    const allowlist = String(process.env.BUSINESS_TYPE_ALLOWLIST || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
+    const cfg = { ...(allowlist.length ? { allowlist } : {}), ...config };
     try {
         const response = await pythonApi.post(
             '/v1/scale-check',
-            { url, platform, totalProducts, vendorCount, config },
+            { url, platform, totalProducts, vendorCount, config: cfg, ...signals },
             { timeout: 30000 }
         );
         return response.data || { scaleTier: "self_serve", isMarketplace: false, totalProducts, reason: "no_response" };

@@ -46,9 +46,12 @@ but the process no longer hard-crashes (see `Server/app/config/redis.js`).
 - Python analyzers have `pytest` suites under `python/**/tests/` and golden
   fixtures under `python/website_analyzer_app/tools/golden_fixtures/` — those are
   **test assets, do not delete**.
-- There is **no formal JS test runner yet**. For quick sanity: `node --check <file>`
-  (server, ESM) and `@babel/parser` for `.jsx` syntax. A "golden-store" end-to-end
-  harness is planned — see `LAUNCH_CHECKLIST.md` §2.
+- Server unit tests: `cd Server && npm test` (Node's built-in `node --test`, files in
+  `Server/test/*.test.js`, no DB needed). Python: `python -m pytest -q` inside each
+  `python/*_app/` folder. Golden replay: `python tools/golden_check.py verify` in
+  `website_analyzer_app` (12 known failures need live network — see `CHANGE_REPORT.md`).
+- Client: `npm run build` and `npx eslint .` (≈200 pre-existing style findings, mostly
+  unused vars / React-compiler hints). For quick server sanity: `node --check <file>`.
 - End-to-end analysis needs the full runtime (Mongo + Redis + Python + Playwright +
   keys). Without it, only static checks / unit tests / harness-writing are possible.
 
@@ -72,7 +75,18 @@ but the process no longer hard-crashes (see `Server/app/config/redis.js`).
 - Lock down VPS MongoDB: bind to localhost or a private network, enable auth, never
   expose it openly.
 
+## Onboarding store profile (Steps 1–4)
+
+`python/website_analyzer_app/level1_detector/site_validator.py` (journey + market +
+language signals) → `Server/utils/taxonomy.js` (Industry → Category → Subcategory)
+→ `level1_detector/business_type.py` (Types 1–5; 1–2 = Enterprise) via
+`/api/v1/scale-check`. Assembled in `Server/app/services/siteReadiness.service.js`,
+stored on `Competitor.storeProfile` / `accessStatus`. English-only stores.
+Product pairing for Growth/Pro is AI-driven (`comparison_engine/ai_product_match.py`).
+
 ## Project docs
 
 - `LAUNCH_CHECKLIST.md` — pre-launch blockers + the go/no-go gate.
+- `CHANGE_REPORT.md` — Oct 2026 review + implementation report (security, Steps 1–4,
+  AI product matching, deployment), with what still needs live verification.
 - `FEATURE_focus_categories.md`, `FEATURE_competitor_similarity.md` — feature specs.

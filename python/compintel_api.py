@@ -83,7 +83,10 @@ app = FastAPI(
 # API-key auth + rate limiting (see api_security.py; env: COMPINTEL_API_KEY,
 # RATE_LIMIT_PER_MINUTE, HEAVY_RATE_LIMIT_PER_MINUTE). Installed BEFORE CORS
 # so 401/429 responses also carry CORS headers.
-from api_security import install_security  # type: ignore
+# Load THIS folder's api_security.py by path: the sub-app folders on sys.path
+# carry older copies (no service keys, per-IP 10/min heavy limit) that would
+# otherwise shadow it and throttle the Node backend.
+install_security = load_module("compintel_api_security", BASE_DIR / "api_security.py").install_security
 install_security(app, service_name="unified-compintel-api")
 
 # SSRF guard at the API boundary: any top-level URL field in a JSON body must
