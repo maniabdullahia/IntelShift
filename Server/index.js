@@ -20,12 +20,17 @@ import { startEventRouter } from "./utils/eventRouter.js";
 import "./app/Queues Events/index.js";
 import seedAll from "./app/seeder/seeder.js";
 import { startWorkspaceScheduler } from "./app/scheduler/workspace.scheduler.js";
+import { redactForLog } from "./utils/redact.js";
 
 // import "./bootstrap.js";
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+// Behind nginx / a load balancer, trust the first proxy hop so req.ip (used by
+// the rate limiter) is the real client, not the proxy.
+if (process.env.TRUST_PROXY === "1") app.set("trust proxy", 1);
 
 /* =========================
    CORS
@@ -72,7 +77,12 @@ app.use(express.static("public"));
 app.use((req, res, next) => {
   const start = Date.now();
 
-  console.log("Request Body:", req.body);
+  // Never log request bodies by default — they carry passwords (login/register/
+  // reset), tokens and PII. Opt in locally with LOG_REQUEST_BODIES=1; even then
+  // sensitive fields are redacted and large payloads truncated.
+  if (process.env.LOG_REQUEST_BODIES === "1" && req.body && Object.keys(req.body).length) {
+    console.log(`${req.method} ${req.originalUrl} body:`, redactForLog(req.body));
+  }
 
   res.on("finish", () => {
     const duration = Date.now() - start;

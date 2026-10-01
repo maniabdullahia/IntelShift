@@ -301,7 +301,7 @@ const createWorkspaceWithCompetitors = async (req, res) => {
 
     const { id: userId } = req.user;
 
-    console.log('Creating workspace with competitors with data:', req.body);
+    console.log('Creating workspace with competitors:', { userId, url: req.body?.url, competitors: (req.body?.competitors || []).length });
     try {
         const {
             workspaceName,

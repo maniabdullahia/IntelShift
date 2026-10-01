@@ -93,7 +93,6 @@ const handleSubscriptionCreated = async (data) => {
         const workspace = await Workspace.findOne({ ownerId: userId });
 
         console.log("Emitting user.subscription.created event to user:", workspace?.id);
-        console.log("User data:", user);
         SocketGateway.user(userId, "subscription.created", {
             userId,
             subscriptionId,

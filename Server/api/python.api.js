@@ -9,14 +9,20 @@ import axios from "axios";
 function getPythonApi() {
   const PYTHON_API_URL = process.env.PYTHON_SERVER_URL;
 
-  if (!PYTHON_API_URL) {
+  if (!PYTHON_API_URL || !/^https?:\/\//i.test(PYTHON_API_URL)) {
     throw new Error(
-      "❌ PYTHON_SERVER_URL is not defined in environment variables"
+      `❌ PYTHON_SERVER_URL must be an absolute http(s) URL (e.g. http://localhost:8000/api), got: ${PYTHON_API_URL || "<unset>"}`
     );
   }
 
+  // Service key for the Python API (python/api_security.py). Put the same value
+  // in the Python service's COMPINTEL_SERVICE_KEYS so backend calls are
+  // authenticated but never rate-limited. Unset = dev mode (Python auth off).
+  const apiKey = process.env.PYTHON_API_KEY;
+
   return axios.create({
     baseURL: PYTHON_API_URL,
+    headers: apiKey ? { "X-API-Key": apiKey } : {},
     // The site comparison (/compare-one) ships the FULL merged snapshot — a large
     // store (e.g. breakout, 1500+ products) is a ~6.6MB payload the Python side
     // needs well over a minute to crunch. 60s aborted it mid-flight, which is the

@@ -83,8 +83,40 @@ app = FastAPI(
 # API-key auth + rate limiting (see api_security.py; env: COMPINTEL_API_KEY,
 # RATE_LIMIT_PER_MINUTE, HEAVY_RATE_LIMIT_PER_MINUTE). Installed BEFORE CORS
 # so 401/429 responses also carry CORS headers.
-# from api_security import install_security
-# install_security(app, service_name="unified-compintel-api")
+from api_security import install_security  # type: ignore
+install_security(app, service_name="unified-compintel-api")
+
+# SSRF guard at the API boundary: any top-level URL field in a JSON body must
+# point at a public host. The fetchers check again (incl. after redirects); this
+# rejects early with a clear 400 instead of a confusing empty analysis.
+import json as _json
+from fastapi import Request as _Request
+from fastapi.responses import JSONResponse as _JSONResponse
+from level1_detector.net_guard import is_public_url as _is_public_url  # type: ignore
+
+_URL_FIELDS = ("url", "baseUrl", "base_url", "origin", "storeUrl", "homepageUrl")
+_URL_LIST_FIELDS = ("urls",)
+
+
+@app.middleware("http")
+async def _ssrf_guard(request: _Request, call_next):
+    if request.method == "POST" and request.url.path.startswith("/api/v1/"):
+        try:
+            body = _json.loads(await request.body() or b"{}")
+        except Exception:
+            body = None
+        if isinstance(body, dict):
+            cands = [body.get(k) for k in _URL_FIELDS]
+            for k in _URL_LIST_FIELDS:
+                if isinstance(body.get(k), list):
+                    cands.extend(body[k])
+            for u in cands:
+                if isinstance(u, str) and u.strip() and not _is_public_url(u.strip()):
+                    return _JSONResponse(
+                        status_code=400,
+                        content={"success": False, "message": "URL must point to a public website.", "url": u},
+                    )
+    return await call_next(request)
 
 # CORS: comma-separated origins via CORS_ORIGINS env var.
 # Default covers local React dev (CRA :3000, Vite :5173).

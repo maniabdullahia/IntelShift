@@ -26,20 +26,32 @@ import { workspaceOwnershipMiddleware } from "../middleware/workspace.middleware
 import { competitorMiddleware } from "../middleware/competitor.middleware.js";
 import { socialCheck } from "../middleware/social.middleware.js";
 import { blockReadOnly } from "../middleware/entitlement.middleware.js";
+import { rateLimit } from "../middleware/rateLimit.middleware.js";
+import urlGuard from "../../utils/urlGuard.js";
 
 // SERVICES
 
 
 const router = Router();
 
+// Every mutating request is screened for non-public URLs (SSRF guard) before it
+// reaches a controller that might hand the URL to the crawler.
+router.use(urlGuard);
+
+// Crawler-backed endpoints launch real browsers / AI calls — authenticate them
+// and cap per-user throughput so one account (or a script) can't exhaust them.
+const crawlLimit = rateLimit({ name: "crawl", max: Number(process.env.CRAWL_RATE_LIMIT_PER_MIN) || 20 });
+const heavyLimit = rateLimit({ name: "heavy", max: Number(process.env.HEAVY_RATE_LIMIT_PER_MIN) || 6 });
+const authLimit = rateLimit({ name: "auth", max: Number(process.env.AUTH_RATE_LIMIT_PER_MIN) || 10 });
+
 // AUTH ROUTES
-router.post("/register", socialCheck,  register);
-router.post("/login", socialCheck, login);
+router.post("/register", authLimit, socialCheck,  register);
+router.post("/login", authLimit, socialCheck, login);
 router.post("/refresh-token", refreshToken);
 router.post("/logout", logout);
-router.post("/forget-password", forgetPassword);
-router.post("/reset-password", resetPassword);
-router.post("/email-verification-link", sendEmailVerificationLink);
+router.post("/forget-password", authLimit, forgetPassword);
+router.post("/reset-password", authLimit, resetPassword);
+router.post("/email-verification-link", authLimit, sendEmailVerificationLink);
 router.post("/verify-email", verifyEmail);
 
 // USER ROUTES
@@ -123,24 +135,25 @@ router.get("/history/:competitorId", authenticate, getCompetitorHistory);
 router.get("/plans", getPlans);
 
 // BUILD URL TREE
-router.post('/url-tree', buildTree);
-router.post('/collection-count', collectionCount);
+router.post('/url-tree', authenticate, crawlLimit, buildTree);
+router.post('/collection-count', authenticate, crawlLimit, collectionCount);
 router.post('/product-matches', authenticate, productMatches);
 
 // VALIDATE URL EXISTS
-router.post('/validate-url', validateUrl);
+router.post('/validate-url', authenticate, crawlLimit, validateUrl);
 
 // DETECT REGIONAL STORES / CURRENCIES (for the onboarding store picker)
-router.post('/detect-stores', detectStores);
+router.post('/detect-stores', authenticate, crawlLimit, detectStores);
 
 // SUGGEST DIRECT COMPETITORS (onboarding assist)
-router.post('/suggest-competitors', suggestCompetitors);
+router.post('/suggest-competitors', authenticate, heavyLimit, suggestCompetitors);
 
 // DEBUG — inspect exactly what the crawler fetched for a URL (raw HTML + categories)
-router.post('/debug-fetch', debugFetch);
+// Admin-only and off unless ENABLE_DEBUG_ROUTES=1 — it returns raw fetched HTML.
+router.post('/debug-fetch', (req, res, next) => (process.env.ENABLE_DEBUG_ROUTES === "1" ? next() : res.status(404).json({ message: "Not found" })), adminAuthenticate, debugFetch);
 
 // ONBOARDING READINESS — confirm homepage + collection + product are reachable
-router.post('/validate-site', validateSite);
+router.post('/validate-site', authenticate, heavyLimit, validateSite);
 
 // HEALTH CHECK
 router.get("/health", (req, res) => {

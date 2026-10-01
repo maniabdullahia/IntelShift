@@ -4,6 +4,8 @@ import asyncio as _asyncio
 import requests
 import cloudscraper
 
+from .net_guard import is_public_url, blocked_result, browser_slot
+
 
 def _ensure_subprocess_capable_loop_policy():
     """Playwright launches the browser as a subprocess. On Windows, uvicorn
@@ -209,6 +211,10 @@ def safe_response(response, fetch_method):
 
     headers = build_headers(response, fetch_method)
 
+    # A public URL that redirected somewhere internal — discard the body.
+    if response.url and not is_public_url(response.url):
+        return blocked_result(response.url, fetch_method)
+
     html = response.text or ""
     blocked = is_html_blocked_or_empty(
         html=html,
@@ -224,6 +230,8 @@ def safe_response(response, fetch_method):
 
 
 def fetch_with_requests(url):
+    if not is_public_url(url):
+        return blocked_result(url, "requests")
     response = requests.get(
         url,
         headers=BROWSER_HEADERS,
@@ -235,6 +243,8 @@ def fetch_with_requests(url):
 
 
 def fetch_with_cloudscraper(url):
+    if not is_public_url(url):
+        return blocked_result(url, "cloudscraper")
     scraper = cloudscraper.create_scraper(
         browser={
             "browser": "chrome",
@@ -254,6 +264,8 @@ def fetch_with_cloudscraper(url):
 
 
 def fetch_with_playwright(url):
+    if not is_public_url(url):
+        return blocked_result(url, "playwright")
     try:
         from playwright.sync_api import sync_playwright
     except Exception as e:
@@ -283,7 +295,7 @@ def fetch_with_playwright(url):
 
     _ensure_subprocess_capable_loop_policy()
     try:
-        with sync_playwright() as p:
+        with browser_slot(), sync_playwright() as p:
             browser = p.chromium.launch(
                 headless=True,
                 args=[
@@ -402,6 +414,9 @@ def fetch_with_playwright(url):
             html = page.content()
             final_url = page.url
             status_code = response.status if response else None
+            if not is_public_url(final_url):
+                browser.close()
+                return blocked_result(final_url, "playwright")
 
             # Extract __NEXT_DATA__ directly from the JS runtime.
             # This is available after JS executes but may not appear in
@@ -608,6 +623,8 @@ def fetch_json_with_playwright(url: str, timeout: int = 45000):
     and returns the JSON — the same reason web_fetch works where a plain GET
     fails. Returns the raw JSON text (str) or None.
     """
+    if not is_public_url(url):
+        return None
     try:
         from playwright.sync_api import sync_playwright
     except Exception:
@@ -615,7 +632,7 @@ def fetch_json_with_playwright(url: str, timeout: int = 45000):
 
     _ensure_subprocess_capable_loop_policy()
     try:
-        with sync_playwright() as p:
+        with browser_slot(), sync_playwright() as p:
             browser = p.chromium.launch(
                 headless=True,
                 args=[
@@ -668,6 +685,8 @@ def fetch_same_origin_json(base_url: str, paths, timeout: int = 45000):
     has passed the challenge succeeds — the browser reuses its cleared session.
 
     Returns { path: text_or_None } for each requested path (raw response text)."""
+    if not is_public_url(base_url):
+        return {}
     try:
         from playwright.sync_api import sync_playwright
     except Exception:
@@ -676,7 +695,7 @@ def fetch_same_origin_json(base_url: str, paths, timeout: int = 45000):
     _ensure_subprocess_capable_loop_policy()
     out = {}
     try:
-        with sync_playwright() as p:
+        with browser_slot(), sync_playwright() as p:
             browser = p.chromium.launch(
                 headless=True,
                 args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"],
@@ -726,6 +745,8 @@ def fetch_with_expanded_menu(base_url: str, timeout: int = 45000):
     nav item — needed for CSS :hover menus — and (2) dispatch mouseover/pointerover/
     focus on all nav-ish elements — needed for JS-built menus. Returns the full HTML
     (or None)."""
+    if not is_public_url(base_url):
+        return None
     try:
         from playwright.sync_api import sync_playwright
     except Exception:
@@ -733,7 +754,7 @@ def fetch_with_expanded_menu(base_url: str, timeout: int = 45000):
 
     _ensure_subprocess_capable_loop_policy()
     try:
-        with sync_playwright() as p:
+        with browser_slot(), sync_playwright() as p:
             browser = p.chromium.launch(
                 headless=True,
                 args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"],
@@ -859,6 +880,8 @@ def fetch_shopify_graphql_catalog(base_url: str, timeout: int = 45000):
 
     Returns { collections:[{handle,title}], products:[{handle,title,productType,tags,vendor}] } or {}.
     """
+    if not is_public_url(base_url):
+        return None
     try:
         from playwright.sync_api import sync_playwright
     except Exception:
@@ -867,7 +890,7 @@ def fetch_shopify_graphql_catalog(base_url: str, timeout: int = 45000):
     _ensure_subprocess_capable_loop_policy()
     captured = {"token": None, "endpoint": None}
     try:
-        with sync_playwright() as p:
+        with browser_slot(), sync_playwright() as p:
             browser = p.chromium.launch(
                 headless=True,
                 args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"],

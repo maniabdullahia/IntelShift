@@ -549,7 +549,6 @@ const resetPassword = async (token, newPassword) => {
 
 
 
-    console.log("Decoded token:", decoded);
     const user = await User.findById(decoded.userId).select(
         "+password +passwordResetToken +passwordResetExpires"
     );

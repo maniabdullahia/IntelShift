@@ -287,7 +287,14 @@ def _read_shopify_graphql_depth(origin: str) -> Dict[str, Dict[str, Any]]:
         "images(first: 50) { edges { node { url } } } description } } } }"
     )
     try:
-        with sync_playwright() as p:
+        from level1_detector.net_guard import browser_slot, is_public_url  # type: ignore
+    except Exception:  # standalone merger without the analyzer on the path
+        from contextlib import nullcontext as browser_slot  # type: ignore
+        is_public_url = lambda _u: True  # noqa: E731
+    if not is_public_url(origin):
+        return depth
+    try:
+        with browser_slot(), sync_playwright() as p:
             browser = p.chromium.launch(headless=True, args=[
                 "--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
             context = browser.new_context(user_agent=ua, locale="en-US")

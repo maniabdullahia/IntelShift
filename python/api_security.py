@@ -159,6 +159,12 @@ def install_security(app, service_name: str = "api") -> None:
         if provided and provided in service_keys:
             return await call_next(request)
 
+        # Dev mode (no keys configured): the local Node backend calls from
+        # loopback and fans out many analyze calls per workspace — never throttle
+        # it, or a normal local run starts failing with 429s.
+        if not auth_enabled and _client_ip(request) in {"127.0.0.1", "::1", "localhost"}:
+            return await call_next(request)
+
         # --- Rate limiting (sliding 60s window) ------------------------------
         # Key on the credential when we have one; fall back to IP in dev mode.
         identity = f"key:{_fingerprint(provided)}" if provided else f"ip:{_client_ip(request)}"

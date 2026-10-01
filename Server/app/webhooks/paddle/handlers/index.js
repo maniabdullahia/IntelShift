@@ -12,7 +12,7 @@ const processEvent = async (event) => {
     const handlers = {
 
         "subscription.created": async (event) => {
-            console.log("Subscription created:", JSON.stringify(event.data, null, 2));
+            console.log("Subscription created:", event.data?.id, event.data?.status);
             await handleSubscriptionCreated(event.data);
         },
 
@@ -40,7 +40,7 @@ const processEvent = async (event) => {
         },
 
         "payment.succeeded": async (event) => {
-            console.log("Payment succeeded:", event.data);
+            console.log("Payment succeeded:", event.data?.id, event.data?.subscription_id || "");
         },
 
         "subscription.canceled": async (event) => {
