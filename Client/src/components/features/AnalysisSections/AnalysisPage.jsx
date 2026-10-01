@@ -46,6 +46,36 @@ import KeyInsights from './KeyInsights';
 import Recommendation from './Recommendation';
 import CompetitorHistory from '../History/CompetitorHistory';
 
+/* "Fail loud": when either store was only partly readable (few products,
+   low price coverage, failed pages, blocked cart/checkout), say so up front
+   instead of letting the report look complete. Driven by
+   comparison.dataQuality.status (ok | partial | insufficient). */
+function ReadQualityBanner({ quality }) {
+  const status = quality?.status;
+  if (!status || status === 'ok') return null;
+  const warnings = arr(quality.warnings).slice(0, 4);
+  const insufficient = status === 'insufficient';
+  return (
+    <div
+      role="status"
+      className={`mb-5 rounded-2xl border p-4 text-sm ${insufficient
+        ? 'border-[rgba(255,107,107,0.35)] bg-[rgba(255,107,107,0.08)]'
+        : 'border-[rgba(254,211,48,0.45)] bg-[rgba(254,211,48,0.12)]'}`}
+    >
+      <p className="font-semibold text-(--text)">
+        {insufficient
+          ? "We couldn't fully read one of these stores — treat this report as incomplete."
+          : 'Part of this comparison is based on incomplete data.'}
+      </p>
+      {warnings.length > 0 && (
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-(--text-light)">
+          {warnings.map((w, i) => <li key={i}>{w}</li>)}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 /* Map finding/insight types to a tab so tab badges can show where the
    high-severity items live. */
 function tabForType(type = '') {
@@ -232,6 +262,8 @@ export default function AnalysisPage(props) {
           </div>
         )}
       </div>
+
+      <ReadQualityBanner quality={comparison?.dataQuality} />
 
       {/* Tab bar now lives in the global Header (contextual top-bar menu). */}
 

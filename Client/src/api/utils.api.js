@@ -34,11 +34,21 @@ const validateSite = async (url) => {
 };
 
 // Suggest product-to-product matches within a mapped collection pair. Local
-// similarity always; useAi adds a cheap-model confirmation (Growth+). The UI shows
-// accept/reject — nothing is auto-asserted. Returns { suggestions, source, count }.
-const productMatches = async (userProducts = [], competitorProducts = [], useAi = false) => {
+// AI picks the like-for-like matches (Growth / Pro; server-enforced). The UI
+// shows accept/reject — nothing is auto-asserted. Returns { suggestions, source, count }.
+const productMatches = async (userProducts = [], competitorProducts = [], useAi = true) => {
     const response = await api.post("/product-matches", { userProducts, competitorProducts, useAi });
     return response.data;
+};
+
+// Saved accept / reject decisions: { "<category>|<userUrl>|<competitorUrl>": "accepted"|"rejected" }.
+const getProductMatchDecisions = async () => {
+    const response = await api.get("/product-matches/decisions");
+    return response.data?.decisions || {};
+};
+const saveProductMatchDecisions = async (decisions) => {
+    const response = await api.post("/product-matches/decisions", { decisions });
+    return response.data?.decisions || {};
 };
 
 export {
@@ -48,4 +58,6 @@ export {
     suggestCompetitors,
     validateSite,
     productMatches,
+    getProductMatchDecisions,
+    saveProductMatchDecisions,
 };

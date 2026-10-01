@@ -14,15 +14,20 @@ export default function EnterpriseGateModal({ open, info, onClose, contactEmail 
     try { return new URL(info?.url).hostname.replace(/^www\./, ""); } catch { return info?.url || "This store"; }
   })();
 
-  const title = isMarketplace ? "This looks like a marketplace" : "This store is enterprise-scale";
-  const body = isMarketplace
-    ? `${host} is a marketplace with many third-party sellers. Our self-serve plans are built to compare single-brand stores, so a marketplace needs a custom Enterprise setup.`
+  const isGlobalBrand = info?.businessType === 2;
+  const title = isGlobalBrand
+    ? "This is a global brand"
+    : isMarketplace ? "This looks like a marketplace" : "This store is enterprise-scale";
+  const body = isGlobalBrand
+    ? `${host} is a global / multinational brand. Brands at this scale (many regional stores, very large catalogs) are handled on our Enterprise plan, so we'll set you up properly there.`
+    : isMarketplace
+    ? `${host} is a large marketplace with many third-party sellers. Our self-serve plans are built for independent stores, so a marketplace this size needs a custom Enterprise setup.`
     : `${host}${Number.isFinite(total) ? ` carries roughly ${total.toLocaleString()}+ products` : " carries a very large catalog"}, which is beyond the self-serve plans. We'll set you up properly on Enterprise.`;
 
   const subject = encodeURIComponent(`Enterprise enquiry — ${host}`);
   const emailBody = encodeURIComponent(
     `Hi,\n\nI'd like to track ${info?.url || host} with IntelShift.\n` +
-    (isMarketplace ? "(Flagged as a marketplace during onboarding.)\n" : `(Catalog size ~${total || "large"} during onboarding.)\n`) +
+    (isGlobalBrand ? "(Flagged as a global brand during onboarding.)\n" : isMarketplace ? "(Flagged as a marketplace during onboarding.)\n" : `(Catalog size ~${total || "large"} during onboarding.)\n`) +
     `\nThanks,`
   );
 

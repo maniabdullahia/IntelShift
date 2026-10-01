@@ -1,4 +1,5 @@
 import { Check, Layers, Info } from "lucide-react";
+import StoreProfileCard from "../../shared/StoreProfileCard";
 
 /* ────────────────────────────────────────────────────────────────
    IntelShift — Onboarding: Focus categories
@@ -64,6 +65,7 @@ export default function FocusCategories({
   setSelected,
   allSelected = false,   // "All categories" toggle
   setAllSelected,
+  storeProfile = null,   // onboarding store profile (business type, market, category)
 }) {
   const hasCategories = Array.isArray(categories) && categories.length > 0;
 
@@ -89,6 +91,7 @@ export default function FocusCategories({
       <h2 style={{ fontSize: 20, fontWeight: 600, letterSpacing: "-0.025em", marginBottom: 6, color: "var(--primary)" }}>
         What do you want to focus on?
       </h2>
+      <StoreProfileCard profile={storeProfile} />
       <p style={{ fontSize: 14.5, color: "var(--text-light)", marginBottom: "1.5rem", lineHeight: 1.6 }}>
         Here's what we found your store sells. Pick the categories that matter most —
         we'll use them to find the right competitors and focus your comparisons.

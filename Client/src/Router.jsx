@@ -1,3 +1,5 @@
+/* eslint-disable react-refresh/only-export-components -- this module exports the router config, not a component; Fast Refresh doesn't apply. */
+import { lazy, Suspense } from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 
 import Layout from './components/layout/Layout';
@@ -14,25 +16,25 @@ import EmailVerification from './screens/Authentication/EmailVerification';
 import ConfirmDeletion from './screens/Authentication/ConfirmDeletion';
 
 
-import OnBoarding from './screens/OnBoarding/OnBoarding';
-import ViewCompetitor from './components/features/Competitor/ViewCompetitor';
+const OnBoarding = lazy(() => import('./screens/OnBoarding/OnBoarding'));
+const ViewCompetitor = lazy(() => import('./components/features/Competitor/ViewCompetitor'));
 
 // Core Screens
-import Competitors from './screens/Main/Core/Competitors';
-import Analysis from './screens/Main/Core/Analysis';
-import ChangeDetailsScreen from './screens/Main/Core/ChangeDetailsScreen';
-import DashboardScreen from './screens/Main/Core/DashboardScreen';
-import Reports from './screens/Main/Core/Reports';
+const Competitors = lazy(() => import('./screens/Main/Core/Competitors'));
+const Analysis = lazy(() => import('./screens/Main/Core/Analysis'));
+const ChangeDetailsScreen = lazy(() => import('./screens/Main/Core/ChangeDetailsScreen'));
+const DashboardScreen = lazy(() => import('./screens/Main/Core/DashboardScreen'));
+const Reports = lazy(() => import('./screens/Main/Core/Reports'));
 
 // Settings Screen
-import AlertSettings from './screens/Main/Settings/AlertSettings';
-import BillingAndUsage from './screens/Main/Settings/BillingAndUsage';
-import ProfileSettings from './screens/Main/Settings/ProfileSettings';
-import WorkspaceSetting from './screens/Main/Settings/WorkspaceSetting';
+const AlertSettings = lazy(() => import('./screens/Main/Settings/AlertSettings'));
+const BillingAndUsage = lazy(() => import('./screens/Main/Settings/BillingAndUsage'));
+const ProfileSettings = lazy(() => import('./screens/Main/Settings/ProfileSettings'));
+const WorkspaceSetting = lazy(() => import('./screens/Main/Settings/WorkspaceSetting'));
 
-import Billing from './screens/Billing/Billing';
-import Checkout from './screens/Checkout/Checkout';
-import BillingSuccess from './components/features/Billing/BillingSuccess';
+const Billing = lazy(() => import('./screens/Billing/Billing'));
+const Checkout = lazy(() => import('./screens/Checkout/Checkout'));
+const BillingSuccess = lazy(() => import('./components/features/Billing/BillingSuccess'));
 
 import Error from './components/ui/Error';
 
@@ -41,8 +43,18 @@ import packagesLoader from './components/features/DataLoaders/plan.loader';
 import UserLoader from './components/features/DataLoaders/user.loader';
 import OnboardingLoader from './components/features/DataLoaders/onboarding.loader';
 
-import Intro from './screens/Intro/Intro';
+const Intro = lazy(() => import('./screens/Intro/Intro'));
 
+
+// Route-level code splitting: heavy screens (analysis charts, onboarding,
+// billing) load on demand instead of in one 1 MB+ bundle. Auth screens stay
+// eager so the login page paints immediately.
+const RouteFallback = () => (
+    <div style={{ minHeight: '40vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-light)', fontSize: 14 }}>
+        Loading…
+    </div>
+);
+const Lazy = ({ children }) => <Suspense fallback={<RouteFallback />}>{children}</Suspense>;
 
 const router = createBrowserRouter([
     {
@@ -56,74 +68,74 @@ const router = createBrowserRouter([
             </ProtectedRoute>,
         children: [
             { index: true, element: <Navigate to="/dashboard" replace /> },
-            { path: "/dashboard", element: <DashboardScreen /> },
+            { path: "/dashboard", element: <Lazy><DashboardScreen /></Lazy> },
             {
                 path: "/competitors",
-                element: <Competitors />,
+                element: <Lazy><Competitors /></Lazy>,
             },
             {
                 path: "/competitors/:competitorId",
-                element: <ViewCompetitor />,
+                element: <Lazy><ViewCompetitor /></Lazy>,
             },
             {
                 path: "/change_detail",
-                element: <ChangeDetailsScreen />,
+                element: <Lazy><ChangeDetailsScreen /></Lazy>,
             },
             {
                 path: "/change_detail/:domain",
-                element: <ChangeDetailsScreen />,
+                element: <Lazy><ChangeDetailsScreen /></Lazy>,
             },
             {
                 path: "/reports",
-                element: <Reports />,
+                element: <Lazy><Reports /></Lazy>,
             },
             {
                 path: "/analysis/:analysisId",
-                element: <Analysis />,
+                element: <Lazy><Analysis /></Lazy>,
             },
             {
                 path: "/settings/profile",
-                element: <ProfileSettings />,
+                element: <Lazy><ProfileSettings /></Lazy>,
             },
             {
                 path: "/settings/billing",
                 loader: packagesLoader,
                 errorElement: <Error />,
-                element: <BillingAndUsage />,
+                element: <Lazy><BillingAndUsage /></Lazy>,
             },
             {
                 path: "/settings/workspace",
-                element: <WorkspaceSetting />,
+                element: <Lazy><WorkspaceSetting /></Lazy>,
             },
             {
                 path: "/settings/alerts",
-                element: <AlertSettings />,
+                element: <Lazy><AlertSettings /></Lazy>,
             },
 
         ]
     },
     {
         path: "/intro",
-        element: <ProtectedRoute><Intro /></ProtectedRoute>,
+        element: <ProtectedRoute><Lazy><Intro /></Lazy></ProtectedRoute>,
     },
     {
         path: '/onboarding',
         loader: OnboardingLoader,
-        element: <ProtectedRoute><SetupRoute><OnBoarding /></SetupRoute></ProtectedRoute>,
+        element: <ProtectedRoute><SetupRoute><Lazy><OnBoarding /></Lazy></SetupRoute></ProtectedRoute>,
     },
     {
         path: '/billing',
         loader: packagesLoader,
-        element: <ProtectedRoute><SetupRoute><Billing /></SetupRoute></ProtectedRoute>,
+        element: <ProtectedRoute><SetupRoute><Lazy><Billing /></Lazy></SetupRoute></ProtectedRoute>,
     },
     {
         path: '/checkout',
         loader: packagesLoader,
-        element: <ProtectedRoute><SetupRoute><Checkout /></SetupRoute></ProtectedRoute>,
+        element: <ProtectedRoute><SetupRoute><Lazy><Checkout /></Lazy></SetupRoute></ProtectedRoute>,
     },
     {
         path: '/billing-success',
-        element: <ProtectedRoute><SetupRoute><BillingSuccess /></SetupRoute></ProtectedRoute>,
+        element: <ProtectedRoute><SetupRoute><Lazy><BillingSuccess /></Lazy></SetupRoute></ProtectedRoute>,
     },
     {
         path: "/login",

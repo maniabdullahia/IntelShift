@@ -18,6 +18,44 @@ import Brand from "../shared/Brand";
 import useWorkspaceStore from "../../store/workspace.store";
 import Favicon from "../shared/Favicon";
 
+// Defined at module level (not inside Sidebar) so React keeps the same
+// component identity across renders — no remounting / favicon flicker.
+const LeafLink = ({ to, name, icon: Icon, indent = false, faviconDomain, active = false, onClick }) => (
+  <Link
+    to={to}
+    onClick={onClick}
+    className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm transition ${indent ? "ml-3" : ""} ${
+      active ? "bg-(--secondary) text-black font-semibold" : "text-white/90 hover:bg-white/10"
+    }`}
+  >
+    {faviconDomain ? (
+      <Favicon domain={faviconDomain} size={20} tile />
+    ) : Icon ? (
+      <Icon size={indent ? 15 : 17} className="shrink-0" />
+    ) : (
+      <span className="w-[15px]" />
+    )}
+    <span className="truncate">{name}</span>
+  </Link>
+);
+
+const GroupHeader = ({ name, icon: Icon, open, onToggle }) => (
+  <button
+    type="button"
+    onClick={onToggle}
+    className="flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-sm text-white/90 transition hover:bg-white/10"
+  >
+    <span className="flex min-w-0 items-center gap-2.5">
+      {Icon ? <Icon size={16} className="shrink-0" /> : null}
+      <span className="truncate">{name}</span>
+    </span>
+    <span className="shrink-0">
+      {open ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+    </span>
+  </button>
+);
+
+
 function Sidebar({
   onNavigate,
   onClose,
@@ -72,41 +110,6 @@ function Sidebar({
     if (isMobileDrawer && onClose) onClose();
   };
 
-  const LeafLink = ({ to, name, icon: Icon, indent = false, faviconDomain }) => (
-    <Link
-      to={to}
-      onClick={handleNavigate}
-      className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm transition ${indent ? "ml-3" : ""} ${
-        isActive(to) ? "bg-(--secondary) text-black font-semibold" : "text-white/90 hover:bg-white/10"
-      }`}
-    >
-      {faviconDomain ? (
-        <Favicon domain={faviconDomain} size={20} tile />
-      ) : Icon ? (
-        <Icon size={indent ? 15 : 17} className="shrink-0" />
-      ) : (
-        <span className="w-[15px]" />
-      )}
-      <span className="truncate">{name}</span>
-    </Link>
-  );
-
-  const GroupHeader = ({ name, icon: Icon, open, onToggle }) => (
-    <button
-      type="button"
-      onClick={onToggle}
-      className="flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-sm text-white/90 transition hover:bg-white/10"
-    >
-      <span className="flex min-w-0 items-center gap-2.5">
-        {Icon ? <Icon size={16} className="shrink-0" /> : null}
-        <span className="truncate">{name}</span>
-      </span>
-      <span className="shrink-0">
-        {open ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
-      </span>
-    </button>
-  );
-
   return (
     <div className={`bg-(--primary) text-white w-60 h-full p-4 flex flex-col items-start ${className}`}>
       <div className="w-full flex items-center gap-2.5 px-1">
@@ -141,14 +144,14 @@ function Sidebar({
                       <span className="block py-2 px-4 ml-3 text-xs text-white/50">No analyses yet</span>
                     )}
                     {item.children.map((child) => (
-                      <LeafLink key={child.id} to={child.path} name={child.name} indent faviconDomain={child.domain} />
+                      <LeafLink key={child.id} to={child.path} active={isActive(child.path)} onClick={handleNavigate} name={child.name} indent faviconDomain={child.domain} />
                     ))}
                   </div>
                 )}
               </div>
             );
           }
-          return <LeafLink key={item.id} to={item.path} name={item.name} icon={item.icon} />;
+          return <LeafLink key={item.id} to={item.path} active={isActive(item.path)} onClick={handleNavigate} name={item.name} icon={item.icon} />;
         })}
 
         {/* Settings group */}
@@ -162,7 +165,7 @@ function Sidebar({
           {openSettings && (
             <div className="mt-1 flex flex-col gap-1">
               {settingsLinks.map((item) => (
-                <LeafLink key={item.id} to={item.path} name={item.name} icon={item.icon} indent />
+                <LeafLink key={item.id} to={item.path} active={isActive(item.path)} onClick={handleNavigate} name={item.name} icon={item.icon} indent />
               ))}
             </div>
           )}

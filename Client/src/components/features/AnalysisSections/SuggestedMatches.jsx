@@ -1,7 +1,7 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Check, X, Sparkles, ArrowLeftRight } from 'lucide-react';
 import { pickSource, Card, Pill, getMatchups, getDomains, getCurrency, arr, money, cleanProductName } from './_helpers';
-import { productMatches as fetchProductMatches } from '../../../api/utils.api';
+import { productMatches as fetchProductMatches, getProductMatchDecisions, saveProductMatchDecisions } from '../../../api/utils.api';
 import useAuthStore from '../../../store/auth.store';
 
 // Map a pipeline product to the shape the matcher expects.
@@ -12,10 +12,10 @@ const toProduct = (p) => ({
 });
 
 /*
-  Growth+: within each MAPPED collection pair, our system auto-matches the leftover
-  (unmatched) products and — with AI on — a cheap model confirms them. The user
-  accepts or rejects each suggestion; nothing is auto-asserted. This is the safe,
-  category-scoped version of 1:1 product matching we designed.
+  Growth / Pro: within each MAPPED collection pair, AI picks the like-for-like
+  competitor product for each of the user's leftover (unmatched) products. Analyses
+  already include the AI matches; this card lets the user re-run on leftovers and
+  accept / reject each suggestion. Decisions are saved to the workspace.
 */
 export default function SuggestedMatches(props) {
   const { ai, comparison, aiPayload } = pickSource(props);
@@ -33,7 +33,6 @@ export default function SuggestedMatches(props) {
     }))
     .filter((c) => c.user.length && c.competitor.length), [matchups]);
 
-  const [useAi, setUseAi] = useState(true);
   const [loading, setLoading] = useState(false);
   const [groups, setGroups] = useState(null); // [{ category, suggestions:[...] }]
   const [decisions, setDecisions] = useState({}); // key -> 'accepted' | 'rejected'
@@ -45,6 +44,14 @@ export default function SuggestedMatches(props) {
   const pairingScope = user?.subscription?.planId?.limits?.pairingScope;
   const productMatchingAllowed = !pairingScope || pairingScope !== 'collections';
 
+  // Load saved decisions once (best-effort — the card still works without them).
+  useEffect(() => {
+    if (!candidates.length || !productMatchingAllowed) return undefined;
+    let alive = true;
+    getProductMatchDecisions().then((d) => { if (alive && d) setDecisions(d); }).catch(() => {});
+    return () => { alive = false; };
+  }, [candidates.length, productMatchingAllowed]);
+
   if (!candidates.length || !productMatchingAllowed) return null;
 
   const keyOf = (cat, s) => `${cat}|${s.userUrl || s.userName}|${s.competitorUrl || s.competitorName}`;
@@ -54,20 +61,29 @@ export default function SuggestedMatches(props) {
     try {
       const out = [];
       for (const c of candidates) {
-        const res = await fetchProductMatches(c.user, c.competitor, useAi);
+        const res = await fetchProductMatches(c.user, c.competitor, true);
         const suggestions = arr(res?.suggestions);
         if (suggestions.length) out.push({ category: c.category, suggestions, source: res?.source });
       }
       setGroups(out);
       if (!out.length) setError('No confident product matches found in the paired collections.');
     } catch (e) {
-      setError(e?.response?.data?.message || e?.message || 'Could not fetch suggestions.');
+      setError(
+        e?.response?.status === 403
+          ? 'Product matching is available on the Growth and Pro plans.'
+          : e?.response?.data?.message || e?.message || 'Could not fetch suggestions.'
+      );
     } finally {
       setLoading(false);
     }
   };
 
-  const decide = (k, v) => setDecisions((d) => ({ ...d, [k]: d[k] === v ? undefined : v }));
+  const decide = (k, v) => {
+    const next = decisions[k] === v ? null : v;
+    setDecisions((d) => ({ ...d, [k]: next || undefined }));
+    // Persist (fire-and-forget); a failed save just means it won't survive reload.
+    saveProductMatchDecisions({ [k]: next }).catch(() => {});
+  };
 
   const gap = (a, b) => {
     if (a == null || b == null || !b) return null;
@@ -81,7 +97,7 @@ export default function SuggestedMatches(props) {
   return (
     <Card
       title="Suggested product matches"
-      subtitle={`We pair leftover products within each matched collection${useAi ? ' and let AI confirm them' : ''}. Confirm the ones that are true like-for-like matches.`}
+      subtitle="AI pairs leftover products within each matched collection. Confirm the ones that are true like-for-like matches — your choices are saved."
     >
       <div className="mb-4 flex flex-wrap items-center gap-3">
         <button
@@ -94,10 +110,6 @@ export default function SuggestedMatches(props) {
           {loading ? 'Finding matches…' : groups ? 'Re-run' : 'Suggest matches'}
         </button>
 
-        <label className="inline-flex items-center gap-2 text-sm text-(--text-light)">
-          <input type="checkbox" checked={useAi} onChange={(e) => setUseAi(e.target.checked)} />
-          Use AI to confirm
-        </label>
 
         {acceptedCount > 0 && (
           <Pill tone="secondary">{acceptedCount} confirmed</Pill>
@@ -110,7 +122,7 @@ export default function SuggestedMatches(props) {
         <div key={g.category} className="mb-5">
           <div className="mb-2 flex items-center gap-2">
             <h4 className="text-sm font-semibold text-(--text)">{g.category}</h4>
-            {g.source === 'ai_confirmed' && <Pill tone="secondary">AI-confirmed</Pill>}
+            {(g.source === 'ai' || g.source === 'ai_confirmed') && <Pill tone="secondary">AI-matched</Pill>}
             <span className="text-xs text-(--text-light)">{g.suggestions.length} suggested</span>
           </div>
 
@@ -143,6 +155,7 @@ export default function SuggestedMatches(props) {
                     <span>{domains.competitor || 'Them'}: {s.competitorPrice != null ? money(s.competitorPrice, currency) : '—'}</span>
                     {g2 && <span className="font-medium">{g2}</span>}
                     {typeof s.confidence === 'number' && <span>· {Math.round(s.confidence * 100)}% match</span>}
+                    {s.reason && <span>· {s.reason}</span>}
                   </div>
 
                   <div className="mt-2 flex gap-2">

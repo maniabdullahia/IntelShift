@@ -144,6 +144,9 @@ function OnBoarding() {
   const [focusSelected, setFocusSelected] = useState([]);
   const [focusAll, setFocusAll] = useState(false);
   const focusForUrlRef = useRef("");
+  // The owner store's profile from validation (business type, market, category,
+  // access) — shown on the Focus step so the user can see how we read their store.
+  const [ownerProfile, setOwnerProfile] = useState(null);
 
   const [competitors, setCompetitors] = useState([makeCompetitor()]);
   const [activeCompetitor, setActiveCompetitor] = useState(0);
@@ -200,22 +203,38 @@ function OnBoarding() {
 
     try {
       const res = await validateSite(u);
+      const verdict = res?.verdict;
 
-      // Scale/marketplace gateway: giants (Amazon/Daraz) and marketplaces can't be
-      // self-served — surface the "talk to us" modal and block progression, even if
-      // the site itself is readable.
+      // Business-type gateway (Types 1–2): large marketplaces (Amazon/Daraz) and
+      // global brands (Nike/Zara) can't be self-served — surface the "talk to us"
+      // modal and block progression, even if the site itself is readable.
       if (res?.scale?.scaleTier === "enterprise") {
         setEnterpriseBlock({
           url: u,
           isMarketplace: !!res.scale.isMarketplace,
+          businessType: res.scale.businessType ?? null,
+          businessTypeLabel: res.scale.businessTypeLabel || "",
           totalProducts: res.scale.totalProducts ?? null,
           reason: res.scale.reason || "",
         });
         return { ok: false, enterprise: true };
       }
 
+      // English-only for now.
+      if (verdict?.code === "UNSUPPORTED_LANGUAGE") {
+        setValidateError(verdict.message);
+        return { ok: false };
+      }
+
       if (res?.ok) {
-        const out = { ok: true, currency: res.currency || "", categories: res.categories || [] };
+        const out = {
+          ok: true,
+          currency: res.currency || "",
+          categories: res.categories || [],
+          profile: res.profile || verdict?.profile || null,
+          accessStatus: verdict?.accessStatus || res.accessStatus || "complete",
+          accessIssues: verdict?.accessIssues || res.accessIssues || [],
+        };
         validatedRef.current.set(u, out);
         return out;
       }
@@ -254,6 +273,7 @@ function OnBoarding() {
       }
       const cats = r.categories || [];
       setDetectedCategories(cats);
+      setOwnerProfile(r.profile || null);
       // New store URL → clear stale focus picks.
       const cu = cleanURL(url);
       if (focusForUrlRef.current !== cu) {
@@ -367,6 +387,21 @@ function OnBoarding() {
 
   // Capture-first: a competitor is "resolved" once it simply has a name + URL.
   // No page matching happens here — that's done in the workspace.
+  // Step 1: a store whose cart / checkout / search couldn't be reached is still
+  // analysed, but marked "incomplete" — tell the user rather than assume.
+  const notifyIncomplete = (c, r) => {
+    if (r?.accessStatus !== "incomplete") return;
+    const parts = (r.accessIssues || []).join(" / ") || "part of the shopping journey";
+    Swal.fire({
+      toast: true,
+      position: "top-end",
+      icon: "info",
+      timer: 7000,
+      showConfirmButton: false,
+      title: `${cleanName(c?.name) || "This store"}: we couldn't access its ${parts}. Reports will mark those areas as not covered.`,
+    });
+  };
+
   const isCompetitorResolved = (c) => Boolean(c && cleanName(c.name) && cleanURL(c.url));
 
   const activeResolved = isCompetitorResolved(competitor);
@@ -377,6 +412,7 @@ function OnBoarding() {
     const r = await runValidation(competitor?.url);
     if (!r.ok) return;
     if (r.currency) patchActive({ currency: competitor?.currency || r.currency });
+    notifyIncomplete(competitor, r);
     setCompetitors((prev) => [...prev, makeCompetitor()]);
     setActiveCompetitor(competitors.length);
     setCurrentStep(4); // stay on "add a competitor" for the new one
@@ -413,6 +449,7 @@ function OnBoarding() {
     const gate = await runValidation(competitor?.url);
     if (!gate.ok) return;
     if (gate.currency) patchActive({ currency: competitor?.currency || gate.currency });
+    notifyIncomplete(competitor, gate);
 
     try {
       setIsSubmitting(true);
@@ -564,6 +601,7 @@ function OnBoarding() {
         label: "Your Focus",
         component: (
           <FocusCategories
+            storeProfile={ownerProfile}
             categories={detectedCategories}
             selected={focusSelected}
             setSelected={setFocusSelected}
@@ -607,7 +645,7 @@ function OnBoarding() {
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [workspaceName, url, industry, workspaceStore, competitors, activeCompetitor, maxCompetitors, validating, validateStage, validateError, detectedCategories, focusSelected, focusAll]
+    [workspaceName, url, industry, workspaceStore, competitors, activeCompetitor, maxCompetitors, validating, validateStage, validateError, detectedCategories, focusSelected, focusAll, ownerProfile]
   );
 
   /* ── Final-step actions ──────────────────────────────────── */

@@ -123,6 +123,9 @@ export function humanizeMatchReasons(reasons){
     const s = String(r).toLowerCase();
     if (s.startsWith('same_product_type:')) return `both are ${s.split(':')[1].replace(/_/g,' ')}`;
     if (s.startsWith('same_inferred_category:')) return `same category (${s.split(':')[1].replace(/_/g,' ')})`;
+    if (s === 'ai') return 'AI-verified like-for-like';
+    // AI matches carry a short free-text reason ("same type and 5L capacity") — show as written.
+    if (/\s/.test(String(r)) && !MATCH_REASON_LABELS[s]) return String(r);
     return MATCH_REASON_LABELS[s] || titleCase(s).toLowerCase();
   });
   return parts.length ? `Matched because: ${[...new Set(parts)].join(' · ')}` : '';
