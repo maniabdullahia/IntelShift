@@ -1,6 +1,8 @@
 import Workspace from "../models/workspace.js";
 import Competitor from "../models/competitor.js";
 import { domainKey } from "../services/storeProfile.service.js";
+import { planAllowsProductPairing } from "../services/productMatch.service.js";
+import { getWorkspacePlan } from "../services/page.service.js";
 import axios from "axios";
 
 import getImportantPagesFast from "../../utils/pageExtractor.js"
@@ -252,9 +254,15 @@ const suggestCompetitors = async (req, res) => {
 // similarity always runs; useAi adds a cheap-model confirmation (Growth+).
 // Suggestion-only — the client shows accept/reject; nothing is auto-asserted.
 const productMatches = async (req, res) => {
-    const { userProducts = [], competitorProducts = [], useAi = false } = req.body || {};
+    const { userProducts = [], competitorProducts = [], useAi = true } = req.body || {};
     if (!Array.isArray(userProducts) || !Array.isArray(competitorProducts)) {
         return res.status(400).json({ message: "userProducts and competitorProducts must be arrays", suggestions: [] });
+    }
+    // Product pairing is a Growth / Pro capability — enforced here, not just in the UI.
+    const workspace = await Workspace.findOne({ ownerId: req.user?.id }).lean();
+    const { plan } = workspace ? await getWorkspacePlan(workspace) : { plan: null };
+    if (!planAllowsProductPairing(plan)) {
+        return res.status(403).json({ message: "Product matching is available on the Growth and Pro plans.", code: "UPGRADE_REQUIRED", suggestions: [] });
     }
     try {
         const out = await suggestProductMatches({ userProducts, competitorProducts, useAi: !!useAi });
@@ -263,6 +271,33 @@ const productMatches = async (req, res) => {
         console.error("productMatches error:", error?.message || error);
         return res.status(502).json({ success: false, message: "Unable to suggest product matches", suggestions: [] });
     }
+};
+
+// Accept / reject decisions on suggested product matches, saved per workspace
+// so they survive reloads (and can later feed like-for-like tracking).
+// Body: { decisions: { "<category>|<userUrl>|<competitorUrl>": "accepted"|"rejected"|null } }
+const MAX_DECISIONS = 5000;
+const getProductMatchDecisions = async (req, res) => {
+    const ws = await Workspace.findOne({ ownerId: req.user?.id }).select("productMatchDecisions").lean();
+    return res.json({ decisions: ws?.productMatchDecisions || {} });
+};
+const saveProductMatchDecisions = async (req, res) => {
+    const incoming = req.body?.decisions;
+    if (!incoming || typeof incoming !== "object" || Array.isArray(incoming)) {
+        return res.status(400).json({ message: "decisions must be an object" });
+    }
+    const ws = await Workspace.findOne({ ownerId: req.user?.id }).select("productMatchDecisions").lean();
+    if (!ws) return res.status(404).json({ message: "Workspace not found" });
+    const next = { ...(ws.productMatchDecisions || {}) };
+    for (const [k, v] of Object.entries(incoming)) {
+        if (typeof k !== "string" || k.length > 1000) continue;
+        if (v === "accepted" || v === "rejected") next[k] = v;
+        else delete next[k];
+    }
+    const keys = Object.keys(next);
+    if (keys.length > MAX_DECISIONS) for (const k of keys.slice(0, keys.length - MAX_DECISIONS)) delete next[k];
+    await Workspace.findByIdAndUpdate(ws._id, { $set: { productMatchDecisions: next } });
+    return res.json({ decisions: next });
 };
 
 // Live product count for a single collection URL (lazy-loaded by the page picker).
@@ -289,4 +324,6 @@ export {
     suggestCompetitors,
     collectionCount,
     productMatches,
+    getProductMatchDecisions,
+    saveProductMatchDecisions,
 }

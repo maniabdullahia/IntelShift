@@ -13,7 +13,7 @@ import { getNotifications, markNotificationsRead } from "../controllers/notifica
 import { getCompetitorHistory } from "../controllers/history.controller.js";
 import { sendTestAlert } from "../controllers/alert.controller.js";
 import { getPlans } from "../controllers/plan.controller.js";
-import { buildTree, validateUrl, detectStores, debugFetch, validateSite, suggestCompetitors, collectionCount, productMatches } from "../controllers/utils.controller.js";
+import { buildTree, validateUrl, detectStores, debugFetch, validateSite, suggestCompetitors, collectionCount, productMatches, getProductMatchDecisions, saveProductMatchDecisions } from "../controllers/utils.controller.js";
 import { deleteRequest, deleteConfirm, reactivate } from "../controllers/account.controller.js";
 import { scheduleDowngradeController, cancelDowngradeController } from "../controllers/downgrade.controller.js";
 import { actionCenter } from "../controllers/actionCenter.controller.js";
@@ -137,7 +137,9 @@ router.get("/plans", getPlans);
 // BUILD URL TREE
 router.post('/url-tree', authenticate, crawlLimit, buildTree);
 router.post('/collection-count', authenticate, crawlLimit, collectionCount);
-router.post('/product-matches', authenticate, productMatches);
+router.post('/product-matches', authenticate, heavyLimit, productMatches);
+router.get('/product-matches/decisions', authenticate, getProductMatchDecisions);
+router.post('/product-matches/decisions', authenticate, saveProductMatchDecisions);
 
 // VALIDATE URL EXISTS
 router.post('/validate-url', authenticate, crawlLimit, validateUrl);

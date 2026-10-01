@@ -40,6 +40,13 @@ const workspaceSchema = new mongoose.Schema(
     },
     // "selected" when the user picked 1–5; "all" when they chose All / skipped /
     // we couldn't detect any categories → the system behaves as it does today.
+    // Accept / reject decisions on AI-suggested product matches (Growth / Pro),
+    // keyed "<category>|<userProductUrl>|<competitorProductUrl>".
+    productMatchDecisions: {
+      type: mongoose.Schema.Types.Mixed,
+      default: {},
+    },
+
     focusMode: {
       type: String,
       enum: ["all", "selected"],

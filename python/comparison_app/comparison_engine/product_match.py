@@ -98,13 +98,38 @@ def suggest_matches(
             break
 
     source = "heuristic"
-    if use_ai and suggestions:
-        confirmed = _ai_confirm(suggestions)
-        if confirmed is not None:
-            suggestions = confirmed
-            source = "ai_confirmed"
+    if use_ai:
+        # AI-first: the model picks matches from a per-product shortlist (it can
+        # find pairs whose names share no words). Falls back to the heuristic
+        # suggestions only when AI is unavailable.
+        ai_out = _ai_pick(user_products, competitor_products)
+        if ai_out is not None:
+            return {"suggestions": ai_out, "source": "ai", "count": len(ai_out)}
 
     return {"suggestions": suggestions, "source": source, "count": len(suggestions)}
+
+
+def _ai_pick(user_products, competitor_products) -> Optional[List[Dict[str, Any]]]:
+    try:
+        from .ai_product_match import ai_match_products, _default_ai
+    except Exception:
+        return None
+    if _default_ai() is None:
+        return None
+    pm = ai_match_products(user_products, competitor_products)
+    if pm.get("source") != "ai":
+        return None
+    out = []
+    for m in pm["matches"]:
+        up, cp = m["userProduct"], m["competitorProduct"]
+        out.append({
+            "userName": up.get("name"), "userUrl": up.get("productUrl"), "userPrice": up.get("priceValue"),
+            "competitorName": cp.get("name"), "competitorUrl": cp.get("productUrl"), "competitorPrice": cp.get("priceValue"),
+            "confidence": m["confidence"],
+            "reason": (m.get("matchReasons") or ["", ""])[1] if len(m.get("matchReasons") or []) > 1 else "",
+            "source": "ai",
+        })
+    return out
 
 
 def _ai_confirm(suggestions: List[Dict[str, Any]]) -> Optional[List[Dict[str, Any]]]:

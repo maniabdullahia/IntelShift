@@ -1301,6 +1301,25 @@ def suggest_product_matches_endpoint(payload: ProductMatchRequest) -> Dict[str, 
         })
 
 
+class AiMatchPairsRequest(BaseModel):
+    pairs: List[Dict[str, Any]] = Field(default_factory=list)
+
+
+@app.post("/api/v1/ai-product-matches")
+def ai_product_matches_endpoint(payload: AiMatchPairsRequest) -> Dict[str, Any]:
+    """AI-first product matching for a batch of mapped collection pairs (Growth /
+    Pro). Each pair: {key, category, currency, userProducts, competitorProducts}.
+    Returns {results:[{key, productMatching}]} where productMatching has the same
+    shape as the local matcher's output (consumed unchanged by UI + AI payload)."""
+    try:
+        from comparison_engine.ai_product_match import ai_match_pairs  # type: ignore
+        return {"success": True, "results": ai_match_pairs(payload.pairs[:40])}
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail={
+            "success": False, "message": "AI product matching failed.", "error": str(exc),
+        })
+
+
 @app.post("/api/v1/store-probe")
 def store_probe_endpoint(payload: StoreProbeRequest) -> Dict[str, Any]:
     """Storefront probe for competitor-suggestion verification.

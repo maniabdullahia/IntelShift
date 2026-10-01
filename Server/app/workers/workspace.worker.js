@@ -14,6 +14,8 @@ import { buildAiPayload, buildOpenAiInsights } from "../../api/python/payload.ai
 import { mergeJson } from "../../api/python/merger.js";
 
 import { createAnalysis } from "../services/analysis.service.js";
+import { applyAiProductMatches, planAllowsProductPairing } from "../services/productMatch.service.js";
+import { getWorkspacePlan } from "../services/page.service.js";
 
 mongoose.set("bufferCommands", false);
 
@@ -63,6 +65,12 @@ const workspaceWorker = new Worker(
       */
 
       const workspace = await Workspace.findById(workspaceId).lean();
+      // Product pairing is a Growth / Pro capability (plan.limits.pairingScope).
+      let productPairing = false;
+      try {
+        const { plan } = workspace ? await getWorkspacePlan(workspace) : { plan: null };
+        productPairing = planAllowsProductPairing(plan);
+      } catch { /* default off */ }
 
       if (!workspace) {
         throw new Error(`Workspace not found: ${workspaceId}`);
@@ -202,6 +210,19 @@ const workspaceWorker = new Worker(
             compData
           );
           console.log(`⏱️ [${comp.name}] compareSite (Python /compare-one) took ${((Date.now() - tCompare) / 1000).toFixed(1)}s`);
+
+          // Growth / Pro: AI pairs products inside every mapped collection pair.
+          // Written into the comparison before the insights payload is built, so
+          // the report and the UI both use the AI matches. Fail-open.
+          if (productPairing && comparison && typeof comparison === "object") {
+            const tMatch = Date.now();
+            try {
+              const { pairs, matched } = await applyAiProductMatches(comparison);
+              console.log(`🤝 [${comp.name}] AI product matching: ${matched} pairs across ${pairs} collection pairs (${((Date.now() - tMatch) / 1000).toFixed(1)}s)`);
+            } catch (matchErr) {
+              console.warn(`AI product matching failed for ${comp.name} (continuing):`, matchErr?.message || matchErr);
+            }
+          }
 
           // Give the AI business context: the user's industry and the full
           // competitor set they deliberately chose. Frames relevance without
